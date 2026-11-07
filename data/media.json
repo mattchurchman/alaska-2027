@@ -833,7 +833,778 @@
    "checked": "2026-11-07"
   }
  ],
- "videos": [],
+ "videos": [
+  {
+   "id": "vid-We4YsYePM4c",
+   "videoId": "We4YsYePM4c",
+   "title": "ROYAL PRINCESS - Complete Full 4K Tour of Royal Princess Cruise Ship!",
+   "channel": "Chris Frame the Maritime Historian",
+   "published": "2025-11-18",
+   "length": "12:42",
+   "url": "https://www.youtube.com/watch?v=We4YsYePM4c",
+   "embed": "https://www.youtube-nocookie.com/embed/We4YsYePM4c",
+   "for": [
+    "ship:royal_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-IWumvBF7gNw",
+   "videoId": "IWumvBF7gNw",
+   "title": "ROYAL PRINCESS DECK BY DECK | FULL INTERIOR & EXTERIOR TOUR",
+   "channel": "The Port Lowdown",
+   "published": "2026-02-15",
+   "length": "44:23",
+   "url": "https://www.youtube.com/watch?v=IWumvBF7gNw",
+   "embed": "https://www.youtube-nocookie.com/embed/IWumvBF7gNw",
+   "for": [
+    "ship:royal_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-amdSB9XdYD4",
+   "videoId": "amdSB9XdYD4",
+   "title": "Star Princess Cruise Ship Full Tour | Princess Cruises",
+   "channel": "Princess Cruises",
+   "published": "2025-10-28",
+   "length": "10:03",
+   "url": "https://www.youtube.com/watch?v=amdSB9XdYD4",
+   "embed": "https://www.youtube-nocookie.com/embed/amdSB9XdYD4",
+   "for": [
+    "ship:star_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-y7RcuNrO1_Q",
+   "videoId": "y7RcuNrO1_Q",
+   "title": "Star Princess | Full Walkthrough Ship Tour & Review | Brand New 2026 | Princess Cruise Lines",
+   "channel": "Cruises It",
+   "published": "2026-01-03",
+   "length": "24:27",
+   "url": "https://www.youtube.com/watch?v=y7RcuNrO1_Q",
+   "embed": "https://www.youtube-nocookie.com/embed/y7RcuNrO1_Q",
+   "for": [
+    "ship:star_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-jyD6NdWg9MY",
+   "videoId": "jyD6NdWg9MY",
+   "title": "Eurodam - Full Ship Tour and Review of this Holland America Cruise Ship",
+   "channel": "Let's All Cruise",
+   "published": "2026-10-31",
+   "length": "12:20",
+   "url": "https://www.youtube.com/watch?v=jyD6NdWg9MY",
+   "embed": "https://www.youtube-nocookie.com/embed/jyD6NdWg9MY",
+   "for": [
+    "ship:eurodam"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-dNCaFssftO8",
+   "videoId": "dNCaFssftO8",
+   "title": "Holland America Eurodam Ship Tour for 2025!",
+   "channel": "The Port Lowdown",
+   "published": "2025-02-23",
+   "length": "31:30",
+   "url": "https://www.youtube.com/watch?v=dNCaFssftO8",
+   "embed": "https://www.youtube-nocookie.com/embed/dNCaFssftO8",
+   "for": [
+    "ship:eurodam"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-PmA4dFAMcuU",
+   "videoId": "PmA4dFAMcuU",
+   "title": "Norwegian Encore | Full Walkthrough Ship Tour & Review | Watch before booking",
+   "channel": "Cruises It",
+   "published": "2025-10-25",
+   "length": "32:48",
+   "url": "https://www.youtube.com/watch?v=PmA4dFAMcuU",
+   "embed": "https://www.youtube-nocookie.com/embed/PmA4dFAMcuU",
+   "for": [
+    "ship:norwegian_encore"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-OTKMoyAJqBk",
+   "videoId": "OTKMoyAJqBk",
+   "title": "Norwegian Encore Full Ship Tour & Walkthrough: Spice H20, New Dining, Free at Sea, & New Spaces",
+   "channel": "Freestyle Travelers",
+   "published": "2025-01-19",
+   "length": "31:00",
+   "url": "https://www.youtube.com/watch?v=OTKMoyAJqBk",
+   "embed": "https://www.youtube-nocookie.com/embed/OTKMoyAJqBk",
+   "for": [
+    "ship:norwegian_encore"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-PLiia3x1tUw",
+   "videoId": "PLiia3x1tUw",
+   "title": "Norwegian Bliss Full Ship Tour & Walkthrough | New Menus, Restaurants & Venues | NCL Bliss Alaska",
+   "channel": "Freestyle Travelers",
+   "published": "2026-02-27",
+   "length": "20:23",
+   "url": "https://www.youtube.com/watch?v=PLiia3x1tUw",
+   "embed": "https://www.youtube-nocookie.com/embed/PLiia3x1tUw",
+   "for": [
+    "ship:norwegian_bliss"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-Tm9IwCZ3iO0",
+   "videoId": "Tm9IwCZ3iO0",
+   "title": "Norwegian Bliss | Full Walkthrough Ship Tour & Review | Cabins and Haven Area | After Dry Dock 2025",
+   "channel": "Cruises It",
+   "published": "2025-08-03",
+   "length": "30:53",
+   "url": "https://www.youtube.com/watch?v=Tm9IwCZ3iO0",
+   "embed": "https://www.youtube-nocookie.com/embed/Tm9IwCZ3iO0",
+   "for": [
+    "ship:norwegian_bliss"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-nXeynf91Y7g",
+   "videoId": "nXeynf91Y7g",
+   "title": "THIS Cruise Ship Has EVERYTHING! Norwegian Joy: Complete Ship Tour",
+   "channel": "EECC Travels",
+   "published": "2025-09-11",
+   "length": "21:26",
+   "url": "https://www.youtube.com/watch?v=nXeynf91Y7g",
+   "embed": "https://www.youtube-nocookie.com/embed/nXeynf91Y7g",
+   "for": [
+    "ship:norwegian_joy"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-JVS5vRM_EqU",
+   "videoId": "JVS5vRM_EqU",
+   "title": "Norwegian Joy Ship Tour - NEW for 2024 + MUST-KNOW tips!",
+   "channel": "CruiseTipsTV",
+   "published": "2024-04-25",
+   "length": "22:49",
+   "url": "https://www.youtube.com/watch?v=JVS5vRM_EqU",
+   "embed": "https://www.youtube-nocookie.com/embed/JVS5vRM_EqU",
+   "for": [
+    "ship:norwegian_joy"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-dsxwSt9IBMw",
+   "videoId": "dsxwSt9IBMw",
+   "title": "Voyager of the Seas | Full Walkthrough Ship Tour & Review with Cabins Suites |Royal Caribbean",
+   "channel": "Cruises It",
+   "published": "2025-03-30",
+   "length": "25:27",
+   "url": "https://www.youtube.com/watch?v=dsxwSt9IBMw",
+   "embed": "https://www.youtube-nocookie.com/embed/dsxwSt9IBMw",
+   "for": [
+    "ship:voyager_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-J_EgH_0TedE",
+   "videoId": "J_EgH_0TedE",
+   "title": "Royal Caribbean Voyager of The Seas Full Walkthrough Tour & Review 2025",
+   "channel": "The Leckie Lifestyle",
+   "published": "2025-01-31",
+   "length": "16:46",
+   "url": "https://www.youtube.com/watch?v=J_EgH_0TedE",
+   "embed": "https://www.youtube-nocookie.com/embed/J_EgH_0TedE",
+   "for": [
+    "ship:voyager_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-EbdtOw_QqOE",
+   "videoId": "EbdtOw_QqOE",
+   "title": "Quantum of the seas | Full Walkthrough Ship Tour & Review | Ultra 4 Royal Caribbean Cruises",
+   "channel": "Cruises It",
+   "published": "2025-11-09",
+   "length": "24:44",
+   "url": "https://www.youtube.com/watch?v=EbdtOw_QqOE",
+   "embed": "https://www.youtube-nocookie.com/embed/EbdtOw_QqOE",
+   "for": [
+    "ship:quantum_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-Zw0IAWxx5Gk",
+   "videoId": "Zw0IAWxx5Gk",
+   "title": "Quantum of the Seas Full Ship Tour. A tour of this Royal Caribbean cruise ship",
+   "channel": "Let's All Cruise",
+   "published": "2026-01-16",
+   "length": "18:26",
+   "url": "https://www.youtube.com/watch?v=Zw0IAWxx5Gk",
+   "embed": "https://www.youtube-nocookie.com/embed/Zw0IAWxx5Gk",
+   "for": [
+    "ship:quantum_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-ilrvKOkjYz8",
+   "videoId": "ilrvKOkjYz8",
+   "title": "Celebrity Edge Ship Tour: Suites, Dining and Onboard Experiences | Celebrity Cruises",
+   "channel": "Celebrity Cruises",
+   "published": "2024-08-05",
+   "length": "15:41",
+   "url": "https://www.youtube.com/watch?v=ilrvKOkjYz8",
+   "embed": "https://www.youtube-nocookie.com/embed/ilrvKOkjYz8",
+   "for": [
+    "ship:celebrity_edge"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-Q2L7fgs8YVc",
+   "videoId": "Q2L7fgs8YVc",
+   "title": "Celebrity Edge | Full Walkthrough Ship Tour & Review | Ultra HD | 2023 New | Celebrity Cruise Lines",
+   "channel": "Cruises It",
+   "published": "2023-10-04",
+   "length": "11:29",
+   "url": "https://www.youtube.com/watch?v=Q2L7fgs8YVc",
+   "embed": "https://www.youtube-nocookie.com/embed/Q2L7fgs8YVc",
+   "for": [
+    "ship:celebrity_edge"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid--kcCPYaufR8",
+   "videoId": "-kcCPYaufR8",
+   "title": "Carnival Legend Cruise Ship Tour (NEW for 2026!)",
+   "channel": "CruiseTipsTV",
+   "published": "2026-07-05",
+   "length": "15:40",
+   "url": "https://www.youtube.com/watch?v=-kcCPYaufR8",
+   "embed": "https://www.youtube-nocookie.com/embed/-kcCPYaufR8",
+   "for": [
+    "ship:carnival_legend"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-x1a3U5zCDow",
+   "videoId": "x1a3U5zCDow",
+   "title": "Is the Carnival Legend Cruise Ship Legendary? FULL SHIP TOUR 2025",
+   "channel": "Travel With Matt Taylor",
+   "published": "2025-09-13",
+   "length": "18:21",
+   "url": "https://www.youtube.com/watch?v=x1a3U5zCDow",
+   "embed": "https://www.youtube-nocookie.com/embed/x1a3U5zCDow",
+   "for": [
+    "ship:carnival_legend"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-qvY6ZOjsYRk",
+   "videoId": "qvY6ZOjsYRk",
+   "title": "Carnival Spirit | Full Walkthrough Ship Tour | 4k 2024 New Video| Fully Renovated",
+   "channel": "Cruises It",
+   "published": "2024-06-07",
+   "length": "14:18",
+   "url": "https://www.youtube.com/watch?v=qvY6ZOjsYRk",
+   "embed": "https://www.youtube-nocookie.com/embed/qvY6ZOjsYRk",
+   "for": [
+    "ship:carnival_spirit"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-VX_N1CX4PaQ",
+   "videoId": "VX_N1CX4PaQ",
+   "title": "Ultimate Carnival Spirit Ship Tour - Every Deck Revealed!",
+   "channel": "Sea Trippin' w/ Kim and Scott",
+   "published": "2025-02-23",
+   "length": "41:06",
+   "url": "https://www.youtube.com/watch?v=VX_N1CX4PaQ",
+   "embed": "https://www.youtube-nocookie.com/embed/VX_N1CX4PaQ",
+   "for": [
+    "ship:carnival_spirit"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-Iru5f4iKd2M",
+   "videoId": "Iru5f4iKd2M",
+   "title": "Ship Tour of MSC Poesia | MSC Cruises",
+   "channel": "MSC Cruises Official",
+   "published": "2026-07-30",
+   "length": "8:25",
+   "url": "https://www.youtube.com/watch?v=Iru5f4iKd2M",
+   "embed": "https://www.youtube-nocookie.com/embed/Iru5f4iKd2M",
+   "for": [
+    "ship:msc_poesia"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-GMU0dbsTIiQ",
+   "videoId": "GMU0dbsTIiQ",
+   "title": "MSC Poesia | Full Walkthrough Ship Tour 4K | NEWLY Refurbished for 2026 | Alaska & Caribbean",
+   "channel": "Cruises It",
+   "published": "2026-08-15",
+   "length": "18:21",
+   "url": "https://www.youtube.com/watch?v=GMU0dbsTIiQ",
+   "embed": "https://www.youtube-nocookie.com/embed/GMU0dbsTIiQ",
+   "for": [
+    "ship:msc_poesia"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-VaxmqwZomzs",
+   "videoId": "VaxmqwZomzs",
+   "title": "Brilliant Lady FULL Ship Tour [4K] - Virgin Voyages Ship Walkthrough",
+   "channel": "VV Insider | Virgin Voyages guides, info and news",
+   "published": "2025-08-19",
+   "length": "33:46",
+   "url": "https://www.youtube.com/watch?v=VaxmqwZomzs",
+   "embed": "https://www.youtube-nocookie.com/embed/VaxmqwZomzs",
+   "for": [
+    "ship:brilliant_lady"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-juiqnJr2dRc",
+   "videoId": "juiqnJr2dRc",
+   "title": "Brilliant Lady | Full Walkthrough Ship Tour & Review | 4K Ultra | \"Adults Only\" | Virgin Cruises",
+   "channel": "Cruises It",
+   "published": "2025-10-04",
+   "length": "22:16",
+   "url": "https://www.youtube.com/watch?v=juiqnJr2dRc",
+   "embed": "https://www.youtube-nocookie.com/embed/juiqnJr2dRc",
+   "for": [
+    "ship:brilliant_lady"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-dtX8UyAOYk4",
+   "videoId": "dtX8UyAOYk4",
+   "title": "Oceania Riviera Cruise Ship Tour | Luxury Cruise Ship Walkthrough 4K",
+   "channel": "S.W. Black Travel",
+   "published": "2025-12-30",
+   "length": "22:37",
+   "url": "https://www.youtube.com/watch?v=dtX8UyAOYk4",
+   "embed": "https://www.youtube-nocookie.com/embed/dtX8UyAOYk4",
+   "for": [
+    "ship:oceania_riviera"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-B6S6RzDpzds",
+   "videoId": "B6S6RzDpzds",
+   "title": "Oceania RIVIERA Decked! All you need to know in 4K and a top to bottom tour...",
+   "channel": "Peter Knego's MidShipCinema",
+   "published": "2026-08-08",
+   "length": "38:13",
+   "url": "https://www.youtube.com/watch?v=B6S6RzDpzds",
+   "embed": "https://www.youtube-nocookie.com/embed/B6S6RzDpzds",
+   "for": [
+    "ship:oceania_riviera"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-MIVxuLAJL7Q",
+   "videoId": "MIVxuLAJL7Q",
+   "title": "Emerald Princess | Full Walkthrough Cruise Ship Tour & Review | Is this ship worth it?",
+   "channel": "Cruises It",
+   "published": "2026-08-22",
+   "length": "19:45",
+   "url": "https://www.youtube.com/watch?v=MIVxuLAJL7Q",
+   "embed": "https://www.youtube-nocookie.com/embed/MIVxuLAJL7Q",
+   "for": [
+    "ship:emerald_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-AILN0YzFJek",
+   "videoId": "AILN0YzFJek",
+   "title": "Emerald Princess: Full Ship Tour & Honest Review",
+   "channel": "Right Direction Adventures",
+   "published": "2026-02-06",
+   "length": "16:44",
+   "url": "https://www.youtube.com/watch?v=AILN0YzFJek",
+   "embed": "https://www.youtube-nocookie.com/embed/AILN0YzFJek",
+   "for": [
+    "ship:emerald_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-vB0e-L9aWbo",
+   "videoId": "vB0e-L9aWbo",
+   "title": "FULL SHIP TOUR 2026 | Crown Princess",
+   "channel": "The Aussie Globetrotter",
+   "published": "2026-03-16",
+   "length": "13:01",
+   "url": "https://www.youtube.com/watch?v=vB0e-L9aWbo",
+   "embed": "https://www.youtube-nocookie.com/embed/vB0e-L9aWbo",
+   "for": [
+    "ship:crown_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-UkqHWTRG7C4",
+   "videoId": "UkqHWTRG7C4",
+   "title": "CROWN PRINCESS - Complete Full HD Tour of Crown Princess Cruise Ship",
+   "channel": "Chris Frame the Maritime Historian",
+   "published": "2025-08-06",
+   "length": "11:50",
+   "url": "https://www.youtube.com/watch?v=UkqHWTRG7C4",
+   "embed": "https://www.youtube-nocookie.com/embed/UkqHWTRG7C4",
+   "for": [
+    "ship:crown_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-Ls-s2v8qsYI",
+   "videoId": "Ls-s2v8qsYI",
+   "title": "Discovery Princess Full Ship Tour & Review | Everything You Need to See Before You Cruise",
+   "channel": "Cruises It",
+   "published": "2026-09-13",
+   "length": "16:57",
+   "url": "https://www.youtube.com/watch?v=Ls-s2v8qsYI",
+   "embed": "https://www.youtube-nocookie.com/embed/Ls-s2v8qsYI",
+   "for": [
+    "ship:discovery_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-_pMXJMXMpfY",
+   "videoId": "_pMXJMXMpfY",
+   "title": "NEW Discovery Princess Ship Tour - INSIDE LOOK!",
+   "channel": "CruiseTipsTV",
+   "published": "2025-08-03",
+   "length": "21:24",
+   "url": "https://www.youtube.com/watch?v=_pMXJMXMpfY",
+   "embed": "https://www.youtube-nocookie.com/embed/_pMXJMXMpfY",
+   "for": [
+    "ship:discovery_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-ma3w6QejQEw",
+   "videoId": "ma3w6QejQEw",
+   "title": "Coral Princess Full Walkthrough Tour and Review | Is This Princess Ship Worth It?",
+   "channel": "Cruises It",
+   "published": "2026-09-06",
+   "length": "18:44",
+   "url": "https://www.youtube.com/watch?v=ma3w6QejQEw",
+   "embed": "https://www.youtube-nocookie.com/embed/ma3w6QejQEw",
+   "for": [
+    "ship:coral_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-Q6DKeYVF2-k",
+   "videoId": "Q6DKeYVF2-k",
+   "title": "Coral Princess Ship Tour 2026 - Full Narrated Deck-By-Deck Video Tour With Deck Plans - ParoDeeJay",
+   "channel": "ParoDeeJay",
+   "published": "2026-02-02",
+   "length": "20:33",
+   "url": "https://www.youtube.com/watch?v=Q6DKeYVF2-k",
+   "embed": "https://www.youtube-nocookie.com/embed/Q6DKeYVF2-k",
+   "for": [
+    "ship:coral_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-D0SDpmw0DYA",
+   "videoId": "D0SDpmw0DYA",
+   "title": "Island Princess Full Cruise Ship Tour, Restaurants, Bars, Entertainment Venues & Facilities 2026",
+   "channel": "TPosition Travelogue",
+   "published": "2026-02-13",
+   "length": "23:56",
+   "url": "https://www.youtube.com/watch?v=D0SDpmw0DYA",
+   "embed": "https://www.youtube-nocookie.com/embed/D0SDpmw0DYA",
+   "for": [
+    "ship:island_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-VKPEkRPPwGM",
+   "videoId": "VKPEkRPPwGM",
+   "title": "Complete Island Princess Ship Tour - Fully Narrated",
+   "channel": "A Cruising Good Time",
+   "published": "2025-03-07",
+   "length": "29:26",
+   "url": "https://www.youtube.com/watch?v=VKPEkRPPwGM",
+   "embed": "https://www.youtube-nocookie.com/embed/VKPEkRPPwGM",
+   "for": [
+    "ship:island_princess"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-cJxkW10Bpu8",
+   "videoId": "cJxkW10Bpu8",
+   "title": "Holland America Westerdam | Full Deck by Deck Cruise Ship Tour HD",
+   "channel": "Destination 4 Vacation",
+   "published": "2025-08-23",
+   "length": "32:13",
+   "url": "https://www.youtube.com/watch?v=cJxkW10Bpu8",
+   "embed": "https://www.youtube-nocookie.com/embed/cJxkW10Bpu8",
+   "for": [
+    "ship:westerdam"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-VpZ_UVvPd8U",
+   "videoId": "VpZ_UVvPd8U",
+   "title": "FULL SHIP TOUR: Holland America Line MS Westerdam (Alaska Cruise 2025)",
+   "channel": "Two Old Men (At Heart)",
+   "published": "2025-10-26",
+   "length": "21:58",
+   "url": "https://www.youtube.com/watch?v=VpZ_UVvPd8U",
+   "embed": "https://www.youtube-nocookie.com/embed/VpZ_UVvPd8U",
+   "for": [
+    "ship:westerdam"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-LESARFkGPSg",
+   "videoId": "LESARFkGPSg",
+   "title": "Holland America Line | MS Noordam Walking Ship Tour",
+   "channel": "Andrew Bibay",
+   "published": "2026-02-20",
+   "length": "15:10",
+   "url": "https://www.youtube.com/watch?v=LESARFkGPSg",
+   "embed": "https://www.youtube-nocookie.com/embed/LESARFkGPSg",
+   "for": [
+    "ship:noordam"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-G27x38ZSOWg",
+   "videoId": "G27x38ZSOWg",
+   "title": "Holland America Noordam | Deck by Deck Ship Tour | Destination 4 Vacation",
+   "channel": "Destination 4 Vacation",
+   "published": "2025-06-30",
+   "length": "33:48",
+   "url": "https://www.youtube.com/watch?v=G27x38ZSOWg",
+   "embed": "https://www.youtube-nocookie.com/embed/G27x38ZSOWg",
+   "for": [
+    "ship:noordam"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid--pPQALa_YGc",
+   "videoId": "-pPQALa_YGc",
+   "title": "Serenade of the Seas Ship Tour | What’s Onboard?",
+   "channel": "Wandering Hewitts",
+   "published": "2026-08-09",
+   "length": "17:20",
+   "url": "https://www.youtube.com/watch?v=-pPQALa_YGc",
+   "embed": "https://www.youtube-nocookie.com/embed/-pPQALa_YGc",
+   "for": [
+    "ship:serenade_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-ebHtiUR56-g",
+   "videoId": "ebHtiUR56-g",
+   "title": "Serenade of the Seas Cruise Ship Tour – What’s Onboard in 2025?",
+   "channel": "Amy's Turnkey Travel",
+   "published": "2025-02-10",
+   "length": "30:40",
+   "url": "https://www.youtube.com/watch?v=ebHtiUR56-g",
+   "embed": "https://www.youtube-nocookie.com/embed/ebHtiUR56-g",
+   "for": [
+    "ship:serenade_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-WndVHEv4gCY",
+   "videoId": "WndVHEv4gCY",
+   "title": "Anthem of the Seas Full Ship Tour - Complete Cruise Ship Guide! | Royal Caribbean",
+   "channel": "The Curious Tourists",
+   "published": "2025-09-10",
+   "length": "12:04",
+   "url": "https://www.youtube.com/watch?v=WndVHEv4gCY",
+   "embed": "https://www.youtube-nocookie.com/embed/WndVHEv4gCY",
+   "for": [
+    "ship:anthem_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-uDMgtLTFqHQ",
+   "videoId": "uDMgtLTFqHQ",
+   "title": "Anthem of the Seas Full Ship Tour & Review | Royal Caribbean | 4K",
+   "channel": "Harr Travel",
+   "published": "2025-07-19",
+   "length": "34:11",
+   "url": "https://www.youtube.com/watch?v=uDMgtLTFqHQ",
+   "embed": "https://www.youtube-nocookie.com/embed/uDMgtLTFqHQ",
+   "for": [
+    "ship:anthem_of_the_seas"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-987fuoLhFAE",
+   "videoId": "987fuoLhFAE",
+   "title": "Celebrity Summit Full Ship Walkthrough Tour & Review | Complete Deck-by-Deck Tour 2026",
+   "channel": "Cruises It",
+   "published": "2026-10-11",
+   "length": "18:53",
+   "url": "https://www.youtube.com/watch?v=987fuoLhFAE",
+   "embed": "https://www.youtube-nocookie.com/embed/987fuoLhFAE",
+   "for": [
+    "ship:celebrity_summit"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-J2eQN_YKP1c",
+   "videoId": "J2eQN_YKP1c",
+   "title": "Celebrity Summit Ship Tour: Suites, Dining and Onboard Experiences | Celebrity Cruises",
+   "channel": "Celebrity Cruises",
+   "published": "2024-08-05",
+   "length": "9:48",
+   "url": "https://www.youtube.com/watch?v=J2eQN_YKP1c",
+   "embed": "https://www.youtube-nocookie.com/embed/J2eQN_YKP1c",
+   "for": [
+    "ship:celebrity_summit"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid--D6bJDomCsY",
+   "videoId": "-D6bJDomCsY",
+   "title": "*RENEWED* Celebrity Solstice Cruise Ship Full Tour & Review (Best Spots Revealed!)",
+   "channel": "JJ Cruise",
+   "published": "2026-06-07",
+   "length": "25:59",
+   "url": "https://www.youtube.com/watch?v=-D6bJDomCsY",
+   "embed": "https://www.youtube-nocookie.com/embed/-D6bJDomCsY",
+   "for": [
+    "ship:celebrity_solstice"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-5lFKjkSpFDI",
+   "videoId": "5lFKjkSpFDI",
+   "title": "REVITALIZED! Celebrity Solstice | 2026 Full Walkthrough Ship Tour & Review 4K | Celebrity Cruises",
+   "channel": "Harr Travel",
+   "published": "2026-07-08",
+   "length": "30:40",
+   "url": "https://www.youtube.com/watch?v=5lFKjkSpFDI",
+   "embed": "https://www.youtube-nocookie.com/embed/5lFKjkSpFDI",
+   "for": [
+    "ship:celebrity_solstice"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-y7KhCCELZQ4",
+   "videoId": "y7KhCCELZQ4",
+   "title": "Norwegian Jade Full Ship Tour (2026) | Complete Walkthrough",
+   "channel": "MIKE ON THE MOVE",
+   "published": "2026-04-19",
+   "length": "16:05",
+   "url": "https://www.youtube.com/watch?v=y7KhCCELZQ4",
+   "embed": "https://www.youtube-nocookie.com/embed/y7KhCCELZQ4",
+   "for": [
+    "ship:norwegian_jade"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-RjDqWl8AvJ8",
+   "videoId": "RjDqWl8AvJ8",
+   "title": "Norwegian Jade | Full Ship Walkthrough Tour | 2025 | 4K",
+   "channel": "Harr Travel",
+   "published": "2025-09-14",
+   "length": "32:40",
+   "url": "https://www.youtube.com/watch?v=RjDqWl8AvJ8",
+   "embed": "https://www.youtube-nocookie.com/embed/RjDqWl8AvJ8",
+   "for": [
+    "ship:norwegian_jade"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-oCZCYT1ns50",
+   "videoId": "oCZCYT1ns50",
+   "title": "FULL 2025 Disney Wonder Alaska Ship Tour",
+   "channel": "Window Seat",
+   "published": "2025-05-16",
+   "length": "16:00",
+   "url": "https://www.youtube.com/watch?v=oCZCYT1ns50",
+   "embed": "https://www.youtube-nocookie.com/embed/oCZCYT1ns50",
+   "for": [
+    "ship:disney_wonder"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-6Fx1eBg7RX0",
+   "videoId": "6Fx1eBg7RX0",
+   "title": "Disney Wonder Full Ship Tour 2025 - Including NEW Changes!",
+   "channel": "Cruise With Ben and David",
+   "published": "2025-01-01",
+   "length": "26:13",
+   "url": "https://www.youtube.com/watch?v=6Fx1eBg7RX0",
+   "embed": "https://www.youtube-nocookie.com/embed/6Fx1eBg7RX0",
+   "for": [
+    "ship:disney_wonder"
+   ],
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "vid-XKUdyt14bdg",
+   "videoId": "XKUdyt14bdg",
+   "title": "Disney Magic Cruise Ship Overview | What to Know Before You Go",
+   "channel": "Take2Travel",
+   "published": "2026-10-02",
+   "length": "15:49",
+   "url": "https://www.youtube.com/watch?v=XKUdyt14bdg",
+   "embed": "https://www.youtube-nocookie.com/embed/XKUdyt14bdg",
+   "for": [
+    "ship:disney_magic"
+   ],
+   "checked": "2026-11-07"
+  }
+ ],
  "officialLinks": [],
  "placeholders": [
   {
