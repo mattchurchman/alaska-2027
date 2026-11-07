@@ -10022,6 +10022,16 @@
    "line": "Princess, Royal Caribbean, Celebrity, HAL Vancouver sailings",
    "finding": "Out of scope (not Seattle departures).",
    "source": null
+  },
+  {
+   "line": "Holland America – Koningsdam, Zaandam, Nieuw Amsterdam, Westerdam (Vancouver/Whittier)",
+   "finding": "On hollandamerica.com (2026-11-07) the summer Vancouver round trips (Koningsdam, Zaandam), Westerdam northbound and Nieuw Amsterdam southbound/northbound after May 16 are offered only as cruisetours, not cruise-only. Westerdam southbound is cruise-only but its verandahs were sold out (May 30, Jun 13, Jun 27).",
+   "source": "hal_search_alaska"
+  },
+  {
+   "line": "Princess – 6-, 8-, 9-day Vancouver round trips",
+   "finding": "Only in April/September 2027 (Coral, Crown, Discovery), outside the late-May to early-July window.",
+   "source": "princess_search_yvr"
   }
  ]
 }

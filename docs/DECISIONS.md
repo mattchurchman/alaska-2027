@@ -7,3 +7,6 @@
 - **2026-11-07 · planning · CSV tool named `make_csv.py`**, not `csv.py`. Reason: `csv.py` shadows Python's csv module.
 - **2026-11-07 · planning · Interface:** Claude app for P0–P5 (artifact/Project access, browser for cruise sites); revisit Claude Code at P6 for real Safari/WebKit testing.
 - **2026-11-07 · planning · Agent-pipeline template not applied:** `mattchurchman/agent-pipeline-template` is not visible to Claude's GitHub access. A lean AGENTS.md was written instead; the template can be retrofitted later if access is granted.
+- **2026-11-07 · p1 · Phase 1 window = departures May 22 – Jul 7, 2027** ("late May / early July"). Mid-May dates found along the way are noted but not added.
+- **2026-11-07 · p1 · Sold-out categories stored as `unavailable` rows** (with the sold-out note) rather than omitted, so the app can show "sold out" next to real prices.
+- **2026-11-07 · p1 · HAL cruisetour-only sailings not added as sailings**; recorded in `linesReviewed` instead, since the family is not buying a land tour.
