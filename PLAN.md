@@ -95,7 +95,7 @@ P2–P5 touch different files and can run in parallel chats after P1 (all write 
 - Done when Ideas → Date works end to end, no console errors at the 4 widths, share links restore the view.
 - **Interface:** decide at the start of P6 whether Claude Code on the moderator's computer is worth it (real WebKit/Safari testing, link checks that reach every site).
 
-### P7 · App B: Days, Cost, Shortlist — Opus 5.5, high
+### P7 · App B: Days, Cost, Shortlist — Opus 5.5, high — DONE (see handoffs/phase7.md)
 - **Days:** option groups per day: Easy for parents · Adventure · DIY & budget · Free · Stay aboard. Separate parents and brothers lanes. Hour-labeled time bar with arrival and all-aboard markers and a legend. Walking meter: parents' miles against the budget.
 - **Cost:** stack-up chart for up to 4 shortlisted options (cruise, tips, arrival travel, hotel, excursions), shaded by price status; "add my quote" on any price (stored locally, exportable).
 - **Shortlist:** stars, share links, JSON/CSV export, import. **Background costs:** flights and hotels as one assumptions panel with search links.

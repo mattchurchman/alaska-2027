@@ -10,6 +10,7 @@
 <link rel="icon" href="app/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 <link rel="stylesheet" href="app/app.css">
+<link rel="stylesheet" href="app/plan.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -31,10 +32,14 @@
     <a href="#view=route" data-act="view" data-view="route"><i>2</i>Route</a>
     <a href="#view=ship" data-act="view" data-view="ship"><i>3</i>Line &amp; ship</a>
     <a href="#view=date" data-act="view" data-view="date"><i>4</i>Dates</a>
+    <a href="#view=days" data-act="view" data-view="days"><i>5</i>Days</a>
+    <a href="#view=cost" data-act="view" data-view="cost"><i>6</i>Cost</a>
+    <a href="#view=short" data-act="view" data-view="short"><i>★</i>Shortlist</a>
   </nav>
 </header>
 
 <main id="main" tabindex="-1">
+  <div id="sharedBar" class="sharedbar" role="status" hidden></div>
   <section id="v-ideas" class="view" data-view="ideas" hidden></section>
   <section id="v-route" class="view" data-view="route" hidden>
     <div class="route-layout">
@@ -58,11 +63,15 @@
       </div>
     </div>
   </section>
+  <section id="v-days" class="view" data-view="days" hidden></section>
+  <section id="v-cost" class="view" data-view="cost" hidden></section>
+  <section id="v-short" class="view" data-view="short" hidden></section>
   <div id="loading" class="loading">Loading the trip data…</div>
 </main>
 
 <div id="pickbar" class="pickbar" hidden></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="quoteDlg" class="dlg-wrap" hidden></div>
 
 <footer class="foot">
   <p>Every price shows where it came from and when it was checked. Nothing here is a booking or a quote.
@@ -73,5 +82,6 @@
 <script src="vendor/leaflet/leaflet.js"></script>
 <script src="app/model.js"></script>
 <script src="app/ui.js"></script>
+<script src="app/plan.js"></script>
 </body>
 </html>

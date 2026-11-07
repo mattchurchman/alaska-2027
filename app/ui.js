@@ -1,11 +1,11 @@
-/* Alaska 2027 planner (v2) — screens: Ideas, Route, Line & ship, Dates.
+/* Alaska 2027 planner (v2) — screens: Ideas, Route, Line & ship, Dates (Days, Cost and Shortlist live in plan.js).
    State lives in the URL hash (#view=…&route=…&ship=…&sailing=…) so any view can be shared. */
 (function () {
   'use strict';
   const M = window.AK;
   const $ = (s, el) => (el || document).querySelector(s);
   const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
-  const VIEWS = ['ideas', 'route', 'ship', 'date'];
+  const VIEWS = ['ideas', 'route', 'ship', 'date', 'days', 'cost', 'short'];
   const GLACIERS = ['glacier_bay', 'hubbard', 'endicott_arm', 'tracy_arm', 'college_fjord', 'stikine_icecap'];
   const LABEL_MIN = {
     sea_p91: 3, yvr_canada_place: 3, whittier: 4, seward: 5, juneau: 5, skagway: 5, ketchikan: 5, ketchikan_wc: 8,
@@ -15,7 +15,7 @@
   const LABEL_NAME = { sea_p91: 'Seattle', yvr_canada_place: 'Vancouver', ketchikan_wc: 'Ward Cove' };
   const LS_KEY = 'ak27v2:last';
 
-  const S = { view: 'ideas', route: null, ship: null, sailing: null, june: false };
+  const S = { view: 'ideas', route: null, ship: null, sailing: null, june: false, day: null };
 
   /* ---------------- helpers ---------------- */
   function esc(v) {
@@ -75,6 +75,8 @@
     if (st.ship) p.set('ship', st.ship);
     if (st.sailing) p.set('sailing', st.sailing);
     if (st.june) p.set('june', '1');
+    if (st.view === 'days' && st.sailing && st.day != null) p.set('day', String(st.day));
+    if (st.withPlan && st.sailing && window.AKP) { const pl = window.AKP.planFor(st.sailing); const enc = M.encodePlan(pl); if (enc) p.set('plan', enc); p.set('cab', M.encodeCab(pl.cab || {})); }
     return '#' + p.toString();
   }
   function readHash(h) {
@@ -86,6 +88,8 @@
     const sh = p.get('ship'); st.ship = sh && M.ship[sh] ? sh : null;
     const sa = p.get('sailing'); st.sailing = sa && M.sailing[sa] ? sa : null;
     st.june = p.get('june') === '1';
+    const dy = p.get('day'); st.day = dy != null && /^\d+$/.test(dy) ? +dy : null;
+    if (p.get('plan') != null || p.get('cab') != null) st.shared = { plan: p.get('plan') || '', cab: p.get('cab') || '' };
     if (st.sailing) st.ship = st.ship || M.sailing[st.sailing].ship; // a sailing implies its ship
     if (!st.view && (st.sailing || st.route)) st.view = st.sailing ? 'date' : 'route';
     return st;
@@ -97,13 +101,16 @@
     if (location.hash !== h) {
       if (push) history.pushState(null, '', h); else history.replaceState(null, '', h);
     }
-    lsSet(LS_KEY, { route: S.route, ship: S.ship, sailing: S.sailing, june: S.june, view: S.view });
+    lsSet(LS_KEY, { route: S.route, ship: S.ship, sailing: S.sailing, june: S.june, view: S.view, day: S.day });
     render();
   }
   function fromLocation() {
     if (location.hash === hashOf(S)) return; // popstate and hashchange can both fire for one step
-    Object.assign(S, { route: null, ship: null, sailing: null, june: false, shipOnly: false }, readHash(location.hash));
+    const st = readHash(location.hash);
+    const shared = st.shared; delete st.shared;
+    Object.assign(S, { route: null, ship: null, sailing: null, june: false, shipOnly: false, day: null }, st);
     if (!S.view) S.view = 'ideas';
+    if (shared && S.sailing && window.AKP) { window.AKP.receiveShared(S.sailing, shared); history.replaceState(null, '', hashOf(S)); }
     render();
   }
   window.addEventListener('popstate', fromLocation);
@@ -112,17 +119,21 @@
   /* ---------------- render ---------------- */
   function render() {
     $$('.steps a').forEach(a => { if (a.dataset.view === S.view) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+    const curStep = $('.steps a[aria-current="page"]'), steps = $('.steps');
+    if (curStep && steps && (curStep.offsetLeft + curStep.offsetWidth > steps.scrollLeft + steps.clientWidth || curStep.offsetLeft < steps.scrollLeft)) steps.scrollLeft = curStep.offsetLeft - 12;
     $$('.view').forEach(v => { v.hidden = v.dataset.view !== S.view; });
     const changed = lastRenderedView !== S.view;
     if (S.view === 'ideas') renderIdeas();
     if (S.view === 'route') renderRoute();
     if (S.view === 'ship') renderShip();
     if (S.view === 'date') renderDate();
+    if (['days', 'cost', 'short'].includes(S.view) && window.AKP) window.AKP.render(S.view);
+    if (window.AKP) window.AKP.renderShared();
     renderPickbar();
     if (changed) {
       if (lastRenderedView) window.scrollTo(0, 0);
       lastRenderedView = S.view;
-      const titles = { ideas: 'Ideas', route: 'Routes', ship: 'Lines & ships', date: 'Dates' };
+      const titles = { ideas: 'Ideas', route: 'Routes', ship: 'Lines & ships', date: 'Dates', days: 'Days', cost: 'Cost', short: 'Shortlist' };
       document.title = titles[S.view] + ' · Alaska 2027 Planner';
     }
   }
@@ -590,7 +601,8 @@
       return '<div class="cab' + (who ? ' pick' : '') + '"><div class="cab-top"><span class="cab-n">' + esc(label) + (who ? ' <span class="who">' + who + '</span>' : '') + '</span>' +
         '<span class="cab-p">' + (row && row.status !== 'unavailable' ? M.fmtUsd(row.usd) : '—') + '</span></div>' +
         '<div class="cab-meta">' + statusPill(row ? row.status : 'unavailable') + (row && row.checked ? ' <span>checked ' + esc(M.fmtChecked(row.checked)) + '</span>' : '') +
-        (url ? ' <a href="' + esc(url) + '" target="_blank" rel="noopener">source ↗</a>' : '') + '</div>' +
+        (url ? ' <a href="' + esc(url) + '" target="_blank" rel="noopener">source ↗</a>' : '') +
+        (window.AKP && s.priceRows[k] ? ' <button type="button" class="linkbtn" data-act="quote" data-row="' + esc(s.priceRows[k]) + '" data-label="' + esc(label + ' cabin, ' + sh.name + ', ' + M.fmtDate(s.depart)) + '">' + (row && row.quoted ? 'edit my quote' : 'add my quote') + '</button>' : '') + '</div>' +
         (row && row.note ? '<div class="cab-note">' + esc(row.note) + '</div>' : '') + '</div>';
     }).join('');
     let days = '';
@@ -634,9 +646,11 @@
       '<ul class="days">' + days + '</ul>' +
       (tsrc ? '<p class="small" style="margin-top:8px">' + tsrc + '</p>' : '') +
       '<div class="next-row" style="justify-content:flex-start;margin-top:12px">' +
-      '<button class="btn small" type="button" data-act="share">Share this sailing</button>' +
+      '<button class="btn small" type="button" data-act="view" data-view="days">Plan the days</button>' +
+      '<button class="btn small ghost" type="button" data-act="view" data-view="cost">Trip cost</button>' +
+      (window.AKP ? '<button class="btn small ghost" type="button" data-act="star" data-sailing="' + esc(s.id) + '" aria-pressed="' + window.AKP.isStarred(s.id) + '">' + (window.AKP.isStarred(s.id) ? '★ On shortlist' : '☆ Shortlist') + '</button>' : '') +
+      '<button class="btn small ghost" type="button" data-act="share">Share</button>' +
       '<button class="btn small ghost" type="button" data-act="ship" data-ship="' + esc(sh.id) + '">About the ship</button></div>' +
-      '<p class="small muted" style="margin-top:10px">Day plans (tours for the parents and the brothers) and the full trip cost come in the next update.</p>' +
       '</div></article>';
   }
 
@@ -645,19 +659,27 @@
     const bar = $('#pickbar');
     if (!S.sailing) { bar.hidden = true; document.body.style.removeProperty('--pick'); return; }
     const s = M.sailing[S.sailing], sh = M.ship[s.ship];
+    const P = window.AKP;
+    const c = P ? P.costOf(s.id) : null;
+    const starred = P ? P.isStarred(s.id) : false;
     bar.hidden = false;
+    const amt = c ? '<b>' + M.fmtUsd(c.totals.total) + '</b><small>' + (c.totals.missing.length ? 'trip so far · ' + c.totals.missing.length + ' not captured' : 'whole trip, 4 people') + '</small>'
+      : '<b>' + (s._two.total != null ? M.fmtUsd(s._two.total) : '—') + '</b><small>2 cabins, before tips</small>';
+    const next = S.view === 'days' ? ['cost', 'Cost'] : S.view === 'cost' ? ['days', 'Days'] : S.view === 'date' ? ['days', 'Plan days'] : ['date', 'Details'];
     bar.innerHTML = '<div class="in"><div class="what"><b>' + lineBadge(s._line) + ' ' + esc(sh.name) + '</b><span>' + esc(M.fmtDate(s.depart, true)) + ' · ' + esc(M.route[s._route].short || '') + '</span></div>' +
-      '<div class="amt"><b>' + (s._two.total != null ? M.fmtUsd(s._two.total) : '—') + '</b><small>2 cabins, before tips</small></div>' +
-      (S.view !== 'date' ? '<button class="btn small go" type="button" data-act="pick" data-sailing="' + esc(s.id) + '">Details</button>' : '') +
+      '<button class="amt" type="button" data-act="view" data-view="cost" aria-label="Trip cost details">' + amt + '</button>' +
+      (P ? '<button class="btn small star' + (starred ? ' on' : '') + '" type="button" data-act="star" data-sailing="' + esc(s.id) + '" aria-pressed="' + starred + '" aria-label="' + (starred ? 'Remove from shortlist' : 'Add to shortlist') + '">' + (starred ? '★' : '☆') + '</button>' : '') +
+      '<button class="btn small go" type="button" data-act="view" data-view="' + next[0] + '">' + next[1] + '</button>' +
       '<button class="btn small x" type="button" data-act="clear" aria-label="Clear the selected sailing">✕</button></div>';
   }
 
   /* ---------------- share ---------------- */
   async function share() {
-    const url = location.href.split('#')[0] + hashOf(S);
+    const url = location.href.split('#')[0] + hashOf(Object.assign({}, S, { withPlan: !!S.sailing }));
     let text = 'Alaska 2027 ideas';
     if (S.sailing) { const s = M.sailing[S.sailing]; text = M.ship[s.ship].name + ', ' + M.fmtDate(s.depart, true) + ' (' + M.route[s._route].name + ')'; }
     else if (S.route) text = M.route[S.route].name;
+    if (S.sailing && window.AKP && M.planCount(window.AKP.planFor(S.sailing))) text += ', with our day plan';
     if (navigator.share) {
       try { await navigator.share({ title: 'Alaska 2027', text, url }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
     }
@@ -696,6 +718,7 @@
     else if (act === 'clear') go({ sailing: null }, false);
     else if (act === 'ship-only-off') go({ shipOnly: false }, false);
     else if (act === 'share') share();
+    else if (window.AKP && window.AKP.onClick(act, a, e)) { /* handled by the Days / Cost / Shortlist screens */ }
     else if (act === 'play') {
       const box = a.closest('.video');
       box.innerHTML = '<iframe src="' + esc(box.dataset.embed + '?autoplay=1&playsinline=1&rel=0') + '" title="Ship tour video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
@@ -703,12 +726,15 @@
   });
   document.addEventListener('change', e => {
     if (e.target.matches('[data-act="june"]')) go({ june: e.target.checked }, false);
+    else if (window.AKP) window.AKP.onChange(e);
   });
   let rz, lastW = window.innerWidth;
   window.addEventListener('resize', () => {
     clearTimeout(rz);
-    rz = setTimeout(() => { if (window.innerWidth === lastW) return; lastW = window.innerWidth; if (S.view === 'date') renderDate(); }, 200);
+    rz = setTimeout(() => { if (window.innerWidth === lastW) return; lastW = window.innerWidth; if (S.view === 'date') renderDate(); else if (S.view === 'cost' && window.AKP) window.AKP.render('cost'); }, 200);
   });
+
+  window.AKUI = { S, go, esc, attrs, statusPill, lineBadge, routeTag, photoHTML, placeName, plural, toast, lsGet, lsSet, render, share, hashOf };
 
   /* ---------------- boot ---------------- */
   M.load().then(() => {
@@ -719,7 +745,10 @@
       st = Object.assign({ view: 'ideas' }, last && last.view ? readHash(hashOf(Object.assign({ view: last.view }, last))) : {});
       if (!st.view) st.view = 'ideas';
     }
+    const shared = st.shared; delete st.shared;
+    if (window.AKP) window.AKP.init();
     Object.assign(S, st);
+    if (shared && S.sailing && window.AKP) window.AKP.receiveShared(S.sailing, shared);
     if (S.sailing && S.view === 'date') S.shipOnly = false;
     history.replaceState(null, '', hashOf(S));
     render();

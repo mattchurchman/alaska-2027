@@ -18,3 +18,8 @@
 - **2026-11-07 · p6 · Share state lives in the URL hash** (`#view=&route=&ship=&sailing=&june=1`); the "only this ship" calendar filter is not shared.
 - **2026-11-07 · p6 · Setup test page kept at `setup-test.html`** until the moderator's iPhone check is done.
 - **2026-11-07 · p6 · Interface:** P6 stayed in the Claude app (headless Chrome testing). Claude Code on the moderator's computer is only worth it if the P8 device test finds Safari-only bugs.
+- **2026-11-07 · p7 · A day plan belongs to one sailing** (picks per day index, per pair; "All 4" = the same offer in both lanes; `aboard` = stay on the ship). Plans, stars, quotes and settings live in localStorage (`ak27v2:*`); a share link carries one plan as `plan=<day><p|b><offerId>,…&cab=ib`, and a JSON backup carries everything.
+- **2026-11-07 · p7 · Time fit is a planning model, not a schedule:** activities laid end to end from 30 min after arrival with 15 min between, back at the ship 1 h before sailing, all aboard drawn 30 min before sailing; independent/reseller tours ending less than an hour before all aboard get a warning. Untimed self-guided picks = 1.5 h, other untimed = 3 h.
+- **2026-11-07 · p7 · Other lines' cruise-sponsored tours are not offered on a sailing** (they can't be booked); the default booking option is the cheapest priced one, cruise line on a tie.
+- **2026-11-07 · p7 · Family quotes override a price row everywhere** with status `family-quote`; quote-only `gap:` ids fill items with no research row (Seattle rides, Vancouver/Anchorage travel). Not-captured lines are listed but never added to totals or drawn in the chart.
+- **2026-11-07 · p7 · Cost split:** each pair pays its own cabin and activities; tips, flights, bags, rides and the two hotel rooms are split evenly.

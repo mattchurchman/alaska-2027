@@ -125,8 +125,15 @@
    "Usable shore time = scheduled port hours minus 30 min to get off and 1 h to be back aboard before departure.",
    "Activities for the same people are laid end to end with 15 min between them. Self-guided options without a stated duration are planned at 1.5 h.",
    "Return-flight timing assumes leaving the ship starts about 2 h after the scheduled arrival, 45 min (Pier 91) or 40 min (Pier 66) to SEA, and 2 h at the airport before departure. Transfer times are planning estimates.",
-   "Cruise-line tours wait for late-running tours or get you to the next port; independent tours do not. The planner flags independent tours that end less than an hour before all-aboard."
-  ]
+   "Cruise-line tours wait for late-running tours or get you to the next port; independent tours do not. The planner flags independent tours that end less than an hour before all-aboard.",
+   "All aboard is drawn 30 min before the published departure (a common cruise-line rule; the ship's daily planner has the real time).",
+   "Parents' walking is the sum of each pick's walkMiles (dock to start, on the tour and back, per person); the default daily budget is 2 miles and can be changed.",
+   "Trip cost = brothers' cabin + parents' cabin + crew tips (line daily rate x 4 x nights) + 4 round-trip flights + checked bags + 2 hotel rooms the night before + each pair's activities (per-person price x 2). Lines with no captured price are listed but not added."
+  ],
+  "allAboardBeforeH": 0.5,
+  "indepBufferH": 1.0,
+  "unpricedH": 3.0,
+  "walkBudgetMi": 2.0
  },
  "scoring": {
   "note": "Scores are the planner's judgment, built from the sourced facts with the rules below. Change the weights to match what the family cares about.",
