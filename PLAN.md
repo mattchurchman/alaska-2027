@@ -58,7 +58,7 @@ Models: Opus 5.5, Sonnet 5.5, Haiku 5.5. Fable is not needed.
 
 ### P0 · Foundation and migration — Sonnet 5.5, medium — DONE except the iPhone check (see handoffs/phase0.md)
 
-### P1 · Routes and sailings — Opus 5.5, high
+### P1 · Routes and sailings — Opus 5.5, high — DONE (see handoffs/phase1.md)
 - Confirm route families. Research Vancouver round trips and both one-way directions, late May to early July 2027. Start with **Princess and Holland America**, then every other line.
 - For each sailing: ship and dates; ports with arrival/departure times; glacier day; interior and balcony prices for 2 adults each, with taxes/fees; CAD → USD with rate and date.
 - Line notes on Alaska experience: Glacier Bay access, land tours, years in Alaska. A short paragraph on small-ship lines (who, from-price, fit for the parents). No full data.
