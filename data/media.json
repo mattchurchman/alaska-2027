@@ -1,0 +1,277 @@
+{
+ "policy": "Photos are Wikimedia Commons images linked by URL with author and license credit. Pages show a styled placeholder when a photo cannot load.",
+ "photos": [
+  {
+   "id": "ph-ship-royal_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Princess_%289038666095%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Royal_Princess_%289038666095%29.jpg",
+   "credit": "Barry Skeates / Wikimedia Commons / CC BY 2.0",
+   "license": "CC BY 2.0",
+   "for": [
+    "ship:royal_princess"
+   ]
+  },
+  {
+   "id": "ph-ship-star_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Star_princess_cruise_ship_%28cropped%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Star_princess_cruise_ship_%28cropped%29.jpg",
+   "credit": "Shiphistory62 / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:star_princess"
+   ]
+  },
+  {
+   "id": "ph-ship-eurodam",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2018-09-18_MS_EURODAM_-_IMO_9378448_-_Glacier_Bay%2C_Alaska_USA.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:2018-09-18_MS_EURODAM_-_IMO_9378448_-_Glacier_Bay%2C_Alaska_USA.jpg",
+   "credit": "Gordon Leggett / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:eurodam"
+   ]
+  },
+  {
+   "id": "ph-ship-norwegian_encore",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2026-05-02_01_NORWEGIAN_ENCORE_-_IMO_9751511_-_Ogden_Point%2C_BC_CAN.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:2026-05-02_01_NORWEGIAN_ENCORE_-_IMO_9751511_-_Ogden_Point%2C_BC_CAN.jpg",
+   "credit": "Gordon Leggett / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:norwegian_encore"
+   ]
+  },
+  {
+   "id": "ph-ship-norwegian_bliss",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seattle_%28WA%2C_USA%29%2C_Pier_66%2C_Norwegian_Bliss_--_2022_--_1794.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Seattle_%28WA%2C_USA%29%2C_Pier_66%2C_Norwegian_Bliss_--_2022_--_1794.jpg",
+   "credit": "Dietmar Rabich / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:norwegian_bliss"
+   ]
+  },
+  {
+   "id": "ph-ship-norwegian_joy",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegian_Joy.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Norwegian_Joy.jpg",
+   "credit": "Arno Redenius / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:norwegian_joy"
+   ]
+  },
+  {
+   "id": "ph-ship-voyager_of_the_seas",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Voyager_of_the_Seas_Costa_Maya_2023.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Voyager_of_the_Seas_Costa_Maya_2023.jpg",
+   "credit": "Larry D. Moore / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:voyager_of_the_seas"
+   ]
+  },
+  {
+   "id": "ph-ship-quantum_of_the_seas",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/20241231_-_Quantum_of_the_Seas.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:20241231_-_Quantum_of_the_Seas.jpg",
+   "credit": "AirplaneNiner / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:quantum_of_the_seas"
+   ]
+  },
+  {
+   "id": "ph-ship-celebrity_edge",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celebrity_Edge_docked_in_Juneau%2C_AK.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Celebrity_Edge_docked_in_Juneau%2C_AK.jpg",
+   "credit": "Matthew Groh / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:celebrity_edge"
+   ]
+  },
+  {
+   "id": "ph-ship-carnival_legend",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nav%C3%ADo_Carnival_Legend%2C_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_08.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Nav%C3%ADo_Carnival_Legend%2C_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_08.jpg",
+   "credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:carnival_legend"
+   ]
+  },
+  {
+   "id": "ph-ship-carnival_spirit",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnival_Spirit_%28ship%2C_2001%29_in_Ogden_Point%2C_Canada_%28May_2025%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Carnival_Spirit_%28ship%2C_2001%29_in_Ogden_Point%2C_Canada_%28May_2025%29.jpg",
+   "credit": "Jack Adamenko / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:carnival_spirit"
+   ]
+  },
+  {
+   "id": "ph-ship-msc_poesia",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MSC_Poesia_near_Copenhagen%2C_20220618_1828_7372.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:MSC_Poesia_near_Copenhagen%2C_20220618_1828_7372.jpg",
+   "credit": "Jakub / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:msc_poesia"
+   ]
+  },
+  {
+   "id": "ph-ship-brilliant_lady",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brilliant_Lady_in_Prince_Rupert%2C_BC.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Brilliant_Lady_in_Prince_Rupert%2C_BC.jpg",
+   "credit": "Rowenray / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:brilliant_lady"
+   ]
+  },
+  {
+   "id": "ph-ship-oceania_riviera",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oceania_Cruises_Riviera_12_IMO_9438078_%40chesi.JPG?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Oceania_Cruises_Riviera_12_IMO_9438078_%40chesi.JPG",
+   "credit": "Piergiuliano Chesi / Wikimedia Commons / CC BY 3.0",
+   "license": "CC BY 3.0",
+   "for": [
+    "ship:oceania_riviera"
+   ]
+  },
+  {
+   "id": "ph-place-sea_p91",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seattle_-_Smith_Cove_from_Jack_Block_Park_01.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Seattle_-_Smith_Cove_from_Jack_Block_Park_01.jpg",
+   "credit": "Joe Mabel / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:sea_p91"
+   ]
+  },
+  {
+   "id": "ph-place-sea_p66",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seattle_-_Bell_Street_Pier_and_Space_Needle_from_Elliott_Bay_01.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Seattle_-_Bell_Street_Pier_and_Space_Needle_from_Elliott_Bay_01.jpg",
+   "credit": "Joe Mabel / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:sea_p66"
+   ]
+  },
+  {
+   "id": "ph-place-juneau",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juneau%2C_Alaska_waterfront.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Juneau%2C_Alaska_waterfront.jpg",
+   "credit": "David Brossard / Wikimedia Commons / CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "for": [
+    "place:juneau"
+   ]
+  },
+  {
+   "id": "ph-place-skagway",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puerto_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_06.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Puerto_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_06.jpg",
+   "credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:skagway"
+   ]
+  },
+  {
+   "id": "ph-place-ketchikan",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Calle_hist%C3%B3rica_Creek%2C_Ketchikan%2C_Alaska%2C_Estados_Unidos%2C_2017-08-16%2C_DD_54.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Calle_hist%C3%B3rica_Creek%2C_Ketchikan%2C_Alaska%2C_Estados_Unidos%2C_2017-08-16%2C_DD_54.jpg",
+   "credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:ketchikan"
+   ]
+  },
+  {
+   "id": "ph-place-ketchikan_wc",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ward_Cove.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Ward_Cove.jpg",
+   "credit": "Scott McMurren / Wikimedia Commons / CC BY 2.0",
+   "license": "CC BY 2.0",
+   "for": [
+    "place:ketchikan_wc"
+   ]
+  },
+  {
+   "id": "ph-place-sitka",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Sitka.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Downtown_Sitka.jpg",
+   "credit": "David Brossard / Wikimedia Commons / CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "for": [
+    "place:sitka"
+   ]
+  },
+  {
+   "id": "ph-place-icy_strait",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Icy_Strait_Point_ENBLA04.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Icy_Strait_Point_ENBLA04.jpg",
+   "credit": "Enrico Blasutto / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:icy_strait"
+   ]
+  },
+  {
+   "id": "ph-place-victoria",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inner_Harbour_and_British_Columbia_Parliament_Buildings%2C_Victoria%2C_at_dusk_20240827_1.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Inner_Harbour_and_British_Columbia_Parliament_Buildings%2C_Victoria%2C_at_dusk_20240827_1.jpg",
+   "credit": "DXR / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:victoria"
+   ]
+  },
+  {
+   "id": "ph-place-glacier_bay",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Glaciar_Margerie%2C_Parque_Nacional_Bah%C3%ADa_del_Glaciar%2C_Alaska%2C_Estados_Unidos%2C_2017-08-19%2C_DD_33.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Glaciar_Margerie%2C_Parque_Nacional_Bah%C3%ADa_del_Glaciar%2C_Alaska%2C_Estados_Unidos%2C_2017-08-19%2C_DD_33.jpg",
+   "credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:glacier_bay"
+   ]
+  },
+  {
+   "id": "ph-place-tracy_arm",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tracy_Arm_fjord%2C_Alaska.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Tracy_Arm_fjord%2C_Alaska.jpg",
+   "credit": "mark byzewski / Wikimedia Commons / CC BY 2.0",
+   "license": "CC BY 2.0",
+   "for": [
+    "place:tracy_arm"
+   ]
+  },
+  {
+   "id": "ph-place-endicott_arm",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dawes-glacier-in-June-2025.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Dawes-glacier-in-June-2025.jpg",
+   "credit": "AlaskaTourist / Wikimedia Commons / CC0",
+   "license": "CC0",
+   "for": [
+    "place:endicott_arm"
+   ]
+  },
+  {
+   "id": "ph-place-hubbard",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubbard_Glacier_Alaska.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Hubbard_Glacier_Alaska.jpg",
+   "credit": "Bernard Spragg. NZ / Wikimedia Commons / CC0",
+   "license": "CC0",
+   "for": [
+    "place:hubbard"
+   ]
+  }
+ ],
+ "videos": [],
+ "officialLinks": []
+}

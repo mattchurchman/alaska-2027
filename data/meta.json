@@ -1,0 +1,423 @@
+{
+ "title": "Alaska 2027 Family Cruise Planner",
+ "version": "2.0.0-p0",
+ "updated": "2026-11-07",
+ "currency": "USD",
+ "travelers": {
+  "parents": {
+   "count": 2,
+   "age": "~65",
+   "cabin": "balcony",
+   "notes": "Mom's walking limit under ~2 miles/day; balcony near elevators."
+  },
+  "brothers": {
+   "count": 2,
+   "age": "~35",
+   "cabin": "interior",
+   "notes": "Budget-minded, adventurous."
+  },
+  "homeAirport": "ABQ",
+  "documents": "All US citizens with passports.",
+  "loyalty": "None"
+ },
+ "window": {
+  "from": "2027-05-25",
+  "to": "2027-07-10",
+  "preferred": "June 2027"
+ },
+ "phases": [
+  {
+   "n": 0,
+   "name": "Foundation and migration",
+   "status": "done"
+  },
+  {
+   "n": 1,
+   "name": "Routes and sailings",
+   "status": "todo"
+  },
+  {
+   "n": 2,
+   "name": "Arrival-city costs",
+   "status": "todo"
+  },
+  {
+   "n": 3,
+   "name": "Experiences A",
+   "status": "todo"
+  },
+  {
+   "n": 4,
+   "name": "Experiences B and glacier guide",
+   "status": "todo"
+  },
+  {
+   "n": 5,
+   "name": "Media",
+   "status": "todo"
+  },
+  {
+   "n": 6,
+   "name": "App A",
+   "status": "todo"
+  },
+  {
+   "n": 7,
+   "name": "App B",
+   "status": "todo"
+  },
+  {
+   "n": 8,
+   "name": "QA and release",
+   "status": "todo"
+  }
+ ],
+ "assumptions": [
+  "Cruise prices are per person for 2 adults sharing a cabin and already include taxes, fees and port expenses as shown on each site.",
+  "Two-cabin cruise fare = 2 x interior + 2 x balcony per-person price for the same sailing.",
+  "Estimated gratuities = line's published daily rate x 4 guests x 7 nights (estimate; may be prepaid or included in some fares).",
+  "Usable shore time = scheduled port hours minus 1.5 hours (30 min to get off, back aboard 1 hour before departure). Planning assumption only.",
+  "Seattle terminal is the line's usual pier; confirm on cruise documents.",
+  "Prices change daily and sales end; refresh before booking.",
+  "Flight fares are 4-adult round-trip totals from Google Flights' listing of Alaska Airlines fares; hotel rates are one room for two guests. Two-room totals are 2 x the one-room rate.",
+  "Map pins use Wikipedia coordinates where marked; others (and all hotels) are approximate. Cruise route lines are schematic, drawn along common channels, not actual ship tracks."
+ ],
+ "statusDefinitions": {
+  "verified": {
+   "label": "Verified quote",
+   "desc": "Read on the cruise line's own booking site for this exact sailing date, 2 adults per cabin, taxes and port fees included, not logged in, no loyalty or membership discount applied."
+  },
+  "published": {
+   "label": "Published, not date-verified",
+   "desc": "A real published figure (aggregator listing, cruise-line policy summary or news report) that was not confirmed on the provider's own booking page for this date."
+  },
+  "estimate": {
+   "label": "Planning estimate",
+   "desc": "Calculated by this planner from other figures (for example, gratuities = daily rate x 4 guests x 7 nights). Not a quote."
+  },
+  "unavailable": {
+   "label": "Not captured",
+   "desc": "Could not be read for this date. No number is shown rather than guessing."
+  },
+  "user": {
+   "label": "Your estimate",
+   "desc": "A number you typed into the planner (for example transfers or travel insurance). Not researched."
+  },
+  "family-quote": {
+   "label": "Family quote",
+   "desc": "A price someone in the family got directly (from a cruise line, agent or airline). Kept as entered."
+  }
+ },
+ "planner": {
+  "offShipH": 0.5,
+  "backAboardH": 1.0,
+  "transitionH": 0.25,
+  "selfGuidedH": 1.5,
+  "disembarkH": 2.0,
+  "airportBeforeH": 2.0,
+  "airportTransferMin": {
+   "sea_p91": 45,
+   "sea_p66": 40
+  },
+  "bagFeeEachWayDefault": true,
+  "notes": [
+   "Usable shore time = scheduled port hours minus 30 min to get off and 1 h to be back aboard before departure.",
+   "Activities for the same people are laid end to end with 15 min between them. Self-guided options without a stated duration are planned at 1.5 h.",
+   "Return-flight timing assumes leaving the ship starts about 2 h after the scheduled arrival, 45 min (Pier 91) or 40 min (Pier 66) to SEA, and 2 h at the airport before departure. Transfer times are planning estimates.",
+   "Cruise-line tours wait for late-running tours or get you to the next port; independent tours do not. The planner flags independent tours that end less than an hour before all-aboard."
+  ]
+ },
+ "scoring": {
+  "note": "Scores are the planner's judgment, built from the sourced facts with the rules below. Change the weights to match what the family cares about.",
+  "factors": [
+   {
+    "id": "scenic",
+    "label": "Glaciers and scenery",
+    "weight": 25,
+    "rule": "Glacier Bay 10, Hubbard Glacier 9, Endicott Arm & Dawes Glacier 8, Tracy Arm 7 (large ships often cannot reach the glacier face), no glacier day 3; +0.5 for a second scenic passage."
+   },
+   {
+    "id": "mobility",
+    "label": "Easy for the parents",
+    "weight": 25,
+    "rule": "Start at 10. -1.5 for each Ward Cove call (7 mi shuttle to Ketchikan), -1 for each Sitka call (shuttle or tender), -0.5 for each Alaska port with under 4 usable hours, +0.5 per full sea day (max +1). Port times not captured: -2."
+   },
+   {
+    "id": "value",
+    "label": "Value",
+    "weight": 20,
+    "rule": "Two cabins + gratuities. Lowest in the window scores 10, highest scores 0, straight line between. No score when a cabin price is missing."
+   },
+   {
+    "id": "excursions",
+    "label": "Excursion choice",
+    "weight": 15,
+    "rule": "2 points per distinct Alaska port (Juneau, Skagway, Ketchikan, Sitka, Icy Strait Point), max 10."
+   },
+   {
+    "id": "portTime",
+    "label": "Time ashore",
+    "weight": 10,
+    "rule": "Usable hours in Alaska ports. Fewest in the window scores 0, most scores 10."
+   },
+   {
+    "id": "comfort",
+    "label": "Ship comfort",
+    "weight": 5,
+    "rule": "Ship built 2017 or later 10, 2008-2016 7, older 4. A rough stand-in; not a review score."
+   }
+  ],
+  "glacier": {
+   "Glacier Bay": 10,
+   "Hubbard Glacier": 9,
+   "Endicott Arm & Dawes Glacier": 8,
+   "Tracy Arm Fjord": 7,
+   "none": 3
+  }
+ },
+ "presets": {
+  "note": "Starter plans fill each port with the first experience on these lists that fits the usable time. Edit freely; nothing here is a recommendation backed by reviews.",
+  "budget": {
+   "label": "Budget Alaska",
+   "sailing": "cheapest June two-cabin total",
+   "cabins": {
+    "brothers": "interior",
+    "parents": "balcony"
+   },
+   "fare": "saver",
+   "hotel": "cheapest hotel rated 4.0+",
+   "family": {
+    "juneau": [
+     "jnu_mdh_bus",
+     "jnu_city"
+    ],
+    "skagway": [
+     "skg_town"
+    ],
+    "ketchikan": [
+     "ktn_city"
+    ],
+    "ketchikan_wc": [
+     "ktn_city"
+    ],
+    "sitka": [
+     "sit_town"
+    ],
+    "icy_strait": [],
+    "victoria": [
+     "vic_harbour"
+    ]
+   },
+   "brothers": {},
+   "offer": "cheapest"
+  },
+  "balanced": {
+   "label": "Balanced Family Experience",
+   "sailing": "highest overall score in June (default weights)",
+   "cabins": {
+    "brothers": "interior",
+    "parents": "balcony"
+   },
+   "fare": "saver",
+   "hotel": "best-rated hotel with 'Accessible' listed",
+   "family": {
+    "juneau": [
+     "jnu_whale",
+     "jnu_mdh_bus"
+    ],
+    "skagway": [
+     "skg_wpyr",
+     "skg_town"
+    ],
+    "ketchikan": [
+     "ktn_totems",
+     "ktn_lumber",
+     "ktn_city"
+    ],
+    "ketchikan_wc": [
+     "ktn_totems",
+     "ktn_lumber",
+     "ktn_city"
+    ],
+    "sitka": [
+     "sit_town"
+    ],
+    "icy_strait": [
+     "isp_culture"
+    ],
+    "victoria": [
+     "vic_harbour"
+    ]
+   },
+   "brothers": {
+    "skagway": [
+     "skg_bike",
+     "skg_adventure"
+    ],
+    "ketchikan": [
+     "ktn_active"
+    ],
+    "ketchikan_wc": [
+     "ktn_active"
+    ],
+    "sitka": [
+     "sit_active"
+    ],
+    "icy_strait": [
+     "isp_zip"
+    ],
+    "juneau": [
+     "jnu_active"
+    ]
+   },
+   "offer": "cheapest-priced"
+  },
+  "premium": {
+   "label": "Premium Scenery & Wildlife",
+   "sailing": "June Glacier Bay sailing with the most Alaska port hours",
+   "cabins": {
+    "brothers": "interior",
+    "parents": "miniSuite"
+   },
+   "fare": "main",
+   "hotel": "highest-rated hotel",
+   "family": {
+    "juneau": [
+     "jnu_mdh_whale",
+     "jnu_whale"
+    ],
+    "skagway": [
+     "skg_wpyr"
+    ],
+    "ketchikan": [
+     "ktn_misty_boat",
+     "ktn_totems"
+    ],
+    "ketchikan_wc": [
+     "ktn_misty_boat",
+     "ktn_totems"
+    ],
+    "sitka": [
+     "sit_wildlife",
+     "sit_town"
+    ],
+    "icy_strait": [
+     "isp_wildlife",
+     "isp_culture"
+    ],
+    "victoria": [
+     "vic_harbour"
+    ]
+   },
+   "brothers": {
+    "juneau": [
+     "jnu_heli"
+    ],
+    "skagway": [
+     "skg_heli",
+     "skg_adventure"
+    ],
+    "ketchikan": [
+     "ktn_active"
+    ],
+    "ketchikan_wc": [
+     "ktn_active"
+    ],
+    "sitka": [
+     "sit_active"
+    ],
+    "icy_strait": [
+     "isp_zip"
+    ]
+   },
+   "offer": "cruise-first"
+  }
+ },
+ "essentials": {
+  "weather": {
+   "title": "June weather",
+   "points": [
+    "Juneau in June averages a high of about 63°F and a low of about 48°F, with measurable rain on roughly 13 days of the month and mostly cloudy skies about 70% of the time.",
+    "Summer highs are generally in the low to mid 60s °F and can top 75°F. Expect rain at some point: pack layers, a waterproof outer layer and waterproof shoes.",
+    "Glacier and fjord days on deck feel colder because of wind off the ice. Bring a warm hat and gloves for the parents on the balcony."
+   ],
+   "sources": [
+    "wx_spark",
+    "travel_juneau_wx"
+   ],
+   "caveat": "Typical conditions only; nobody can forecast June 2027."
+  },
+  "daylight": {
+   "title": "Long days",
+   "points": [
+    "In Juneau the sun rises about 4 am and sets about 10 pm in June (Jun 21: 3:48 am to 10:09 pm), so evening port calls are still light.",
+    "Bring an eye mask if anyone sleeps badly in light; interior cabins are dark."
+   ],
+   "sources": [
+    "daylight_jnu"
+   ]
+  },
+  "documents": {
+   "title": "Documents",
+   "points": [
+    "Seattle round trips stop in Victoria, Canada, which makes them closed-loop cruises. Passports are recommended but not required for US citizens on these sailings.",
+    "Everyone in the family has a passport: take them. If someone misses the ship or needs to fly home from Victoria, a passport is required to fly.",
+    "Check that names on cruise and flight bookings match the passports, and that passports are valid through the trip.",
+    "Yukon tours from Skagway (Carcross, Fraser) cross into Canada: carry passports on those days."
+   ],
+   "sources": [
+    "rci_passport"
+   ]
+  },
+  "congestion": {
+   "title": "Busy ports",
+   "points": [
+    "Juneau, Skagway and Ketchikan often host several ships on the same day in June. Book popular tours early and expect lines at the tram, the Mendenhall buses and the Skagway train.",
+    "This planner does not have 2027 ship-by-ship port schedules, so it cannot say which days are busiest."
+   ],
+   "sources": []
+  },
+  "mobility": {
+   "title": "For the parents",
+   "points": [
+    "When booking the balcony, ask for a cabin mid-ship near an elevator bank, and away from the theatre, galley and nightclub decks.",
+    "Lines offer accessible cabins and wheelchair or scooter rentals; book these early, they are limited.",
+    "Tender ports (sometimes Sitka) need steps into a small boat. Ward Cove (Ketchikan on Norwegian) needs a shuttle into town.",
+    "Mom's limit is under about 2 miles of walking a day. Seated boat tours, the White Pass train and coach tours fit that best; town walks are self-paced."
+   ],
+   "sources": []
+  }
+ },
+ "qa": {
+  "checked": "2026-11-06",
+  "summary": "Tested in headless Chrome (Playwright) with iPhone and iPad touch and user-agent emulation. Safari's own engine (WebKit) could not be installed in the workspace, so Safari itself was not run. A scan of the shipped code found no scripting features newer than iOS 15.",
+  "passed": [
+   "Data audit: 63 sailings, 130 excursion offers, 7 flight records and 9 hotels cross-checked for matching ids, price statuses, source links, check dates, coordinates and port times. No issues.",
+   "Costs: 33 generated plans covering all 13 itineraries that have port times (every fare class, cabin tier, bag count, hotel, extras and random activities) were recomputed separately from data.json. All match the app to the dollar. The seeded Balanced plan ($11,724) was also checked by hand against the source figures.",
+   "Port-time rule: all 2,229 Add buttons across those 13 itineraries match a separate calculation of usable shore time (2,142 enabled, 87 blocked).",
+   "Return-day airport check: 26 itinerary and flight combinations match a separate calculation.",
+   "Planner flows (40 scripted checks): activities stack 15 minutes apart, parents and brothers have separate lanes, an all-4 activity needs both lanes free, a day cannot be overfilled, mobility warnings appear, changing the sailing flags activities that no longer fit, selections survive a reload, JSON, CSV and printable-itinerary exports work, exports re-import, malformed and junk imports are handled, HTML typed into a plan name is not run, the last plan cannot be deleted, and compare stops at four.",
+   "Layout: all 12 tabs at iPhone (390 px), iPad portrait (820), iPad landscape (1180) and desktop (1280), in light and dark mode. No console errors and no sideways scrolling.",
+   "The page works with or without data.json beside it, and the two CSV exports (app and script) are byte-for-byte identical.",
+   "With no network, every photo falls back to a labelled placeholder."
+  ],
+  "fixed": [
+   "Touch targets: text buttons, step links, expanders and sliders were 36-40 px tall and map pins 24 px; now 44 px (pins 40 px on touch screens).",
+   "iPhone map: Seattle pins sat under the legend, Hubbard Glacier was outside the default view and some labels were cut off. The default view now frames the whole route and the legend no longer blocks taps.",
+   "iOS Safari zooms the page when a form control is smaller than 16 px; selects now use 16 px on touch devices."
+  ],
+  "notTested": [
+   "Safari/WebKit on a real iPhone or iPad. Worth a quick look there: map pinch-zoom, downloads, and the Copy plans as text button.",
+   "Printing (the Print button only appears in the standalone file and was not run).",
+   "Screen readers.",
+   "iPhones older than iOS 15 (photo boxes use aspect-ratio)."
+  ]
+ },
+ "glacierGuide": {},
+ "migration": {
+  "fromVersion": "0.5.0-phase5",
+  "date": "2026-11-07",
+  "v1PriceSlots": 439,
+  "note": "v1 per-person cabin prices were doubled into 2-adult cabin prices. v1 'twoRooms' hotel estimates were dropped (the app computes them)."
+ }
+}

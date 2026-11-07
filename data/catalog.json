@@ -1,0 +1,6752 @@
+{
+ "routeFamilies": [
+  {
+   "id": "SEA-GB",
+   "name": "Seattle round trip with Glacier Bay",
+   "gateway": "SEA",
+   "glacier": "glacier_bay",
+   "color": "#0f766e",
+   "dash": null
+  },
+  {
+   "id": "SEA-DAWES",
+   "name": "Seattle round trip with Endicott Arm & Dawes Glacier",
+   "gateway": "SEA",
+   "glacier": "endicott_arm",
+   "color": "#2563eb",
+   "dash": null
+  },
+  {
+   "id": "SEA-TRACY",
+   "name": "Seattle round trip with Tracy Arm",
+   "gateway": "SEA",
+   "glacier": "tracy_arm",
+   "color": "#7c3aed",
+   "dash": null
+  },
+  {
+   "id": "SEA-HUBBARD",
+   "name": "Seattle round trip with Hubbard Glacier",
+   "gateway": "SEA",
+   "glacier": "hubbard",
+   "color": "#c2410c",
+   "dash": null
+  },
+  {
+   "id": "SEA-NONE",
+   "name": "Seattle round trip, no glacier day",
+   "gateway": "SEA",
+   "glacier": null,
+   "color": "#64748b",
+   "dash": "6 4"
+  },
+  {
+   "id": "YVR-RT",
+   "name": "Vancouver round trip",
+   "gateway": "YVR",
+   "glacier": null,
+   "color": "#b45309",
+   "dash": null,
+   "status": "phase1"
+  },
+  {
+   "id": "YVR-N",
+   "name": "One way Vancouver to Seward/Whittier",
+   "gateway": "YVR",
+   "glacier": null,
+   "color": "#be123c",
+   "dash": "10 4",
+   "status": "phase1"
+  },
+  {
+   "id": "YVR-S",
+   "name": "One way Seward/Whittier to Vancouver",
+   "gateway": "ANC",
+   "glacier": null,
+   "color": "#9d174d",
+   "dash": "10 4",
+   "status": "phase1"
+  }
+ ],
+ "lines": [
+  {
+   "id": "princess",
+   "name": "Princess Cruises",
+   "badge": "PR",
+   "color": "#1f4e8c",
+   "terminal": "sea_p91",
+   "fareBasis": "Princess Standard fare (site default). 'Up to 50% Off' sale pricing shown publicly. Princess Plus (drinks, Wi-Fi, gratuities) costs more.",
+   "includes": "Main dining, buffet, entertainment, pools. Drinks, Wi-Fi and gratuities extra on the Standard fare.",
+   "payment": {
+    "finalPaymentDays": 120,
+    "deposit": "Non-refundable deposit by default unless you pay to upgrade to a refundable deposit (per Princess policy page).",
+    "status": "verified",
+    "source": "princess_policy",
+    "note": "Applies to new bookings made after Sep 2, 2026 for 2027 sailings."
+   },
+   "accessibility": "Accessible staterooms bookable on the line's site (check 'Accessible stateroom').",
+   "gratuityRow": "line:princess:gratuity"
+  },
+  {
+   "id": "hal",
+   "name": "Holland America Line",
+   "badge": "HA",
+   "color": "#16365c",
+   "terminal": "sea_p91",
+   "fareBasis": "Standard fare shown with 'All taxes and fees included'. 'Have It All' package is an optional add-on.",
+   "includes": "Main dining, Lido buffet, live music venues, 24-hour room service. Drinks, Wi-Fi and gratuities extra on the base fare.",
+   "payment": {
+    "finalPaymentDays": null,
+    "deposit": "Not captured.",
+    "status": "unavailable",
+    "source": null,
+    "note": "Sources disagree (75 vs 90 days). Confirm at booking."
+   },
+   "accessibility": "Booking flow has a 'Wheelchair Accessible Room' checkbox.",
+   "gratuityRow": "line:hal:gratuity"
+  },
+  {
+   "id": "ncl",
+   "name": "Norwegian Cruise Line",
+   "badge": "NC",
+   "color": "#0a5f8f",
+   "terminal": "sea_p66",
+   "fareBasis": "Base fare ('Free at Sea' / More at Sea extras optional). Joy sailings showed a 'Black Friday Latitudes Sale' price to logged-out visitors.",
+   "includes": "Main dining rooms, buffet, Broadway-style shows. Freestyle dining (no fixed times). Drinks, Wi-Fi and service charge extra on the base fare.",
+   "payment": {
+    "finalPaymentDays": 120,
+    "deposit": "$250 per person for 7+ day sailings (secondary source).",
+    "status": "published",
+    "source": "ncl_policy",
+    "note": "Verify in NCL Guest Ticket Contract."
+   },
+   "accessibility": "'I need an accessible stateroom' option in booking; requires affirmation of need.",
+   "gratuityRow": "line:ncl:gratuity"
+  },
+  {
+   "id": "rci",
+   "name": "Royal Caribbean",
+   "badge": "RC",
+   "color": "#1d3f8f",
+   "terminal": "sea_p91",
+   "fareBasis": "Price shown with 'all taxes & fees'. Page also tagged '10% Off Resident Rate' and 'Early Booking Bonus'; no residency discount was applied.",
+   "includes": "Main dining, Windjammer buffet, shows, pools. Drinks, Wi-Fi and gratuities extra.",
+   "payment": {
+    "finalPaymentDays": 90,
+    "deposit": "Refundable and non-refundable deposit fares; non-refundable fares become a cruise credit minus $100 pp if cancelled before final payment.",
+    "status": "published",
+    "source": "rcl_policy",
+    "note": "5-14 night cruises."
+   },
+   "accessibility": "Accessible staterooms available by request in booking.",
+   "gratuityRow": "line:rci:gratuity"
+  },
+  {
+   "id": "celebrity",
+   "name": "Celebrity Cruises",
+   "badge": "CE",
+   "color": "#22313f",
+   "terminal": "sea_p91",
+   "fareBasis": "Price shown with 'all taxes & fees' and the '75% Off 2nd Guest' promotion. Default fare type (cruise-only vs All Included) not confirmed.",
+   "includes": "Main dining, buffet, shows. All Included upgrade adds drinks, Wi-Fi and tips.",
+   "payment": {
+    "finalPaymentDays": 90,
+    "deposit": "Not captured for US market.",
+    "status": "published",
+    "source": "celebrity_faq",
+    "note": "Taken from Celebrity's UK FAQ; confirm US terms."
+   },
+   "accessibility": "Inside staterooms listed as including accessible options.",
+   "gratuityRow": "line:celebrity:gratuity"
+  },
+  {
+   "id": "carnival",
+   "name": "Carnival Cruise Line",
+   "badge": "CA",
+   "color": "#1b4fa0",
+   "terminal": "sea_p91",
+   "fareBasis": "Public fare for 2 adults, no military/senior/past-guest discounts, 'Taxes and fees are included'.",
+   "includes": "Main dining, Lido buffet, comedy and shows. Drinks, Wi-Fi and gratuities extra.",
+   "payment": {
+    "finalPaymentDays": null,
+    "deposit": "Not captured.",
+    "status": "unavailable",
+    "source": null,
+    "note": "Confirm on booking confirmation."
+   },
+   "accessibility": "Accessible staterooms by request.",
+   "gratuityRow": "line:carnival:gratuity"
+  },
+  {
+   "id": "msc",
+   "name": "MSC Cruises",
+   "badge": "MS",
+   "color": "#13284a",
+   "terminal": "sea_p91",
+   "fareBasis": "'Price includes all fees and taxes' for 2 guests. A '10% off with Voyagers Club' member discount was shown but not applied.",
+   "includes": "Main dining, buffet, shows. Drinks and Wi-Fi extra unless a package is added.",
+   "payment": {
+    "finalPaymentDays": null,
+    "deposit": "Not captured.",
+    "status": "unavailable",
+    "source": null,
+    "note": ""
+   },
+   "accessibility": "Not captured.",
+   "gratuityRow": "line:msc:gratuity"
+  },
+  {
+   "id": "virgin",
+   "name": "Virgin Voyages",
+   "badge": "VV",
+   "color": "#7a1131",
+   "terminal": "sea_p91",
+   "fareBasis": "Adults-only (18+). 'Black Friday Preview: 80% off 2nd Sailor' pricing shown per sailor.",
+   "includes": "All restaurants (no buffet), gratuities, basic drinks, Wi-Fi.",
+   "payment": {
+    "finalPaymentDays": null,
+    "deposit": "Not captured.",
+    "status": "unavailable",
+    "source": null,
+    "note": ""
+   },
+   "accessibility": "Not captured.",
+   "gratuityRow": "line:virgin:gratuity"
+  },
+  {
+   "id": "oceania",
+   "name": "Oceania Cruises",
+   "badge": "OC",
+   "color": "#22344a",
+   "terminal": "sea_p66",
+   "fareBasis": "Premium line; adults-only since Jan 2026 per European agent listing. Prices here are aggregator samples only.",
+   "includes": "Specialty dining included; small ship (about 1,250 guests).",
+   "payment": {
+    "finalPaymentDays": null,
+    "deposit": "Not captured.",
+    "status": "unavailable",
+    "source": null,
+    "note": ""
+   },
+   "accessibility": "Not captured.",
+   "gratuityRow": "line:oceania:gratuity"
+  }
+ ],
+ "ships": [
+  {
+   "id": "royal_princess",
+   "line": "princess",
+   "name": "Royal Princess",
+   "built": 2013,
+   "guests": 3560,
+   "guestsSource": "Princess itinerary page"
+  },
+  {
+   "id": "star_princess",
+   "line": "princess",
+   "name": "Star Princess",
+   "built": 2025,
+   "guests": 4300,
+   "guestsSource": "CruiseTimetables listing",
+   "note": "New Sphere-class ship (2025)."
+  },
+  {
+   "id": "eurodam",
+   "line": "hal",
+   "name": "Eurodam",
+   "built": 2008,
+   "guests": null,
+   "note": "Mid-size ship; Holland America's quieter style suits the parents."
+  },
+  {
+   "id": "norwegian_encore",
+   "line": "ncl",
+   "name": "Norwegian Encore",
+   "built": 2019,
+   "guests": 3958,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "norwegian_bliss",
+   "line": "ncl",
+   "name": "Norwegian Bliss",
+   "built": 2018,
+   "guests": 4010,
+   "guestsSource": "CruiseTimetables listing",
+   "note": "Built with a large forward Observation Lounge for Alaska viewing."
+  },
+  {
+   "id": "norwegian_joy",
+   "line": "ncl",
+   "name": "Norwegian Joy",
+   "built": 2017,
+   "guests": 3776,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "voyager_of_the_seas",
+   "line": "rci",
+   "name": "Voyager of the Seas",
+   "built": 1999,
+   "guests": null
+  },
+  {
+   "id": "quantum_of_the_seas",
+   "line": "rci",
+   "name": "Quantum of the Seas",
+   "built": 2014,
+   "guests": 4180,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "celebrity_edge",
+   "line": "celebrity",
+   "name": "Celebrity Edge",
+   "built": 2018,
+   "guests": 2908,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "carnival_legend",
+   "line": "carnival",
+   "name": "Carnival Legend",
+   "built": 2002,
+   "guests": 2134,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "carnival_spirit",
+   "line": "carnival",
+   "name": "Carnival Spirit",
+   "built": 2001,
+   "guests": 2134,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "msc_poesia",
+   "line": "msc",
+   "name": "MSC Poesia",
+   "built": 2008,
+   "guests": 2446,
+   "guestsSource": "CruiseTimetables listing"
+  },
+  {
+   "id": "brilliant_lady",
+   "line": "virgin",
+   "name": "Brilliant Lady",
+   "built": 2025,
+   "guests": null,
+   "note": "Adults only (18+)."
+  },
+  {
+   "id": "oceania_riviera",
+   "line": "oceania",
+   "name": "Oceania Riviera",
+   "built": 2012,
+   "guests": 1250,
+   "guestsSource": "Cruise Web listing"
+  }
+ ],
+ "itineraries": [
+  {
+   "id": "princess_royal_gb",
+   "line": "princess",
+   "ship": "royal_princess",
+   "name": "7-Day Inside Passage (with Glacier Bay National Park)",
+   "weekday": "Saturday",
+   "glacier": "Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesStatus": "verified",
+   "timesSource": "Princess itinerary pages, voyage codes 1717-1722",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:00",
+      "dep": "21:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "06:00",
+      "dep": "14:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "07:00",
+      "dep": "13:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "21:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.38,
+     -136.1
+    ],
+    [
+     58.75,
+     -136.35
+    ],
+    [
+     58.98,
+     -137.0
+    ],
+    [
+     58.75,
+     -136.35
+    ],
+    [
+     58.38,
+     -136.1
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-GB"
+  },
+  {
+   "id": "princess_star_dawes",
+   "line": "princess",
+   "ship": "star_princess",
+   "name": "7-Day Inside Passage (Roundtrip Seattle)",
+   "weekday": "Sunday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "Princess itinerary pages, voyage codes 4722-4727",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:30",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "05:00",
+      "dep": "09:00"
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "12:30",
+      "dep": "21:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "19:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "hal_eurodam_explorer",
+   "line": "hal",
+   "ship": "eurodam",
+   "name": "7-Day Alaska Explorer",
+   "weekday": "Saturday",
+   "glacier": "Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesStatus": "verified",
+   "timesSource": "Holland America cruise pages d741-d747; Seattle return time from CruiseMapper",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "stephens_passage",
+      "arr": null,
+      "dep": null
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "12:30",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "06:00",
+      "dep": "15:00"
+     },
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "17:30",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "08:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:30",
+      "dep": "13:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.38,
+     -136.1
+    ],
+    [
+     58.75,
+     -136.35
+    ],
+    [
+     58.98,
+     -137.0
+    ],
+    [
+     58.75,
+     -136.35
+    ],
+    [
+     58.38,
+     -136.1
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.135,
+     -135.45
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.13,
+     -136.6
+    ],
+    [
+     57.3,
+     -136.3
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.05,
+     -135.34
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     56.4,
+     -134.65
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-GB"
+  },
+  {
+   "id": "ncl_encore_gb",
+   "line": "ncl",
+   "ship": "norwegian_encore",
+   "name": "7-Day Alaska Round-Trip Seattle: Skagway, Juneau, Ketchikan & Victoria",
+   "weekday": "Sunday",
+   "glacier": "Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesStatus": "verified",
+   "timesSource": "NCL vacation builder (ENCORE7SEAJNUSGYKTNVICSEA); Glacier Bay times not published",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p66",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan_wc",
+      "arr": "07:00",
+      "dep": "13:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p66",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.611,
+     -122.348
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.38,
+     -136.1
+    ],
+    [
+     58.75,
+     -136.35
+    ],
+    [
+     58.98,
+     -137.0
+    ],
+    [
+     58.75,
+     -136.35
+    ],
+    [
+     58.38,
+     -136.1
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.611,
+     -122.348
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-GB"
+  },
+  {
+   "id": "ncl_bliss_dawes",
+   "line": "ncl",
+   "ship": "norwegian_bliss",
+   "name": "7-Day Alaska Round-Trip Seattle: Juneau, Sitka, Ketchikan & Victoria",
+   "weekday": "Saturday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "NCL vacation builder (BLISS7SEASITJNUICYKTNVICSEA); Seattle return from CruiseMapper",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p66",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "10:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "06:30",
+      "dep": "13:30"
+     },
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "06:00",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan_wc",
+      "arr": "06:00",
+      "dep": "13:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p66",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.611,
+     -122.348
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     55.3,
+     -133.9
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.05,
+     -135.34
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.3,
+     -136.3
+    ],
+    [
+     58.13,
+     -136.6
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.135,
+     -135.45
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.611,
+     -122.348
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "ncl_joy_hubbard",
+   "line": "ncl",
+   "ship": "norwegian_joy",
+   "name": "7-Day Alaska Round-trip Seattle: Juneau, Ketchikan & Victoria (Hubbard Glacier)",
+   "weekday": "Friday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "verified",
+   "timesSource": "NCL vacation builder (JOY7SEAJNUICYKTNVICSEA)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p66",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "06:00",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan_wc",
+      "arr": "06:00",
+      "dep": "13:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p66",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.611,
+     -122.348
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.13,
+     -136.6
+    ],
+    [
+     58.5,
+     -137.6
+    ],
+    [
+     59.1,
+     -138.7
+    ],
+    [
+     59.75,
+     -139.75
+    ],
+    [
+     60.0,
+     -139.5
+    ],
+    [
+     59.75,
+     -139.75
+    ],
+    [
+     59.1,
+     -138.7
+    ],
+    [
+     58.5,
+     -137.6
+    ],
+    [
+     58.13,
+     -136.6
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.135,
+     -135.45
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.611,
+     -122.348
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-HUBBARD"
+  },
+  {
+   "id": "ncl_joy_dawes",
+   "line": "ncl",
+   "ship": "norwegian_joy",
+   "name": "7-Day Alaska Round-trip Seattle: Icy Strait Point, Ketchikan & Victoria",
+   "weekday": "Friday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "NCL vacation builder (JOY7SEAICYSITKTNVICSEA); Seattle return time not captured",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p66",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "11:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "06:00",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan_wc",
+      "arr": "06:00",
+      "dep": "13:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p66",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.611,
+     -122.348
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     55.3,
+     -133.9
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.05,
+     -135.34
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     56.4,
+     -134.65
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.135,
+     -135.45
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.611,
+     -122.348
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "rci_voyager_dawes",
+   "line": "rci",
+   "ship": "voyager_of_the_seas",
+   "name": "7 Night Alaska Adventure Cruise",
+   "weekday": "Friday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page (VY07A458, Jun 11 sailing)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "08:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "07:00",
+      "dep": "12:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "08:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "rci_quantum_dawes",
+   "line": "rci",
+   "ship": "quantum_of_the_seas",
+   "name": "7 Night Alaska Adventure Cruise",
+   "weekday": "Monday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page (QN07A455, Jun 14 sailing)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "09:30",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "05:00",
+      "dep": "09:30"
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "17:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     55.3,
+     -133.9
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.05,
+     -135.34
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.3,
+     -136.3
+    ],
+    [
+     58.13,
+     -136.6
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "celebrity_edge_dawes",
+   "line": "celebrity",
+   "ship": "celebrity_edge",
+   "name": "7 Night Alaska Dawes Glacier Cruise",
+   "weekday": "Friday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "Celebrity itinerary page (EG07A439, Jun 11 sailing)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "05:30",
+      "dep": "10:00"
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:30",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "17:30",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "carnival_tracy",
+   "line": "carnival",
+   "ship": null,
+   "ships": [
+    "carnival_legend",
+    "carnival_spirit"
+   ],
+   "name": "7-Day Alaska Inside Passage & Glacier from Seattle",
+   "weekday": "Tuesday (Legend) / Thursday (Spirit)",
+   "glacier": "Tracy Arm Fjord",
+   "glacierPlace": "tracy_arm",
+   "timesStatus": "verified",
+   "timesSource": "Carnival itinerary pages (GA2, Jun 15 Legend and Jun 17 Spirit); Seattle return from CruiseMapper",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "15:30"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "tracy_arm",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "07:00",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "07:00",
+      "dep": "13:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.835,
+     -133.35
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     59.445,
+     -135.325
+    ],
+    [
+     59.25,
+     -135.36
+    ],
+    [
+     58.95,
+     -135.18
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-TRACY"
+  },
+  {
+   "id": "msc_poesia_tracy",
+   "line": "msc",
+   "ship": "msc_poesia",
+   "name": "7 Nights Alaska (Ketchikan, Icy Strait, Tracy Arm, Juneau, Victoria)",
+   "weekday": "Monday",
+   "glacier": "Tracy Arm Fjord",
+   "glacierPlace": "tracy_arm",
+   "timesStatus": "published",
+   "timesSource": "CruiseTimetables (aggregator); port list confirmed on msccruisesusa.com",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "10:00",
+      "dep": "19:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "tracy_arm",
+      "arr": null,
+      "dep": null
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "14:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:58"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.135,
+     -135.45
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.5,
+     -134.98
+    ],
+    [
+     58.24,
+     -134.63
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.835,
+     -133.35
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     58.295,
+     -134.4
+    ],
+    [
+     58.2,
+     -134.25
+    ],
+    [
+     57.95,
+     -134.05
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-TRACY"
+  },
+  {
+   "id": "virgin_brilliant_fjords",
+   "line": "virgin",
+   "ship": "brilliant_lady",
+   "name": "Alaska: Inside Passage & Glacial Fjords",
+   "weekday": "Thursday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "unavailable",
+   "timesSource": "Port order from virginvoyages.com; day-by-day times not captured",
+   "ports": [
+    "ketchikan",
+    "sitka",
+    "endicott_arm",
+    "victoria"
+   ],
+   "days": null,
+   "mapLine": [
+    [
+     47.63,
+     -122.382
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     56.4,
+     -134.65
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.05,
+     -135.34
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     56.4,
+     -134.65
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.52,
+     -132.9
+    ],
+    [
+     57.74,
+     -133.62
+    ],
+    [
+     57.35,
+     -133.78
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.63,
+     -122.382
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-DAWES"
+  },
+  {
+   "id": "oceania_riviera_visions",
+   "line": "oceania",
+   "ship": "oceania_riviera",
+   "name": "7 Night Visions of Alaska",
+   "weekday": "Thursday",
+   "glacier": null,
+   "glacierPlace": null,
+   "timesStatus": "published",
+   "timesSource": "CruiseTimetables (Jul 1, 2027 sailing)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p66",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "09:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "10:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "07:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "14:00",
+      "dep": "23:00"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p66",
+      "arr": "08:00"
+     }
+    ]
+   ],
+   "mapLine": [
+    [
+     47.611,
+     -122.348
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     54.55,
+     -131.15
+    ],
+    [
+     55.08,
+     -131.3
+    ],
+    [
+     55.338,
+     -131.645
+    ],
+    [
+     55.405,
+     -131.735
+    ],
+    [
+     55.47,
+     -131.86
+    ],
+    [
+     55.75,
+     -132.2
+    ],
+    [
+     56.05,
+     -132.75
+    ],
+    [
+     56.3,
+     -133.2
+    ],
+    [
+     56.95,
+     -133.7
+    ],
+    [
+     57.05,
+     -134.2
+    ],
+    [
+     57.2,
+     -134.65
+    ],
+    [
+     58.27,
+     -135.15
+    ],
+    [
+     58.135,
+     -135.45
+    ],
+    [
+     58.28,
+     -135.85
+    ],
+    [
+     58.13,
+     -136.6
+    ],
+    [
+     57.3,
+     -136.3
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     57.05,
+     -135.34
+    ],
+    [
+     57.0,
+     -135.55
+    ],
+    [
+     56.3,
+     -135.1
+    ],
+    [
+     55.3,
+     -133.9
+    ],
+    [
+     53.8,
+     -130.95
+    ],
+    [
+     52.6,
+     -130.6
+    ],
+    [
+     51.7,
+     -130.0
+    ],
+    [
+     50.9,
+     -129.1
+    ],
+    [
+     49.9,
+     -128.1
+    ],
+    [
+     49.0,
+     -126.6
+    ],
+    [
+     48.35,
+     -125.4
+    ],
+    [
+     48.45,
+     -124.75
+    ],
+    [
+     48.3,
+     -123.9
+    ],
+    [
+     48.405,
+     -123.39
+    ],
+    [
+     48.25,
+     -123.2
+    ],
+    [
+     48.17,
+     -122.75
+    ],
+    [
+     47.95,
+     -122.45
+    ],
+    [
+     47.63,
+     -122.43
+    ],
+    [
+     47.611,
+     -122.348
+    ]
+   ],
+   "mapLineBasis": "schematic",
+   "routeFamily": "SEA-NONE"
+  }
+ ],
+ "sailings": [
+  {
+   "id": "princess_royal_gb_2027-05-29",
+   "itinerary": "princess_royal_gb",
+   "ship": "royal_princess",
+   "depart": "2027-05-29",
+   "return": "2027-06-05",
+   "nights": 7,
+   "code": "1717",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_royal_gb_2027-05-29:interior",
+    "oceanview": "sailing:princess_royal_gb_2027-05-29:oceanview",
+    "balcony": "sailing:princess_royal_gb_2027-05-29:balcony",
+    "miniSuite": "sailing:princess_royal_gb_2027-05-29:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_royal_gb_2027-06-05",
+   "itinerary": "princess_royal_gb",
+   "ship": "royal_princess",
+   "depart": "2027-06-05",
+   "return": "2027-06-12",
+   "nights": 7,
+   "code": "1718",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_royal_gb_2027-06-05:interior",
+    "oceanview": "sailing:princess_royal_gb_2027-06-05:oceanview",
+    "balcony": "sailing:princess_royal_gb_2027-06-05:balcony",
+    "miniSuite": "sailing:princess_royal_gb_2027-06-05:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_royal_gb_2027-06-12",
+   "itinerary": "princess_royal_gb",
+   "ship": "royal_princess",
+   "depart": "2027-06-12",
+   "return": "2027-06-19",
+   "nights": 7,
+   "code": "1719",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_royal_gb_2027-06-12:interior",
+    "oceanview": "sailing:princess_royal_gb_2027-06-12:oceanview",
+    "balcony": "sailing:princess_royal_gb_2027-06-12:balcony",
+    "miniSuite": "sailing:princess_royal_gb_2027-06-12:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_royal_gb_2027-06-19",
+   "itinerary": "princess_royal_gb",
+   "ship": "royal_princess",
+   "depart": "2027-06-19",
+   "return": "2027-06-26",
+   "nights": 7,
+   "code": "1720",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_royal_gb_2027-06-19:interior",
+    "oceanview": "sailing:princess_royal_gb_2027-06-19:oceanview",
+    "balcony": "sailing:princess_royal_gb_2027-06-19:balcony",
+    "miniSuite": "sailing:princess_royal_gb_2027-06-19:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_royal_gb_2027-06-26",
+   "itinerary": "princess_royal_gb",
+   "ship": "royal_princess",
+   "depart": "2027-06-26",
+   "return": "2027-07-03",
+   "nights": 7,
+   "code": "1721",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_royal_gb_2027-06-26:interior",
+    "oceanview": "sailing:princess_royal_gb_2027-06-26:oceanview",
+    "balcony": "sailing:princess_royal_gb_2027-06-26:balcony",
+    "miniSuite": "sailing:princess_royal_gb_2027-06-26:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_royal_gb_2027-07-03",
+   "itinerary": "princess_royal_gb",
+   "ship": "royal_princess",
+   "depart": "2027-07-03",
+   "return": "2027-07-10",
+   "nights": 7,
+   "code": "1722",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_royal_gb_2027-07-03:interior",
+    "oceanview": "sailing:princess_royal_gb_2027-07-03:oceanview",
+    "balcony": "sailing:princess_royal_gb_2027-07-03:balcony",
+    "miniSuite": "sailing:princess_royal_gb_2027-07-03:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_star_dawes_2027-05-30",
+   "itinerary": "princess_star_dawes",
+   "ship": "star_princess",
+   "depart": "2027-05-30",
+   "return": "2027-06-06",
+   "nights": 7,
+   "code": "4722",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_star_dawes_2027-05-30:interior",
+    "oceanview": "sailing:princess_star_dawes_2027-05-30:oceanview",
+    "balcony": "sailing:princess_star_dawes_2027-05-30:balcony",
+    "miniSuite": "sailing:princess_star_dawes_2027-05-30:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_star_dawes_2027-06-06",
+   "itinerary": "princess_star_dawes",
+   "ship": "star_princess",
+   "depart": "2027-06-06",
+   "return": "2027-06-13",
+   "nights": 7,
+   "code": "4723",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_star_dawes_2027-06-06:interior",
+    "oceanview": "sailing:princess_star_dawes_2027-06-06:oceanview",
+    "balcony": "sailing:princess_star_dawes_2027-06-06:balcony",
+    "miniSuite": "sailing:princess_star_dawes_2027-06-06:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_star_dawes_2027-06-13",
+   "itinerary": "princess_star_dawes",
+   "ship": "star_princess",
+   "depart": "2027-06-13",
+   "return": "2027-06-20",
+   "nights": 7,
+   "code": "4724",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_star_dawes_2027-06-13:interior",
+    "oceanview": "sailing:princess_star_dawes_2027-06-13:oceanview",
+    "balcony": "sailing:princess_star_dawes_2027-06-13:balcony",
+    "miniSuite": "sailing:princess_star_dawes_2027-06-13:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_star_dawes_2027-06-20",
+   "itinerary": "princess_star_dawes",
+   "ship": "star_princess",
+   "depart": "2027-06-20",
+   "return": "2027-06-27",
+   "nights": 7,
+   "code": "4725",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_star_dawes_2027-06-20:interior",
+    "oceanview": "sailing:princess_star_dawes_2027-06-20:oceanview",
+    "balcony": "sailing:princess_star_dawes_2027-06-20:balcony",
+    "miniSuite": "sailing:princess_star_dawes_2027-06-20:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_star_dawes_2027-06-27",
+   "itinerary": "princess_star_dawes",
+   "ship": "star_princess",
+   "depart": "2027-06-27",
+   "return": "2027-07-04",
+   "nights": 7,
+   "code": "4726",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_star_dawes_2027-06-27:interior",
+    "oceanview": "sailing:princess_star_dawes_2027-06-27:oceanview",
+    "balcony": "sailing:princess_star_dawes_2027-06-27:balcony",
+    "miniSuite": "sailing:princess_star_dawes_2027-06-27:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "princess_star_dawes_2027-07-04",
+   "itinerary": "princess_star_dawes",
+   "ship": "star_princess",
+   "depart": "2027-07-04",
+   "return": "2027-07-11",
+   "nights": 7,
+   "code": "4727",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_star_dawes_2027-07-04:interior",
+    "oceanview": "sailing:princess_star_dawes_2027-07-04:oceanview",
+    "balcony": "sailing:princess_star_dawes_2027-07-04:balcony",
+    "miniSuite": "sailing:princess_star_dawes_2027-07-04:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "hal_eurodam_explorer_2027-05-29",
+   "itinerary": "hal_eurodam_explorer",
+   "ship": "eurodam",
+   "depart": "2027-05-29",
+   "return": "2027-06-05",
+   "nights": 7,
+   "code": "d741",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_eurodam_explorer_2027-05-29:interior",
+    "oceanview": "sailing:hal_eurodam_explorer_2027-05-29:oceanview",
+    "balcony": "sailing:hal_eurodam_explorer_2027-05-29:balcony",
+    "miniSuite": "sailing:hal_eurodam_explorer_2027-05-29:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "hal_eurodam_explorer_2027-06-05",
+   "itinerary": "hal_eurodam_explorer",
+   "ship": "eurodam",
+   "depart": "2027-06-05",
+   "return": "2027-06-12",
+   "nights": 7,
+   "code": "d742",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_eurodam_explorer_2027-06-05:interior",
+    "oceanview": "sailing:hal_eurodam_explorer_2027-06-05:oceanview",
+    "balcony": "sailing:hal_eurodam_explorer_2027-06-05:balcony",
+    "miniSuite": "sailing:hal_eurodam_explorer_2027-06-05:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "hal_eurodam_explorer_2027-06-12",
+   "itinerary": "hal_eurodam_explorer",
+   "ship": "eurodam",
+   "depart": "2027-06-12",
+   "return": "2027-06-19",
+   "nights": 7,
+   "code": "d743",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_eurodam_explorer_2027-06-12:interior",
+    "oceanview": "sailing:hal_eurodam_explorer_2027-06-12:oceanview",
+    "balcony": "sailing:hal_eurodam_explorer_2027-06-12:balcony",
+    "miniSuite": "sailing:hal_eurodam_explorer_2027-06-12:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "hal_eurodam_explorer_2027-06-19",
+   "itinerary": "hal_eurodam_explorer",
+   "ship": "eurodam",
+   "depart": "2027-06-19",
+   "return": "2027-06-26",
+   "nights": 7,
+   "code": "d746",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_eurodam_explorer_2027-06-19:interior",
+    "oceanview": "sailing:hal_eurodam_explorer_2027-06-19:oceanview",
+    "balcony": "sailing:hal_eurodam_explorer_2027-06-19:balcony",
+    "miniSuite": "sailing:hal_eurodam_explorer_2027-06-19:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "hal_eurodam_explorer_2027-06-26",
+   "itinerary": "hal_eurodam_explorer",
+   "ship": "eurodam",
+   "depart": "2027-06-26",
+   "return": "2027-07-03",
+   "nights": 7,
+   "code": "d747",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_eurodam_explorer_2027-06-26:interior",
+    "oceanview": "sailing:hal_eurodam_explorer_2027-06-26:oceanview",
+    "balcony": "sailing:hal_eurodam_explorer_2027-06-26:balcony",
+    "miniSuite": "sailing:hal_eurodam_explorer_2027-06-26:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_encore_gb_2027-05-30",
+   "itinerary": "ncl_encore_gb",
+   "ship": "norwegian_encore",
+   "depart": "2027-05-30",
+   "return": "2027-06-06",
+   "nights": 7,
+   "code": "24203314",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_encore_gb_2027-05-30:interior",
+    "oceanview": "sailing:ncl_encore_gb_2027-05-30:oceanview",
+    "balcony": "sailing:ncl_encore_gb_2027-05-30:balcony",
+    "miniSuite": "sailing:ncl_encore_gb_2027-05-30:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_encore_gb_2027-06-06",
+   "itinerary": "ncl_encore_gb",
+   "ship": "norwegian_encore",
+   "depart": "2027-06-06",
+   "return": "2027-06-13",
+   "nights": 7,
+   "code": "24203315",
+   "flags": [],
+   "note": "Guarantee Inside (cabin assigned by NCL) was $1,579 pp.",
+   "priceRows": {
+    "interior": "sailing:ncl_encore_gb_2027-06-06:interior",
+    "oceanview": "sailing:ncl_encore_gb_2027-06-06:oceanview",
+    "balcony": "sailing:ncl_encore_gb_2027-06-06:balcony",
+    "miniSuite": "sailing:ncl_encore_gb_2027-06-06:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_encore_gb_2027-06-13",
+   "itinerary": "ncl_encore_gb",
+   "ship": "norwegian_encore",
+   "depart": "2027-06-13",
+   "return": "2027-06-20",
+   "nights": 7,
+   "code": "24203316",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_encore_gb_2027-06-13:interior",
+    "oceanview": "sailing:ncl_encore_gb_2027-06-13:oceanview",
+    "balcony": "sailing:ncl_encore_gb_2027-06-13:balcony",
+    "miniSuite": "sailing:ncl_encore_gb_2027-06-13:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_encore_gb_2027-06-20",
+   "itinerary": "ncl_encore_gb",
+   "ship": "norwegian_encore",
+   "depart": "2027-06-20",
+   "return": "2027-06-27",
+   "nights": 7,
+   "code": "24203317",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_encore_gb_2027-06-20:interior",
+    "oceanview": "sailing:ncl_encore_gb_2027-06-20:oceanview",
+    "balcony": "sailing:ncl_encore_gb_2027-06-20:balcony",
+    "miniSuite": "sailing:ncl_encore_gb_2027-06-20:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_encore_gb_2027-06-27",
+   "itinerary": "ncl_encore_gb",
+   "ship": "norwegian_encore",
+   "depart": "2027-06-27",
+   "return": "2027-07-04",
+   "nights": 7,
+   "code": "24203318",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_encore_gb_2027-06-27:interior",
+    "oceanview": "sailing:ncl_encore_gb_2027-06-27:oceanview",
+    "balcony": "sailing:ncl_encore_gb_2027-06-27:balcony",
+    "miniSuite": "sailing:ncl_encore_gb_2027-06-27:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_bliss_dawes_2027-05-29",
+   "itinerary": "ncl_bliss_dawes",
+   "ship": "norwegian_bliss",
+   "depart": "2027-05-29",
+   "return": "2027-06-05",
+   "nights": 7,
+   "code": "24218430",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_bliss_dawes_2027-05-29:interior",
+    "oceanview": "sailing:ncl_bliss_dawes_2027-05-29:oceanview",
+    "balcony": "sailing:ncl_bliss_dawes_2027-05-29:balcony",
+    "miniSuite": "sailing:ncl_bliss_dawes_2027-05-29:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_bliss_dawes_2027-06-05",
+   "itinerary": "ncl_bliss_dawes",
+   "ship": "norwegian_bliss",
+   "depart": "2027-06-05",
+   "return": "2027-06-12",
+   "nights": 7,
+   "code": "24218431",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_bliss_dawes_2027-06-05:interior",
+    "oceanview": "sailing:ncl_bliss_dawes_2027-06-05:oceanview",
+    "balcony": "sailing:ncl_bliss_dawes_2027-06-05:balcony",
+    "miniSuite": "sailing:ncl_bliss_dawes_2027-06-05:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_bliss_dawes_2027-06-12",
+   "itinerary": "ncl_bliss_dawes",
+   "ship": "norwegian_bliss",
+   "depart": "2027-06-12",
+   "return": "2027-06-19",
+   "nights": 7,
+   "code": "24218432",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_bliss_dawes_2027-06-12:interior",
+    "oceanview": "sailing:ncl_bliss_dawes_2027-06-12:oceanview",
+    "balcony": "sailing:ncl_bliss_dawes_2027-06-12:balcony",
+    "miniSuite": "sailing:ncl_bliss_dawes_2027-06-12:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_bliss_dawes_2027-06-19",
+   "itinerary": "ncl_bliss_dawes",
+   "ship": "norwegian_bliss",
+   "depart": "2027-06-19",
+   "return": "2027-06-26",
+   "nights": 7,
+   "code": "24218433",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_bliss_dawes_2027-06-19:interior",
+    "oceanview": "sailing:ncl_bliss_dawes_2027-06-19:oceanview",
+    "balcony": "sailing:ncl_bliss_dawes_2027-06-19:balcony",
+    "miniSuite": "sailing:ncl_bliss_dawes_2027-06-19:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_bliss_dawes_2027-06-26",
+   "itinerary": "ncl_bliss_dawes",
+   "ship": "norwegian_bliss",
+   "depart": "2027-06-26",
+   "return": "2027-07-03",
+   "nights": 7,
+   "code": "24218434",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:ncl_bliss_dawes_2027-06-26:interior",
+    "oceanview": "sailing:ncl_bliss_dawes_2027-06-26:oceanview",
+    "balcony": "sailing:ncl_bliss_dawes_2027-06-26:balcony",
+    "miniSuite": "sailing:ncl_bliss_dawes_2027-06-26:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_joy_hubbard_2027-06-25",
+   "itinerary": "ncl_joy_hubbard",
+   "ship": "norwegian_joy",
+   "depart": "2027-06-25",
+   "return": "2027-07-02",
+   "nights": 7,
+   "code": "24235224",
+   "flags": [
+    "promo"
+   ],
+   "note": "Sale price shown to logged-out visitors; the sale label suggests it may end after Black Friday 2026. Guarantee Inside was $959 pp.",
+   "priceRows": {
+    "interior": "sailing:ncl_joy_hubbard_2027-06-25:interior",
+    "oceanview": "sailing:ncl_joy_hubbard_2027-06-25:oceanview",
+    "balcony": "sailing:ncl_joy_hubbard_2027-06-25:balcony",
+    "miniSuite": "sailing:ncl_joy_hubbard_2027-06-25:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "ncl_joy_dawes_2027-07-02",
+   "itinerary": "ncl_joy_dawes",
+   "ship": "norwegian_joy",
+   "depart": "2027-07-02",
+   "return": "2027-07-09",
+   "nights": 7,
+   "code": "24235225",
+   "flags": [
+    "promo",
+    "holiday"
+   ],
+   "note": "Guarantee Inside was $999 pp.",
+   "priceRows": {
+    "interior": "sailing:ncl_joy_dawes_2027-07-02:interior",
+    "oceanview": "sailing:ncl_joy_dawes_2027-07-02:oceanview",
+    "balcony": "sailing:ncl_joy_dawes_2027-07-02:balcony",
+    "miniSuite": "sailing:ncl_joy_dawes_2027-07-02:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_voyager_dawes_2027-05-28",
+   "itinerary": "rci_voyager_dawes",
+   "ship": "voyager_of_the_seas",
+   "depart": "2027-05-28",
+   "return": "2027-06-04",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_voyager_dawes_2027-05-28:interior",
+    "oceanview": "sailing:rci_voyager_dawes_2027-05-28:oceanview",
+    "balcony": "sailing:rci_voyager_dawes_2027-05-28:balcony",
+    "miniSuite": "sailing:rci_voyager_dawes_2027-05-28:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_voyager_dawes_2027-06-04",
+   "itinerary": "rci_voyager_dawes",
+   "ship": "voyager_of_the_seas",
+   "depart": "2027-06-04",
+   "return": "2027-06-11",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_voyager_dawes_2027-06-04:interior",
+    "oceanview": "sailing:rci_voyager_dawes_2027-06-04:oceanview",
+    "balcony": "sailing:rci_voyager_dawes_2027-06-04:balcony",
+    "miniSuite": "sailing:rci_voyager_dawes_2027-06-04:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_voyager_dawes_2027-06-11",
+   "itinerary": "rci_voyager_dawes",
+   "ship": "voyager_of_the_seas",
+   "depart": "2027-06-11",
+   "return": "2027-06-18",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_voyager_dawes_2027-06-11:interior",
+    "oceanview": "sailing:rci_voyager_dawes_2027-06-11:oceanview",
+    "balcony": "sailing:rci_voyager_dawes_2027-06-11:balcony",
+    "miniSuite": "sailing:rci_voyager_dawes_2027-06-11:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_voyager_dawes_2027-06-18",
+   "itinerary": "rci_voyager_dawes",
+   "ship": "voyager_of_the_seas",
+   "depart": "2027-06-18",
+   "return": "2027-06-25",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_voyager_dawes_2027-06-18:interior",
+    "oceanview": "sailing:rci_voyager_dawes_2027-06-18:oceanview",
+    "balcony": "sailing:rci_voyager_dawes_2027-06-18:balcony",
+    "miniSuite": "sailing:rci_voyager_dawes_2027-06-18:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_voyager_dawes_2027-06-25",
+   "itinerary": "rci_voyager_dawes",
+   "ship": "voyager_of_the_seas",
+   "depart": "2027-06-25",
+   "return": "2027-07-02",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_voyager_dawes_2027-06-25:interior",
+    "oceanview": "sailing:rci_voyager_dawes_2027-06-25:oceanview",
+    "balcony": "sailing:rci_voyager_dawes_2027-06-25:balcony",
+    "miniSuite": "sailing:rci_voyager_dawes_2027-06-25:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_quantum_dawes_2027-05-31",
+   "itinerary": "rci_quantum_dawes",
+   "ship": "quantum_of_the_seas",
+   "depart": "2027-05-31",
+   "return": "2027-06-07",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_quantum_dawes_2027-05-31:interior",
+    "oceanview": "sailing:rci_quantum_dawes_2027-05-31:oceanview",
+    "balcony": "sailing:rci_quantum_dawes_2027-05-31:balcony",
+    "miniSuite": "sailing:rci_quantum_dawes_2027-05-31:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_quantum_dawes_2027-06-07",
+   "itinerary": "rci_quantum_dawes",
+   "ship": "quantum_of_the_seas",
+   "depart": "2027-06-07",
+   "return": "2027-06-14",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_quantum_dawes_2027-06-07:interior",
+    "oceanview": "sailing:rci_quantum_dawes_2027-06-07:oceanview",
+    "balcony": "sailing:rci_quantum_dawes_2027-06-07:balcony",
+    "miniSuite": "sailing:rci_quantum_dawes_2027-06-07:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_quantum_dawes_2027-06-14",
+   "itinerary": "rci_quantum_dawes",
+   "ship": "quantum_of_the_seas",
+   "depart": "2027-06-14",
+   "return": "2027-06-21",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_quantum_dawes_2027-06-14:interior",
+    "oceanview": "sailing:rci_quantum_dawes_2027-06-14:oceanview",
+    "balcony": "sailing:rci_quantum_dawes_2027-06-14:balcony",
+    "miniSuite": "sailing:rci_quantum_dawes_2027-06-14:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_quantum_dawes_2027-06-21",
+   "itinerary": "rci_quantum_dawes",
+   "ship": "quantum_of_the_seas",
+   "depart": "2027-06-21",
+   "return": "2027-06-28",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_quantum_dawes_2027-06-21:interior",
+    "oceanview": "sailing:rci_quantum_dawes_2027-06-21:oceanview",
+    "balcony": "sailing:rci_quantum_dawes_2027-06-21:balcony",
+    "miniSuite": "sailing:rci_quantum_dawes_2027-06-21:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "rci_quantum_dawes_2027-06-28",
+   "itinerary": "rci_quantum_dawes",
+   "ship": "quantum_of_the_seas",
+   "depart": "2027-06-28",
+   "return": "2027-07-05",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "resident-tag"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_quantum_dawes_2027-06-28:interior",
+    "oceanview": "sailing:rci_quantum_dawes_2027-06-28:oceanview",
+    "balcony": "sailing:rci_quantum_dawes_2027-06-28:balcony",
+    "miniSuite": "sailing:rci_quantum_dawes_2027-06-28:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "celebrity_edge_dawes_2027-05-28",
+   "itinerary": "celebrity_edge_dawes",
+   "ship": "celebrity_edge",
+   "depart": "2027-05-28",
+   "return": "2027-06-04",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_edge_dawes_2027-05-28:interior",
+    "oceanview": "sailing:celebrity_edge_dawes_2027-05-28:oceanview",
+    "balcony": "sailing:celebrity_edge_dawes_2027-05-28:balcony",
+    "miniSuite": "sailing:celebrity_edge_dawes_2027-05-28:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "celebrity_edge_dawes_2027-06-04",
+   "itinerary": "celebrity_edge_dawes",
+   "ship": "celebrity_edge",
+   "depart": "2027-06-04",
+   "return": "2027-06-11",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_edge_dawes_2027-06-04:interior",
+    "oceanview": "sailing:celebrity_edge_dawes_2027-06-04:oceanview",
+    "balcony": "sailing:celebrity_edge_dawes_2027-06-04:balcony",
+    "miniSuite": "sailing:celebrity_edge_dawes_2027-06-04:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "celebrity_edge_dawes_2027-06-11",
+   "itinerary": "celebrity_edge_dawes",
+   "ship": "celebrity_edge",
+   "depart": "2027-06-11",
+   "return": "2027-06-18",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_edge_dawes_2027-06-11:interior",
+    "oceanview": "sailing:celebrity_edge_dawes_2027-06-11:oceanview",
+    "balcony": "sailing:celebrity_edge_dawes_2027-06-11:balcony",
+    "miniSuite": "sailing:celebrity_edge_dawes_2027-06-11:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "celebrity_edge_dawes_2027-06-18",
+   "itinerary": "celebrity_edge_dawes",
+   "ship": "celebrity_edge",
+   "depart": "2027-06-18",
+   "return": "2027-06-25",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_edge_dawes_2027-06-18:interior",
+    "oceanview": "sailing:celebrity_edge_dawes_2027-06-18:oceanview",
+    "balcony": "sailing:celebrity_edge_dawes_2027-06-18:balcony",
+    "miniSuite": "sailing:celebrity_edge_dawes_2027-06-18:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "celebrity_edge_dawes_2027-06-25",
+   "itinerary": "celebrity_edge_dawes",
+   "ship": "celebrity_edge",
+   "depart": "2027-06-25",
+   "return": "2027-07-02",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_edge_dawes_2027-06-25:interior",
+    "oceanview": "sailing:celebrity_edge_dawes_2027-06-25:oceanview",
+    "balcony": "sailing:celebrity_edge_dawes_2027-06-25:balcony",
+    "miniSuite": "sailing:celebrity_edge_dawes_2027-06-25:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-05-25",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_legend",
+   "depart": "2027-05-25",
+   "return": "2027-06-01",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-05-25:interior",
+    "oceanview": "sailing:carnival_tracy_2027-05-25:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-05-25:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-05-25:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-01",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_legend",
+   "depart": "2027-06-01",
+   "return": "2027-06-08",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-01:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-01:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-01:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-01:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-08",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_legend",
+   "depart": "2027-06-08",
+   "return": "2027-06-15",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-08:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-08:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-08:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-08:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-15",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_legend",
+   "depart": "2027-06-15",
+   "return": "2027-06-22",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-15:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-15:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-15:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-15:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-22",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_legend",
+   "depart": "2027-06-22",
+   "return": "2027-06-29",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-22:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-22:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-22:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-22:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-29",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_legend",
+   "depart": "2027-06-29",
+   "return": "2027-07-06",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-29:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-29:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-29:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-29:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-05-27",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_spirit",
+   "depart": "2027-05-27",
+   "return": "2027-06-03",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-05-27:interior",
+    "oceanview": "sailing:carnival_tracy_2027-05-27:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-05-27:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-05-27:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-03",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_spirit",
+   "depart": "2027-06-03",
+   "return": "2027-06-10",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-03:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-03:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-03:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-03:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-10",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_spirit",
+   "depart": "2027-06-10",
+   "return": "2027-06-17",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-10:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-10:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-10:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-10:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-17",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_spirit",
+   "depart": "2027-06-17",
+   "return": "2027-06-24",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-17:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-17:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-17:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-17:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-06-24",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_spirit",
+   "depart": "2027-06-24",
+   "return": "2027-07-01",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-06-24:interior",
+    "oceanview": "sailing:carnival_tracy_2027-06-24:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-06-24:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-06-24:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "carnival_tracy_2027-07-01",
+   "itinerary": "carnival_tracy",
+   "ship": "carnival_spirit",
+   "depart": "2027-07-01",
+   "return": "2027-07-08",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:carnival_tracy_2027-07-01:interior",
+    "oceanview": "sailing:carnival_tracy_2027-07-01:oceanview",
+    "balcony": "sailing:carnival_tracy_2027-07-01:balcony",
+    "miniSuite": "sailing:carnival_tracy_2027-07-01:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "msc_poesia_tracy_2027-06-07",
+   "itinerary": "msc_poesia_tracy",
+   "ship": "msc_poesia",
+   "depart": "2027-06-07",
+   "return": "2027-06-14",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": "Balcony price not captured, so the two-cabin total cannot be calculated yet.",
+   "priceRows": {
+    "interior": "sailing:msc_poesia_tracy_2027-06-07:interior",
+    "oceanview": "sailing:msc_poesia_tracy_2027-06-07:oceanview",
+    "balcony": "sailing:msc_poesia_tracy_2027-06-07:balcony",
+    "miniSuite": "sailing:msc_poesia_tracy_2027-06-07:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "msc_poesia_tracy_2027-06-14",
+   "itinerary": "msc_poesia_tracy",
+   "ship": "msc_poesia",
+   "depart": "2027-06-14",
+   "return": "2027-06-21",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": "Balcony price not captured, so the two-cabin total cannot be calculated yet.",
+   "priceRows": {
+    "interior": "sailing:msc_poesia_tracy_2027-06-14:interior",
+    "oceanview": "sailing:msc_poesia_tracy_2027-06-14:oceanview",
+    "balcony": "sailing:msc_poesia_tracy_2027-06-14:balcony",
+    "miniSuite": "sailing:msc_poesia_tracy_2027-06-14:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "msc_poesia_tracy_2027-06-21",
+   "itinerary": "msc_poesia_tracy",
+   "ship": "msc_poesia",
+   "depart": "2027-06-21",
+   "return": "2027-06-28",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": "Balcony price not captured, so the two-cabin total cannot be calculated yet.",
+   "priceRows": {
+    "interior": "sailing:msc_poesia_tracy_2027-06-21:interior",
+    "oceanview": "sailing:msc_poesia_tracy_2027-06-21:oceanview",
+    "balcony": "sailing:msc_poesia_tracy_2027-06-21:balcony",
+    "miniSuite": "sailing:msc_poesia_tracy_2027-06-21:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "msc_poesia_tracy_2027-06-28",
+   "itinerary": "msc_poesia_tracy",
+   "ship": "msc_poesia",
+   "depart": "2027-06-28",
+   "return": "2027-07-05",
+   "nights": 7,
+   "code": null,
+   "flags": [],
+   "note": "Balcony price not captured, so the two-cabin total cannot be calculated yet.",
+   "priceRows": {
+    "interior": "sailing:msc_poesia_tracy_2027-06-28:interior",
+    "oceanview": "sailing:msc_poesia_tracy_2027-06-28:oceanview",
+    "balcony": "sailing:msc_poesia_tracy_2027-06-28:balcony",
+    "miniSuite": "sailing:msc_poesia_tracy_2027-06-28:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "virgin_brilliant_fjords_2027-06-03",
+   "itinerary": "virgin_brilliant_fjords",
+   "ship": "brilliant_lady",
+   "depart": "2027-06-03",
+   "return": "2027-06-10",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo",
+    "adults-only"
+   ],
+   "note": "Only the lowest Sea View price was captured; Sea Terrace (balcony) and Insider (interior) prices are not captured. Virgin fares include gratuities, Wi-Fi and basic drinks.",
+   "priceRows": {
+    "interior": "sailing:virgin_brilliant_fjords_2027-06-03:interior",
+    "oceanview": "sailing:virgin_brilliant_fjords_2027-06-03:oceanview",
+    "balcony": "sailing:virgin_brilliant_fjords_2027-06-03:balcony",
+    "miniSuite": "sailing:virgin_brilliant_fjords_2027-06-03:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "virgin_brilliant_fjords_2027-06-10",
+   "itinerary": "virgin_brilliant_fjords",
+   "ship": "brilliant_lady",
+   "depart": "2027-06-10",
+   "return": "2027-06-17",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "promo",
+    "adults-only"
+   ],
+   "note": "Only the lowest Sea View price was captured; Sea Terrace (balcony) and Insider (interior) prices are not captured. Virgin fares include gratuities, Wi-Fi and basic drinks.",
+   "priceRows": {
+    "interior": "sailing:virgin_brilliant_fjords_2027-06-10:interior",
+    "oceanview": "sailing:virgin_brilliant_fjords_2027-06-10:oceanview",
+    "balcony": "sailing:virgin_brilliant_fjords_2027-06-10:balcony",
+    "miniSuite": "sailing:virgin_brilliant_fjords_2027-06-10:miniSuite"
+   },
+   "priceSourceKind": "first-party"
+  },
+  {
+   "id": "oceania_riviera_visions_2027-07-01",
+   "itinerary": "oceania_riviera_visions",
+   "ship": "oceania_riviera",
+   "depart": "2027-07-01",
+   "return": "2027-07-08",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "holiday",
+    "adults-only"
+   ],
+   "note": "Premium small ship. Seattle round trips start Jun 24 (price for Jun 24 not captured). No glacier day.",
+   "priceRows": {
+    "interior": "sailing:oceania_riviera_visions_2027-07-01:interior",
+    "oceanview": "sailing:oceania_riviera_visions_2027-07-01:oceanview",
+    "balcony": "sailing:oceania_riviera_visions_2027-07-01:balcony",
+    "miniSuite": "sailing:oceania_riviera_visions_2027-07-01:miniSuite"
+   },
+   "priceSourceKind": "aggregator"
+  }
+ ],
+ "places": [
+  {
+   "id": "sea_p91",
+   "name": "Smith Cove Cruise Terminal (Pier 91)",
+   "short": "Seattle · Pier 91",
+   "kind": "terminal",
+   "country": "US",
+   "tz": "America/Los_Angeles",
+   "lat": 47.6297,
+   "lng": -122.3822,
+   "notes": "Interbay/Magnolia, about 3 mi north of downtown. Used by Princess, Holland America, Royal Caribbean, Celebrity, Carnival, MSC and Virgin (typical assignment; confirm on cruise documents). Taxi/rideshare or cruise-line transfer to SEA airport, roughly 30-45 min."
+  },
+  {
+   "id": "sea_p66",
+   "name": "Bell Street Cruise Terminal (Pier 66)",
+   "short": "Seattle · Pier 66",
+   "kind": "terminal",
+   "country": "US",
+   "tz": "America/Los_Angeles",
+   "lat": 47.6114,
+   "lng": -122.3479,
+   "notes": "Downtown waterfront in Belltown, near Pike Place Market. Used by Norwegian and Oceania (typical assignment; confirm). Downtown hotels are a short ride away."
+  },
+  {
+   "id": "sea_airport",
+   "name": "Seattle–Tacoma International Airport (SEA)",
+   "short": "SEA airport",
+   "kind": "airport",
+   "country": "US",
+   "tz": "America/Los_Angeles",
+   "lat": 47.4502,
+   "lng": -122.3088,
+   "notes": "Arrival/departure airport for the ABQ flights (Phase 3)."
+  },
+  {
+   "id": "juneau",
+   "name": "Juneau, Alaska",
+   "short": "Juneau",
+   "kind": "port",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 58.2989,
+   "lng": -134.4081,
+   "photo2": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_Juneau_and_Douglas_Island.jpg?width=1000",
+    "page": "https://commons.wikimedia.org/wiki/File:Downtown_Juneau_and_Douglas_Island.jpg",
+    "credit": "Mark Hogan / Wikimedia Commons / CC BY-SA 2.0",
+    "license": "CC BY-SA 2.0"
+   },
+   "notes": "Ships normally berth at the downtown docks; the Mount Roberts Tramway base is on the waterfront. Mendenhall Glacier is about 12 miles away (bus or tour needed). Busiest port in Southeast Alaska: several ships a day in June.",
+   "dock": "Dock (downtown)",
+   "logistics": [
+    {
+     "text": "Goldbelt Tram base station is on the cruise docks at 490 S. Franklin St. (tram closed in 2026; 2027 reopening unconfirmed).",
+     "source": "goldbelt_update"
+    },
+    {
+     "text": "Mendenhall Visitor Center is reached from its parking lots by stairs, elevators and an easy ramp.",
+     "source": "fs_mdh_vc"
+    },
+    {
+     "text": "Allen Marine's Juneau office is in Auke Bay (13391 Glacier Highway). Cruise whale tours include a motorcoach from downtown.",
+     "source": "allen_juneau"
+    }
+   ]
+  },
+  {
+   "id": "skagway",
+   "name": "Skagway, Alaska",
+   "short": "Skagway",
+   "kind": "port",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 59.4503,
+   "lng": -135.326,
+   "photo2": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_44.jpg?width=1000",
+    "page": "https://commons.wikimedia.org/wiki/File:Centro_hist%C3%B3rico_de_Skagway%2C_Alaska%2C_Estados_Unidos%2C_2017-08-18%2C_DD_44.jpg",
+    "credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0"
+   },
+   "notes": "Docks are at the south end of town; Broadway's historic district starts within roughly half a mile. White Pass & Yukon Route trains board near the docks. Flat, compact town; Canada (Yukon) excursions need passports.",
+   "dock": "Dock",
+   "logistics": [
+    {
+     "text": "Frontier Excursions' default pickup is at the cruise pier where it meets land outside the security gates (or 3rd and Broadway).",
+     "source": "frontier"
+    },
+    {
+     "text": "No fee to enter Klondike Gold Rush NHP; ranger programs and museums are free.",
+     "source": "nps_klgo_fees"
+    }
+   ]
+  },
+  {
+   "id": "ketchikan",
+   "name": "Ketchikan, Alaska (downtown)",
+   "short": "Ketchikan",
+   "kind": "port",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 55.3422,
+   "lng": -131.6461,
+   "notes": "Downtown berths put Creek Street and the waterfront a short, flat walk from the gangway. Often rainy: Ketchikan is one of the wettest towns in the US.",
+   "dock": "Dock (downtown)",
+   "logistics": [
+    {
+     "text": "Alaska Rainforest Sanctuary is at Herring Cove, about 8 road miles from town.",
+     "source": "visit_ktn_ars"
+    }
+   ]
+  },
+  {
+   "id": "ketchikan_wc",
+   "name": "Ketchikan – Ward Cove",
+   "short": "Ketchikan (Ward Cove)",
+   "kind": "port",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 55.411,
+   "lng": -131.727,
+   "notes": "Norwegian's Ketchikan calls use the Ward Cove dock about 7 miles north of downtown; reaching Creek Street needs a shuttle or taxi (allow 20-30 min each way). Adds a transfer for the parents.",
+   "dock": "Dock (Ward Cove, shuttle to town)",
+   "logistics": [
+    {
+     "text": "A reseller lists a Ward Cove to downtown shuttle at $65 (one way, per-person basis unclear).",
+     "source": "ase_ketchikan"
+    }
+   ]
+  },
+  {
+   "id": "sitka",
+   "name": "Sitka, Alaska",
+   "short": "Sitka",
+   "kind": "port",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 57.0531,
+   "lng": -135.33,
+   "notes": "Most large ships use the Sitka Sound Cruise Terminal several miles north of downtown with a shuttle into town; some calls tender to downtown instead. Dock vs tender is set per call, so confirm closer to sailing.",
+   "dock": "Dock north of town with shuttle, or tender",
+   "logistics": [
+    {
+     "text": "Alaska Raptor Center: 1000 Raptor Way; adult admission $17 in person; spring/summer 8 am to 4 pm.",
+     "source": "raptor"
+    },
+    {
+     "text": "Sitka National Historical Park has no entrance fee.",
+     "source": "nps_sitk_fees"
+    }
+   ]
+  },
+  {
+   "id": "icy_strait",
+   "name": "Icy Strait Point (Hoonah), Alaska",
+   "short": "Icy Strait Point",
+   "kind": "port",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 58.129,
+   "lng": -135.4475,
+   "notes": "Tlingit-owned destination built around a restored 1912 cannery near the village of Hoonah. Ships dock at the cannery complex; whale watching departs nearby; gondolas and the ZipRider are on site.",
+   "dock": "Dock",
+   "logistics": [
+    {
+     "text": "ZipRider reservations generally must be made through the cruise line; ride is 5,495 ft over about 90 seconds.",
+     "source": "ziprider"
+    }
+   ]
+  },
+  {
+   "id": "victoria",
+   "name": "Victoria, British Columbia",
+   "short": "Victoria, BC",
+   "kind": "port",
+   "country": "CA",
+   "tz": "America/Vancouver",
+   "lat": 48.4139,
+   "lng": -123.387,
+   "notes": "Ships berth at Ogden Point, roughly 1.5-2 km from the Inner Harbour. Most Seattle round trips call in the evening for a few hours (required foreign-port stop). Canada: bring passports.",
+   "dock": "Dock (Ogden Point)"
+  },
+  {
+   "id": "glacier_bay",
+   "name": "Glacier Bay National Park",
+   "short": "Glacier Bay",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 58.979,
+   "lng": -137.051,
+   "photo2": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Glacier_Bay_National_Park_Inner_Passage-0219.jpg?width=1000",
+    "page": "https://commons.wikimedia.org/wiki/File:Glacier_Bay_National_Park_Inner_Passage-0219.jpg",
+    "credit": "Betty Wills (Atsme) / Wikimedia Commons / CC BY-SA 4.0",
+    "license": "CC BY-SA 4.0"
+   },
+   "notes": "National Park Service limits ship entries; park rangers board for commentary. Ship cruises up to tidewater glaciers such as Margerie and Johns Hopkins (ice permitting). No going ashore.",
+   "dock": "Scenic cruising (no landing)"
+  },
+  {
+   "id": "tracy_arm",
+   "name": "Tracy Arm Fjord",
+   "short": "Tracy Arm",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 57.835,
+   "lng": -133.35,
+   "notes": "Narrow fjord south of Juneau ending at the Sawyer Glaciers. Large ships often cannot reach the glacier faces when ice is heavy; lines may substitute Endicott Arm.",
+   "dock": "Scenic cruising (no landing)"
+  },
+  {
+   "id": "endicott_arm",
+   "name": "Endicott Arm & Dawes Glacier",
+   "short": "Dawes Glacier",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 57.52,
+   "lng": -132.9,
+   "photo2": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alaska_-_Endicott_Arm_Fjord_%2850573523438%29.jpg?width=1000",
+    "page": "https://commons.wikimedia.org/wiki/File:Alaska_-_Endicott_Arm_Fjord_%2850573523438%29.jpg",
+    "credit": "Larry Syverson / Wikimedia Commons / CC BY-SA 2.0",
+    "license": "CC BY-SA 2.0"
+   },
+   "notes": "Fjord next to Tracy Arm, ending at Dawes Glacier. Usually a morning scenic cruise before an afternoon Juneau call.",
+   "dock": "Scenic cruising (no landing)"
+  },
+  {
+   "id": "hubbard",
+   "name": "Hubbard Glacier",
+   "short": "Hubbard Glacier",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Yakutat",
+   "lat": 60.02,
+   "lng": -139.47,
+   "notes": "North America's largest tidewater glacier (about 6 miles wide at the face), in Disenchantment Bay near Yakutat. Rare on 7-night Seattle round trips.",
+   "dock": "Scenic cruising (no landing)"
+  },
+  {
+   "id": "stephens_passage",
+   "name": "Stephens Passage",
+   "short": "Stephens Passage",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 57.95,
+   "lng": -134.05,
+   "notes": "Channel south of Juneau, known for humpback whales. Holland America lists it as scenic cruising on the way in to Juneau.",
+   "dock": "Scenic cruising"
+  }
+ ],
+ "pois": [
+  {
+   "id": "auke_bay",
+   "name": "Auke Bay harbor (whale boats)",
+   "place": "juneau",
+   "lat": 58.38333,
+   "lng": -134.65972,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "Most Juneau whale tours leave from here, about 12 mi from the cruise docks by coach."
+  },
+  {
+   "id": "mendenhall_vc",
+   "name": "Mendenhall Glacier Visitor Center",
+   "place": "juneau",
+   "lat": 58.4168,
+   "lng": -134.5456,
+   "basis": "approx",
+   "source": null,
+   "note": "About 12-13 mi from the docks. The Wikipedia glacier coordinates (58.4958, -134.5322) are up-glacier; the pin is at the visitor center."
+  },
+  {
+   "id": "juneau_heli",
+   "name": "Juneau helicopter bases (airport area)",
+   "place": "juneau",
+   "lat": 58.356,
+   "lng": -134.578,
+   "basis": "approx",
+   "source": null,
+   "note": "Glacier-landing helicopters fly from near Juneau airport; exact base depends on the operator."
+  },
+  {
+   "id": "goldbelt_tram",
+   "name": "Goldbelt (Mount Roberts) Tram base",
+   "place": "juneau",
+   "lat": 58.2985,
+   "lng": -134.4047,
+   "basis": "approx",
+   "source": null,
+   "note": "On the cruise docks at 490 S. Franklin St. Closed in 2026; 2027 reopening unconfirmed."
+  },
+  {
+   "id": "white_pass",
+   "name": "White Pass summit (train turnaround)",
+   "place": "skagway",
+   "lat": 59.62472,
+   "lng": -135.13806,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "About 20 rail miles from Skagway; the summit train turns around here."
+  },
+  {
+   "id": "carcross",
+   "name": "Carcross, Yukon (bus and rail tours)",
+   "place": "skagway",
+   "lat": 60.1667,
+   "lng": -134.7069,
+   "basis": "approx",
+   "source": null,
+   "note": "Longer Yukon tours reach Carcross; Canadian border crossing (bring passports)."
+  },
+  {
+   "id": "klgo_vc",
+   "name": "Klondike Gold Rush NHP visitor center",
+   "place": "skagway",
+   "lat": 59.4553,
+   "lng": -135.3156,
+   "basis": "approx",
+   "source": null,
+   "note": "Broadway & 2nd Ave, a short walk from the cruise docks."
+  },
+  {
+   "id": "creek_street",
+   "name": "Creek Street",
+   "place": "ketchikan",
+   "lat": 55.3428,
+   "lng": -131.6425,
+   "basis": "approx",
+   "source": null,
+   "note": "Historic boardwalk a short walk from the downtown docks."
+  },
+  {
+   "id": "totem_bight",
+   "name": "Totem Bight State Historical Park",
+   "place": "ketchikan",
+   "lat": 55.42,
+   "lng": -131.7725,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "About 10 mi north of downtown; short gravel trail to the totems and clan house."
+  },
+  {
+   "id": "saxman",
+   "name": "Saxman Totem Park",
+   "place": "ketchikan",
+   "lat": 55.32056,
+   "lng": -131.59833,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "About 2.5 mi south of downtown."
+  },
+  {
+   "id": "misty_fjords",
+   "name": "Misty Fjords National Monument",
+   "place": "ketchikan",
+   "lat": 55.62167,
+   "lng": -130.60722,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "Reached by boat (about 5 h round trip) or floatplane."
+  },
+  {
+   "id": "rainforest_sanctuary",
+   "name": "Alaska Rainforest Sanctuary (Herring Cove)",
+   "place": "ketchikan",
+   "lat": 55.322,
+   "lng": -131.528,
+   "basis": "approx",
+   "source": null,
+   "note": "About 8 road miles from town."
+  },
+  {
+   "id": "raptor_center",
+   "name": "Alaska Raptor Center",
+   "place": "sitka",
+   "lat": 57.0545,
+   "lng": -135.3115,
+   "basis": "approx",
+   "source": null,
+   "note": "1000 Raptor Way, about 1 mi from downtown Sitka."
+  },
+  {
+   "id": "sitka_nhp",
+   "name": "Sitka National Historical Park (totem trail)",
+   "place": "sitka",
+   "lat": 57.04888,
+   "lng": -135.31596,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "Flat, mostly gravel trail; no entrance fee."
+  },
+  {
+   "id": "inner_harbour",
+   "name": "Victoria Inner Harbour",
+   "place": "victoria",
+   "lat": 48.4216,
+   "lng": -123.37,
+   "basis": "approx",
+   "source": null,
+   "note": "About 1.5 mi from the Ogden Point cruise terminal."
+  },
+  {
+   "id": "butchart",
+   "name": "Butchart Gardens",
+   "place": "victoria",
+   "lat": 48.56528,
+   "lng": -123.46944,
+   "basis": "wikipedia",
+   "source": "wiki_coords",
+   "note": "About 13 mi from the cruise terminal; tours run on evening calls in summer."
+  }
+ ],
+ "linesReviewed": [
+  {
+   "line": "Holland America – Noordam",
+   "finding": "No 7-night Seattle round trip in June 2027: Noordam sails the 28-day Arctic Circle Solstice voyage Jun 6–Jul 4. Its 7-day Alaska Explorer runs May 30 and from Jul 4.",
+   "source": "cruisemapper_noordam"
+  },
+  {
+   "line": "Royal Caribbean – Voyager 'Alaska Experience'",
+   "finding": "Juneau/Skagway/Sitka version without a glacier day runs only in May and September 2027.",
+   "source": null
+  },
+  {
+   "line": "Norwegian Joy – 9- and 10-day",
+   "finding": "9-day round trips depart Jun 7 and Jun 16, 2027. Excluded as longer than 8 nights.",
+   "source": "cabinsaver_ncl"
+  },
+  {
+   "line": "Carnival Luminosa, Princess Ruby/Coral/Island/Crown/Discovery",
+   "finding": "Sail from San Francisco, Vancouver or Whittier, not round trip from Seattle.",
+   "source": "cabinsaver_sea"
+  },
+  {
+   "line": "Princess, Royal Caribbean, Celebrity, HAL Vancouver sailings",
+   "finding": "Out of scope (not Seattle departures).",
+   "source": null
+  }
+ ]
+}

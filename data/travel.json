@@ -1,0 +1,852 @@
+{
+ "note": "v1 Seattle-only travel data, migrated as is. Phase 2 adds YVR and ANC gateways, ground transfers and hotel ranges.",
+ "gateways": [
+  {
+   "id": "SEA",
+   "name": "Seattle (SEA airport, Piers 66 and 91)",
+   "status": "v1"
+  },
+  {
+   "id": "YVR",
+   "name": "Vancouver",
+   "status": "phase2"
+  },
+  {
+   "id": "ANC",
+   "name": "Anchorage (for Seward/Whittier)",
+   "status": "phase2"
+  }
+ ],
+ "flights": [
+  {
+   "id": "abq_sea_ak_2027-06-11_2027-06-19",
+   "airline": "Alaska Airlines",
+   "flightNumbers": null,
+   "flightNumberNote": "Google Flights did not show flight numbers for these results; get them from Alaska at booking.",
+   "route": "ABQ-SEA-ABQ",
+   "stops": 0,
+   "outboundDate": "2027-06-11",
+   "returnDate": "2027-06-19",
+   "embarkDate": "2027-06-12",
+   "disembarkDate": "2027-06-19",
+   "sailingIds": [
+    "princess_royal_gb_2027-06-12",
+    "hal_eurodam_explorer_2027-06-12",
+    "ncl_bliss_dawes_2027-06-12"
+   ],
+   "outbound": [
+    {
+     "dep": "07:00",
+     "arr": "09:12",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    },
+    {
+     "dep": "16:11",
+     "arr": "18:23",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    }
+   ],
+   "returns": [
+    {
+     "dep": "11:16",
+     "arr": "15:19",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    },
+    {
+     "dep": "18:55",
+     "arr": "22:58",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    }
+   ],
+   "returnTimesChecked": true,
+   "returnTimesNote": null,
+   "restrictions": "Saver: no changes, no refunds. Main: free change, no refund. Prices can change daily.",
+   "sources": [
+    "gf_abq_sea",
+    "alaska_air"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-11%20through%202027-06-19%20for%204%20adults%20nonstop",
+   "bookUrl": "https://www.alaskaair.com/",
+   "checked": "2026-11-06",
+   "buffers": {
+    "arrive": "Arrives the day before embarkation (7:00 am flight lands 9:12 am; hotel check-in is usually mid-afternoon, so plan luggage storage).",
+    "depart": "Ship docks about 6:00-7:00 am (see each itinerary). The 11:16 am flight leaves roughly 4 to 5 hours after docking: workable with a transfer, tight if disembarkation is late or the parents need assistance. The 6:55 pm flight is the relaxed choice (needs luggage storage or a day room).",
+    "status": "estimate"
+   },
+   "fareRows": {
+    "saver": "flight:abq_sea_ak_2027-06-11_2027-06-19:saver",
+    "main": "flight:abq_sea_ak_2027-06-11_2027-06-19:main",
+    "first": "flight:abq_sea_ak_2027-06-11_2027-06-19:first"
+   },
+   "bagRow": "flight:abq_sea_ak_2027-06-11_2027-06-19:bag"
+  },
+  {
+   "id": "abq_sea_ak_2027-06-14_2027-06-22",
+   "airline": "Alaska Airlines",
+   "flightNumbers": null,
+   "flightNumberNote": "Google Flights did not show flight numbers for these results; get them from Alaska at booking.",
+   "route": "ABQ-SEA-ABQ",
+   "stops": 0,
+   "outboundDate": "2027-06-14",
+   "returnDate": "2027-06-22",
+   "embarkDate": "2027-06-15",
+   "disembarkDate": "2027-06-22",
+   "sailingIds": [
+    "carnival_tracy_2027-06-15"
+   ],
+   "outbound": [
+    {
+     "dep": "07:00",
+     "arr": "09:12",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    },
+    {
+     "dep": "16:11",
+     "arr": "18:23",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    }
+   ],
+   "returns": [
+    {
+     "dep": "11:16",
+     "arr": "15:19",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    },
+    {
+     "dep": "18:55",
+     "arr": "22:58",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    }
+   ],
+   "returnTimesChecked": false,
+   "returnTimesNote": "Return times were read for Jun 11-19 and Jun 24-Jul 2 only; the same two nonstops (11:16 am, 6:55 pm) were not opened for this date pair. Confirm before relying on them.",
+   "restrictions": "Saver: no changes, no refunds. Main: free change, no refund. Prices can change daily.",
+   "sources": [
+    "gf_abq_sea",
+    "alaska_air"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-14%20through%202027-06-22%20for%204%20adults%20nonstop",
+   "bookUrl": "https://www.alaskaair.com/",
+   "checked": "2026-11-06",
+   "buffers": {
+    "arrive": "Arrives the day before embarkation (7:00 am flight lands 9:12 am; hotel check-in is usually mid-afternoon, so plan luggage storage).",
+    "depart": "Ship docks about 6:00-7:00 am (see each itinerary). The 11:16 am flight leaves roughly 4 to 5 hours after docking: workable with a transfer, tight if disembarkation is late or the parents need assistance. The 6:55 pm flight is the relaxed choice (needs luggage storage or a day room).",
+    "status": "estimate"
+   },
+   "fareRows": {
+    "saver": "flight:abq_sea_ak_2027-06-14_2027-06-22:saver",
+    "main": "flight:abq_sea_ak_2027-06-14_2027-06-22:main",
+    "first": "flight:abq_sea_ak_2027-06-14_2027-06-22:first"
+   },
+   "bagRow": "flight:abq_sea_ak_2027-06-14_2027-06-22:bag"
+  },
+  {
+   "id": "abq_sea_ak_2027-06-16_2027-06-24",
+   "airline": "Alaska Airlines",
+   "flightNumbers": null,
+   "flightNumberNote": "Google Flights did not show flight numbers for these results; get them from Alaska at booking.",
+   "route": "ABQ-SEA-ABQ",
+   "stops": 0,
+   "outboundDate": "2027-06-16",
+   "returnDate": "2027-06-24",
+   "embarkDate": "2027-06-17",
+   "disembarkDate": "2027-06-24",
+   "sailingIds": [
+    "carnival_tracy_2027-06-17"
+   ],
+   "outbound": [
+    {
+     "dep": "07:00",
+     "arr": "09:12",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    },
+    {
+     "dep": "16:11",
+     "arr": "18:23",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    }
+   ],
+   "returns": [
+    {
+     "dep": "11:16",
+     "arr": "15:19",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    },
+    {
+     "dep": "18:55",
+     "arr": "22:58",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    }
+   ],
+   "returnTimesChecked": false,
+   "returnTimesNote": "Return times were read for Jun 11-19 and Jun 24-Jul 2 only; the same two nonstops (11:16 am, 6:55 pm) were not opened for this date pair. Confirm before relying on them.",
+   "restrictions": "Saver: no changes, no refunds. Main: free change, no refund. Prices can change daily.",
+   "sources": [
+    "gf_abq_sea",
+    "alaska_air"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-16%20through%202027-06-24%20for%204%20adults%20nonstop",
+   "bookUrl": "https://www.alaskaair.com/",
+   "checked": "2026-11-06",
+   "buffers": {
+    "arrive": "Arrives the day before embarkation (7:00 am flight lands 9:12 am; hotel check-in is usually mid-afternoon, so plan luggage storage).",
+    "depart": "Ship docks about 6:00-7:00 am (see each itinerary). The 11:16 am flight leaves roughly 4 to 5 hours after docking: workable with a transfer, tight if disembarkation is late or the parents need assistance. The 6:55 pm flight is the relaxed choice (needs luggage storage or a day room).",
+    "status": "estimate"
+   },
+   "fareRows": {
+    "saver": "flight:abq_sea_ak_2027-06-16_2027-06-24:saver",
+    "main": "flight:abq_sea_ak_2027-06-16_2027-06-24:main",
+    "first": "flight:abq_sea_ak_2027-06-16_2027-06-24:first"
+   },
+   "bagRow": "flight:abq_sea_ak_2027-06-16_2027-06-24:bag"
+  },
+  {
+   "id": "abq_sea_ak_2027-06-18_2027-06-26",
+   "airline": "Alaska Airlines",
+   "flightNumbers": null,
+   "flightNumberNote": "Google Flights did not show flight numbers for these results; get them from Alaska at booking.",
+   "route": "ABQ-SEA-ABQ",
+   "stops": 0,
+   "outboundDate": "2027-06-18",
+   "returnDate": "2027-06-26",
+   "embarkDate": "2027-06-19",
+   "disembarkDate": "2027-06-26",
+   "sailingIds": [
+    "princess_royal_gb_2027-06-19",
+    "hal_eurodam_explorer_2027-06-19",
+    "ncl_bliss_dawes_2027-06-19"
+   ],
+   "outbound": [
+    {
+     "dep": "07:00",
+     "arr": "09:12",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    },
+    {
+     "dep": "16:11",
+     "arr": "18:23",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    }
+   ],
+   "returns": [
+    {
+     "dep": "11:16",
+     "arr": "15:19",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    },
+    {
+     "dep": "18:55",
+     "arr": "22:58",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    }
+   ],
+   "returnTimesChecked": false,
+   "returnTimesNote": "Return times were read for Jun 11-19 and Jun 24-Jul 2 only; the same two nonstops (11:16 am, 6:55 pm) were not opened for this date pair. Confirm before relying on them.",
+   "restrictions": "Saver: no changes, no refunds. Main: free change, no refund. Prices can change daily.",
+   "sources": [
+    "gf_abq_sea",
+    "alaska_air"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-18%20through%202027-06-26%20for%204%20adults%20nonstop",
+   "bookUrl": "https://www.alaskaair.com/",
+   "checked": "2026-11-06",
+   "buffers": {
+    "arrive": "Arrives the day before embarkation (7:00 am flight lands 9:12 am; hotel check-in is usually mid-afternoon, so plan luggage storage).",
+    "depart": "Ship docks about 6:00-7:00 am (see each itinerary). The 11:16 am flight leaves roughly 4 to 5 hours after docking: workable with a transfer, tight if disembarkation is late or the parents need assistance. The 6:55 pm flight is the relaxed choice (needs luggage storage or a day room).",
+    "status": "estimate"
+   },
+   "fareRows": {
+    "saver": "flight:abq_sea_ak_2027-06-18_2027-06-26:saver",
+    "main": "flight:abq_sea_ak_2027-06-18_2027-06-26:main",
+    "first": "flight:abq_sea_ak_2027-06-18_2027-06-26:first"
+   },
+   "bagRow": "flight:abq_sea_ak_2027-06-18_2027-06-26:bag"
+  },
+  {
+   "id": "abq_sea_ak_2027-06-19_2027-06-27",
+   "airline": "Alaska Airlines",
+   "flightNumbers": null,
+   "flightNumberNote": "Google Flights did not show flight numbers for these results; get them from Alaska at booking.",
+   "route": "ABQ-SEA-ABQ",
+   "stops": 0,
+   "outboundDate": "2027-06-19",
+   "returnDate": "2027-06-27",
+   "embarkDate": "2027-06-20",
+   "disembarkDate": "2027-06-27",
+   "sailingIds": [
+    "princess_star_dawes_2027-06-20",
+    "ncl_encore_gb_2027-06-20"
+   ],
+   "outbound": [
+    {
+     "dep": "07:00",
+     "arr": "09:12",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    },
+    {
+     "dep": "16:11",
+     "arr": "18:23",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    }
+   ],
+   "returns": [
+    {
+     "dep": "11:16",
+     "arr": "15:19",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    },
+    {
+     "dep": "18:55",
+     "arr": "22:58",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    }
+   ],
+   "returnTimesChecked": false,
+   "returnTimesNote": "Return times were read for Jun 11-19 and Jun 24-Jul 2 only; the same two nonstops (11:16 am, 6:55 pm) were not opened for this date pair. Confirm before relying on them.",
+   "restrictions": "Saver: no changes, no refunds. Main: free change, no refund. Prices can change daily.",
+   "sources": [
+    "gf_abq_sea",
+    "alaska_air"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-19%20through%202027-06-27%20for%204%20adults%20nonstop",
+   "bookUrl": "https://www.alaskaair.com/",
+   "checked": "2026-11-06",
+   "buffers": {
+    "arrive": "Arrives the day before embarkation (7:00 am flight lands 9:12 am; hotel check-in is usually mid-afternoon, so plan luggage storage).",
+    "depart": "Ship docks about 6:00-7:00 am (see each itinerary). The 11:16 am flight leaves roughly 4 to 5 hours after docking: workable with a transfer, tight if disembarkation is late or the parents need assistance. The 6:55 pm flight is the relaxed choice (needs luggage storage or a day room).",
+    "status": "estimate"
+   },
+   "fareRows": {
+    "saver": "flight:abq_sea_ak_2027-06-19_2027-06-27:saver",
+    "main": "flight:abq_sea_ak_2027-06-19_2027-06-27:main",
+    "first": "flight:abq_sea_ak_2027-06-19_2027-06-27:first"
+   },
+   "bagRow": "flight:abq_sea_ak_2027-06-19_2027-06-27:bag"
+  },
+  {
+   "id": "abq_sea_ak_2027-06-24_2027-07-02",
+   "airline": "Alaska Airlines",
+   "flightNumbers": null,
+   "flightNumberNote": "Google Flights did not show flight numbers for these results; get them from Alaska at booking.",
+   "route": "ABQ-SEA-ABQ",
+   "stops": 0,
+   "outboundDate": "2027-06-24",
+   "returnDate": "2027-07-02",
+   "embarkDate": "2027-06-25",
+   "disembarkDate": "2027-07-02",
+   "sailingIds": [
+    "ncl_joy_hubbard_2027-06-25",
+    "rci_voyager_dawes_2027-06-25",
+    "celebrity_edge_dawes_2027-06-25"
+   ],
+   "outbound": [
+    {
+     "dep": "07:00",
+     "arr": "09:12",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    },
+    {
+     "dep": "16:11",
+     "arr": "18:23",
+     "durationMin": 192,
+     "tz": "Dep Mountain / arr Pacific"
+    }
+   ],
+   "returns": [
+    {
+     "dep": "11:16",
+     "arr": "15:19",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    },
+    {
+     "dep": "18:55",
+     "arr": "22:58",
+     "durationMin": 183,
+     "tz": "Dep Pacific / arr Mountain"
+    }
+   ],
+   "returnTimesChecked": true,
+   "returnTimesNote": null,
+   "restrictions": "Saver: no changes, no refunds. Main: free change, no refund. Prices can change daily.",
+   "sources": [
+    "gf_abq_sea",
+    "alaska_air"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-24%20through%202027-07-02%20for%204%20adults%20nonstop",
+   "bookUrl": "https://www.alaskaair.com/",
+   "checked": "2026-11-06",
+   "buffers": {
+    "arrive": "Arrives the day before embarkation (7:00 am flight lands 9:12 am; hotel check-in is usually mid-afternoon, so plan luggage storage).",
+    "depart": "Ship docks about 6:00-7:00 am (see each itinerary). The 11:16 am flight leaves roughly 4 to 5 hours after docking: workable with a transfer, tight if disembarkation is late or the parents need assistance. The 6:55 pm flight is the relaxed choice (needs luggage storage or a day room).",
+    "status": "estimate"
+   },
+   "fareRows": {
+    "saver": "flight:abq_sea_ak_2027-06-24_2027-07-02:saver",
+    "main": "flight:abq_sea_ak_2027-06-24_2027-07-02:main",
+    "first": "flight:abq_sea_ak_2027-06-24_2027-07-02:first"
+   },
+   "bagRow": "flight:abq_sea_ak_2027-06-24_2027-07-02:bag"
+  },
+  {
+   "id": "abq_sea_connecting_2027-06-11_2027-06-19",
+   "airline": "Not captured (carrier names not shown in the list text)",
+   "flightNumbers": null,
+   "route": "ABQ-SEA (1 stop)",
+   "stops": 1,
+   "outboundDate": "2027-06-11",
+   "returnDate": "2027-06-19",
+   "embarkDate": "2027-06-12",
+   "disembarkDate": "2027-06-19",
+   "sailingIds": [
+    "princess_royal_gb_2027-06-12",
+    "hal_eurodam_explorer_2027-06-12",
+    "ncl_bliss_dawes_2027-06-12"
+   ],
+   "outbound": [
+    {
+     "dep": "19:35",
+     "arr": "00:11+1",
+     "durationMin": 336,
+     "fareRow": "flight:abq_sea_connecting_2027-06-11_2027-06-19:opt1"
+    },
+    {
+     "dep": "21:35",
+     "arr": "01:45+1",
+     "durationMin": 310,
+     "fareRow": "flight:abq_sea_connecting_2027-06-11_2027-06-19:opt2"
+    },
+    {
+     "dep": "09:45",
+     "arr": "14:05",
+     "durationMin": 320,
+     "fareRow": "flight:abq_sea_connecting_2027-06-11_2027-06-19:opt3"
+    },
+    {
+     "dep": "08:20",
+     "arr": "12:24",
+     "durationMin": 304,
+     "fareRow": "flight:abq_sea_connecting_2027-06-11_2027-06-19:opt4"
+    }
+   ],
+   "returns": [],
+   "returnTimesChecked": false,
+   "restrictions": "Not captured.",
+   "sources": [
+    "gf_abq_sea"
+   ],
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-11%20through%202027-06-19%20for%204%20adults",
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "note": "Only Alaska flies ABQ-SEA nonstop in the results. The connecting options cost $118 to $3,518 more for four and two of them land after midnight, so they are listed for context only.",
+   "fareRows": {
+    "saver": "flight:abq_sea_connecting_2027-06-11_2027-06-19:saver"
+   },
+   "bagRow": "flight:abq_sea_connecting_2027-06-11_2027-06-19:bag"
+  }
+ ],
+ "hotels": [
+  {
+   "id": "hyatt_regency",
+   "name": "Hyatt Regency Seattle",
+   "area": "downtown",
+   "stars": 4,
+   "reviewScore": 4.6,
+   "reviewCount": 4300,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_downtown"
+   ],
+   "url": "https://www.google.com/travel/search?q=hotels%20in%20downtown%20Seattle%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Breakfast (fee)",
+    "Parking (fee)",
+    "Fitness center",
+    "Restaurant/bar"
+   ],
+   "accessibilityListed": false,
+   "distances": {
+    "pier66Mi": 0.8,
+    "pier91Mi": null,
+    "airportMi": null
+   },
+   "transfers": "Taxi, rideshare or cruise-line transfer to the terminal; costs not captured.",
+   "pros": "Top score among the downtown hotels with thousands of reviews (4.6 on 4.3K).",
+   "cons": "Second-highest downtown rate. No accessibility feature shown on the list page.",
+   "lat": 47.6131,
+   "lng": -122.3334,
+   "coordBasis": "approx",
+   "rateRow": "hotel:hyatt_regency:room_night",
+   "taxRow": "hotel:hyatt_regency:taxes"
+  },
+  {
+   "id": "mayflower_park",
+   "name": "Mayflower Park Hotel",
+   "area": "downtown",
+   "stars": 4,
+   "reviewScore": 4.4,
+   "reviewCount": 1500,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_downtown"
+   ],
+   "url": "https://www.google.com/travel/search?q=hotels%20in%20downtown%20Seattle%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Breakfast (fee)",
+    "Parking (fee)",
+    "Fitness center",
+    "Restaurant/bar",
+    "Room service"
+   ],
+   "accessibilityListed": false,
+   "distances": {
+    "pier66Mi": null,
+    "pier91Mi": null,
+    "airportMi": null
+   },
+   "transfers": "Downtown; terminal transfer costs not captured.",
+   "pros": "Rated 4.4 on 1.5K reviews.",
+   "cons": "No accessibility feature shown on the list page; Pier 66 distance not shown.",
+   "lat": 47.6119,
+   "lng": -122.3383,
+   "coordBasis": "approx",
+   "rateRow": "hotel:mayflower_park:room_night",
+   "taxRow": "hotel:mayflower_park:taxes"
+  },
+  {
+   "id": "exec_pacific",
+   "name": "Executive Hotel Pacific",
+   "area": "downtown",
+   "stars": 3,
+   "reviewScore": 3.6,
+   "reviewCount": 2400,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_downtown"
+   ],
+   "url": "https://www.google.com/travel/search?q=hotels%20in%20downtown%20Seattle%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Free parking (as listed)",
+    "Fitness center",
+    "Restaurant/bar",
+    "Accessible",
+    "Business center"
+   ],
+   "accessibilityListed": true,
+   "distances": {
+    "pier66Mi": null,
+    "pier91Mi": null,
+    "airportMi": null
+   },
+   "transfers": "Downtown; terminal transfer costs not captured.",
+   "pros": "'Accessible' amenity listed and parking shown as free.",
+   "cons": "Lowest review score of the list (3.6).",
+   "lat": 47.6064,
+   "lng": -122.333,
+   "coordBasis": "approx",
+   "rateRow": "hotel:exec_pacific:room_night",
+   "taxRow": "hotel:exec_pacific:taxes"
+  },
+  {
+   "id": "moore",
+   "name": "Moore Hotel",
+   "area": "waterfront-adjacent",
+   "stars": 2,
+   "reviewScore": 3.9,
+   "reviewCount": 996,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_pier66"
+   ],
+   "url": "https://www.google.com/travel/search?q=waterfront%20hotels%20Seattle%20Pier%2066%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Breakfast",
+    "Parking (fee)",
+    "Accessible",
+    "Smoke-free"
+   ],
+   "accessibilityListed": true,
+   "distances": {
+    "pier66Mi": 0.4,
+    "pier91Mi": null,
+    "airportMi": null
+   },
+   "transfers": "Short ride to Pier 66 (0.4 mi per Google); rates for taxi or rideshare not captured.",
+   "pros": "Lowest downtown rate; 'Accessible' listed; breakfast included.",
+   "cons": "2-star older property; review score 3.9.",
+   "lat": 47.6116,
+   "lng": -122.3418,
+   "coordBasis": "approx",
+   "rateRow": "hotel:moore:room_night",
+   "taxRow": "hotel:moore:taxes"
+  },
+  {
+   "id": "hotel_max",
+   "name": "Hotel Max",
+   "area": "downtown",
+   "stars": 3,
+   "reviewScore": 4.2,
+   "reviewCount": 1600,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_pier66"
+   ],
+   "url": "https://www.google.com/travel/search?q=waterfront%20hotels%20Seattle%20Pier%2066%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Breakfast",
+    "Parking (fee)",
+    "Accessible",
+    "Fitness center",
+    "Laundry"
+   ],
+   "accessibilityListed": true,
+   "distances": {
+    "pier66Mi": 0.6,
+    "pier91Mi": null,
+    "airportMi": null
+   },
+   "transfers": "0.6 mi to Pier 66 per Google.",
+   "pros": "'Accessible' listed, mid-range rate, 4.2 on 1.6K reviews.",
+   "cons": "Themed rooms may not suit everyone; no further accessibility detail captured.",
+   "lat": 47.6138,
+   "lng": -122.3383,
+   "coordBasis": "approx",
+   "rateRow": "hotel:hotel_max:room_night",
+   "taxRow": "hotel:hotel_max:taxes"
+  },
+  {
+   "id": "edgewater",
+   "name": "The Edgewater Hotel",
+   "area": "waterfront",
+   "stars": 4,
+   "reviewScore": 4.4,
+   "reviewCount": 3300,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_pier66"
+   ],
+   "url": "https://www.google.com/travel/search?q=waterfront%20hotels%20Seattle%20Pier%2066%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Breakfast (fee)",
+    "Parking (fee)",
+    "Fitness center",
+    "Restaurant/bar"
+   ],
+   "accessibilityListed": false,
+   "distances": {
+    "pier66Mi": 0.1,
+    "pier91Mi": null,
+    "airportMi": null
+   },
+   "transfers": "0.1 mi to Pier 66 per Google, the shortest hop of any hotel found.",
+   "pros": "Closest hotel to Pier 66 in the results.",
+   "cons": "Most expensive option found; no accessibility feature shown.",
+   "lat": 47.6127,
+   "lng": -122.352,
+   "coordBasis": "approx",
+   "rateRow": "hotel:edgewater:room_night",
+   "taxRow": "hotel:edgewater:taxes"
+  },
+  {
+   "id": "hampton_airport",
+   "name": "Hampton Inn & Suites Seattle-Airport/28th Ave",
+   "area": "airport",
+   "stars": 3,
+   "reviewScore": 4.4,
+   "reviewCount": 2100,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_airport"
+   ],
+   "url": "https://www.google.com/travel/search?q=hotels%20near%20Seattle-Tacoma%20airport%20SeaTac%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free breakfast",
+    "Free Wi-Fi",
+    "Free parking",
+    "Airport shuttle",
+    "Accessible",
+    "Fitness center"
+   ],
+   "accessibilityListed": true,
+   "distances": {
+    "pier66Mi": null,
+    "pier91Mi": null,
+    "airportMi": 1.2
+   },
+   "transfers": "Airport shuttle listed (hours and cost not captured). Terminal is roughly 14-16 mi by road, 30-45 min (Phase 1 note); fare not captured.",
+   "pros": "Best airport-area score (4.4 on 2.1K), free breakfast, parking, shuttle and 'Accessible' listed, lowest-effort arrival for the parents.",
+   "cons": "Not downtown; extra ride to the pier on embarkation day.",
+   "lat": 47.4343,
+   "lng": -122.2967,
+   "coordBasis": "approx",
+   "rateRow": "hotel:hampton_airport:room_night",
+   "taxRow": "hotel:hampton_airport:taxes"
+  },
+  {
+   "id": "element_airport",
+   "name": "Element by Marriott Seattle Sea-Tac Airport",
+   "area": "airport",
+   "stars": 3,
+   "reviewScore": 4.5,
+   "reviewCount": 475,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_airport"
+   ],
+   "url": "https://www.google.com/travel/search?q=hotels%20near%20Seattle-Tacoma%20airport%20SeaTac%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free breakfast",
+    "Free Wi-Fi",
+    "Parking (fee)",
+    "Indoor pool",
+    "Fitness center"
+   ],
+   "accessibilityListed": false,
+   "distances": {
+    "pier66Mi": null,
+    "pier91Mi": null,
+    "airportMi": 2.8
+   },
+   "transfers": "Shuttle not shown on the list page.",
+   "pros": "High score (4.5), free breakfast.",
+   "cons": "Only 475 reviews; 2.8 mi from SEA; no accessibility feature shown.",
+   "lat": 47.44,
+   "lng": -122.2965,
+   "coordBasis": "approx",
+   "rateRow": "hotel:element_airport:room_night",
+   "taxRow": "hotel:element_airport:taxes"
+  },
+  {
+   "id": "doubletree_airport",
+   "name": "DoubleTree by Hilton Seattle Airport",
+   "area": "airport",
+   "stars": 3,
+   "reviewScore": 3.8,
+   "reviewCount": 6900,
+   "reviewSource": "Google (as shown on the Google Hotels list)",
+   "stayDate": "2027-06-11",
+   "checkOut": "2027-06-12",
+   "nights": 1,
+   "bookUrl": null,
+   "checked": "2026-11-06",
+   "mobilityNote": null,
+   "sources": [
+    "gh_airport"
+   ],
+   "url": "https://www.google.com/travel/search?q=hotels%20near%20Seattle-Tacoma%20airport%20SeaTac%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "amenities": [
+    "Free Wi-Fi",
+    "Breakfast (fee)",
+    "Parking (fee)",
+    "Outdoor pool",
+    "Fitness center"
+   ],
+   "accessibilityListed": false,
+   "distances": {
+    "pier66Mi": null,
+    "pier91Mi": null,
+    "airportMi": 1.1
+   },
+   "transfers": "Shuttle not shown on the list page.",
+   "pros": "Lowest airport-area name-brand rate in the results, 1.1 mi from SEA.",
+   "cons": "Review score 3.8.",
+   "lat": 47.4352,
+   "lng": -122.2952,
+   "coordBasis": "approx",
+   "rateRow": "hotel:doubletree_airport:room_night",
+   "taxRow": "hotel:doubletree_airport:taxes"
+  }
+ ],
+ "groundTransfers": [],
+ "hotelRanges": [],
+ "coverage": {
+  "checked": "2026-11-06",
+  "flights": "Alaska Airlines is the only carrier with ABQ-SEA nonstops in the results (2 each way). Fares were read on Google Flights for 4 adults, not on Alaska's own site, so they are 'published', not verified. Six date pairs were searched (Jun 11-19, 14-22, 16-24, 18-26, 19-27, 24-Jul 2), covering the lead Saturday, Sunday, Tuesday, Thursday and Friday sailings. The same $1,588 nonstop fare appeared for every pair. Southwest, Delta, United and American showed no nonstop and were not priced separately.",
+  "hotels": "9 hotels for the night of Jun 11 2027 (before the Sat Jun 12 sailings). Rates are 1 room, 2 guests as listed on Google Hotels; two-room totals are planner estimates (2 x rate). Taxes, fees, transfer costs and photos were not captured. Other nights (Jun 18, 19, 24 etc.) were not searched, so those rates will differ.",
+  "notCaptured": [
+   "Flight numbers",
+   "Alaska booking-site quotes",
+   "Southwest/Delta/United/American fares",
+   "Hotel taxes and mandatory fees",
+   "Hotel photos",
+   "Airport and terminal transfer prices",
+   "Hotel prices for nights other than Jun 11 2027",
+   "Post-cruise hotel"
+  ]
+ }
+}

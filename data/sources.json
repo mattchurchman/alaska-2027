@@ -1,0 +1,607 @@
+{
+ "sources": [
+  {
+   "id": "cabinsaver_sea",
+   "title": "Seattle Cruises in 2027: Seven Cruise Lines Compared",
+   "url": "https://cabinsaver.com/articles/trends/seattle-cruises/",
+   "kind": "aggregator",
+   "publisher": "CabinSaver",
+   "checked": "2026-11-06",
+   "note": "Discovery: which lines/ships sail from Seattle in 2027, glacier counts."
+  },
+  {
+   "id": "cabinsaver_ncl",
+   "title": "2027 Norwegian Cruise Line Alaska Cruises",
+   "url": "https://cabinsaver.com/articles/trends/ncl-alaska-cruises/",
+   "kind": "aggregator",
+   "publisher": "CabinSaver",
+   "checked": "2026-11-06",
+   "note": "Discovery: NCL ship days of week and June dates."
+  },
+  {
+   "id": "hal_news_2027",
+   "title": "Holland America Line Unveils 2027 Alaska Season",
+   "url": "https://www.hollandamerica.com/en/us/news/2025/August/news-08072025-Alaska-2027",
+   "kind": "first-party",
+   "publisher": "Holland America Line",
+   "checked": "2026-11-06",
+   "note": "Eurodam and Noordam Seattle round trips; Noordam 28-day Solstice voyage departs Jun 6, 2027."
+  },
+  {
+   "id": "carnival_news_2027",
+   "title": "Carnival Cruise Line Announces 2027 Alaska",
+   "url": "https://www.carnival-news.com/2025/07/24/carnival-cruise-line-announces-2027-alaska-adventures-and-remarkable-carnival-journeys-cruises",
+   "kind": "first-party",
+   "publisher": "Carnival Cruise Line",
+   "checked": "2026-11-06",
+   "note": "Legend and Spirit homeport in Seattle."
+  },
+  {
+   "id": "cruisemapper_sea_jun",
+   "title": "Seattle cruise port schedule, June 2027",
+   "url": "https://www.cruisemapper.com/ports/seattle-port-6?month=2027-06",
+   "kind": "aggregator",
+   "publisher": "CruiseMapper",
+   "checked": "2026-11-06",
+   "note": "Ship arrival/departure times at Seattle and terminal-by-line note."
+  },
+  {
+   "id": "cruisemapper_noordam",
+   "title": "ms Noordam itineraries",
+   "url": "https://www.cruisemapper.com/ships/ms-Noordam-613",
+   "kind": "aggregator",
+   "publisher": "CruiseMapper",
+   "checked": "2026-11-06",
+   "note": "Noordam 2027: May 30 and Jul 4 Alaska Explorer; Jun 6 is a 28-day voyage."
+  },
+  {
+   "id": "ctt_msc_jun",
+   "title": "MSC Poesia cruises, June 2027",
+   "url": "https://www.cruisetimetables.com/cruisesonmscpoesia-jun2027.html",
+   "kind": "aggregator",
+   "publisher": "CruiseTimetables",
+   "checked": "2026-11-06",
+   "note": "MSC Poesia June port times."
+  },
+  {
+   "id": "ctt_riviera",
+   "title": "Oceania Riviera departing 1 July 2027",
+   "url": "https://www.cruisetimetables.com/cruisesonoceaniariviera-01jul2027.html",
+   "kind": "aggregator",
+   "publisher": "CruiseTimetables",
+   "checked": "2026-11-06",
+   "note": "Riviera 7-night Visions of Alaska itinerary, times and sampled prices."
+  },
+  {
+   "id": "gangwaze_riviera",
+   "title": "Riviera June 24, 2027 – 7 Night Visions of Alaska",
+   "url": "https://gangwaze.com/cruise-lines/oceania-cruises/riviera/2027-06-24/7-nights",
+   "kind": "aggregator",
+   "publisher": "Gangwaze",
+   "checked": "2026-11-06",
+   "note": "Riviera Seattle round trips start Jun 24, 2027."
+  },
+  {
+   "id": "terminals",
+   "title": "Seattle cruise terminals by line (Pier 66 / Pier 91)",
+   "url": "https://www.cruisemapper.com/ports/seattle-port-6?month=2027-06",
+   "kind": "aggregator",
+   "publisher": "CruiseMapper",
+   "checked": "2026-11-06",
+   "note": "Pier 91 serves Carnival Corp. lines, Royal Caribbean Group, MSC, Virgin; Pier 66 serves NCL and Oceania. Confirm on your cruise documents."
+  },
+  {
+   "id": "princess_policy",
+   "title": "Princess standard cancellation, refund & final payment policy",
+   "url": "https://www.princess.com/en-us/plan/standard-cancellation-refund-policy",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "Final payment 120 days before departure for new bookings sailing 2027+."
+  },
+  {
+   "id": "princess_policy_news",
+   "title": "Princess Cruises updates booking policies",
+   "url": "https://www.cruisecritic.com/news/princess-cruises-updates-booking-policies",
+   "kind": "news",
+   "publisher": "Cruise Critic",
+   "checked": "2026-11-06",
+   "note": "120-day final payment for bookings made on/after Sep 2, 2026 for 2027+ sailings."
+  },
+  {
+   "id": "ncl_policy",
+   "title": "NCL cancellation policy summary",
+   "url": "https://pabau.com/templates/ncl-cruises-cancellation-policy/",
+   "kind": "secondary",
+   "publisher": "Pabau (summary of NCL terms)",
+   "checked": "2026-11-06",
+   "note": "Final payment 120 days; $250 pp deposit for 7+ day sailings. Verify in NCL Guest Ticket Contract."
+  },
+  {
+   "id": "rcl_policy",
+   "title": "Royal Caribbean cancellation policy guide",
+   "url": "https://www.royalcaribbeanblog.com/2024/06/06/royal-caribbean-cancellation-policy",
+   "kind": "secondary",
+   "publisher": "Royal Caribbean Blog",
+   "checked": "2026-11-06",
+   "note": "Final payment 90 days for 5-14 night cruises; refundable vs non-refundable deposit fares."
+  },
+  {
+   "id": "celebrity_faq",
+   "title": "Celebrity Cruises payments FAQ",
+   "url": "https://www.celebritycruises.com/gb/faqs/manage-plan",
+   "kind": "first-party",
+   "publisher": "Celebrity Cruises (UK site)",
+   "checked": "2026-11-06",
+   "note": "Final payment 90 days; cancellation scale 89-75 days 25%. UK market page; confirm US terms."
+  },
+  {
+   "id": "grat_points",
+   "title": "How much to tip on a cruise (Oct 2026)",
+   "url": "https://thepointsparty.com/articles/how-much-to-tip-on-a-cruise-gratuities-by-line",
+   "kind": "secondary",
+   "publisher": "The Points Party",
+   "checked": "2026-11-06",
+   "note": "Carnival $17, Royal Caribbean $18.50, Norwegian $20, Princess $18 per guest per day (standard rooms)."
+  },
+  {
+   "id": "grat_hal",
+   "title": "Holland America raises daily gratuity (Jun 1, 2026)",
+   "url": "https://cruise.blog/2026/04/another-carnival-cruise-line-raises-the-daily-gratuity-charges",
+   "kind": "news",
+   "publisher": "Cruise.Blog",
+   "checked": "2026-11-06",
+   "note": "HAL standard cabins $18.00 pp/day from Jun 1, 2026."
+  },
+  {
+   "id": "grat_moneywise",
+   "title": "Cruise automatic gratuities 2026",
+   "url": "https://moneywise.com/life/travel/cruise-automatic-gratuities-tipping-daily-fees",
+   "kind": "news",
+   "publisher": "Moneywise",
+   "checked": "2026-11-06",
+   "note": "MSC $17-23; Celebrity $19.50-24.50 pp/day after 2026 increases."
+  },
+  {
+   "id": "grat_cruzely",
+   "title": "Cruise ship gratuities for 2026",
+   "url": "https://www.cruzely.com/full-guide-to-cruise-ship-gratuities-for-2019-amounts-etiquette-and-more/",
+   "kind": "secondary",
+   "publisher": "Cruzely",
+   "checked": "2026-11-06",
+   "note": "Virgin Voyages: gratuities included in fare."
+  },
+  {
+   "id": "wpyr",
+   "title": "White Pass & Yukon Route: Excursions",
+   "url": "https://wpyr.com/excursions/",
+   "kind": "first-party",
+   "publisher": "White Pass & Yukon Route",
+   "checked": "2026-11-06",
+   "note": "Operator's own train prices. Page shows no season/year, no accessibility info and only a link for cancellation terms."
+  },
+  {
+   "id": "frontier",
+   "title": "Frontier Excursions (Skagway)",
+   "url": "https://frontierexcursions.com",
+   "kind": "first-party",
+   "publisher": "Frontier Excursions",
+   "checked": "2026-11-06",
+   "note": "Local Skagway bus operator. Prices, pickup at the pier, 24-hour cancellation rule and vehicle accessibility notes."
+  },
+  {
+   "id": "goldbelt_tix",
+   "title": "Goldbelt Tram: tram tickets",
+   "url": "https://www.goldbelttram.com/activities/tram-tickets/",
+   "kind": "first-party",
+   "publisher": "Goldbelt Tram",
+   "checked": "2026-11-06",
+   "note": "All-day pass $60 (page footer 2026; season not explicitly stated)."
+  },
+  {
+   "id": "goldbelt_update",
+   "title": "Goldbelt Tram update",
+   "url": "https://www.goldbelttram.com/goldbelt-tram-update/",
+   "kind": "first-party",
+   "publisher": "Goldbelt Tram",
+   "checked": "2026-11-06",
+   "note": "Operator statement (May 20, 2026): tram temporarily closed as assessments continue; no reopening date."
+  },
+  {
+   "id": "ktoo_tram",
+   "title": "Juneau's Goldbelt Tram reopening still in limbo after crash this spring",
+   "url": "https://www.ktoo.org/2026/09/24/juneaus-goldbelt-tram-reopening-still-in-limbo-after-crash-this-spring/",
+   "kind": "news",
+   "publisher": "KTOO Public Media (Sep 24, 2026)",
+   "checked": "2026-11-06",
+   "note": "Tram closed all 2026 season after an April crash; waiting on a part; 2027 is the stated target and a state certification is required first."
+  },
+  {
+   "id": "fs_mdh_fees",
+   "title": "Mendenhall fees and passes (US Forest Service)",
+   "url": "https://www.fs.usda.gov/r10/tongass/offices/mendenhall-fees-and-passes",
+   "kind": "government",
+   "publisher": "USDA Forest Service",
+   "checked": "2026-11-06",
+   "note": "Visitor center: $5 per day for ages 16+ ($15 season pass); page last updated Jul 21, 2025."
+  },
+  {
+   "id": "fs_mdh_vc",
+   "title": "Mendenhall Glacier Visitor Center (US Forest Service)",
+   "url": "https://www.fs.usda.gov/r10/tongass/offices/mendenhall-glacier-visitor-center",
+   "kind": "government",
+   "publisher": "USDA Forest Service",
+   "checked": "2026-11-06",
+   "note": "Visitor center reachable from parking lots by stairs, elevators and an easy ramp."
+  },
+  {
+   "id": "juneau_empire_fees",
+   "title": "Juneau meeting to discuss fee increases for Tongass National Forest",
+   "url": "https://www.juneauempire.com/2026/06/20/juneau-meeting-to-discuss-fee-increases-for-tongass-national-forest/",
+   "kind": "news",
+   "publisher": "Juneau Empire (Jun 20, 2026)",
+   "checked": "2026-11-06",
+   "note": "Proposal (not approved): Mendenhall day fee $5 to $15; Ketchikan Discovery Center $5 to $10."
+  },
+  {
+   "id": "juneau_ind_fees",
+   "title": "$15 charge instead of $5 at Mendenhall Glacier Visitor Center (proposed)",
+   "url": "https://www.juneauindependent.com/post/15-charge-instead-of-5-at-mendenhall-glacier-visitor-center-other-fee-changes-proposed-by-us-fore",
+   "kind": "news",
+   "publisher": "Juneau Independent",
+   "checked": "2026-11-06",
+   "note": "Same proposal; comment period May 22 to Jul 20, 2026; no effective date stated."
+  },
+  {
+   "id": "raptor",
+   "title": "Alaska Raptor Center: plan your visit",
+   "url": "https://www.alaskaraptor.org/visit/",
+   "kind": "first-party",
+   "publisher": "Alaska Raptor Center",
+   "checked": "2026-11-06",
+   "note": "Adult admission $17, bought in person; spring/summer 8 am to 4 pm daily (page does not state the year)."
+  },
+  {
+   "id": "truealaskan",
+   "title": "True Alaskan Tours (Allen Marine) home page",
+   "url": "https://www.truealaskantours.com",
+   "kind": "first-party",
+   "publisher": "True Alaskan Tours / Allen Marine",
+   "checked": "2026-11-06",
+   "note": "Direct-booking site. 'From' prices plus taxes and fees; page does not say adult vs child."
+  },
+  {
+   "id": "allen_juneau",
+   "title": "Allen Marine Tours: Juneau",
+   "url": "https://allenmarinetours.com/juneau/",
+   "kind": "first-party",
+   "publisher": "Allen Marine Tours",
+   "checked": "2026-11-06",
+   "note": "Tour list and booking guidance (cruise passengers via cruise line, independents via True Alaskan Tours). No prices on page."
+  },
+  {
+   "id": "allen_whale",
+   "title": "Allen Marine: Whale Watching & Wildlife Quest",
+   "url": "https://allenmarinetours.com/tour/whale-watching-wildlife-quest/",
+   "kind": "first-party",
+   "publisher": "Allen Marine Tours",
+   "checked": "2026-11-06",
+   "note": "Wheelchair accessible when booked through the cruise line (500 lb combined limit; device max 48 x 32 in). Cancellations go through the cruise line."
+  },
+  {
+   "id": "ziprider",
+   "title": "ZipRider: Icy Strait Point",
+   "url": "https://ziprider.com/rides/icy-strait-point/",
+   "kind": "first-party",
+   "publisher": "ZipRider",
+   "checked": "2026-11-06",
+   "note": "About 90-second ride; average ticket about $200; reservations generally must go through the cruise line."
+  },
+  {
+   "id": "nps_klgo_fees",
+   "title": "Klondike Gold Rush NHP: fees",
+   "url": "https://www.nps.gov/klgo/planyourvisit/fees.htm",
+   "kind": "government",
+   "publisher": "National Park Service",
+   "checked": "2026-11-06",
+   "note": "No entrance or tour fee; ranger programs and park museums free."
+  },
+  {
+   "id": "nps_sitk_fees",
+   "title": "Sitka National Historical Park: fees",
+   "url": "https://www.nps.gov/sitk/planyourvisit/fees.htm",
+   "kind": "government",
+   "publisher": "National Park Service",
+   "checked": "2026-11-06",
+   "note": "No entrance pass required."
+  },
+  {
+   "id": "visit_ktn_ars",
+   "title": "Alaska Rainforest Sanctuary (Visit Ketchikan listing)",
+   "url": "https://visit-ketchikan.com/members/alaska-rainforest-sanctuary/full-page",
+   "kind": "first-party",
+   "publisher": "Visit Ketchikan",
+   "checked": "2026-11-06",
+   "note": "Sanctuary at Herring Cove, about 8 road miles from Ketchikan; half-mile easy trail; tours 2.75 to 3.25 h with transfers. No price on page."
+  },
+  {
+   "id": "pr_juneau",
+   "title": "Princess shore excursions: Juneau",
+   "url": "https://www.princess.com/en-us/shore-excursions/juneau-alaska/",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "Listing page 1 of 5 (12 of 63 excursions). 'From' prices per person, not specifically per adult. No sailing selected."
+  },
+  {
+   "id": "pr_skagway",
+   "title": "Princess shore excursions: Skagway",
+   "url": "https://www.princess.com/en-us/shore-excursions/skagway-alaska/",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "Listing page 1 of 5 (12 of 51 excursions). 'From' prices."
+  },
+  {
+   "id": "pr_ketchikan",
+   "title": "Princess shore excursions: Ketchikan",
+   "url": "https://www.princess.com/en-us/shore-excursions/ketchikan-alaska/",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "Listing page 1 (12 of 53 excursions). 'From' prices."
+  },
+  {
+   "id": "pr_sitka",
+   "title": "Princess shore excursions: Sitka",
+   "url": "https://www.princess.com/en-us/shore-excursions/sitka-alaska/",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "Listing page 1 (12 of 41 excursions). 'From' prices."
+  },
+  {
+   "id": "pr_icy",
+   "title": "Princess shore excursions: Icy Strait Point",
+   "url": "https://www.princess.com/en-us/shore-excursions/icy-strait-point-alaska/",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "Listing page 1 (12 of 20 excursions; page 2 not read). 'From' prices."
+  },
+  {
+   "id": "pr_whale",
+   "title": "Princess: Local Connections Whale Watching & Wildlife Quest (Allen family)",
+   "url": "https://www.princess.com/en-us/shore-excursions/juneau-alaska/local-connections-whale-watching-wildlife-quest-created-by-the-allen-family",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-06",
+   "note": "4 h, Easy. Page shows no price. $100 cash refund from the operator if no whale is sighted in June to August."
+  },
+  {
+   "id": "cn_whale",
+   "title": "Carnival: Whale Watching & Wildlife Quest (Juneau)",
+   "url": "https://www.carnival.com/shore-excursions/eco-tour/whale-watching-and-wildlife-quest-171006",
+   "kind": "first-party",
+   "publisher": "Carnival Cruise Line",
+   "checked": "2026-11-06",
+   "note": "$220.99 for ages 13+; 4 h; Easy; ambulatory accessible (collapsible wheelchairs yes, scooters no). No cancellation text."
+  },
+  {
+   "id": "cn_mdh",
+   "title": "Carnival: Mendenhall Glacier & Wildlife Quest (Juneau)",
+   "url": "https://www.carnival.com/shore-excursions/juneau/mendenhall-glacier--wildlife-quest-171005",
+   "kind": "first-party",
+   "publisher": "Carnival Cruise Line",
+   "checked": "2026-11-06",
+   "note": "$263.99 for ages 13+; 5.5 h; Easy; ambulatory accessible. No cancellation text."
+  },
+  {
+   "id": "cn_zip",
+   "title": "Carnival: Skyglider & World's Largest ZipRider (Icy Strait Point)",
+   "url": "https://carnival.com/shore-excursions/icy-strait-point/the-ziprider-adventure-701011",
+   "kind": "first-party",
+   "publisher": "Carnival Cruise Line",
+   "checked": "2026-11-06",
+   "note": "From $196.99; 1 h; Moderate; 75 to 275 lb; no wheelchairs, canes or rollators; 1/4 mile downhill gravel walk from gondola to ZipRider."
+  },
+  {
+   "id": "cn_rain",
+   "title": "Carnival: Rainforest Wildlife Sanctuary, Eagles & Totems (Ketchikan)",
+   "url": "https://www.carnival.com/shore-excursions/alaska/rainforest-wildlife-sanctuary-eagles-and-totems-170043",
+   "kind": "first-party",
+   "publisher": "Carnival Cruise Line",
+   "checked": "2026-11-06",
+   "note": "$140.99 for ages 13+; 2.75 h; Moderate; page says not accessible (uneven surfaces, stairs)."
+  },
+  {
+   "id": "ncl_wpyr",
+   "title": "NCL: White Pass Scenic Railway (SGY_01)",
+   "url": "https://www.ncl.com/shore-excursions/SGY_01/White-Pass-Scenic-Railway",
+   "kind": "first-party",
+   "publisher": "Norwegian Cruise Line",
+   "checked": "2026-11-06",
+   "note": "From $249.99 USD; ~2.75 h; Level 1 Easy; lift car (up to 30 in wide, 700 lb with lift); modify or cancel without penalty up to 48 h before the ship arrives."
+  },
+  {
+   "id": "ncl_mdh",
+   "title": "NCL: Mendenhall Glacier & Whale Quest (JNU_12)",
+   "url": "https://www.ncl.com/shore-excursions/JNU_12/Mendenhall-Glacier-Whale-Quest",
+   "kind": "first-party",
+   "publisher": "Norwegian Cruise Line",
+   "checked": "2026-11-06",
+   "note": "Adult from $269.99; ~5.5 h; Easy; Limited Accessibility (needs 250 yards unassisted on paved, inclined paths); 48 h free cancellation."
+  },
+  {
+   "id": "ncl_hatch",
+   "title": "NCL: Scenic Juneau & Hatchery (JNU_01)",
+   "url": "https://www.ncl.com/shore-excursions/JNU_01",
+   "kind": "first-party",
+   "publisher": "Norwegian Cruise Line",
+   "checked": "2026-11-06",
+   "note": "Adult from $109.99; ~2.25 h; Easy; accessible (manual wheelchairs yes, scooters no); 48 h free cancellation."
+  },
+  {
+   "id": "ncl_lumber",
+   "title": "NCL: Great Alaskan Lumberjack Show (KTN_09)",
+   "url": "https://app.ncl.com/shore-excursions/KTN_09/Great-Alaskan-Lumberjack-Show",
+   "kind": "first-party",
+   "publisher": "Norwegian Cruise Line",
+   "checked": "2026-11-06",
+   "note": "Page lists no price, duration or accessibility; says grandstands are covered, heated and cushioned."
+  },
+  {
+   "id": "ncl_totem",
+   "title": "NCL: Totem Bight State Park & Lumberjack Show (KTN_45)",
+   "url": "https://www.ncl.com/fr/en/shore-excursions/KTN_45/Totem-Bight-State-Park-Lumberjack-Show",
+   "kind": "first-party",
+   "publisher": "Norwegian Cruise Line",
+   "checked": "2026-11-06",
+   "note": "The page I could read was the French-site version priced in euros (from 134.40 EUR), so no USD price is used. Level 2 Moderate; about half a mile of uneven gravel trail; Limited Accessibility."
+  },
+  {
+   "id": "butchart",
+   "title": "The Butchart Gardens (home page)",
+   "url": "https://www.butchartgardens.com",
+   "kind": "first-party",
+   "publisher": "The Butchart Gardens",
+   "checked": "2026-11-06",
+   "note": "Linked for price and hours. The ticket page did not load for the automated reader, so no price is captured."
+  },
+  {
+   "id": "ase_juneau",
+   "title": "Alaska Shore Excursions: Juneau",
+   "url": "https://alaskashoreexcursions.com/juneau",
+   "kind": "reseller",
+   "publisher": "Alaska Shore Excursions",
+   "checked": "2026-11-06",
+   "note": "Independent third-party seller (not the operator). 49 Juneau tours with per-person prices (adult not specified). Site states 'Free Cancellation' generally; per-tour terms not read."
+  },
+  {
+   "id": "ase_skagway",
+   "title": "Alaska Shore Excursions: Skagway",
+   "url": "https://alaskashoreexcursions.com/skagway",
+   "kind": "reseller",
+   "publisher": "Alaska Shore Excursions",
+   "checked": "2026-11-06",
+   "note": "37 Skagway tours; per-person prices unless marked per vehicle/charter."
+  },
+  {
+   "id": "ase_ketchikan",
+   "title": "Alaska Shore Excursions: Ketchikan",
+   "url": "https://alaskashoreexcursions.com/ketchikan",
+   "kind": "reseller",
+   "publisher": "Alaska Shore Excursions",
+   "checked": "2026-11-06",
+   "note": "50 Ketchikan tours incl. Ward Cove shuttles; per-person prices unless marked."
+  },
+  {
+   "id": "ase_sitka",
+   "title": "Alaska Shore Excursions: Sitka",
+   "url": "https://alaskashoreexcursions.com/sitka",
+   "kind": "reseller",
+   "publisher": "Alaska Shore Excursions",
+   "checked": "2026-11-06",
+   "note": "30 Sitka tours; per-person prices unless marked."
+  },
+  {
+   "id": "gf_abq_sea",
+   "title": "Google Flights: ABQ to SEA round trips, 4 adults, June 2027",
+   "url": "https://www.google.com/travel/flights?q=Flights%20from%20ABQ%20to%20SEA%20on%202027-06-11%20through%202027-06-19%20for%204%20adults%20nonstop",
+   "kind": "aggregator",
+   "publisher": "Google Flights",
+   "checked": "2026-11-06",
+   "note": "Fares and times for 4 adults, economy incl. Basic, logged out. Shows Alaska Airlines fare options; Alaska's own booking site was not queried. Each flight record links to its own date search."
+  },
+  {
+   "id": "alaska_air",
+   "title": "Alaska Airlines booking site",
+   "url": "https://www.alaskaair.com/",
+   "kind": "first-party",
+   "publisher": "Alaska Airlines",
+   "checked": "2026-11-06",
+   "note": "Where to book. Not queried: the fare figures come from the Google Flights listing of Alaska's Saver/Main/First fares. Homepage only; no deep link to the exact flights is available."
+  },
+  {
+   "id": "gh_downtown",
+   "title": "Google Hotels: downtown Seattle, Jun 11-12 2027",
+   "url": "https://www.google.com/travel/search?q=hotels%20in%20downtown%20Seattle%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "kind": "aggregator",
+   "publisher": "Google Hotels",
+   "checked": "2026-11-06",
+   "note": "Nightly rate shown for 1 room, 2 guests (the 2 rooms x 4 adults setting did not carry through). Tax treatment is not stated on the list page."
+  },
+  {
+   "id": "gh_airport",
+   "title": "Google Hotels: near Seattle-Tacoma airport, Jun 11-12 2027",
+   "url": "https://www.google.com/travel/search?q=hotels%20near%20Seattle-Tacoma%20airport%20SeaTac%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "kind": "aggregator",
+   "publisher": "Google Hotels",
+   "checked": "2026-11-06",
+   "note": "Same basis as the downtown search: 1 room, 2 guests, tax treatment not stated."
+  },
+  {
+   "id": "gh_pier66",
+   "title": "Google Hotels: waterfront / Pier 66 area, Jun 11-12 2027",
+   "url": "https://www.google.com/travel/search?q=waterfront%20hotels%20Seattle%20Pier%2066%20June%2011%202027%20to%20June%2012%202027%202%20guests",
+   "kind": "aggregator",
+   "publisher": "Google Hotels",
+   "checked": "2026-11-06",
+   "note": "Same basis; Google lists distance to Pier 66 for each result."
+  },
+  {
+   "id": "wiki_coords",
+   "title": "Wikipedia article coordinates (Totem Bight, Saxman, Butchart Gardens, White Pass, Mendenhall Glacier, Misty Fjords, Sitka NHP, Auke Bay)",
+   "url": "https://en.wikipedia.org/wiki/Totem_Bight_State_Historical_Park",
+   "kind": "reference",
+   "publisher": "Wikipedia",
+   "checked": "2026-11-06",
+   "note": "Coordinates read from each article's infobox; used to place map pins. Other pins are approximate (marked on the map)."
+  },
+  {
+   "id": "naturalearth",
+   "title": "Natural Earth 1:10m land and boundary lines (public domain)",
+   "url": "https://www.naturalearthdata.com/",
+   "kind": "reference",
+   "publisher": "Natural Earth",
+   "checked": "2026-11-06",
+   "note": "Coastline drawn on the planner map. Generalized: small coves and piers are not shown."
+  },
+  {
+   "id": "wx_spark",
+   "title": "WeatherSpark: average weather at Juneau International Airport",
+   "url": "https://weatherspark.com/y/145123/Average-Weather-at-Juneau-International-Airport-Alaska-United-States-Year-Round",
+   "kind": "reference",
+   "publisher": "WeatherSpark",
+   "checked": "2026-11-06",
+   "note": "June averages: high 63°F, low 48°F, about 13 days with measurable precipitation, about 4.3 in of rain, mostly cloudy or overcast about 70% of the time."
+  },
+  {
+   "id": "travel_juneau_wx",
+   "title": "Travel Juneau: weather and packing tips",
+   "url": "https://www.traveljuneau.com/discover-juneau/travel-tips-weather/",
+   "kind": "first-party",
+   "publisher": "Travel Juneau",
+   "checked": "2026-11-06",
+   "note": "Summer highs generally low-to-mid 60s °F; layers, a waterproof outer layer and waterproof shoes recommended."
+  },
+  {
+   "id": "daylight_jnu",
+   "title": "Alaska.org: Juneau sunrise and sunset, June",
+   "url": "https://www.alaska.org/weather/daylight-hours/juneau/june",
+   "kind": "reference",
+   "publisher": "ALASKA.ORG",
+   "checked": "2026-11-06",
+   "note": "Jun 1: 3:58 am to 9:51 pm. Jun 21: 3:48 am to 10:09 pm. Jun 30: 3:54 am to 10:07 pm."
+  },
+  {
+   "id": "rci_passport",
+   "title": "Royal Caribbean: Do you need a passport for a cruise?",
+   "url": "https://www.royalcaribbean.com/guides/do-you-need-a-passport-for-a-cruise",
+   "kind": "first-party",
+   "publisher": "Royal Caribbean",
+   "checked": "2026-11-06",
+   "note": "Closed-loop cruises (same US port start and end, e.g. Seattle round trips via Victoria): passport recommended, not required; alternatives listed. A passport is needed to fly home from abroad if you miss the ship."
+  }
+ ]
+}

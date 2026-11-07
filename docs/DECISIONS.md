@@ -1,0 +1,9 @@
+# Decisions
+
+- **2026-11-07 · planning · Host on GitHub Pages** from public repo `mattchurchman/alaska-2027`, `main` / root. Reason: plain link with no login; outside photos, map tiles and video embeds load (the Claude artifact blocked all three).
+- **2026-11-07 · planning · Data split into 7 files with one row per price** (`data/prices.json`). Reason: refreshes touch one row; the validator can prove no price lives elsewhere. `sources.json` added to the plan's six files because sources are shared by prices, offers and notes.
+- **2026-11-07 · planning · Cabin prices stored per cabin for 2 adults** (v1 per-person × 2). Reason: v2 compares whole cabins (brothers interior + parents balcony).
+- **2026-11-07 · planning · Leaflet bundled in `vendor/`** instead of a CDN. Reason: one fewer outside dependency; the site still needs the network for tiles and photos.
+- **2026-11-07 · planning · CSV tool named `make_csv.py`**, not `csv.py`. Reason: `csv.py` shadows Python's csv module.
+- **2026-11-07 · planning · Interface:** Claude app for P0–P5 (artifact/Project access, browser for cruise sites); revisit Claude Code at P6 for real Safari/WebKit testing.
+- **2026-11-07 · planning · Agent-pipeline template not applied:** `mattchurchman/agent-pipeline-template` is not visible to Claude's GitHub access. A lean AGENTS.md was written instead; the template can be retrofitted later if access is granted.

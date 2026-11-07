@@ -1,0 +1,10 @@
+line,sailings,june_sailings,june_with_two_cabin_price,cheapest_june_ship,cheapest_june_depart,cheapest_june_route_family,cheapest_june_two_cabin_usd,with_tips_usd,price_status,checked,source_url
+Princess Cruises,12,8,8,Star Princess,2027-06-27,SEA-DAWES,7186,7690.0,verified/verified,2026-11-06,https://www.princess.com/itinerary-details/?voyageCode=4726
+Holland America Line,5,4,4,Eurodam,2027-06-26,SEA-GB,8796,9300.0,verified/verified,2026-11-06,https://www.hollandamerica.com/en/us/find-a-cruise/a7e07b/d747
+Norwegian Cruise Line,12,9,9,Norwegian Joy,2027-06-25,SEA-HUBBARD,5776,6336.0,verified/verified,2026-11-06,https://www.ncl.com/vacation-builder/planning/stateroom?itineraryCode=JOY7SEAJNUICYKTNVICSEA&packageId=24235224&guests=2&stateroomTypeCode=INSIDE
+Royal Caribbean,10,8,8,Voyager of the Seas,2027-06-25,SEA-DAWES,5034,5552.0,verified/verified,2026-11-06,https://www.royalcaribbean.com/itinerary/7-night-alaska-adventure-cruise-from-seattle-on-voyager-VY07A458?sailDate=2027-06-25&packageCode=VY07A458&groupId=VY07SEA-2189415139&country=USA
+Celebrity Cruises,5,4,4,Celebrity Edge,2027-06-04,SEA-DAWES,6532,7078.0,verified/verified,2026-11-06,https://www.celebritycruises.com/itinerary/7-night-alaska-dawes-glacier-from-seattle-on-edge-EG07A439?sailDate=2027-06-04&packageCode=EG07A439&groupId=EG07SEA-4212612062&country=USA
+Carnival Cruise Line,12,9,9,Carnival Legend,2027-06-01,SEA-TRACY,5136,5612.0,verified/verified,2026-11-06,https://www.carnival.com/itinerary/7-day-alaska-inside-passage-and-glacier-cruise/seattle/legend/7-days/ga2?itinportcode=SEA&sailDate=06012027&numGuests=2
+MSC Cruises,4,4,0,,,,,,,,
+Virgin Voyages,2,2,0,,,,,,,,
+Oceania Cruises,1,0,0,,,,,,,,

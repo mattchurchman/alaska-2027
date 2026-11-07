@@ -1,0 +1,544 @@
+<title>Alaska 2027 Planner</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: chart-room planner — slab-serif signage headings over a glacial grey ground, a sticky tab rail, cards for sailings, monospaced figures for times and fares. */
+:root{
+  --bg:#eef2f1; --surface:#ffffff; --sunk:#e3eaea; --line:#cfdadb;
+  --ink:#12212b; --muted:#566871; --accent:#0d6a67; --accent-ink:#ffffff; --accent-soft:#d5ebe9;
+  --salmon:#c4552d; --salmon-soft:#f7e2d8;
+  --ok:#2c7a4b; --ok-soft:#dcefe3; --warn:#9a6300; --warn-soft:#f6ead1; --est:#5d4f9a; --est-soft:#e7e3f4; --na:#7b8489; --na-soft:#e7eaeb;
+  --g-bay:#0d6a67; --g-hubbard:#3b5bb5; --g-dawes:#7a8f2a; --g-tracy:#b0602a; --g-none:#8a8f93;
+  --shadow:0 1px 2px rgba(18,33,43,.06),0 4px 14px rgba(18,33,43,.06);
+  --f-display:"Zilla Slab",Rockwell,"Roboto Slab",Georgia,serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1418; --surface:#14212a; --sunk:#0f1a20; --line:#26363f;
+  --ink:#e3ecee; --muted:#93a6ad; --accent:#4fb3ab; --accent-ink:#06201f; --accent-soft:#163a3a;
+  --salmon:#f08a62; --salmon-soft:#3a2219;
+  --ok:#6cc38f; --ok-soft:#173327; --warn:#e3b35a; --warn-soft:#352a12; --est:#a99be0; --est-soft:#272240; --na:#9aa4a9; --na-soft:#222c31;
+  --g-bay:#4fb3ab; --g-hubbard:#8ea6f0; --g-dawes:#b6c96a; --g-tracy:#e6996a; --g-none:#9aa4a9;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1418; --surface:#14212a; --sunk:#0f1a20; --line:#26363f;
+  --ink:#e3ecee; --muted:#93a6ad; --accent:#4fb3ab; --accent-ink:#06201f; --accent-soft:#163a3a;
+  --salmon:#f08a62; --salmon-soft:#3a2219;
+  --ok:#6cc38f; --ok-soft:#173327; --warn:#e3b35a; --warn-soft:#352a12; --est:#a99be0; --est-soft:#272240; --na:#9aa4a9; --na-soft:#222c31;
+  --g-bay:#4fb3ab; --g-hubbard:#8ea6f0; --g-dawes:#b6c96a; --g-tracy:#e6996a; --g-none:#9aa4a9;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25); color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono,.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.muted{color:var(--muted)}
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;flex-direction:column;gap:6px;padding-block:10px 0}
+.brandrow{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brandrow h1{font-size:1.35rem}
+.brandrow .sub{font-size:.85rem;color:var(--muted)}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin:0 -4px}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{flex:none;text-decoration:none;color:var(--muted);font-weight:600;font-size:.92rem;padding:10px 12px 11px;border-bottom:3px solid transparent;min-height:44px;display:flex;align-items:center}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+main{padding-block:22px 64px}
+section.view{display:flex;flex-direction:column;gap:22px}
+.lede{max-width:68ch;font-size:1.02rem}
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.g2{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+@media (max-width:420px){.g2,.g3{grid-template-columns:1fr}}
+.pick{display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.pick .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pick h3{font-size:1.15rem}
+.big{font-family:var(--f-mono);font-size:1.6rem;font-weight:500;letter-spacing:-.01em}
+/* photo */
+.ph{position:relative;aspect-ratio:16/9;max-width:100%;background:linear-gradient(160deg,var(--accent-soft),var(--sunk));overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph .ph-fallback{position:absolute;inset:0;display:flex;align-items:flex-end;padding:12px 14px;font-family:var(--f-display);font-size:1.15rem;color:var(--accent)}
+.ph .ph-fallback svg{position:absolute;right:10px;top:10px;width:56px;height:56px;opacity:.45}
+.ph.loaded .ph-fallback{display:none}
+.credit{font-size:.68rem;color:var(--muted);padding:4px 16px 0;line-height:1.3}
+.credit a{color:inherit}
+/* badges & pills */
+.badge{display:inline-flex;align-items:center;justify-content:center;font-family:var(--f-display);font-weight:700;font-size:.78rem;letter-spacing:.04em;min-width:34px;height:24px;padding:0 6px;border-radius:5px;color:#fff;background:var(--b,#334)}
+.lineName{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.9rem}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;border-radius:999px;padding:2px 9px;background:var(--sunk);color:var(--ink);white-space:nowrap}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted));display:inline-block}
+.st{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:600;border-radius:4px;padding:1px 6px;white-space:nowrap}
+.st-verified{background:var(--ok-soft);color:var(--ok)} .st-published{background:var(--warn-soft);color:var(--warn)}
+.st-estimate{background:var(--est-soft);color:var(--est)} .st-unavailable{background:var(--na-soft);color:var(--na)}
+.flag{font-size:.72rem;font-weight:600;color:var(--salmon);background:var(--salmon-soft);border-radius:4px;padding:1px 6px}
+/* chart */
+.chartcard{padding:16px}
+.chartwrap{overflow-x:auto}
+.chart text{font-family:var(--f-body);fill:var(--muted);font-size:11px}
+.chart .gl{stroke:var(--line);stroke-width:1}
+.chart .dot{cursor:pointer;stroke:var(--surface);stroke-width:1.5}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:.82rem}
+.tip{font-size:.85rem;min-height:2.6em;margin-top:6px}
+/* filters */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:.85rem;font-weight:600;border-radius:999px;padding:8px 14px;min-height:44px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--c)}
+select{font:inherit;font-size:.88rem;padding:8px 10px;min-height:44px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+label.sel{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted);font-weight:600}
+/* sailing rows */
+.sl{display:flex;flex-direction:column;gap:10px}
+.srow{display:grid;grid-template-columns:minmax(0,2.3fr) minmax(0,1.2fr) minmax(0,1.6fr) auto;gap:6px 18px;padding:14px 16px;align-items:center}
+.srow .who{display:flex;flex-direction:column;gap:4px;min-width:0}
+.srow .who b{font-family:var(--f-display);font-size:1.08rem;font-weight:600}
+.srow .when{font-size:.9rem}
+.srow .fares{display:grid;grid-template-columns:auto auto;gap:2px 12px;font-size:.85rem;align-items:baseline}
+.srow .fares .k{color:var(--muted)}
+.srow .tot{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.srow .tot .num{font-size:1.25rem;font-weight:500}
+.srow details{grid-column:1/-1}
+details summary{cursor:pointer;font-size:.85rem;font-weight:600;color:var(--accent);min-height:44px;display:flex;align-items:center;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";font-family:var(--f-mono);margin-right:8px}
+details[open] summary::before{content:"–"}
+@media (max-width:760px){.srow{grid-template-columns:1fr 1fr}.srow .who{grid-column:1/-1}.srow .tot{align-items:flex-start;text-align:left}}
+@media (max-width:420px){.srow{grid-template-columns:1fr}}
+/* timeline */
+.tl{display:flex;flex-direction:column;border-left:2px solid var(--line);margin:6px 0 4px 8px}
+.tday{position:relative;padding:6px 0 10px 18px;display:grid;grid-template-columns:minmax(64px,auto) minmax(0,1fr);gap:2px 12px}
+.tday::before{content:"";position:absolute;left:-7px;top:11px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--muted)}
+.tday.port::before{border-color:var(--accent);background:var(--accent)}
+.tday.scenic::before{border-color:var(--c,var(--g-bay));background:var(--surface)}
+.tday .dn{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);padding-top:3px}
+.tday .what{display:flex;flex-direction:column;gap:3px;min-width:0}
+.tday .what b{font-weight:600}
+.tday .times{font-family:var(--f-mono);font-size:.82rem}
+.bar{height:8px;background:var(--sunk);border-radius:4px;position:relative;max-width:360px;overflow:hidden}
+.bar span{position:absolute;top:0;bottom:0;border-radius:4px}
+.bar .all{background:var(--accent-soft)} .bar .use{background:var(--accent)}
+.note{font-size:.82rem;color:var(--muted)}
+/* tables */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--sunk);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:.88rem}
+.kv dt{color:var(--muted);font-weight:600}
+.kv dd{margin:0;min-width:0}
+.statusrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.statusrow div{display:flex;flex-direction:column;gap:4px;font-size:.84rem}
+.phase{display:flex;flex-wrap:wrap;gap:8px}
+.phase span{font-size:.8rem;border:1px solid var(--line);border-radius:6px;padding:4px 8px;background:var(--surface)}
+.phase span.done{border-color:var(--accent);color:var(--accent);font-weight:600}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+footer{font-size:.78rem;color:var(--muted);padding-block:0 40px}
+
+/* excursions */
+.lab{display:inline-flex;align-items:center;font-size:.74rem;font-weight:700;border-radius:999px;padding:2px 10px;white-space:nowrap}
+.lab-ideal_parents{background:var(--ok-soft);color:var(--ok)} .lab-precautions{background:var(--warn-soft);color:var(--warn)}
+.lab-brothers{background:var(--est-soft);color:var(--est)} .lab-everyone{background:var(--accent-soft);color:var(--accent)} .lab-not_recommended{background:var(--salmon-soft);color:var(--salmon)}
+.meter{display:inline-flex;gap:3px;vertical-align:middle}
+.meter i{width:10px;height:10px;border-radius:50%;background:var(--sunk);border:1px solid var(--line);display:inline-block}
+.meter i.on{background:var(--accent);border-color:var(--accent)}
+.ph.sm{aspect-ratio:21/8}
+.xcard{overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.xcard .xh{padding:14px 16px 6px;display:flex;flex-direction:column;gap:8px}
+.xcard h3{font-size:1.2rem}
+.xrow{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.82rem;color:var(--muted)}
+.xbox{margin:0 16px 10px;padding:9px 11px;border-radius:8px;background:var(--sunk);font-size:.86rem}
+.xbox b{font-weight:600}
+.xrisk{margin:0 16px 10px;padding:9px 11px;border-radius:8px;background:var(--salmon-soft);color:var(--ink);font-size:.86rem;border-left:4px solid var(--salmon)}
+.xcmp{margin:0 16px 10px;font-size:.86rem}
+.xo{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 14px;padding:11px 16px;border-top:1px solid var(--line)}
+.xo .t{min-width:0;display:flex;flex-direction:column;gap:2px}
+.xo .t b{font-weight:600;font-size:.92rem}
+.xo .p{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:3px}
+.xo .p .num{font-size:1.05rem;font-weight:500}
+.xo .m{grid-column:1/-1;font-size:.78rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 12px}
+.kind{display:inline-flex;font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:1px 6px;width:fit-content;background:var(--sunk);color:var(--muted)}
+.kind-cruise{background:var(--accent-soft);color:var(--accent)} .kind-free,.kind-diy{background:var(--ok-soft);color:var(--ok)}
+.fit-no{color:var(--salmon);font-weight:600}
+.warnb{background:var(--salmon-soft);border-left:4px solid var(--salmon);padding:10px 14px;border-radius:8px;font-size:.9rem}
+@media (prefers-reduced-motion:no-preference){.ph img{transition:opacity .4s}.ph:not(.loaded) img{opacity:0}}
+
+/* flights & hotels */
+.fl{display:flex;flex-direction:column}
+.fl .fh{padding:14px 16px 8px;display:flex;flex-direction:column;gap:6px}
+.legs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;padding:0 16px 12px}
+.leg{background:var(--sunk);border-radius:8px;padding:9px 11px;font-size:.86rem}
+.leg b{font-weight:600}
+.fare3{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;padding:0 16px 12px}
+.fare3>div{border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:3px;font-size:.84rem}
+.hcard{overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.hcard .hb{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px}
+/*__PLANNER_CSS__*/
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow"><h1>Alaska 2027 Planner</h1><span class="sub" id="subline">Seattle round trips · 4 travelers from ABQ</span></div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#overview">Overview</a><a href="#plan" class="hot">Plan builder</a><a href="#compare">Compare</a><a href="#map">Map</a><a href="#sailings">Sailings</a><a href="#itineraries">Routes</a><a href="#ports">Ports</a><a href="#excursions">Excursions</a><a href="#travel">Flights &amp; hotels</a><a href="#know">Know before</a><a href="#lines">Cruise lines</a><a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app"><p class="muted">Loading planner data…</p></main>
+<footer class="wrap" id="foot"></footer>
+
+<script id="inline-data" type="application/json">/*__DATA__*/</script>
+<script>
+(function(){
+"use strict";
+var D, IDX={};
+var GLAC={"Glacier Bay":"--g-bay","Hubbard Glacier":"--g-hubbard","Endicott Arm & Dawes Glacier":"--g-dawes","Tracy Arm Fjord":"--g-tracy"};
+var GSHORT={"Glacier Bay":"Glacier Bay","Hubbard Glacier":"Hubbard","Endicott Arm & Dawes Glacier":"Dawes Glacier","Tracy Arm Fjord":"Tracy Arm"};
+var store={get:function(k,d){try{var v=localStorage.getItem("ak27:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem("ak27:"+k,JSON.stringify(v))}catch(e){}}};
+var state=Object.assign({glacier:"all",line:"all",window:"june",sort:"total",exPort:"all",exLabel:"all"},store.get("filters",{}));
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function money(n){return n==null?"—":"$"+Math.round(n).toLocaleString("en-US")}
+function dt(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2])}
+function fmtD(s,o){return dt(s).toLocaleDateString("en-US",o||{month:"short",day:"numeric"})}
+function addDays(s,n){var d=dt(s);d.setDate(d.getDate()+n);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function t12(t){if(!t)return"";var h=+t.slice(0,2),m=t.slice(3);if(t==="23:59"||t==="23:58")return"midnight";return((h%12)||12)+":"+m+(h<12?" am":" pm")}
+function hrs(a,b){if(!a||!b)return null;var x=(+a.slice(0,2))*60+(+a.slice(3)),y=(+b.slice(0,2))*60+(+b.slice(3));if(b==="23:59"||b==="23:58")y=24*60;return (y-x)/60}
+function stTag(s){var def=D.meta.statusDefinitions[s]||{label:s};return '<span class="st st-'+esc(s)+'" title="'+esc(def.desc||"")+'">'+esc(def.label)+'</span>'}
+function badge(line){return '<span class="badge" style="--b:'+esc(line.color)+'" aria-hidden="true">'+esc(line.badge)+'</span>'}
+function gpill(g){if(!g)return '<span class="pill" style="--c:var(--g-none)"><i></i>No glacier day</span>';return '<span class="pill" style="--c:var('+GLAC[g]+')"><i></i>'+esc(GSHORT[g]||g)+'</span>'}
+var MOUNT='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M4 52 24 18l10 16 8-10 18 28Z"/><path d="m24 18 5 8-5 3-4-4"/></svg>';
+function photo(p,label){if(!p)return '<div class="ph"><div class="ph-fallback">'+MOUNT+esc(label||"")+'</div></div>';
+  return '<div class="ph"><img loading="lazy" alt="'+esc(label||"")+'" src="'+esc(p.url)+'" onload="this.parentNode.classList.add(\'loaded\')" onerror="this.remove()"><div class="ph-fallback">'+MOUNT+esc(label||"")+'</div></div>'+
+   '<div class="credit">Photo: <a href="'+esc(p.page)+'" target="_blank" rel="noopener">'+esc(p.credit)+'</a></div>'}
+
+/* ---------- derived ---------- */
+function prep(){
+  ["places","lines","ships","itineraries","sources"].forEach(function(k){IDX[k]={};D[k].forEach(function(x){IDX[k][x.id]=x})});
+  D.itineraries.forEach(function(it){
+    var ak=0,use=0,ports=[],scenic=0,sea=0,notes=[];
+    (it.days||[]).forEach(function(day){day.forEach(function(e){
+      if(e.type==="sea")sea++;
+      if(e.type==="scenic")scenic++;
+      if(e.type==="port"){var pl=IDX.places[e.place];var h=hrs(e.arr,e.dep);if(pl.country==="US"){ak+=h;use+=Math.max(0,h-1.5);ports.push(e.place)}
+        if(e.place==="ketchikan_wc")notes.push("Ketchikan stop is at Ward Cove, about 7 miles from downtown (shuttle needed).");
+        if(e.place==="sitka")notes.push("Sitka: shuttle from the cruise terminal north of town, or tender; confirm closer to sailing.");
+        if(pl.country==="CA"&&h<=4)notes.push("Victoria is a short evening call ("+h.toFixed(1)+" h).");}
+    })});
+    if(!it.days&&it.ports){ports=it.ports.filter(function(p){return IDX.places[p].kind==="port"&&IDX.places[p].country==="US"})}
+    if(sea>=2)notes.push(sea+" full sea days (restful for the parents).");
+    it._ak=it.days?ak:null; it._use=it.days?use:null; it._akPorts=ports; it._sea=sea; it._notes=notes;
+  });
+  (D.excursions||[]).forEach(function(e){
+    var wins=[];
+    D.itineraries.forEach(function(it){var found=null;(it.days||[]).forEach(function(day){day.forEach(function(en){if(en.type==="port"&&e.ports.indexOf(en.place)>-1&&found===null){found=Math.max(0,hrs(en.arr,en.dep)-1.5)}})});if(found!==null)wins.push(found)});
+    e._wins=wins;
+  });
+  D.sailings.forEach(function(s){
+    var it=IDX.itineraries[s.itinerary],ln=IDX.lines[it.line],p=s.prices;
+    s._it=it; s._line=ln; s._ship=IDX.ships[s.ship];
+    var i=p.interior.pp,b=p.balcony.pp;
+    s._fare=(i!=null&&b!=null)?2*i+2*b:null;
+    s._fareStatus=(i!=null&&b!=null)?((p.interior.status==="verified"&&p.balcony.status==="verified")?"verified":"published"):"unavailable";
+    var g=ln.gratuity&&ln.gratuity.pp_day; s._grat=(g==null)?null:g*4*s.nights;
+    s._total=(s._fare!=null&&s._grat!=null)?s._fare+s._grat:null;
+    s._june=s.depart>="2027-06-01"&&s.depart<="2027-06-30";
+  });
+}
+
+/* ---------- views ---------- */
+function chartCard(){
+  var pts=D.sailings.filter(function(s){return s._fare!=null});
+  var W=920,H=300,L=64,R=14,T=14,B=40;
+  var d0=dt("2027-05-24").getTime(),d1=dt("2027-07-06").getTime();
+  var vals=pts.map(function(s){return s._fare}),lo=Math.floor(Math.min.apply(null,vals)/1000)*1000,hi=Math.ceil(Math.max.apply(null,vals)/1000)*1000;
+  function x(s){return L+(dt(s).getTime()-d0)/(d1-d0)*(W-L-R)}
+  function y(v){return T+(hi-v)/(hi-lo)*(H-T-B)}
+  var g="";for(var v=lo;v<=hi;v+=1000){g+='<line class="gl" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(v)+'" y2="'+y(v)+'"/><text x="'+(L-8)+'" y="'+(y(v)+4)+'" text-anchor="end">$'+(v/1000)+'k</text>'}
+  ["2027-05-25","2027-06-01","2027-06-08","2027-06-15","2027-06-22","2027-06-29","2027-07-06"].forEach(function(s){g+='<text x="'+x(s)+'" y="'+(H-B+18)+'" text-anchor="middle">'+fmtD(s)+'</text>'});
+  g+='<rect x="'+x("2027-06-01")+'" y="'+T+'" width="'+(x("2027-06-30")-x("2027-06-01"))+'" height="'+(H-T-B)+'" fill="var(--accent-soft)" opacity=".35"/>';
+  var dots=pts.map(function(s){var c=s._it.glacier?"var("+GLAC[s._it.glacier]+")":"var(--g-none)";
+    return '<circle class="dot" tabindex="0" data-id="'+esc(s.id)+'" cx="'+x(s.depart).toFixed(1)+'" cy="'+y(s._fare).toFixed(1)+'" r="6.5" fill="'+c+'"><title>'+esc(s._ship.name+" "+fmtD(s.depart)+": "+money(s._fare))+'</title></circle>'}).join("");
+  var leg=Object.keys(GLAC).map(function(k){return '<span class="pill" style="--c:var('+GLAC[k]+')"><i></i>'+esc(GSHORT[k])+'</span>'}).join("")+'<span class="pill" style="--c:var(--g-none)"><i></i>No glacier day</span>';
+  return '<div class="card chartcard"><div class="eyebrow">Two-cabin cruise fare by departure date</div><p class="note" style="margin:4px 0 10px">Interior + balcony for 4 adults, taxes and port fees included, before gratuities. Shaded band = June. Tap a dot for details.</p>'+
+    '<div class="chartwrap"><svg class="chart" viewBox="0 0 '+W+' '+H+'" style="min-width:620px;width:100%" role="img" aria-label="Two-cabin fares by departure date">'+g+dots+'</svg></div>'+
+    '<div class="legend" style="margin-top:8px">'+leg+'</div><div class="tip" id="tip" aria-live="polite"></div></div>';
+}
+
+function rowHTML(s){
+  var it=s._it,p=s.prices;
+  var flags=s.flags.map(function(f){return {"promo":"Sale/promo price","holiday":"July 4 week","adults-only":"Adults only","resident-tag":"Resident-rate tag shown (not applied)"}[f]}).filter(Boolean).map(function(t){return '<span class="flag">'+esc(t)+'</span>'}).join(" ");
+  function fr(k,lab){var x=p[k];return '<span class="k">'+esc(x.label||lab)+'</span><span class="num">'+(x.pp==null?'<span class="muted">—</span>':money(x.pp)+' pp')+'</span>'}
+  return '<article class="card srow" id="s-'+esc(s.id)+'">'+
+   '<div class="who"><div class="lineName">'+badge(s._line)+esc(s._line.name)+'</div><b>'+esc(s._ship.name)+'</b><span class="muted" style="font-size:.85rem">'+esc(it.name)+'</span>'+(flags?'<div style="display:flex;gap:6px;flex-wrap:wrap">'+flags+'</div>':'')+'</div>'+
+   '<div class="when"><div>'+fmtD(s.depart,{weekday:"short",month:"short",day:"numeric"})+'</div><div class="muted">to '+fmtD(s.return,{weekday:"short",month:"short",day:"numeric"})+'</div><div style="margin-top:4px">'+gpill(it.glacier)+'</div>'+
+     '<div class="note" style="margin-top:4px">'+(it._ak!=null?it._ak.toFixed(1)+' h in AK ports':'Port times not captured')+'</div></div>'+
+   '<div class="fares">'+fr("interior","Interior")+fr("balcony","Balcony")+'</div>'+
+   '<div class="tot"><span class="eyebrow">Two cabins + tips</span><span class="num">'+money(s._total)+'</span><span class="note">fare '+money(s._fare)+'</span>'+stTag(s._fareStatus)+'<button class="linkbtn" data-pa="use-sail" data-v="'+esc(s.id)+'">Use in my plan</button></div>'+
+   '<details><summary>Day by day, all cabin prices and source</summary>'+detailHTML(s)+'</details></article>';
+}
+
+function timeline(it,startDate){
+  if(!it.days)return '<p class="note">Day-by-day times not captured. Ports: '+(it.ports||[]).map(function(p){return esc(IDX.places[p].short)}).join(" · ")+'</p>';
+  return '<div class="tl">'+it.days.map(function(day,i){return day.map(function(e,j){
+    var pl=e.place?IDX.places[e.place]:null, date=startDate?fmtD(addDays(startDate,i),{weekday:"short",month:"short",day:"numeric"}):"Day "+(i+1);
+    var dn=j===0?(startDate?date:"Day "+(i+1)):"";
+    var cls=e.type==="port"?"port":e.type==="scenic"?"scenic":"";
+    var c=e.type==="scenic"&&it.glacierPlace===e.place&&it.glacier?' style="--c:var('+GLAC[it.glacier]+')"':'';
+    var body;
+    if(e.type==="sea")body='<b>At sea</b>';
+    else if(e.type==="embark")body='<b>Depart '+esc(pl.short)+'</b><span class="times">sails '+t12(e.dep)+'</span><span class="note">Board early afternoon; most lines want guests aboard 2 hours before sailing.</span>';
+    else if(e.type==="disembark")body='<b>Arrive '+esc(pl.short)+'</b><span class="times">'+(e.arr?'arrives '+t12(e.arr):'')+'</span><span class="note">Leaving the ship usually starts about 2 hours after arrival.</span>';
+    else if(e.type==="scenic")body='<b>'+esc(pl.name)+'</b><span class="times">'+(e.arr?t12(e.arr)+' – '+t12(e.dep)+' scenic cruising':'Scenic cruising (times not published)')+'</span>';
+    else{var h=hrs(e.arr,e.dep),u=Math.max(0,h-1.5);
+      body='<b>'+esc(pl.name)+'</b><span class="times">'+t12(e.arr)+' – '+t12(e.dep)+' · '+h.toFixed(1)+' h in port · ~'+u.toFixed(1)+' h usable</span>'+
+      '<div class="bar" aria-hidden="true"><span class="all" style="left:0;width:'+(h/15*100).toFixed(1)+'%"></span><span class="use" style="left:'+(0.5/15*100).toFixed(1)+'%;width:'+(u/15*100).toFixed(1)+'%"></span></div>'+
+      '<span class="note">'+esc(pl.dock||"")+'</span>';}
+    return '<div class="tday '+cls+'"'+c+'><div class="dn">'+dn+'</div><div class="what">'+body+'</div></div>'}).join("")}).join("")+'</div>';
+}
+
+function detailHTML(s){
+  var it=s._it,p=s.prices,ln=s._line;
+  var cats=[["interior","Interior"],["oceanview","Oceanview"],["balcony","Balcony"],["miniSuite","Suite tier"]].map(function(c){var x=p[c[0]];
+    return '<tr><td>'+esc(x.label||c[1])+'</td><td class="num">'+(x.pp==null?"—":money(x.pp))+'</td><td class="num">'+(x.pp==null?"—":money(2*x.pp))+'</td><td>'+stTag(x.status)+(x.note?' <span class="note">'+esc(x.note)+'</span>':'')+'</td></tr>'}).join("");
+  return '<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:18px;margin-top:8px">'+
+    '<div>'+timeline(it,s.depart)+'</div>'+
+    '<div style="display:flex;flex-direction:column;gap:12px;min-width:0"><div class="tablewrap"><table><thead><tr><th>Cabin</th><th>Per person</th><th>Cabin (2)</th><th>Status</th></tr></thead><tbody>'+cats+'</tbody></table></div>'+
+    '<dl class="kv"><dt>Two-cabin fare</dt><dd class="num">'+money(s._fare)+' '+stTag(s._fareStatus)+'</dd>'+
+    '<dt>Gratuities</dt><dd>'+(s._grat==null?'—':money(s._grat)+' ('+(ln.gratuity.pp_day?'$'+ln.gratuity.pp_day.toFixed(2)+' × 4 × 7':'included in fare')+') ')+stTag("estimate")+'</dd>'+
+    '<dt>Price basis</dt><dd>'+esc(s.priceBasis)+'</dd><dt>Fare type</dt><dd>'+esc(ln.fareBasis)+'</dd>'+
+    (s.note?'<dt>Note</dt><dd>'+esc(s.note)+'</dd>':'')+
+    '<dt>Seattle pier</dt><dd>'+esc(IDX.places[ln.terminal].name)+' (usual for this line)</dd>'+
+    '<dt>Source</dt><dd><a href="'+esc(s.priceSource.url)+'" target="_blank" rel="noopener">'+esc(s.priceSource.note)+'</a><br><span class="note">Checked '+esc(s.priceSource.checked)+(s.code?' · code '+esc(s.code):'')+'</span></dd>'+
+    '<dt>Port times</dt><dd>'+stTag(it.timesStatus)+' <span class="note">'+esc(it.timesSource)+'</span></dd></dl>'+
+    (it._notes.length?'<div class="note"><b>Mobility notes:</b> '+it._notes.map(esc).join(" ")+'</div>':'')+'</div></div>';
+}
+
+function vSailings(){
+  var lines=D.lines.filter(function(l){return D.sailings.some(function(s){return s._line===l})});
+  var gl=[["all","All"]].concat(Object.keys(GLAC).map(function(k){return [k,GSHORT[k]]})).concat([["none","No glacier day"]]);
+  var list=D.sailings.filter(function(s){
+    if(state.window==="june"&&!s._june)return false;
+    if(state.line!=="all"&&s._line.id!==state.line)return false;
+    if(state.glacier!=="all"){if(state.glacier==="none"?s._it.glacier:s._it.glacier!==state.glacier)return false}
+    return true});
+  var sorts={total:function(a,b){return (a._total==null?1e9:a._total)-(b._total==null?1e9:b._total)},date:function(a,b){return a.depart<b.depart?-1:1},ak:function(a,b){return (b._it._ak||0)-(a._it._ak||0)},balcony:function(a,b){return (a.prices.balcony.pp||1e9)-(b.prices.balcony.pp||1e9)}};
+  list.sort(sorts[state.sort]||sorts.total);
+  return '<section class="view"><div class="toolbar">'+
+    '<div class="chips" role="group" aria-label="Dates">'+[["june","June departures"],["all","Late May – early July"]].map(function(o){return '<button class="chip" data-f="window" data-v="'+o[0]+'" aria-pressed="'+(state.window===o[0])+'">'+o[1]+'</button>'}).join("")+'</div>'+
+    '<label class="sel" for="f-line">Line <select id="f-line" data-f="line"><option value="all">All lines</option>'+lines.map(function(l){return '<option value="'+l.id+'"'+(state.line===l.id?" selected":"")+'>'+esc(l.name)+'</option>'}).join("")+'</select></label>'+
+    '<label class="sel" for="f-sort">Sort <select id="f-sort" data-f="sort">'+[["total","Lowest two-cabin cost"],["balcony","Lowest balcony"],["ak","Most Alaska port hours"],["date","Departure date"]].map(function(o){return '<option value="'+o[0]+'"'+(state.sort===o[0]?" selected":"")+'>'+o[1]+'</option>'}).join("")+'</select></label></div>'+
+    '<div class="chips" role="group" aria-label="Glacier">'+gl.map(function(o){return '<button class="chip" data-f="glacier" data-v="'+esc(o[0])+'" aria-pressed="'+(state.glacier===o[0])+'" style="--c:var('+(GLAC[o[0]]||"--g-none")+')">'+(o[0]!=="all"?"<i></i>":"")+esc(o[1])+'</button>'}).join("")+'</div>'+
+    '<p class="note">'+list.length+' sailings. Totals are for 4 people: two-cabin cruise fare plus estimated gratuities. Sailings missing a balcony or interior price sort last.</p>'+
+    '<div class="sl">'+(list.length?list.map(rowHTML).join(""):'<div class="card empty">No sailings match these filters.</div>')+'</div></section>';
+}
+
+function vItins(){
+  return '<section class="view"><p class="lede">Each route repeats weekly, so the port times below apply to every date listed. Usable time assumes 30 minutes to get off the ship and being back aboard an hour before departure.</p><div class="grid g2">'+
+  D.itineraries.map(function(it){var ln=IDX.lines[it.line],ships=(it.ships||[it.ship]).map(function(id){return IDX.ships[id]});
+    var dates=D.sailings.filter(function(s){return s.itinerary===it.id}).map(function(s){return fmtD(s.depart)}).join(", ");
+    return '<article class="card pick">'+photo(ships[0].photo,ships[0].name)+'<div class="body"><div class="lineName">'+badge(ln)+esc(ln.name)+'</div><h3>'+esc(ships.map(function(x){return x.name}).join(" / "))+'</h3><div class="muted" style="font-size:.88rem">'+esc(it.name)+'</div>'+
+    '<div style="display:flex;gap:6px;flex-wrap:wrap">'+gpill(it.glacier)+'<span class="pill">'+esc(it.weekday)+'s</span>'+(it._ak!=null?'<span class="pill">'+it._ak.toFixed(1)+' h in AK ports</span>':'')+'<span class="pill">'+it._sea+' sea day'+(it._sea===1?'':'s')+'</span></div>'+
+    '<div class="note">Dates: '+esc(dates)+'</div>'+timeline(it)+
+    (it._notes.length?'<div class="note"><b>Worth knowing:</b> '+it._notes.map(esc).join(" ")+'</div>':'')+
+    '<div class="note">Times: '+stTag(it.timesStatus)+' '+esc(it.timesSource)+'</div></div></article>'}).join("")+'</div></section>';
+}
+
+function vPorts(){
+  var by={};D.itineraries.forEach(function(it){(it.days||[]).forEach(function(day){day.forEach(function(e){if(e.place){(by[e.place]=by[e.place]||{})[it.id]=1}})});(it.ports||[]).forEach(function(p){(by[p]=by[p]||{})[it.id]=1})});
+  var groups=[["Alaska ports","port"],["Glaciers and scenic cruising","scenic"],["Seattle","terminal"]];
+  return '<section class="view"><p class="lede">Dock details here are planning notes from general port knowledge, not confirmed for 2027 sailings. Facts found while researching excursions are listed under each port with their source; see the Excursions tab for tours and prices.</p>'+
+   groups.map(function(g){var ps=D.places.filter(function(p){return p.kind===g[1]});
+    return '<h2 style="font-size:1.35rem">'+g[0]+'</h2><div class="grid g3">'+ps.map(function(p){var n=Object.keys(by[p.id]||{}).length;
+      return '<article class="card pick">'+photo(p.photo,p.short)+'<div class="body"><h3>'+esc(p.name)+'</h3>'+(p.dock?'<span class="pill">'+esc(p.dock)+'</span>':'')+
+      '<p style="margin:0;font-size:.9rem">'+esc(p.notes)+'</p>'+portExtra(p)+'<button class="linkbtn" data-pa="map-place" data-v="'+esc(p.id)+'">Show on map</button>'+'<div class="note">'+n+' of '+D.itineraries.length+' routes · time zone '+esc(p.tz.replace("America/",""))+' · '+p.lat.toFixed(3)+', '+p.lng.toFixed(3)+'</div></div></article>'}).join("")+'</div>'}).join("")+
+   '<div class="card" style="padding:16px"><div class="eyebrow">Time zones</div><p style="margin:6px 0 0" class="note">Seattle and Victoria are on Pacific time; Alaska ports are one hour earlier (Alaska time). Ships usually switch the onboard clock to match, and published port times are local.</p></div></section>';
+}
+
+function vLines(){
+  var rows=D.lines.map(function(l){var g=l.gratuity,p=l.payment;
+    return '<tr><td><div class="lineName">'+badge(l)+esc(l.name)+'</div></td><td>'+esc(IDX.places[l.terminal].short)+'</td><td class="num">'+(g.pp_day==null?"—":g.pp_day===0?"Included":"$"+g.pp_day.toFixed(2))+'<br>'+stTag(g.status)+'</td>'+
+      '<td>'+(p.finalPaymentDays?p.finalPaymentDays+' days before sailing':'—')+'<br>'+stTag(p.status)+'<div class="note">'+esc(p.deposit)+' '+esc(p.note||"")+'</div></td><td style="min-width:240px">'+esc(l.fareBasis)+'<div class="note">'+esc(l.includes)+'</div></td><td style="min-width:180px">'+esc(l.accessibility)+'</td></tr>'}).join("");
+  return '<section class="view"><p class="lede">Daily gratuities are charged per guest on top of the fare unless a package includes them. Final payment is the last day to cancel without losing more than the deposit.</p>'+
+   '<div class="tablewrap"><table><thead><tr><th>Line</th><th>Seattle pier</th><th>Gratuity pp/day</th><th>Final payment</th><th>Fare shown / included</th><th>Accessible cabins</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+   '<h2 style="font-size:1.35rem">Checked and ruled out</h2><div class="tablewrap"><table><tbody>'+D.linesReviewed.map(function(r){return '<tr><td style="min-width:180px"><b>'+esc(r.line)+'</b></td><td>'+esc(r.finding)+(r.source?' <a href="'+esc(IDX.sources[r.source].url)+'" target="_blank" rel="noopener">source</a>':'')+'</td></tr>'}).join("")+'</tbody></table></div></section>';
+}
+
+function qaCard(){
+  var q=D.meta.qa;if(!q)return"";
+  function ul(a){return '<ul style="margin:0;padding-left:20px">'+a.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul>'}
+  return '<div class="card" style="padding:16px"><div class="eyebrow">How this planner was tested ('+esc(q.checked)+')</div><p style="margin:8px 0 0">'+esc(q.summary)+'</p>'+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Checked and passing</h3>'+ul(q.passed)+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Fixed during testing</h3>'+ul(q.fixed)+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Not tested</h3>'+ul(q.notTested)+'</div>'}
+function excursionCov(){
+  var c=D.meta.excursionCoverage;if(!c)return"";
+  function dl(o){return Object.keys(o).map(function(k){return '<li><b>'+esc((IDX.lines[k]&&IDX.lines[k].name)||k)+':</b> '+esc(o[k])+'</li>'}).join("")}
+  return '<div class="card" style="padding:16px"><div class="eyebrow">Excursion research coverage ('+esc(c.checked)+')</div><p style="margin:8px 0 0">'+esc(c.summary)+'</p>'+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Cruise-line excursion prices captured</h3><ul style="margin:0;padding-left:20px">'+dl(c.linesWithCruiseExcursionPrices)+'</ul>'+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Not captured</h3><ul style="margin:0;padding-left:20px">'+dl(c.linesNotCaptured)+'</ul>'+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Pages that blocked or failed</h3><ul style="margin:0;padding-left:20px">'+c.operatorPagesBlocked.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul>'+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">Known gaps</h3><ul style="margin:0;padding-left:20px">'+c.gaps.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul>'+
+   '<h3 style="font-size:1rem;margin:12px 0 4px">What is subjective</h3><ul style="margin:0;padding-left:20px">'+c.subjectiveFields.map(function(x){return '<li>'+esc(x)+'</li>'}).join("")+'</ul></div>'}
+function vSources(){
+  var photos=[];D.ships.forEach(function(s){if(s.photo)photos.push([s.name,s.photo])});D.places.forEach(function(p){if(p.photo)photos.push([p.name,p.photo]);if(p.photo2)photos.push([p.name,p.photo2])});
+  return '<section class="view"><div class="card" style="padding:16px"><div class="eyebrow">Assumptions</div><ul style="margin:8px 0 0;padding-left:20px">'+D.meta.assumptions.map(function(a){return '<li>'+esc(a)+'</li>'}).join("")+'</ul></div>'+
+   '<div class="card" style="padding:16px"><div class="eyebrow">Price status labels</div><div class="statusrow" style="margin-top:10px">'+Object.keys(D.meta.statusDefinitions).map(function(k){return '<div>'+stTag(k)+'<span class="muted">'+esc(D.meta.statusDefinitions[k].desc)+'</span></div>'}).join("")+'</div></div>'+
+   excursionCov()+qaCard()+'<h2 style="font-size:1.35rem">Cruise price pages</h2><p class="note">Each sailing links to the exact page its prices came from (open a sailing on the Sailings tab). All were read on '+esc(D.meta.updated)+' from Denver, logged out.</p>'+
+   '<h2 style="font-size:1.35rem">Other sources</h2><div class="tablewrap"><table><thead><tr><th>Source</th><th>Type</th><th>Used for</th><th>Checked</th></tr></thead><tbody>'+
+   D.sources.map(function(s){return '<tr><td style="min-width:200px"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a><div class="note">'+esc(s.publisher)+'</div></td><td>'+esc(s.kind)+'</td><td style="min-width:240px">'+esc(s.note)+'</td><td class="num">'+esc(s.checked)+'</td></tr>'}).join("")+'</tbody></table></div>'+
+   '<h2 style="font-size:1.35rem">Photo credits</h2><div class="tablewrap"><table><tbody>'+photos.map(function(p){return '<tr><td>'+esc(p[0])+'</td><td><a href="'+esc(p[1].page)+'" target="_blank" rel="noopener">'+esc(p[1].credit)+'</a></td></tr>'}).join("")+'</tbody></table></div>'+
+   '<p class="note">'+esc(D.photoPolicy)+'</p></section>';
+}
+
+
+/* ---------- excursions ---------- */
+function portExtra(p){
+  var L=p.logistics||[],ex=(D.excursions||[]).filter(function(e){return e.ports.indexOf(p.id)>-1}).length;
+  return (L.length?'<ul class="note" style="margin:0;padding-left:18px">'+L.map(function(l){var s=IDX.sources[l.source];return '<li>'+esc(l.text)+(s?' <a href="'+esc(s.url)+'" target="_blank" rel="noopener">source</a>':'')+'</li>'}).join("")+'</ul>':'')+
+    (ex?'<a href="#excursions" data-expo="'+esc(p.id)+'">'+ex+' excursion idea'+(ex>1?'s':'')+'</a>':'')}
+function watchouts(){
+  var r=(D.excursions||[]).filter(function(e){return e.risk});if(!r.length)return"";
+  return '<div class="warnb"><b>Watch-outs from excursion research</b><ul style="margin:6px 0 0;padding-left:20px">'+r.map(function(e){return '<li><b>'+esc(e.name)+':</b> '+esc(e.risk.text)+'</li>'}).join("")+'</ul></div>'}
+function priceTxt(o){
+  if(o.pp==null)return '<span class="muted">No price shown</span>';
+  if(o.pp===0)return '<span class="num">Free</span>';
+  var v=(o.pp%1===0)?String(o.pp):o.pp.toFixed(2);
+  return (o.from?'<span class="muted" style="font-size:.75rem">from </span>':'')+'<span class="num">$'+Number(v).toLocaleString("en-US",{minimumFractionDigits:(o.pp%1===0?0:2)})+'</span>'+(o.unit==="vehicle"?' <span class="muted" style="font-size:.75rem">/ vehicle</span>':o.unit==="charter"?' <span class="muted" style="font-size:.75rem">/ charter</span>':' <span class="muted" style="font-size:.75rem">/ person</span>')}
+var WC={accessible:"Wheelchair accessible (per page)",limited:"Limited accessibility (per page)",ambulatory:"Ambulatory accessible: collapsible wheelchairs OK, no scooters",no:"Not accessible (per page)",not_stated:"Accessibility not stated"};
+var KRANK={cruise:0,independent:1,reseller:2,diy:3,free:4};
+function meter(n){var h="";for(var i=1;i<=5;i++)h+='<i'+(i<=n?' class="on"':'')+'></i>';return '<span class="meter" role="img" aria-label="Exertion '+n+' of 5">'+h+'</span>'}
+function fitTxt(o,e){
+  if(o.hours==null||!e._wins.length)return"";
+  var n=e._wins.filter(function(w){return w>=o.hours}).length,tot=e._wins.length;
+  return n===0?'<span class="fit-no">Too long for every route (needs '+o.hours+' h of '+Math.max.apply(null,e._wins).toFixed(1)+' h best case)</span>':'<span>Fits '+n+' of '+tot+' routes</span>'}
+function cmpLine(e){
+  var c=[],ind=[];e.offers.forEach(function(o){if(o.pp==null||o.pp===0||o.unit!=="pp")return;if(o.kind==="cruise")c.push(o.pp);else if(o.kind==="independent"||o.kind==="reseller")ind.push(o.pp)});
+  if(!c.length||!ind.length)return"";
+  var a=Math.min.apply(null,c),b=Math.min.apply(null,ind);
+  return '<div class="xcmp"><b>Option A vs B:</b> lowest cruise-line price $'+a.toFixed(0)+' vs lowest independent $'+b.toFixed(0)+' per person'+(b<a?' (about $'+Math.round((a-b)*4)+' less for four if the tours match)':a<b?' (the cruise-line option is lower)':'')+'. <span class="muted">Not like-for-like unless the inclusions match.</span></div>'}
+function offerHtml(o,e){
+  var kind=D.meta.offerKinds[o.kind]||o.kind,wc=o.wheelchair||"not_stated";
+  return '<div class="xo"><div class="t"><span class="kind kind-'+esc(o.kind)+'">'+esc(kind)+'</span><b>'+esc(o.title)+'</b><span class="note">'+esc(o.provider)+(o.line?'':'')+'</span></div>'+
+   '<div class="p">'+priceTxt(o)+stTag(o.status)+'</div>'+
+   '<div class="m">'+(o.hours!=null?'<span>'+o.hours+' h</span>':'')+(o.level?'<span>Line rating: '+esc(o.level)+'</span>':'')+'<span>'+esc(WC[wc]||WC.not_stated)+'</span>'+(fitTxt(o,e)?fitTxt(o,e):'')+'</div>'+
+   (o.note?'<div class="m"><span>'+esc(o.note)+'</span></div>':'')+
+   '<div class="m"><span>Cancellation: '+esc(o.cancel||"not stated on the page read")+'</span>'+(o.url?'<a href="'+esc(o.url)+'" target="_blank" rel="noopener">Source / booking page</a>':'<span>No source link (planning note)</span>')+'<span>Checked '+esc(o.checked)+'</span></div></div>'}
+function xcard(e,i){
+  var pl=IDX.places[e.photoPlace]||{},ph=(i%2&&pl.photo2)?pl.photo2:pl.photo;
+  var offers=e.offers.slice().sort(function(a,b){return (KRANK[a.kind]-KRANK[b.kind])});
+  var grp={parents:"Parents",brothers:"Brothers",family:"Whole family"}[e.group]||"";
+  return '<article class="card xcard" id="x-'+esc(e.id)+'">'+(function(){var h=photo(ph,pl.short||pl.name||'');return h.replace('class="ph"','class="ph sm"')})()+
+   '<div class="xh"><h3>'+esc(e.name)+'</h3><div class="xrow"><span class="lab lab-'+esc(e.label)+'">'+esc(D.meta.labels[e.label])+'</span>'+(grp?'<span class="pill">Suggested: '+grp+'</span>':'')+'<span>Exertion '+meter(e.exertion)+'</span><span>Weather sensitivity: '+esc(e.weather)+'</span></div>'+
+   '<p style="margin:0;font-size:.92rem">'+esc(e.blurb)+'</p><div class="row-links">'+(IDX.places[e.port].kind==="port"?'<button class="btn sm" data-pa="plan-port" data-v="'+esc(e.port)+'">Plan it</button>':'')+'<button class="linkbtn" data-pa="map-x" data-v="'+esc(e.id)+'">Map</button></div></div>'+
+   (e.risk?'<div class="xrisk"><b>Operating risk ('+esc(e.risk.level)+'):</b> '+esc(e.risk.text)+(IDX.sources[e.risk.source]?' <a href="'+esc(IDX.sources[e.risk.source].url)+'" target="_blank" rel="noopener">source</a>':'')+'</div>':'')+
+   '<div class="xbox"><b>Mobility:</b> '+esc(e.mobility)+'<div class="note" style="margin-top:4px">Exertion score is '+esc(e.exertionBasis)+'. Low exertion is not confirmed accessibility.</div></div>'+
+   (e.caveat?'<div class="xcmp"><b>Note:</b> '+esc(e.caveat)+'</div>':'')+cmpLine(e)+
+   '<div>'+offers.map(function(o){return offerHtml(o,e)}).join("")+'</div></article>'}
+function vExcursions(){
+  var ex=D.excursions||[];
+  if(!ex.length)return '<section class="view"><div class="card empty">No excursion data in this build.</div></section>';
+  var withEx=D.places.filter(function(p){return ex.some(function(e){return e.port===p.id})});
+  var labs=[["all","All"]].concat(Object.keys(D.meta.labels).filter(function(k){return ex.some(function(e){return e.label===k})}).map(function(k){return [k,D.meta.labels[k]]}));
+  var cov=D.meta.excursionCoverage||{};
+  var list=ex.filter(function(e){return (state.exPort==="all"||e.port===state.exPort)&&(state.exLabel==="all"||e.label===state.exLabel)});
+  var body="";
+  withEx.forEach(function(p){
+    var xs=list.filter(function(e){return e.port===p.id});if(!xs.length)return;
+    var w=xs[0]._wins,sum=w.length?'Usable shore time on the '+w.length+' route'+(w.length>1?'s':'')+' that stop here: '+Math.min.apply(null,w).toFixed(1)+' to '+Math.max.apply(null,w).toFixed(1)+' h':'Onboard scenic cruising: no going ashore';
+    body+='<h2 style="font-size:1.4rem">'+esc(p.name)+'</h2><div class="note" style="margin-top:-12px">'+esc(sum)+(p.id==="ketchikan"?' (Norwegian calls at Ward Cove add a shuttle transfer)':'')+'</div><div class="grid g2">'+xs.map(function(e,i){return xcard(e,i)}).join("")+'</div>'});
+  var nOff=0;ex.forEach(function(e){nOff+=e.offers.length});
+  return '<section class="view"><div class="lede"><p>Each experience shows <b>Option A</b> (what cruise lines sell) and <b>Option B</b> (the operator direct or an independent reseller) side by side, so the family can see what a tour really costs. '+ex.length+' experiences, '+nOff+' priced or sourced options, checked '+fmtD(cov.checked||D.meta.updated,{month:"long",day:"numeric",year:"numeric"})+'.</p></div>'+
+   '<div class="warnb"><b>These are published prices, not quotes.</b> '+esc(cov.summary||"")+' Cruise-line prices were read only for Princess, Carnival and Norwegian; the other lines are listed as not captured (see Sources). "Fits" compares each tour with the usable shore time (scheduled hours minus 1.5 h) on every route that stops there.</div>'+
+   '<div class="toolbar"><label class="sel" for="f-export">Port <select id="f-export" data-f="exPort"><option value="all">All ports</option>'+withEx.map(function(p){return '<option value="'+p.id+'"'+(state.exPort===p.id?" selected":"")+'>'+esc(p.short||p.name)+'</option>'}).join("")+'</select></label>'+
+   '<div class="chips" role="group" aria-label="Suitability">'+labs.map(function(o){return '<button class="chip" data-f="exLabel" data-v="'+esc(o[0])+'" aria-pressed="'+(state.exLabel===o[0])+'">'+esc(o[1])+'</button>'}).join("")+'</div></div>'+
+   (body||'<div class="card empty">No excursions match these filters.</div>')+'</section>';
+}
+
+
+/* ---------- flights & hotels ---------- */
+function tm(t){if(!t)return"";var n=t.indexOf("+1")>-1;return t12(t.replace("+1",""))+(n?" (+1 day)":"")}
+function sailNames(f){return (f.sailingIds||[]).map(function(id){var s=IDX.sail[id];return s?s._ship.name:null}).filter(Boolean).join(", ")}
+function fareBox(lab,x){if(!x)return"";return '<div><span class="muted">'+esc(lab)+'</span><span class="num" style="font-size:1.1rem">'+(x.total4==null?'—':money(x.total4))+'</span><span class="note">'+(x.pp!=null?money(x.pp)+' per person · ':'')+'4 adults round trip</span>'+stTag(x.status)+'<span class="note">'+esc(x.note||"")+'</span></div>'}
+function flightCard(f){
+  var o=(f.outbound||[]).map(function(x){return '<div>'+tm(x.dep)+' → '+tm(x.arr)+(x.totalFare4!=null?' · '+money(x.totalFare4)+' for 4':'')+'</div>'}).join("");
+  var r=(f.returns||[]).map(function(x){return '<div>'+tm(x.dep)+' → '+tm(x.arr)+'</div>'}).join("");
+  var fr=f.fare||{};
+  return '<article class="card fl"><div class="fh"><div class="eyebrow">Fly '+fmtD(f.outboundDate,{weekday:"short",month:"short",day:"numeric"})+' · return '+fmtD(f.returnDate,{weekday:"short",month:"short",day:"numeric"})+'</div>'+
+   '<h3>'+esc(f.airline)+' · '+(f.stops===0?'nonstop':f.stops+' stop')+'</h3>'+
+   '<div class="note">Cruise sails '+fmtD(f.embarkDate,{weekday:"long",month:"short",day:"numeric"})+' → ship '+esc(sailNames(f)||"none in this data")+'. Back in Seattle '+fmtD(f.disembarkDate,{weekday:"short",month:"short",day:"numeric"})+'.</div></div>'+
+   '<div class="legs"><div class="leg"><b>ABQ → SEA ('+fmtD(f.outboundDate)+')</b>'+o+'<div class="note">Times as listed on Google Flights (ABQ Mountain, SEA Pacific).</div></div>'+
+   (r?'<div class="leg"><b>SEA → ABQ ('+fmtD(f.returnDate)+')</b>'+r+'<div class="note">'+(f.returnTimesChecked?'Read on the booking panel.':'Not opened for this date pair; confirm.')+'</div></div>':'')+'</div>'+
+   '<div class="fare3">'+(f.fare.main?fareBox("Saver",fr.saver)+fareBox("Main",fr.main)+fareBox("First",fr.first):fareBox("Round-trip total",fr.saver))+'</div>'+
+   '<div class="xbox"><b>Bags:</b> '+esc((f.bags||{}).note||"")+' '+stTag((f.bags||{}).status||"unavailable")+'</div>'+
+   (f.buffers?'<div class="xbox"><b>Timing for the parents:</b> '+esc(f.buffers.arrive)+' '+esc(f.buffers.depart)+' '+stTag(f.buffers.status)+'</div>':'')+
+   (f.returnTimesNote?'<div class="xrisk">'+esc(f.returnTimesNote)+'</div>':'')+
+   (f.note?'<div class="xcmp">'+esc(f.note)+'</div>':'')+
+   '<div class="xo" style="border-top:1px solid var(--line)"><div class="t"><span class="note">'+esc(f.restrictions||"")+'</span></div><div class="m" style="grid-column:1/-1"><a href="'+esc(f.url)+'" target="_blank" rel="noopener">Source: this date search on Google Flights</a>'+(f.bookUrl?'<a href="'+esc(f.bookUrl)+'" target="_blank" rel="noopener">Book with the airline (homepage)</a>':'')+'<span>Checked '+esc(f.checked)+'</span></div></div></article>'}
+var AREA={downtown:"Downtown","waterfront-adjacent":"Near the waterfront",waterfront:"Waterfront",airport:"Airport area"};
+function hotelCard(h){
+  var dd=h.distances||{},ds=[];if(dd.pier66Mi!=null)ds.push(dd.pier66Mi+' mi to Pier 66');if(dd.airportMi!=null)ds.push(dd.airportMi+' mi to SEA');
+  return '<article class="card hcard">'+photo(h.photo,h.name)+'<div class="hb"><div class="eyebrow">'+esc(AREA[h.area]||h.area)+' · '+h.stars+'-star</div><h3>'+esc(h.name)+'</h3>'+
+   '<div class="xrow"><span class="pill">★ '+h.reviewScore+' · '+h.reviewCount.toLocaleString("en-US")+' reviews</span>'+(h.accessibilityListed?'<span class="lab lab-everyone">"Accessible" listed</span>':'<span class="lab lab-precautions">No accessibility feature listed</span>')+'</div>'+
+   '<div><span class="big">'+money(h.twoRooms.total)+'</span> <span class="muted" style="font-size:.85rem">2 rooms, 1 night (estimate)</span></div>'+
+   '<div class="note">'+money(h.rate.perRoomNight)+' per room ('+h.rate.guests+' guests) '+stTag(h.rate.status)+' · 2-room total '+stTag(h.twoRooms.status)+' · taxes and fees '+stTag(h.taxesFees.status)+'</div>'+
+   '<div class="note">Night of '+fmtD(h.stayDate,{weekday:"short",month:"short",day:"numeric"})+' (before the '+fmtD(h.checkOut,{weekday:"short",month:"short",day:"numeric"})+' sailings).'+(ds.length?' '+esc(ds.join(' · '))+'.':'')+'</div>'+
+   '<div style="font-size:.9rem"><b>Good:</b> '+esc(h.pros)+'</div><div style="font-size:.9rem"><b>Watch:</b> '+esc(h.cons)+'</div>'+
+   '<div class="note"><b>Getting around:</b> '+esc(h.transfers)+'</div><div class="note">Listed: '+esc(h.amenities.join(", "))+'</div>'+
+   '<div class="note"><a href="'+esc(h.url)+'" target="_blank" rel="noopener">Source: Google Hotels list</a> · checked '+esc(h.checked)+'</div></div></article>'}
+function vTravel(){
+  var F=D.flights||[],Hs=D.hotels||[],cov=D.meta.travelCoverage||{};
+  if(!F.length&&!Hs.length)return '<section class="view"><div class="card empty">No flight or hotel data in this build.</div></section>';
+  var byArea={};Hs.forEach(function(h){(byArea[h.area]=byArea[h.area]||[]).push(h)});
+  var order=["airport","downtown","waterfront-adjacent","waterfront"];
+  return '<section class="view"><div class="lede"><p>Four adults, Albuquerque to Seattle. Only <b>Alaska Airlines</b> flies it nonstop in the results (about 3 hours), so the question is mostly which date and which return time. Hotels are for the night before the cruise.</p></div>'+
+   '<div class="warnb"><b>Published listings, not booking quotes.</b> '+esc(cov.flights||"")+'</div>'+
+   '<h2 style="font-size:1.4rem">Flights</h2><div class="grid g2">'+F.map(flightCard).join("")+'</div>'+
+   '<h2 style="font-size:1.4rem">Seattle hotels, night of Jun 11 2027</h2><div class="warnb">'+esc(cov.hotels||"")+'</div>'+
+   order.filter(function(a){return byArea[a]}).map(function(a){return '<div class="eyebrow">'+esc(AREA[a])+'</div><div class="grid g3">'+byArea[a].map(hotelCard).join("")+'</div>'}).join("")+
+   '<div class="card" style="padding:16px"><div class="eyebrow" style="margin-bottom:6px">Not captured yet</div><div class="note">'+(cov.notCaptured||[]).map(esc).join(" · ")+'</div></div></section>'}
+
+/*__PLANNER_JS__*/
+/* ---------- router ---------- */
+var VIEWS={overview:vOverview,plan:vPlan,compare:vCompare,map:vMap,know:vKnow,sailings:vSailings,itineraries:vItins,ports:vPorts,excursions:vExcursions,travel:vTravel,lines:vLines,sources:vSources};
+var pendingGoto=null;
+function render(){
+  var v=(location.hash||"#overview").slice(1);if(!VIEWS[v])v="overview";
+  document.querySelectorAll("nav.tabs a").forEach(function(a){a.removeAttribute("aria-current");if(a.getAttribute("href")==="#"+v){a.setAttribute("aria-current","page");try{a.scrollIntoView({block:"nearest",inline:"nearest"})}catch(x){}}});
+  var app=document.getElementById("app");app.innerHTML=VIEWS[v]();
+  if(pendingGoto){var el=document.getElementById("s-"+pendingGoto);pendingGoto=null;afterRender(v);if(el){var dd=el.querySelector("details");if(dd)dd.open=true;el.scrollIntoView({block:"start"});window.scrollBy(0,-110)}}
+  else if(pendingJump){afterRender(v)}
+  else{window.scrollTo(0,0);afterRender(v)}
+}
+document.addEventListener("click",function(e){
+  var xo=e.target.closest("[data-expo]");if(xo){state.exPort=xo.getAttribute("data-expo");if(state.exPort==="ketchikan_wc")state.exPort="ketchikan";state.exLabel="all";store.set("filters",state);if(location.hash==="#excursions"){e.preventDefault();render()}return}
+  var g=e.target.closest("[data-goto]");if(g){pendingGoto=g.getAttribute("data-goto");if(state.window==="june"&&pendingGoto&&!IDX.sail[pendingGoto]._june){state.window="all"}state.glacier="all";state.line="all";store.set("filters",state);if(location.hash==="#sailings"){e.preventDefault();render()}return}
+  var c=e.target.closest(".chip[data-f]");if(c){state[c.getAttribute("data-f")]=c.getAttribute("data-v");store.set("filters",state);render();return}
+  var dot=e.target.closest(".dot");if(dot)showTip(dot.getAttribute("data-id"));
+});
+document.addEventListener("keydown",function(e){var dot=e.target.closest&&e.target.closest(".dot");if(dot&&(e.key==="Enter"||e.key===" ")){e.preventDefault();showTip(dot.getAttribute("data-id"))}});
+document.addEventListener("change",function(e){var s=e.target.closest("select[data-f]");if(s){state[s.getAttribute("data-f")]=s.value;store.set("filters",state);render()}});
+function showTip(id){var s=IDX.sail[id],t=document.getElementById("tip");if(!s||!t)return;
+  t.innerHTML='<b>'+esc(s._ship.name)+'</b> · '+fmtD(s.depart,{weekday:"short",month:"short",day:"numeric"})+' · '+esc(GSHORT[s._it.glacier]||"No glacier day")+' · fare <span class="num">'+money(s._fare)+'</span> · est. total <span class="num">'+money(s._total)+'</span> · <a href="#sailings" data-goto="'+esc(s.id)+'">open</a>'}
+window.addEventListener("hashchange",render);
+
+function boot(data){D=data;prep();IDX.sail={};D.sailings.forEach(function(s){IDX.sail[s.id]=s});prep4();loadPlans();
+  document.getElementById("subline").textContent="Seattle round trips · "+D.sailings.length+" sailings · prices checked "+fmtD(D.meta.updated,{month:"short",day:"numeric",year:"numeric"});
+  document.getElementById("foot").innerHTML='<p>Data version '+esc(D.meta.version)+'. Prices change daily; recheck on the cruise line\'s site before booking. Ship and line names are used only to identify sailings; no affiliation.</p>';
+  render()}
+var inline=null;try{var raw=document.getElementById("inline-data").textContent.trim();if(raw&&raw.charAt(0)==="{")inline=JSON.parse(raw)}catch(e){}
+function fallback(){if(inline)boot(inline);else document.getElementById("app").innerHTML='<div class="card empty">Planner data could not be loaded. Keep data.json next to this page, or use the single-file version.</div>'}
+if(location.protocol==="file:"){fallback()}
+else{fetch("data.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){if(!d||!d.sailings)throw 0;boot(d)}).catch(fallback)}
+})();
+</script>
