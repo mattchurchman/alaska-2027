@@ -656,6 +656,15 @@
    "publisher": "Celebrity Cruises",
    "checked": "2026-11-07",
    "note": "'Pricing shown includes all taxes & fees', starting price avg per person, 2 guests. Promos shown: 75% Off 2nd Guest, Up to $1,000 Instant Savings."
+  },
+  {
+   "id": "ncl_vb_jade_2027",
+   "title": "Norwegian Cruise Line vacation builder: Norwegian Jade Alaska (Vancouver / Whittier) 2027",
+   "url": "https://www.ncl.com/vacations?destination=alaska&ship=JADE",
+   "kind": "first-party",
+   "publisher": "Norwegian Cruise Line",
+   "checked": "2026-11-07",
+   "note": "Logged out, 2 guests, USD. Stateroom page shows 'Per Person. Includes taxes, fees and port expenses'. Auto-applied offers: 50% Off All Cruises, 2-For-1 Deposits, Risk-Free Cancellation. Port times from the vacation builder Itinerary tab."
   }
  ]
 }
