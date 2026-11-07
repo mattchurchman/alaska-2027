@@ -92,3 +92,14 @@ RCI port times (itinerary pages):
 - Solstice NB Vancouver→Seward SL07YVR-2527737053 (pkg SL07A443): Jun 4 880/1105/1544/1715/3639; Jun 18 845/1578/1602/1862/4339; Jul 2 1267/1845/1776/2372/-. Times (Jun 18): Van 16:00; IP; Sitka 09:30-17:30; Endicott Arm 09:00-15:00; Icy Strait 07:00-17:00; Juneau 07:00-16:30; Hubbard 07:00-11:00; Seward 06:00
 - Solstice NB variant SL07YVR-1077280133 (Ward Cove, Sitka, Icy Strait, Juneau, Hubbard): May 21 only (before window)
 - Solstice SB Seward→Vancouver SL07SWD-1391220359 (pkg SL07A442): May 28 852/1175/1350/1629/3913; Jun 11 986/1304/1553/2212/4231; Jun 25 954/1473/1914/2151/4502; Jul 9 1152/1843/1821/2292/5136. Times (May 28): Seward 20:00; Hubbard 15:00-18:00; Juneau 10:00-21:00; Skagway 07:00-19:30; Icy Strait 07:00-17:00; Ketchikan 10:30-19:30; IP; Van 07:00
+
+## Part 2 (2026-11-07)
+### Norwegian Jade (ncl.com vacation builder JSON, logged out, 2 guests, "Per Person. Includes taxes, fees and port expenses")
+API: /api/vacation-builder/v2/itinerary/{code}/sailings?numberOfGuests=2 (combinedPrice pp); times: /api/vacation-builder/itinerary/{code}/package/{pkg}/events.
+NB JADE7VANKTNJNUSGYICYWQF (Mon, Glacier Bay + Icy Strait evening): May 24 749/1079/2019/2289 (In/OV/Bal/ClubBalSuite), Jun 7 919/1039/2159/2349, Jun 21 1049/1249/2339/2619, Jul 5 1049/1219/2339/2559.
+SB JADE7WQFHNSICYSGYKTNVAN (Hubbard, Haines): May 31 759/959/1859/2069. SB JADE7WQFICYJNUSGYKTNVAN (Hubbard, Juneau): Jun 14 959/1089/2869/2889, Jun 28 999/1159/2549/2699.
+Hubbard codes JADE7VANKTNJNUSGYICYHGCWQF / JADE7WQFHGCICYJNUSGYKTNVAN and JADE7VANKTNJNUSGYWQF have no sailings in May 22-Jul 7.
+### Disney: disneycruise.disney.go.com/cruises-destinations/list/ returns its 404 page in the browser pane (also via the site's own Find a Cruise link). Used alaskacruises.com 'from' interior (incl. taxes) + gangwaze times.
+Wonder Mon: May 24 2012, May 31 2159, Jun 7 2306, Jun 14 2131, Jun 21 2251, Jun 28 2425, Jul 5 2145. Magic Thu: May 27 1858, Jun 3 2019, Jun 10 2089, Jun 17 2096, Jun 24 2096, Jul 1 2061.
+### Seattle refresh (cheapest two-cabin sailing per line): Voyager May 28, Princess Star May 30, Celebrity Edge Jun 4, HAL Eurodam May 29 (interior only) unchanged. Carnival May 25 down $15-30 pp (Carnival API says taxesAndFeesInPrice NotIncluded but the itinerary page says '*Taxes and fees are included.'). NCL Bliss May 29 balcony +$50 pp, Club Balcony Suite +$80 pp.
+### Small ships (context only): UnCruise Wilderness Discoverer Jun 27 2027 Juneau-Ketchikan Navigator $7,300 pp dbl (uncruise.com, port taxes incl.); UnCruise summer from $8,500 pp and Lindblad Greg Mortimer Jul 2 2027 Cat 05 balcony $11,660 pp (thepointsparty.com, Oct 7 2026). Viking Venus Jul 9-19 2027 V2 $6,999 pp (same article).

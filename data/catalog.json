@@ -82,7 +82,13 @@
     "note": "Applies to new bookings made after Sep 2, 2026 for 2027 sailings."
    },
    "accessibility": "Accessible staterooms bookable on the line's site (check 'Accessible stateroom').",
-   "gratuityRow": "line:princess:gratuity"
+   "gratuityRow": "line:princess:gratuity",
+   "alaskaNotes": "Alaska specialist: sailing Alaska since 1969 and the biggest Glacier Bay presence (85 Glacier Bay calls planned in 2027). Owns five wilderness lodges (incl. Denali and Mt. McKinley Princess) for cruisetours. Glacier Bay on most Seattle and Vancouver itineraries here; Voyage of the Glaciers one-ways add College Fjord or Hubbard.",
+   "alaskaNotesSources": [
+    "princess_alaska_2027_release",
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": true
   },
   {
    "id": "hal",
@@ -100,7 +106,13 @@
     "note": "Sources disagree (75 vs 90 days). Confirm at booking."
    },
    "accessibility": "Booking flow has a 'Wheelchair Accessible Room' checkbox.",
-   "gratuityRow": "line:hal:gratuity"
+   "gratuityRow": "line:hal:gratuity",
+   "alaskaNotes": "Alaska specialist: 80 years in Alaska in 2027. Holds Glacier Bay permits (Eurodam Seattle Explorer and Glacier Discovery one-ways); a National Park ranger boards for the Glacier Bay day. Owns Holland America Denali Lodge for cruisetours; 'Glacier Guarantee' and Alaska Up Close talks aboard. Many summer Vancouver sailings are sold only as cruisetours.",
+   "alaskaNotesSources": [
+    "hal_alaska_2027_release",
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": true
   },
   {
    "id": "ncl",
@@ -118,7 +130,13 @@
     "note": "Verify in NCL Guest Ticket Contract."
    },
    "accessibility": "'I need an accessible stateroom' option in booking; requires affirmation of need.",
-   "gratuityRow": "line:ncl:gratuity"
+   "gratuityRow": "line:ncl:gratuity",
+   "alaskaNotes": "Holds Glacier Bay entry: Norwegian Jade's northbound Vancouver-Whittier sailings and some Joy 9-day Seattle trips include it. Sells Denali cruisetours around Jade's one-ways (Anchorage/Fairbanks Denali Express, Denali by Rail, etc. seen on ncl.com). Big resort-style ships; freestyle dining.",
+   "alaskaNotesSources": [
+    "ncl_vb_jade_2027",
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": true
   },
   {
    "id": "rci",
@@ -136,7 +154,12 @@
     "note": "5-14 night cruises."
    },
    "accessibility": "Accessible staterooms available by request in booking.",
-   "gratuityRow": "line:rci:gratuity"
+   "gratuityRow": "line:rci:gratuity",
+   "alaskaNotes": "No Glacier Bay permit (not on the NPS-authorized list); glacier days are Dawes/Endicott Arm, Tracy Arm or Hubbard. Big-ship activities (rock walls, North Star on Quantum-class). Anthem's Seward one-ways reach Hubbard Glacier.",
+   "alaskaNotesSources": [
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   },
   {
    "id": "celebrity",
@@ -154,7 +177,12 @@
     "note": "Taken from Celebrity's UK FAQ; confirm US terms."
    },
    "accessibility": "Inside staterooms listed as including accessible options.",
-   "gratuityRow": "line:celebrity:gratuity"
+   "gratuityRow": "line:celebrity:gratuity",
+   "alaskaNotes": "No Glacier Bay permit; glacier days are Dawes/Endicott Arm or Hubbard. More upscale feel than Royal Caribbean (same parent company); Solstice one-ways to Seward add Hubbard Glacier.",
+   "alaskaNotesSources": [
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   },
   {
    "id": "carnival",
@@ -172,7 +200,12 @@
     "note": "Confirm on booking confirmation."
    },
    "accessibility": "Accessible staterooms by request.",
-   "gratuityRow": "line:carnival:gratuity"
+   "gratuityRow": "line:carnival:gratuity",
+   "alaskaNotes": "No Glacier Bay permit; the Seattle itinerary here uses Tracy Arm. Lowest fares and the most casual atmosphere; a single ship (Carnival Legend) does the Seattle run.",
+   "alaskaNotesSources": [
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   },
   {
    "id": "msc",
@@ -190,7 +223,12 @@
     "note": ""
    },
    "accessibility": "Not captured.",
-   "gratuityRow": "line:msc:gratuity"
+   "gratuityRow": "line:msc:gratuity",
+   "alaskaNotes": "No Glacier Bay permit. Newer to Alaska (Seattle round trips); glacier day is Dawes/Endicott or Tracy Arm per itinerary.",
+   "alaskaNotesSources": [
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   },
   {
    "id": "virgin",
@@ -208,7 +246,12 @@
     "note": ""
    },
    "accessibility": "Not captured.",
-   "gratuityRow": "line:virgin:gratuity"
+   "gratuityRow": "line:virgin:gratuity",
+   "alaskaNotes": "No Glacier Bay permit. Adults-only (18+), so a family of four adults qualifies. Newer to Alaska.",
+   "alaskaNotesSources": [
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   },
   {
    "id": "oceania",
@@ -226,7 +269,12 @@
     "note": ""
    },
    "accessibility": "Not captured.",
-   "gratuityRow": "line:oceania:gratuity"
+   "gratuityRow": "line:oceania:gratuity",
+   "alaskaNotes": "No Glacier Bay permit. Premium small-ish ships (about 1,250 guests); adults-only per an agent listing. Seattle round trips start late June.",
+   "alaskaNotesSources": [
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   },
   {
    "id": "disney",
@@ -244,7 +292,13 @@
     "note": ""
    },
    "accessibility": "Not captured.",
-   "gratuityRow": "line:disney:gratuity"
+   "gratuityRow": "line:disney:gratuity",
+   "alaskaNotes": "No Glacier Bay permit; the glacier day is scenic viewing at the Stikine Icecap. Family-focused line sailing only from Vancouver in Alaska. Disney's own search page could not be read on 2026-11-07, so prices here are reseller samples.",
+   "alaskaNotesSources": [
+    "dcl_alaska",
+    "pointsparty_glacier_bay_permits"
+   ],
+   "glacierBayPermit": false
   }
  ],
  "ships": [
@@ -10904,6 +10958,41 @@
    "line": "Princess – 6-, 8-, 9-day Vancouver round trips",
    "finding": "Only in April/September 2027 (Coral, Crown, Discovery), outside the late-May to early-July window.",
    "source": "princess_search_yvr"
+  },
+  {
+   "line": "Crystal – Crystal Serenity (Vancouver → Seward)",
+   "finding": "Seen in the June 2027 Vancouver departure pattern (Mondays to Seward). Luxury, all-inclusive pricing; not priced here.",
+   "source": null
+  },
+  {
+   "line": "Silversea – Silver Whisper (Vancouver → Seward)",
+   "finding": "Thursday departures to Seward in June 2027 per the Vancouver weekly pattern. Luxury expedition-style; not priced here.",
+   "source": null
+  },
+  {
+   "line": "Seabourn – Seabourn Encore / Odyssey (Vancouver, Seward)",
+   "finding": "Seabourn holds Glacier Bay authorization. Luxury small ship; not priced here.",
+   "source": "pointsparty_glacier_bay_permits"
+  },
+  {
+   "line": "Explora Journeys – Explora III",
+   "finding": "Listed among Vancouver departures in summer 2027. Ultra-luxury; not priced here.",
+   "source": null
+  },
+  {
+   "line": "Viking – Viking Venus",
+   "finding": "10-night Vancouver-Seward style voyages (e.g. Jul 9-19 2027) rather than 7 nights; Viking holds Glacier Bay authorization. Out of the 7-night scope.",
+   "source": "pointsparty_alaska_cost"
+  },
+  {
+   "line": "Regent Seven Seas, Oceania (Vancouver/Seward voyages)",
+   "finding": "Luxury/premium one-ways exist in some seasons; not researched for 2027 dates. Oceania's Seattle round trip is in the main data.",
+   "source": null
+  },
+  {
+   "line": "Small-ship and expedition lines (UnCruise, Lindblad, Alaskan Dream, American Cruise Lines)",
+   "finding": "Ships of roughly 50-150 guests sailing from Juneau, Sitka or Ketchikan (not Seattle/Vancouver), with kayaks, skiffs and naturalists instead of shows. Prices are far higher: roughly 5 to 10 times a big-ship interior fare per person for a summer week (UnCruise and Lindblad samples in notes/phase1.md). Fit for the parents is mixed: most days include shore landings by small boat and wet-step or beach landings, and several of these ships have no elevator. Good fit for the brothers; check each ship's accessibility page before considering it for the parents. Alaskan Dream Cruises and American Cruise Lines were not priced.",
+   "source": "uncruise_pricing_2027"
   }
  ]
 }

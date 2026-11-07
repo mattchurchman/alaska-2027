@@ -692,6 +692,60 @@
    "publisher": "Disney Cruise Line",
    "checked": "2026-11-07",
    "note": "Confirms departures from Vancouver and ports (Stikine Icecap glacier viewing, Icy Strait Point, Juneau, Ketchikan/Ward Cove, Skagway). No prices on this page."
+  },
+  {
+   "id": "princess_alaska_2027_release",
+   "title": "Princess Cruises unveils 2027 Alaska season with return of Star Princess (news release, Aug 2025)",
+   "url": "https://www.princess.com/news/news-releases/2025/08/princess-cruises-unveils-2027-alaska-season-with-return-of-star-princess",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-07",
+   "note": "Nearly 60 years in Alaska (since 1969); 85 Glacier Bay calls in 2027; five wilderness lodges incl. Mt. McKinley and Denali Princess lodges."
+  },
+  {
+   "id": "hal_alaska_2027_release",
+   "title": "Holland America Line unveils 2027 Alaska season (news release, Aug 7 2025)",
+   "url": "https://www.hollandamerica.com/en/us/news/2025/August/news-08072025-Alaska-2027",
+   "kind": "first-party",
+   "publisher": "Holland America Line",
+   "checked": "2026-11-07",
+   "note": "80 years in Alaska in 2027; six ships; Glacier Bay on Eurodam Alaska Explorer and Glacier Discovery one-ways; National Park ranger boards for Glacier Bay; Holland America Denali Lodge; Glacier Guarantee; We Love Alaska and Alaska Up Close programs."
+  },
+  {
+   "id": "pointsparty_glacier_bay_permits",
+   "title": "Glacier Bay Cruises: Which Ships Go and How Permits Work",
+   "url": "https://thepointsparty.com/articles/glacier-bay-cruise-ships-permits",
+   "kind": "secondary",
+   "publisher": "The Points Party",
+   "checked": "2026-11-07",
+   "note": "Lines authorized in Glacier Bay per the NPS list: Princess, Holland America, Norwegian, Seabourn, Cunard, Viking. No more than two cruise ships a day."
+  },
+  {
+   "id": "nps_glba_cruise",
+   "title": "Glacier Bay National Park: cruise ship services news release",
+   "url": "https://www.nps.gov/glba/learn/news/glacier-bay-issues-new-contracts-for-cruise-ship-services.htm",
+   "kind": "government",
+   "publisher": "National Park Service",
+   "checked": "2026-11-07",
+   "note": "Concession contracts for cruise ship entry into Glacier Bay."
+  },
+  {
+   "id": "pointsparty_alaska_cost",
+   "title": "How Much Does an Alaska Cruise Cost? Fares From Eight Cruise Lines (Oct 7 2026 snapshot)",
+   "url": "https://thepointsparty.com/articles/alaska-cruise-cost",
+   "kind": "secondary",
+   "publisher": "The Points Party",
+   "checked": "2026-11-07",
+   "note": "Small-ship and Viking from-prices used only as context in the small-ship paragraph."
+  },
+  {
+   "id": "uncruise_pricing_2027",
+   "title": "UnCruise: pricing, Alaska's Fjords & Glaciers with Ketchikan (Wilderness Discoverer)",
+   "url": "https://uncruise.com/pages/pricing-photography-cruise-alaskas-fjords-glaciers-with-ketchikan",
+   "kind": "first-party",
+   "publisher": "UnCruise Adventures",
+   "checked": "2026-11-07",
+   "note": "Jun 27 2027, Juneau to Ketchikan, 76 guests; Navigator cabin double occupancy per person, port taxes and fees included, gratuities not included."
   }
  ]
 }
