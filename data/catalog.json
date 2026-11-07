@@ -46,8 +46,7 @@
    "gateway": "YVR",
    "glacier": null,
    "color": "#b45309",
-   "dash": null,
-   "status": "phase1"
+   "dash": null
   },
   {
    "id": "YVR-N",
@@ -55,8 +54,7 @@
    "gateway": "YVR",
    "glacier": null,
    "color": "#be123c",
-   "dash": "10 4",
-   "status": "phase1"
+   "dash": "10 4"
   },
   {
    "id": "YVR-S",
@@ -64,8 +62,7 @@
    "gateway": "ANC",
    "glacier": null,
    "color": "#9d174d",
-   "dash": "10 4",
-   "status": "phase1"
+   "dash": "10 4"
   }
  ],
  "lines": [
@@ -345,6 +342,64 @@
    "built": 2012,
    "guests": 1250,
    "guestsSource": "Cruise Web listing"
+  },
+  {
+   "id": "emerald_princess",
+   "line": "princess",
+   "name": "Emerald Princess",
+   "built": null,
+   "guests": 3090,
+   "guestsSource": "Princess itinerary page",
+   "note": "Guests from the Princess itinerary page."
+  },
+  {
+   "id": "crown_princess",
+   "line": "princess",
+   "name": "Crown Princess",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "discovery_princess",
+   "line": "princess",
+   "name": "Discovery Princess",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "coral_princess",
+   "line": "princess",
+   "name": "Coral Princess",
+   "built": 2003,
+   "guests": 2000,
+   "guestsSource": "Princess itinerary page",
+   "note": "Princess page: inaugural Jan 17, 2003; refurbished Jan 14, 2019."
+  },
+  {
+   "id": "island_princess",
+   "line": "princess",
+   "name": "Island Princess",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "westerdam",
+   "line": "hal",
+   "name": "Westerdam",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "noordam",
+   "line": "hal",
+   "name": "Noordam",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
   }
  ],
  "itineraries": [
@@ -5117,6 +5172,981 @@
    ],
    "mapLineBasis": "schematic",
    "routeFamily": "SEA-NONE"
+  },
+  {
+   "id": "princess_emerald_yvr_gb",
+   "line": "princess",
+   "ship": "emerald_princess",
+   "routeFamily": "YVR-RT",
+   "name": "7-Day Inside Passage (with Glacier Bay National Park), round trip Vancouver",
+   "weekday": "Tuesday",
+   "glacier": "Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary page, voyage E714",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "14:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "06:15",
+      "dep": "15:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "10:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes",
+   "line": "princess",
+   "ship": "emerald_princess",
+   "routeFamily": "YVR-RT",
+   "name": "7-Day Inside Passage, round trip Vancouver",
+   "weekday": "Tuesday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesSource": "Princess itinerary pages, voyages E715-E720. Juneau arrival is 14:00 or 15:00 and Vancouver departure 15:00 or 16:00 depending on date (see sailing notes).",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "14:00",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "08:00",
+      "dep": "14:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "07:30",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_n",
+   "line": "princess",
+   "ship": "crown_princess",
+   "routeFamily": "YVR-N",
+   "name": "7-Day Voyage of the Glaciers (Northbound), Vancouver to Whittier",
+   "weekday": "Saturday",
+   "glacier": "Glacier Bay + College Fjord",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages 3721, 3723, 3725, 3727",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:00",
+      "dep": "14:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "08:00",
+      "dep": "21:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "06:15",
+      "dep": "15:15"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "college_fjord",
+      "arr": "18:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "whittier",
+      "arr": "00:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_s",
+   "line": "princess",
+   "ship": "crown_princess",
+   "routeFamily": "YVR-S",
+   "name": "7-Day Voyage of the Glaciers with Glacier Bay (Southbound), Whittier to Vancouver",
+   "weekday": "Saturday",
+   "glacier": "Hubbard + Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages 3722, 3724, 3726",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "whittier",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "09:15",
+      "dep": "18:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "05:30",
+      "dep": "20:45"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "06:30",
+      "dep": "16:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "10:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_n",
+   "line": "princess",
+   "ship": "discovery_princess",
+   "routeFamily": "YVR-N",
+   "name": "7-Day Voyage of the Glaciers (Northbound), Vancouver to Whittier",
+   "weekday": "Saturday",
+   "glacier": "Glacier Bay + College Fjord",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages X723, X725, X727",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:00",
+      "dep": "14:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "08:00",
+      "dep": "21:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "06:15",
+      "dep": "15:15"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "college_fjord",
+      "arr": "18:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "whittier",
+      "arr": "00:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_s",
+   "line": "princess",
+   "ship": "discovery_princess",
+   "routeFamily": "YVR-S",
+   "name": "7-Day Voyage of the Glaciers with Glacier Bay (Southbound), Whittier to Vancouver",
+   "weekday": "Saturday",
+   "glacier": "Hubbard + Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages X722, X724, X726, X728. Calls at Icy Strait Point instead of Skagway. Vancouver arrival 08:00 on X724.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "whittier",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "09:15",
+      "dep": "18:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "06:00",
+      "dep": "19:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "06:30",
+      "dep": "16:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "10:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_n",
+   "line": "princess",
+   "ship": "coral_princess",
+   "routeFamily": "YVR-N",
+   "name": "7-Day Voyage of the Glaciers (Northbound), Vancouver to Whittier",
+   "weekday": "Wednesday",
+   "glacier": "Hubbard + College Fjord (no Glacier Bay)",
+   "glacierPlace": "hubbard",
+   "timesSource": "Princess itinerary pages 6710, 6712, 6714. Hubbard 15:30-20:30 (6712: 15:00-20:00).",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:00",
+      "dep": "14:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "09:00",
+      "dep": "21:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:30",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "college_fjord",
+      "arr": "18:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "whittier",
+      "arr": "00:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_s",
+   "line": "princess",
+   "ship": "coral_princess",
+   "routeFamily": "YVR-S",
+   "name": "7-Day Voyage of the Glaciers with Glacier Bay (Southbound), Whittier to Vancouver",
+   "weekday": "Wednesday",
+   "glacier": "Hubbard + Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages 6709, 6711, 6713, 6715",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "whittier",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "09:15",
+      "dep": "18:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "06:30",
+      "dep": "16:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "10:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_n_gb",
+   "line": "princess",
+   "ship": "island_princess",
+   "routeFamily": "YVR-N",
+   "name": "7-Day Voyage of the Glaciers (Northbound), Vancouver to Whittier",
+   "weekday": "Wednesday",
+   "glacier": "Glacier Bay + College Fjord",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages 2714, 2716, 2718",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:00",
+      "dep": "14:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "09:00",
+      "dep": "21:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "06:00",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "college_fjord",
+      "arr": "18:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "whittier",
+      "arr": "00:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_n_hubbard",
+   "line": "princess",
+   "ship": "island_princess",
+   "routeFamily": "YVR-N",
+   "name": "7-Day Voyage of the Glaciers (Northbound), Vancouver to Whittier",
+   "weekday": "Wednesday",
+   "glacier": "Hubbard + College Fjord (no Glacier Bay)",
+   "glacierPlace": "hubbard",
+   "timesSource": "Princess itinerary page 2712",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "06:00",
+      "dep": "14:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "09:00",
+      "dep": "21:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:30",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "college_fjord",
+      "arr": "18:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "whittier",
+      "arr": "00:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_s",
+   "line": "princess",
+   "ship": "island_princess",
+   "routeFamily": "YVR-S",
+   "name": "7-Day Voyage of the Glaciers with Glacier Bay (Southbound), Whittier to Vancouver",
+   "weekday": "Wednesday",
+   "glacier": "Hubbard + Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Princess itinerary pages 2713, 2715, 2717",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "whittier",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "09:15",
+      "dep": "18:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "06:00",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "06:30",
+      "dep": "16:15"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "10:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:30"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_westerdam_gd_s",
+   "line": "hal",
+   "ship": "westerdam",
+   "routeFamily": "YVR-S",
+   "name": "7-Day Glacier Discovery Southbound, Whittier to Vancouver",
+   "weekday": "Sunday",
+   "glacier": "Hubbard + Glacier Bay",
+   "glacierPlace": "glacier_bay",
+   "timesSource": "Holland America voyage pages w733 and w737 (identical); w741 assumed the same",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "whittier",
+      "dep": "19:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "glacier_bay",
+      "arr": "08:30",
+      "dep": "18:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "21:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "08:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "11:00",
+      "dep": "19:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_noordam_explorer",
+   "line": "hal",
+   "ship": "noordam",
+   "routeFamily": "SEA-DAWES",
+   "name": "7-Day Alaska Explorer",
+   "weekday": "Sunday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesSource": "Holland America voyage pages n731 and n739 (identical); n734 assumed the same",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "sea_p91",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "stephens_passage",
+      "arr": null,
+      "dep": null
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "12:30",
+      "dep": "22:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "08:00",
+      "dep": "14:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "08:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "07:00",
+      "dep": "13:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "victoria",
+      "arr": "20:00",
+      "dep": "23:59"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "sea_p91",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "timesStatus": "verified",
+   "mapLineBasis": null,
+   "addedIn": "p1"
   }
  ],
  "sailings": [
@@ -6303,6 +7333,797 @@
     "miniSuite": "sailing:oceania_riviera_visions_2027-07-01:miniSuite"
    },
    "priceSourceKind": "aggregator"
+  },
+  {
+   "id": "princess_emerald_yvr_gb_2027-05-25",
+   "itinerary": "princess_emerald_yvr_gb",
+   "ship": "emerald_princess",
+   "depart": "2027-05-25",
+   "return": "2027-06-01",
+   "nights": 7,
+   "code": "E714",
+   "flags": [],
+   "note": "Vancouver departure 15:00.",
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_gb_2027-05-25:interior",
+    "oceanview": "sailing:princess_emerald_yvr_gb_2027-05-25:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_gb_2027-05-25:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_gb_2027-05-25:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes_2027-06-01",
+   "itinerary": "princess_emerald_yvr_dawes",
+   "ship": "emerald_princess",
+   "depart": "2027-06-01",
+   "return": "2027-06-08",
+   "nights": 7,
+   "code": "E715",
+   "flags": [],
+   "note": "Vancouver departure 15:00.",
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_dawes_2027-06-01:interior",
+    "oceanview": "sailing:princess_emerald_yvr_dawes_2027-06-01:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_dawes_2027-06-01:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_dawes_2027-06-01:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes_2027-06-08",
+   "itinerary": "princess_emerald_yvr_dawes",
+   "ship": "emerald_princess",
+   "depart": "2027-06-08",
+   "return": "2027-06-15",
+   "nights": 7,
+   "code": "E716",
+   "flags": [],
+   "note": "Vancouver 15:00; Juneau 15:00-22:00.",
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_dawes_2027-06-08:interior",
+    "oceanview": "sailing:princess_emerald_yvr_dawes_2027-06-08:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_dawes_2027-06-08:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_dawes_2027-06-08:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes_2027-06-15",
+   "itinerary": "princess_emerald_yvr_dawes",
+   "ship": "emerald_princess",
+   "depart": "2027-06-15",
+   "return": "2027-06-22",
+   "nights": 7,
+   "code": "E717",
+   "flags": [],
+   "note": "Vancouver departure 15:00.",
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_dawes_2027-06-15:interior",
+    "oceanview": "sailing:princess_emerald_yvr_dawes_2027-06-15:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_dawes_2027-06-15:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_dawes_2027-06-15:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes_2027-06-22",
+   "itinerary": "princess_emerald_yvr_dawes",
+   "ship": "emerald_princess",
+   "depart": "2027-06-22",
+   "return": "2027-06-29",
+   "nights": 7,
+   "code": "E718",
+   "flags": [],
+   "note": "Juneau 15:00-22:00.",
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_dawes_2027-06-22:interior",
+    "oceanview": "sailing:princess_emerald_yvr_dawes_2027-06-22:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_dawes_2027-06-22:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_dawes_2027-06-22:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes_2027-06-29",
+   "itinerary": "princess_emerald_yvr_dawes",
+   "ship": "emerald_princess",
+   "depart": "2027-06-29",
+   "return": "2027-07-06",
+   "nights": 7,
+   "code": "E719",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_dawes_2027-06-29:interior",
+    "oceanview": "sailing:princess_emerald_yvr_dawes_2027-06-29:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_dawes_2027-06-29:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_dawes_2027-06-29:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_emerald_yvr_dawes_2027-07-06",
+   "itinerary": "princess_emerald_yvr_dawes",
+   "ship": "emerald_princess",
+   "depart": "2027-07-06",
+   "return": "2027-07-13",
+   "nights": 7,
+   "code": "E720",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_emerald_yvr_dawes_2027-07-06:interior",
+    "oceanview": "sailing:princess_emerald_yvr_dawes_2027-07-06:oceanview",
+    "balcony": "sailing:princess_emerald_yvr_dawes_2027-07-06:balcony",
+    "miniSuite": "sailing:princess_emerald_yvr_dawes_2027-07-06:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_n_2027-05-22",
+   "itinerary": "princess_crown_votg_n",
+   "ship": "crown_princess",
+   "depart": "2027-05-22",
+   "return": "2027-05-29",
+   "nights": 7,
+   "code": "3721",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_n_2027-05-22:interior",
+    "oceanview": "sailing:princess_crown_votg_n_2027-05-22:oceanview",
+    "balcony": "sailing:princess_crown_votg_n_2027-05-22:balcony",
+    "miniSuite": "sailing:princess_crown_votg_n_2027-05-22:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_s_2027-05-29",
+   "itinerary": "princess_crown_votg_s",
+   "ship": "crown_princess",
+   "depart": "2027-05-29",
+   "return": "2027-06-05",
+   "nights": 7,
+   "code": "3722",
+   "flags": [],
+   "note": "Suites sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_s_2027-05-29:interior",
+    "oceanview": "sailing:princess_crown_votg_s_2027-05-29:oceanview",
+    "balcony": "sailing:princess_crown_votg_s_2027-05-29:balcony",
+    "miniSuite": "sailing:princess_crown_votg_s_2027-05-29:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_n_2027-06-05",
+   "itinerary": "princess_crown_votg_n",
+   "ship": "crown_princess",
+   "depart": "2027-06-05",
+   "return": "2027-06-12",
+   "nights": 7,
+   "code": "3723",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_n_2027-06-05:interior",
+    "oceanview": "sailing:princess_crown_votg_n_2027-06-05:oceanview",
+    "balcony": "sailing:princess_crown_votg_n_2027-06-05:balcony",
+    "miniSuite": "sailing:princess_crown_votg_n_2027-06-05:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_s_2027-06-12",
+   "itinerary": "princess_crown_votg_s",
+   "ship": "crown_princess",
+   "depart": "2027-06-12",
+   "return": "2027-06-19",
+   "nights": 7,
+   "code": "3724",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_s_2027-06-12:interior",
+    "oceanview": "sailing:princess_crown_votg_s_2027-06-12:oceanview",
+    "balcony": "sailing:princess_crown_votg_s_2027-06-12:balcony",
+    "miniSuite": "sailing:princess_crown_votg_s_2027-06-12:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_n_2027-06-19",
+   "itinerary": "princess_crown_votg_n",
+   "ship": "crown_princess",
+   "depart": "2027-06-19",
+   "return": "2027-06-26",
+   "nights": 7,
+   "code": "3725",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_n_2027-06-19:interior",
+    "oceanview": "sailing:princess_crown_votg_n_2027-06-19:oceanview",
+    "balcony": "sailing:princess_crown_votg_n_2027-06-19:balcony",
+    "miniSuite": "sailing:princess_crown_votg_n_2027-06-19:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_s_2027-06-26",
+   "itinerary": "princess_crown_votg_s",
+   "ship": "crown_princess",
+   "depart": "2027-06-26",
+   "return": "2027-07-03",
+   "nights": 7,
+   "code": "3726",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_s_2027-06-26:interior",
+    "oceanview": "sailing:princess_crown_votg_s_2027-06-26:oceanview",
+    "balcony": "sailing:princess_crown_votg_s_2027-06-26:balcony",
+    "miniSuite": "sailing:princess_crown_votg_s_2027-06-26:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_crown_votg_n_2027-07-03",
+   "itinerary": "princess_crown_votg_n",
+   "ship": "crown_princess",
+   "depart": "2027-07-03",
+   "return": "2027-07-10",
+   "nights": 7,
+   "code": "3727",
+   "flags": [
+    "holiday"
+   ],
+   "note": "Mini-suites sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_crown_votg_n_2027-07-03:interior",
+    "oceanview": "sailing:princess_crown_votg_n_2027-07-03:oceanview",
+    "balcony": "sailing:princess_crown_votg_n_2027-07-03:balcony",
+    "miniSuite": "sailing:princess_crown_votg_n_2027-07-03:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_s_2027-05-22",
+   "itinerary": "princess_discovery_votg_s",
+   "ship": "discovery_princess",
+   "depart": "2027-05-22",
+   "return": "2027-05-29",
+   "nights": 7,
+   "code": "X722",
+   "flags": [],
+   "note": "Oceanview priced above balcony on the Princess page (few oceanview cabins on this ship).",
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_s_2027-05-22:interior",
+    "oceanview": "sailing:princess_discovery_votg_s_2027-05-22:oceanview",
+    "balcony": "sailing:princess_discovery_votg_s_2027-05-22:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_s_2027-05-22:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_n_2027-05-29",
+   "itinerary": "princess_discovery_votg_n",
+   "ship": "discovery_princess",
+   "depart": "2027-05-29",
+   "return": "2027-06-05",
+   "nights": 7,
+   "code": "X723",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_n_2027-05-29:interior",
+    "oceanview": "sailing:princess_discovery_votg_n_2027-05-29:oceanview",
+    "balcony": "sailing:princess_discovery_votg_n_2027-05-29:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_n_2027-05-29:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_s_2027-06-05",
+   "itinerary": "princess_discovery_votg_s",
+   "ship": "discovery_princess",
+   "depart": "2027-06-05",
+   "return": "2027-06-12",
+   "nights": 7,
+   "code": "X724",
+   "flags": [],
+   "note": "Suites sold out. Vancouver arrival 08:00.",
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_s_2027-06-05:interior",
+    "oceanview": "sailing:princess_discovery_votg_s_2027-06-05:oceanview",
+    "balcony": "sailing:princess_discovery_votg_s_2027-06-05:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_s_2027-06-05:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_n_2027-06-12",
+   "itinerary": "princess_discovery_votg_n",
+   "ship": "discovery_princess",
+   "depart": "2027-06-12",
+   "return": "2027-06-19",
+   "nights": 7,
+   "code": "X725",
+   "flags": [],
+   "note": "Suites sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_n_2027-06-12:interior",
+    "oceanview": "sailing:princess_discovery_votg_n_2027-06-12:oceanview",
+    "balcony": "sailing:princess_discovery_votg_n_2027-06-12:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_n_2027-06-12:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_s_2027-06-19",
+   "itinerary": "princess_discovery_votg_s",
+   "ship": "discovery_princess",
+   "depart": "2027-06-19",
+   "return": "2027-06-26",
+   "nights": 7,
+   "code": "X726",
+   "flags": [],
+   "note": "Suites sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_s_2027-06-19:interior",
+    "oceanview": "sailing:princess_discovery_votg_s_2027-06-19:oceanview",
+    "balcony": "sailing:princess_discovery_votg_s_2027-06-19:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_s_2027-06-19:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_n_2027-06-26",
+   "itinerary": "princess_discovery_votg_n",
+   "ship": "discovery_princess",
+   "depart": "2027-06-26",
+   "return": "2027-07-03",
+   "nights": 7,
+   "code": "X727",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_n_2027-06-26:interior",
+    "oceanview": "sailing:princess_discovery_votg_n_2027-06-26:oceanview",
+    "balcony": "sailing:princess_discovery_votg_n_2027-06-26:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_n_2027-06-26:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_discovery_votg_s_2027-07-03",
+   "itinerary": "princess_discovery_votg_s",
+   "ship": "discovery_princess",
+   "depart": "2027-07-03",
+   "return": "2027-07-10",
+   "nights": 7,
+   "code": "X728",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_discovery_votg_s_2027-07-03:interior",
+    "oceanview": "sailing:princess_discovery_votg_s_2027-07-03:oceanview",
+    "balcony": "sailing:princess_discovery_votg_s_2027-07-03:balcony",
+    "miniSuite": "sailing:princess_discovery_votg_s_2027-07-03:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_s_2027-05-26",
+   "itinerary": "princess_coral_votg_s",
+   "ship": "coral_princess",
+   "depart": "2027-05-26",
+   "return": "2027-06-02",
+   "nights": 7,
+   "code": "6709",
+   "flags": [],
+   "note": "Suites sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_s_2027-05-26:interior",
+    "oceanview": "sailing:princess_coral_votg_s_2027-05-26:oceanview",
+    "balcony": "sailing:princess_coral_votg_s_2027-05-26:balcony",
+    "miniSuite": "sailing:princess_coral_votg_s_2027-05-26:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_n_2027-06-02",
+   "itinerary": "princess_coral_votg_n",
+   "ship": "coral_princess",
+   "depart": "2027-06-02",
+   "return": "2027-06-09",
+   "nights": 7,
+   "code": "6710",
+   "flags": [],
+   "note": "Suites sold out. Hubbard 15:30-20:30.",
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_n_2027-06-02:interior",
+    "oceanview": "sailing:princess_coral_votg_n_2027-06-02:oceanview",
+    "balcony": "sailing:princess_coral_votg_n_2027-06-02:balcony",
+    "miniSuite": "sailing:princess_coral_votg_n_2027-06-02:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_s_2027-06-09",
+   "itinerary": "princess_coral_votg_s",
+   "ship": "coral_princess",
+   "depart": "2027-06-09",
+   "return": "2027-06-16",
+   "nights": 7,
+   "code": "6711",
+   "flags": [],
+   "note": "Suites sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_s_2027-06-09:interior",
+    "oceanview": "sailing:princess_coral_votg_s_2027-06-09:oceanview",
+    "balcony": "sailing:princess_coral_votg_s_2027-06-09:balcony",
+    "miniSuite": "sailing:princess_coral_votg_s_2027-06-09:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_n_2027-06-16",
+   "itinerary": "princess_coral_votg_n",
+   "ship": "coral_princess",
+   "depart": "2027-06-16",
+   "return": "2027-06-23",
+   "nights": 7,
+   "code": "6712",
+   "flags": [],
+   "note": "Hubbard 15:00-20:00.",
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_n_2027-06-16:interior",
+    "oceanview": "sailing:princess_coral_votg_n_2027-06-16:oceanview",
+    "balcony": "sailing:princess_coral_votg_n_2027-06-16:balcony",
+    "miniSuite": "sailing:princess_coral_votg_n_2027-06-16:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_s_2027-06-23",
+   "itinerary": "princess_coral_votg_s",
+   "ship": "coral_princess",
+   "depart": "2027-06-23",
+   "return": "2027-06-30",
+   "nights": 7,
+   "code": "6713",
+   "flags": [],
+   "note": "Balcony sold out.",
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_s_2027-06-23:interior",
+    "oceanview": "sailing:princess_coral_votg_s_2027-06-23:oceanview",
+    "balcony": "sailing:princess_coral_votg_s_2027-06-23:balcony",
+    "miniSuite": "sailing:princess_coral_votg_s_2027-06-23:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_n_2027-06-30",
+   "itinerary": "princess_coral_votg_n",
+   "ship": "coral_princess",
+   "depart": "2027-06-30",
+   "return": "2027-07-07",
+   "nights": 7,
+   "code": "6714",
+   "flags": [
+    "holiday"
+   ],
+   "note": "Hubbard 15:30-20:30.",
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_n_2027-06-30:interior",
+    "oceanview": "sailing:princess_coral_votg_n_2027-06-30:oceanview",
+    "balcony": "sailing:princess_coral_votg_n_2027-06-30:balcony",
+    "miniSuite": "sailing:princess_coral_votg_n_2027-06-30:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_coral_votg_s_2027-07-07",
+   "itinerary": "princess_coral_votg_s",
+   "ship": "coral_princess",
+   "depart": "2027-07-07",
+   "return": "2027-07-14",
+   "nights": 7,
+   "code": "6715",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_coral_votg_s_2027-07-07:interior",
+    "oceanview": "sailing:princess_coral_votg_s_2027-07-07:oceanview",
+    "balcony": "sailing:princess_coral_votg_s_2027-07-07:balcony",
+    "miniSuite": "sailing:princess_coral_votg_s_2027-07-07:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_n_hubbard_2027-05-26",
+   "itinerary": "princess_island_votg_n_hubbard",
+   "ship": "island_princess",
+   "depart": "2027-05-26",
+   "return": "2027-06-02",
+   "nights": 7,
+   "code": "2712",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_n_hubbard_2027-05-26:interior",
+    "oceanview": "sailing:princess_island_votg_n_hubbard_2027-05-26:oceanview",
+    "balcony": "sailing:princess_island_votg_n_hubbard_2027-05-26:balcony",
+    "miniSuite": "sailing:princess_island_votg_n_hubbard_2027-05-26:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_s_2027-06-02",
+   "itinerary": "princess_island_votg_s",
+   "ship": "island_princess",
+   "depart": "2027-06-02",
+   "return": "2027-06-09",
+   "nights": 7,
+   "code": "2713",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_s_2027-06-02:interior",
+    "oceanview": "sailing:princess_island_votg_s_2027-06-02:oceanview",
+    "balcony": "sailing:princess_island_votg_s_2027-06-02:balcony",
+    "miniSuite": "sailing:princess_island_votg_s_2027-06-02:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_n_gb_2027-06-09",
+   "itinerary": "princess_island_votg_n_gb",
+   "ship": "island_princess",
+   "depart": "2027-06-09",
+   "return": "2027-06-16",
+   "nights": 7,
+   "code": "2714",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_n_gb_2027-06-09:interior",
+    "oceanview": "sailing:princess_island_votg_n_gb_2027-06-09:oceanview",
+    "balcony": "sailing:princess_island_votg_n_gb_2027-06-09:balcony",
+    "miniSuite": "sailing:princess_island_votg_n_gb_2027-06-09:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_s_2027-06-16",
+   "itinerary": "princess_island_votg_s",
+   "ship": "island_princess",
+   "depart": "2027-06-16",
+   "return": "2027-06-23",
+   "nights": 7,
+   "code": "2715",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_s_2027-06-16:interior",
+    "oceanview": "sailing:princess_island_votg_s_2027-06-16:oceanview",
+    "balcony": "sailing:princess_island_votg_s_2027-06-16:balcony",
+    "miniSuite": "sailing:princess_island_votg_s_2027-06-16:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_n_gb_2027-06-23",
+   "itinerary": "princess_island_votg_n_gb",
+   "ship": "island_princess",
+   "depart": "2027-06-23",
+   "return": "2027-06-30",
+   "nights": 7,
+   "code": "2716",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_n_gb_2027-06-23:interior",
+    "oceanview": "sailing:princess_island_votg_n_gb_2027-06-23:oceanview",
+    "balcony": "sailing:princess_island_votg_n_gb_2027-06-23:balcony",
+    "miniSuite": "sailing:princess_island_votg_n_gb_2027-06-23:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_s_2027-06-30",
+   "itinerary": "princess_island_votg_s",
+   "ship": "island_princess",
+   "depart": "2027-06-30",
+   "return": "2027-07-07",
+   "nights": 7,
+   "code": "2717",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_s_2027-06-30:interior",
+    "oceanview": "sailing:princess_island_votg_s_2027-06-30:oceanview",
+    "balcony": "sailing:princess_island_votg_s_2027-06-30:balcony",
+    "miniSuite": "sailing:princess_island_votg_s_2027-06-30:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "princess_island_votg_n_gb_2027-07-07",
+   "itinerary": "princess_island_votg_n_gb",
+   "ship": "island_princess",
+   "depart": "2027-07-07",
+   "return": "2027-07-14",
+   "nights": 7,
+   "code": "2718",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:princess_island_votg_n_gb_2027-07-07:interior",
+    "oceanview": "sailing:princess_island_votg_n_gb_2027-07-07:oceanview",
+    "balcony": "sailing:princess_island_votg_n_gb_2027-07-07:balcony",
+    "miniSuite": "sailing:princess_island_votg_n_gb_2027-07-07:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_westerdam_gd_s_2027-05-30",
+   "itinerary": "hal_westerdam_gd_s",
+   "ship": "westerdam",
+   "depart": "2027-05-30",
+   "return": "2027-06-06",
+   "nights": 7,
+   "code": "w733",
+   "flags": [],
+   "note": "Verandah and all suites sold out for cruise-only (inventory likely held for cruisetours). Inside category without guarantee: $1,329 pp.",
+   "priceRows": {
+    "interior": "sailing:hal_westerdam_gd_s_2027-05-30:interior",
+    "oceanview": "sailing:hal_westerdam_gd_s_2027-05-30:oceanview",
+    "balcony": "sailing:hal_westerdam_gd_s_2027-05-30:balcony",
+    "miniSuite": "sailing:hal_westerdam_gd_s_2027-05-30:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_westerdam_gd_s_2027-06-13",
+   "itinerary": "hal_westerdam_gd_s",
+   "ship": "westerdam",
+   "depart": "2027-06-13",
+   "return": "2027-06-20",
+   "nights": 7,
+   "code": "w737",
+   "flags": [],
+   "note": "Verandah and suites sold out for cruise-only. Inside category: $1,514 pp.",
+   "priceRows": {
+    "interior": "sailing:hal_westerdam_gd_s_2027-06-13:interior",
+    "oceanview": "sailing:hal_westerdam_gd_s_2027-06-13:oceanview",
+    "balcony": "sailing:hal_westerdam_gd_s_2027-06-13:balcony",
+    "miniSuite": "sailing:hal_westerdam_gd_s_2027-06-13:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_westerdam_gd_s_2027-06-27",
+   "itinerary": "hal_westerdam_gd_s",
+   "ship": "westerdam",
+   "depart": "2027-06-27",
+   "return": "2027-07-04",
+   "nights": 7,
+   "code": "w741",
+   "flags": [],
+   "note": "Verandah and suites sold out for cruise-only. Inside category: $1,489 pp. Port times not re-read for this date.",
+   "priceRows": {
+    "interior": "sailing:hal_westerdam_gd_s_2027-06-27:interior",
+    "oceanview": "sailing:hal_westerdam_gd_s_2027-06-27:oceanview",
+    "balcony": "sailing:hal_westerdam_gd_s_2027-06-27:balcony",
+    "miniSuite": "sailing:hal_westerdam_gd_s_2027-06-27:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_noordam_explorer_2027-05-23",
+   "itinerary": "hal_noordam_explorer",
+   "ship": "noordam",
+   "depart": "2027-05-23",
+   "return": "2027-05-30",
+   "nights": 7,
+   "code": "n731",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_noordam_explorer_2027-05-23:interior",
+    "oceanview": "sailing:hal_noordam_explorer_2027-05-23:oceanview",
+    "balcony": "sailing:hal_noordam_explorer_2027-05-23:balcony",
+    "miniSuite": "sailing:hal_noordam_explorer_2027-05-23:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_noordam_explorer_2027-05-30",
+   "itinerary": "hal_noordam_explorer",
+   "ship": "noordam",
+   "depart": "2027-05-30",
+   "return": "2027-06-06",
+   "nights": 7,
+   "code": "n734",
+   "flags": [],
+   "note": "Port times not re-read for this date (same itinerary page).",
+   "priceRows": {
+    "interior": "sailing:hal_noordam_explorer_2027-05-30:interior",
+    "oceanview": "sailing:hal_noordam_explorer_2027-05-30:oceanview",
+    "balcony": "sailing:hal_noordam_explorer_2027-05-30:balcony",
+    "miniSuite": "sailing:hal_noordam_explorer_2027-05-30:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "hal_noordam_explorer_2027-07-04",
+   "itinerary": "hal_noordam_explorer",
+   "ship": "noordam",
+   "depart": "2027-07-04",
+   "return": "2027-07-11",
+   "nights": 7,
+   "code": "n739",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:hal_noordam_explorer_2027-07-04:interior",
+    "oceanview": "sailing:hal_noordam_explorer_2027-07-04:oceanview",
+    "balcony": "sailing:hal_noordam_explorer_2027-07-04:balcony",
+    "miniSuite": "sailing:hal_noordam_explorer_2027-07-04:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
   }
  ],
  "places": [
@@ -6558,6 +8379,45 @@
    "lng": -134.05,
    "notes": "Channel south of Juneau, known for humpback whales. Holland America lists it as scenic cruising on the way in to Juneau.",
    "dock": "Scenic cruising"
+  },
+  {
+   "id": "yvr_canada_place",
+   "name": "Canada Place cruise terminal, Vancouver",
+   "short": "Vancouver · Canada Place",
+   "kind": "terminal",
+   "country": "CA",
+   "tz": "America/Vancouver",
+   "lat": 49.2888,
+   "lng": -123.1111,
+   "notes": "Downtown Vancouver waterfront, next to Waterfront SkyTrain station. US-bound ships clear US border pre-clearance here before boarding. Canada Line SkyTrain runs from YVR airport to Waterfront (about 26 min).",
+   "dock": "Dock",
+   "coordBasis": "approximate"
+  },
+  {
+   "id": "whittier",
+   "name": "Whittier, Alaska (cruise port for Anchorage)",
+   "short": "Whittier",
+   "kind": "terminal",
+   "country": "US",
+   "tz": "America/Anchorage",
+   "lat": 60.7739,
+   "lng": -148.6836,
+   "notes": "Small port about 60 mi by road from Anchorage. Road access is only through the one-lane Anton Anderson tunnel, which runs on a fixed schedule; rail also connects to Anchorage. Princess, Holland America and others use it for one-way Gulf of Alaska cruises.",
+   "dock": "Dock",
+   "coordBasis": "approximate"
+  },
+  {
+   "id": "college_fjord",
+   "name": "College Fjord, Alaska",
+   "short": "College Fjord",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Anchorage",
+   "lat": 61.2,
+   "lng": -147.8,
+   "notes": "Fjord in northern Prince William Sound lined with tidewater and valley glaciers named after colleges. Ships cruise it in the evening before arriving in Whittier.",
+   "dock": "Scenic cruising (no landing)",
+   "coordBasis": "approximate"
   }
  ],
  "pois": [

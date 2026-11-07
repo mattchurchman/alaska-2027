@@ -602,6 +602,42 @@
    "publisher": "Royal Caribbean",
    "checked": "2026-11-06",
    "note": "Closed-loop cruises (same US port start and end, e.g. Seattle round trips via Victoria): passport recommended, not required; alternatives listed. A passport is needed to fly home from abroad if you miss the ship."
+  },
+  {
+   "id": "princess_itin_2027",
+   "title": "Princess itinerary-details pages (Alaska 2027, by voyage code)",
+   "url": "https://www.princess.com/itinerary-details/?voyageCode=E715",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-07",
+   "note": "1 room / 2 guests, Princess Standard fare, avg per person incl. taxes and fees. Port times as listed."
+  },
+  {
+   "id": "princess_search_yvr",
+   "title": "Princess cruise search: Alaska from Vancouver or Anchorage (Whittier)",
+   "url": "https://www.princess.com/cruise-search/",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-07",
+   "note": "18 products. In the window: Emerald 7-day Vancouver round trips and Voyage of the Glaciers (Crown, Discovery, Coral, Island)."
+  },
+  {
+   "id": "hal_search_alaska",
+   "title": "Holland America cruise search, Alaska (destinationIds:(A))",
+   "url": "https://www.hollandamerica.com/en/us/find-a-cruise?destinationIds:(A)",
+   "kind": "first-party",
+   "publisher": "Holland America Line",
+   "checked": "2026-11-07",
+   "note": "143 cruises / 32 products incl. sold out. Summer Vancouver round trips and most one-ways are sold only as cruisetours."
+  },
+  {
+   "id": "hal_booking_2027",
+   "title": "Holland America booking step 'Choose your guests' (2 adults)",
+   "url": "https://www.hollandamerica.com/en/us/booking/choose-your-guests",
+   "kind": "first-party",
+   "publisher": "Holland America Line",
+   "checked": "2026-11-07",
+   "note": "Reached from each voyage page's Continue button. 'FROM' average per person, all taxes and fees included."
   }
  ]
 }
