@@ -665,6 +665,33 @@
    "publisher": "Norwegian Cruise Line",
    "checked": "2026-11-07",
    "note": "Logged out, 2 guests, USD. Stateroom page shows 'Per Person. Includes taxes, fees and port expenses'. Auto-applied offers: 50% Off All Cruises, 2-For-1 Deposits, Risk-Free Cancellation. Port times from the vacation builder Itinerary tab."
+  },
+  {
+   "id": "alaskacruises_disney_2027",
+   "title": "AlaskaCruises.com: Disney Wonder and Disney Magic 2027 sailing calendars",
+   "url": "https://www.alaskacruises.com/ships/disney-cruises-disney-wonder-cruise-itineraries.html",
+   "kind": "reseller",
+   "publisher": "AlaskaCruises.com",
+   "checked": "2026-11-07",
+   "note": "'Priced From' Interior Stateroom, per person, double occupancy, 'Includes taxes & fees'. Magic page: /ships/disney-cruises-disney-magic-cruise-itineraries.html. Used because Disney's own search page returned a 404 in the browser on 2026-11-07."
+  },
+  {
+   "id": "gangwaze_disney_2027",
+   "title": "Gangwaze itinerary maps: Disney Wonder Jun 21 2027, Disney Magic Jun 17 2027",
+   "url": "https://gangwaze.com/cruise-lines/disney-cruise-line/disney-wonder/2027-06-21/7-nights",
+   "kind": "aggregator",
+   "publisher": "Gangwaze",
+   "checked": "2026-11-07",
+   "note": "Day-by-day port times. Magic: /disney-magic/2027-06-17/7-nights."
+  },
+  {
+   "id": "dcl_alaska",
+   "title": "Disney Cruise Line: Alaska cruises",
+   "url": "https://disneycruise.disney.go.com/cruise-destinations/alaska/",
+   "kind": "first-party",
+   "publisher": "Disney Cruise Line",
+   "checked": "2026-11-07",
+   "note": "Confirms departures from Vancouver and ports (Stikine Icecap glacier viewing, Icy Strait Point, Juneau, Ketchikan/Ward Cove, Skagway). No prices on this page."
   }
  ]
 }

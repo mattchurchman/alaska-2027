@@ -227,6 +227,24 @@
    },
    "accessibility": "Not captured.",
    "gratuityRow": "line:oceania:gratuity"
+  },
+  {
+   "id": "disney",
+   "name": "Disney Cruise Line",
+   "badge": "DC",
+   "color": "#1d3f8f",
+   "terminal": "yvr_canada_place",
+   "fareBasis": "Family-focused line. Alaska sailings 2027 are round trips from Vancouver only (Disney Wonder Mondays, Disney Magic Thursdays). Prices here are reseller 'from' samples; Disney's own search could not be read.",
+   "includes": "Rotational dining (three main restaurants in turn), Broadway-style Disney shows, soft drinks at meals and drink stations. Alcohol, Wi-Fi, adult-only dining and gratuities extra.",
+   "payment": {
+    "finalPaymentDays": null,
+    "deposit": "Not captured.",
+    "status": "unavailable",
+    "source": null,
+    "note": ""
+   },
+   "accessibility": "Not captured.",
+   "gratuityRow": "line:disney:gratuity"
   }
  ],
  "ships": [
@@ -437,6 +455,22 @@
    "id": "norwegian_jade",
    "line": "ncl",
    "name": "Norwegian Jade",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "disney_wonder",
+   "line": "disney",
+   "name": "Disney Wonder",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "disney_magic",
+   "line": "disney",
+   "name": "Disney Magic",
    "built": null,
    "guests": null,
    "guestsSource": null
@@ -7199,6 +7233,150 @@
    "ship": "norwegian_jade",
    "mapLineBasis": null,
    "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr",
+   "line": "disney",
+   "ship": "disney_wonder",
+   "routeFamily": "YVR-RT",
+   "name": "7-Night Alaska Cruise (Stikine Icecap, Skagway, Juneau, Ketchikan)",
+   "weekday": "Monday",
+   "glacier": "Stikine Icecap",
+   "glacierPlace": "stikine_icecap",
+   "timesStatus": "published",
+   "timesSource": "Third-party itinerary page (Gangwaze) for the Jun 21 2027 sailing; assumed the same for other dates. Disney's own pages could not be read. Glacier day has no listed hours.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "stikine_icecap",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:15",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "06:45",
+      "dep": "16:45"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "11:15",
+      "dep": "19:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "08:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr",
+   "line": "disney",
+   "ship": "disney_magic",
+   "routeFamily": "YVR-RT",
+   "name": "7-Night Alaska Cruise (Stikine Icecap, Skagway, Icy Strait Point, Ketchikan)",
+   "weekday": "Thursday",
+   "glacier": "Stikine Icecap",
+   "glacierPlace": "stikine_icecap",
+   "timesStatus": "published",
+   "timesSource": "Third-party itinerary page (Gangwaze) for the Jun 17 2027 sailing; assumed the same for other dates. Disney's own pages could not be read. No Juneau call. Glacier day has no listed hours.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "stikine_icecap",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:15",
+      "dep": "20:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "14:00",
+      "dep": "19:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "08:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
   }
  ],
  "sailings": [
@@ -9893,6 +10071,281 @@
    },
    "priceSourceKind": "first-party",
    "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-05-24",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-05-24",
+   "return": "2027-05-31",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-05-24:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-05-24:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-05-24:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-05-24:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-05-31",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-05-31",
+   "return": "2027-06-07",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-05-31:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-05-31:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-05-31:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-05-31:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-06-07",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-06-07",
+   "return": "2027-06-14",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-06-07:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-06-07:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-06-07:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-06-07:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-06-14",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-06-14",
+   "return": "2027-06-21",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-06-14:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-06-14:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-06-14:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-06-14:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-06-21",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-06-21",
+   "return": "2027-06-28",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-06-21:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-06-21:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-06-21:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-06-21:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-06-28",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-06-28",
+   "return": "2027-07-05",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line",
+    "holiday"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-06-28:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-06-28:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-06-28:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-06-28:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_wonder_yvr_2027-07-05",
+   "itinerary": "disney_wonder_yvr",
+   "ship": "disney_wonder",
+   "depart": "2027-07-05",
+   "return": "2027-07-12",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_wonder_yvr_2027-07-05:interior",
+    "oceanview": "sailing:disney_wonder_yvr_2027-07-05:oceanview",
+    "balcony": "sailing:disney_wonder_yvr_2027-07-05:balcony",
+    "miniSuite": "sailing:disney_wonder_yvr_2027-07-05:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr_2027-05-27",
+   "itinerary": "disney_magic_yvr",
+   "ship": "disney_magic",
+   "depart": "2027-05-27",
+   "return": "2027-06-03",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_magic_yvr_2027-05-27:interior",
+    "oceanview": "sailing:disney_magic_yvr_2027-05-27:oceanview",
+    "balcony": "sailing:disney_magic_yvr_2027-05-27:balcony",
+    "miniSuite": "sailing:disney_magic_yvr_2027-05-27:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr_2027-06-03",
+   "itinerary": "disney_magic_yvr",
+   "ship": "disney_magic",
+   "depart": "2027-06-03",
+   "return": "2027-06-10",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_magic_yvr_2027-06-03:interior",
+    "oceanview": "sailing:disney_magic_yvr_2027-06-03:oceanview",
+    "balcony": "sailing:disney_magic_yvr_2027-06-03:balcony",
+    "miniSuite": "sailing:disney_magic_yvr_2027-06-03:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr_2027-06-10",
+   "itinerary": "disney_magic_yvr",
+   "ship": "disney_magic",
+   "depart": "2027-06-10",
+   "return": "2027-06-17",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_magic_yvr_2027-06-10:interior",
+    "oceanview": "sailing:disney_magic_yvr_2027-06-10:oceanview",
+    "balcony": "sailing:disney_magic_yvr_2027-06-10:balcony",
+    "miniSuite": "sailing:disney_magic_yvr_2027-06-10:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr_2027-06-17",
+   "itinerary": "disney_magic_yvr",
+   "ship": "disney_magic",
+   "depart": "2027-06-17",
+   "return": "2027-06-24",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_magic_yvr_2027-06-17:interior",
+    "oceanview": "sailing:disney_magic_yvr_2027-06-17:oceanview",
+    "balcony": "sailing:disney_magic_yvr_2027-06-17:balcony",
+    "miniSuite": "sailing:disney_magic_yvr_2027-06-17:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr_2027-06-24",
+   "itinerary": "disney_magic_yvr",
+   "ship": "disney_magic",
+   "depart": "2027-06-24",
+   "return": "2027-07-01",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_magic_yvr_2027-06-24:interior",
+    "oceanview": "sailing:disney_magic_yvr_2027-06-24:oceanview",
+    "balcony": "sailing:disney_magic_yvr_2027-06-24:balcony",
+    "miniSuite": "sailing:disney_magic_yvr_2027-06-24:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
+  },
+  {
+   "id": "disney_magic_yvr_2027-07-01",
+   "itinerary": "disney_magic_yvr",
+   "ship": "disney_magic",
+   "depart": "2027-07-01",
+   "return": "2027-07-08",
+   "nights": 7,
+   "code": null,
+   "flags": [
+    "family-line",
+    "holiday"
+   ],
+   "note": "Balcony price not captured (Disney's search could not be read).",
+   "priceRows": {
+    "interior": "sailing:disney_magic_yvr_2027-07-01:interior",
+    "oceanview": "sailing:disney_magic_yvr_2027-07-01:oceanview",
+    "balcony": "sailing:disney_magic_yvr_2027-07-01:balcony",
+    "miniSuite": "sailing:disney_magic_yvr_2027-07-01:miniSuite"
+   },
+   "priceSourceKind": "reseller",
+   "addedIn": "p1"
   }
  ],
  "places": [
@@ -10238,6 +10691,19 @@
    "lng": -135.445,
    "notes": "Small town on Lynn Canal, about 15 mi by water south of Skagway. Quieter than Skagway; known for bald eagles (Chilkat preserve). Port Chilkoot dock is a short walk from town.",
    "dock": "Port Chilkoot dock",
+   "coordBasis": "approximate"
+  },
+  {
+   "id": "stikine_icecap",
+   "name": "Stikine Icecap (scenic glacier viewing)",
+   "short": "Stikine Icecap",
+   "kind": "scenic",
+   "country": "US",
+   "tz": "America/Juneau",
+   "lat": 57.0,
+   "lng": -132.6,
+   "notes": "Large icefield on the Alaska-BC border east of Petersburg and Wrangell. Disney lists a scenic glacier-viewing day here; which glacier face the ship approaches is not stated.",
+   "dock": "Scenic cruising (no landing)",
    "coordBasis": "approximate"
   }
  ],
