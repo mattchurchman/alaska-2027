@@ -513,7 +513,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.princess.com/itinerary-details/?voyageCode=4722",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Princess itinerary page, Standard fare, 'Up to 50% Off' sale"
   },
   {
@@ -528,7 +528,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.princess.com/itinerary-details/?voyageCode=4722",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Princess itinerary page, Standard fare, 'Up to 50% Off' sale"
   },
   {
@@ -543,7 +543,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.princess.com/itinerary-details/?voyageCode=4722",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Princess itinerary page, Standard fare, 'Up to 50% Off' sale"
   },
   {
@@ -558,7 +558,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.princess.com/itinerary-details/?voyageCode=4722",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Princess itinerary page, Standard fare, 'Up to 50% Off' sale",
    "label": "Mini-Suite"
   },
@@ -879,7 +879,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.hollandamerica.com/en/us/find-a-cruise/a7e07b/d741",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Holland America booking page 'Choose your guests' (2 adults)",
    "label": "Inside"
   },
@@ -1504,7 +1504,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.ncl.com/vacation-builder/planning/stateroom?itineraryCode=BLISS7SEASITJNUICYKTNVICSEA&packageId=24218430&guests=2&stateroomTypeCode=INSIDE",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "NCL vacation builder stateroom page, 2 guests",
    "label": "Inside"
   },
@@ -1520,38 +1520,38 @@
    "status": "verified",
    "source": null,
    "url": "https://www.ncl.com/vacation-builder/planning/stateroom?itineraryCode=BLISS7SEASITJNUICYKTNVICSEA&packageId=24218430&guests=2&stateroomTypeCode=INSIDE",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "NCL vacation builder stateroom page, 2 guests"
   },
   {
    "id": "sailing:ncl_bliss_dawes_2027-05-29:balcony",
    "for": "sailing:ncl_bliss_dawes_2027-05-29",
    "item": "cabin_balcony",
-   "amount": 3218,
+   "amount": 3318,
    "currency": "USD",
-   "usd": 3218,
+   "usd": 3318,
    "fx": null,
    "basis": "Cabin for 2 adults (v1 per-person average x 2). Average per person, 2 adults sharing, cruise fare including taxes, fees and port expenses. Gratuities not included.",
    "status": "verified",
    "source": null,
    "url": "https://www.ncl.com/vacation-builder/planning/stateroom?itineraryCode=BLISS7SEASITJNUICYKTNVICSEA&packageId=24218430&guests=2&stateroomTypeCode=INSIDE",
-   "checked": "2026-11-06",
-   "note": "NCL vacation builder stateroom page, 2 guests"
+   "checked": "2026-11-07",
+   "note": "NCL vacation builder stateroom page, 2 guests Was $3,218 on 2026-11-06."
   },
   {
    "id": "sailing:ncl_bliss_dawes_2027-05-29:miniSuite",
    "for": "sailing:ncl_bliss_dawes_2027-05-29",
    "item": "cabin_miniSuite",
-   "amount": 3618,
+   "amount": 3778,
    "currency": "USD",
-   "usd": 3618,
+   "usd": 3778,
    "fx": null,
    "basis": "Cabin for 2 adults (v1 per-person average x 2). Average per person, 2 adults sharing, cruise fare including taxes, fees and port expenses. Gratuities not included.",
    "status": "verified",
    "source": null,
    "url": "https://www.ncl.com/vacation-builder/planning/stateroom?itineraryCode=BLISS7SEASITJNUICYKTNVICSEA&packageId=24218430&guests=2&stateroomTypeCode=INSIDE",
-   "checked": "2026-11-06",
-   "note": "NCL vacation builder stateroom page, 2 guests",
+   "checked": "2026-11-07",
+   "note": "NCL vacation builder stateroom page, 2 guests Was $3,618 on 2026-11-06.",
    "label": "Club Balcony Suite"
   },
   {
@@ -1938,7 +1938,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.royalcaribbean.com/itinerary/7-night-alaska-adventure-cruise-from-seattle-on-voyager-VY07A458?sailDate=2027-05-28&packageCode=VY07A458&groupId=VY07SEA-2189415139&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Royal Caribbean search results date panel, 2 guests"
   },
   {
@@ -1953,7 +1953,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.royalcaribbean.com/itinerary/7-night-alaska-adventure-cruise-from-seattle-on-voyager-VY07A458?sailDate=2027-05-28&packageCode=VY07A458&groupId=VY07SEA-2189415139&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Royal Caribbean search results date panel, 2 guests",
    "label": "Outside View"
   },
@@ -1969,7 +1969,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.royalcaribbean.com/itinerary/7-night-alaska-adventure-cruise-from-seattle-on-voyager-VY07A458?sailDate=2027-05-28&packageCode=VY07A458&groupId=VY07SEA-2189415139&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Royal Caribbean search results date panel, 2 guests"
   },
   {
@@ -1984,7 +1984,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.royalcaribbean.com/itinerary/7-night-alaska-adventure-cruise-from-seattle-on-voyager-VY07A458?sailDate=2027-05-28&packageCode=VY07A458&groupId=VY07SEA-2189415139&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Royal Caribbean search results date panel, 2 guests",
    "label": "Suite"
   },
@@ -2621,7 +2621,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.celebritycruises.com/itinerary/7-night-alaska-dawes-glacier-from-seattle-on-edge-EG07A439?sailDate=2027-06-04&packageCode=EG07A439&groupId=EG07SEA-4212612062&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Celebrity search results date panel, 2 guests, '75% Off 2nd Guest' promotion",
    "label": "Inside"
   },
@@ -2637,7 +2637,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.celebritycruises.com/itinerary/7-night-alaska-dawes-glacier-from-seattle-on-edge-EG07A439?sailDate=2027-06-04&packageCode=EG07A439&groupId=EG07SEA-4212612062&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Celebrity search results date panel, 2 guests, '75% Off 2nd Guest' promotion"
   },
   {
@@ -2652,7 +2652,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.celebritycruises.com/itinerary/7-night-alaska-dawes-glacier-from-seattle-on-edge-EG07A439?sailDate=2027-06-04&packageCode=EG07A439&groupId=EG07SEA-4212612062&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Celebrity search results date panel, 2 guests, '75% Off 2nd Guest' promotion",
    "label": "Veranda"
   },
@@ -2668,7 +2668,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.celebritycruises.com/itinerary/7-night-alaska-dawes-glacier-from-seattle-on-edge-EG07A439?sailDate=2027-06-04&packageCode=EG07A439&groupId=EG07SEA-4212612062&country=USA",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Celebrity search results date panel, 2 guests, '75% Off 2nd Guest' promotion",
    "label": "Concierge Class"
   },
@@ -2865,47 +2865,47 @@
    "id": "sailing:carnival_tracy_2027-05-25:interior",
    "for": "sailing:carnival_tracy_2027-05-25",
    "item": "cabin_interior",
-   "amount": 1618,
+   "amount": 1588,
    "currency": "USD",
-   "usd": 1618,
+   "usd": 1588,
    "fx": null,
    "basis": "Cabin for 2 adults (v1 per-person average x 2). Average per person, 2 adults sharing, cruise fare including taxes, fees and port expenses. Gratuities not included.",
    "status": "verified",
    "source": null,
    "url": "https://www.carnival.com/itinerary/7-day-alaska-inside-passage-and-glacier-cruise/seattle/legend/7-days/ga2?itinportcode=SEA&sailDate=05252027&numGuests=2",
-   "checked": "2026-11-06",
-   "note": "Carnival cruise search, 2 adults, no discounts"
+   "checked": "2026-11-07",
+   "note": "Carnival cruise search, 2 adults, no discounts Was $1,618 on 2026-11-06."
   },
   {
    "id": "sailing:carnival_tracy_2027-05-25:oceanview",
    "for": "sailing:carnival_tracy_2027-05-25",
    "item": "cabin_oceanview",
-   "amount": 1978,
+   "amount": 1948,
    "currency": "USD",
-   "usd": 1978,
+   "usd": 1948,
    "fx": null,
    "basis": "Cabin for 2 adults (v1 per-person average x 2). Average per person, 2 adults sharing, cruise fare including taxes, fees and port expenses. Gratuities not included.",
    "status": "verified",
    "source": null,
    "url": "https://www.carnival.com/itinerary/7-day-alaska-inside-passage-and-glacier-cruise/seattle/legend/7-days/ga2?itinportcode=SEA&sailDate=05252027&numGuests=2",
-   "checked": "2026-11-06",
-   "note": "Carnival cruise search, 2 adults, no discounts",
+   "checked": "2026-11-07",
+   "note": "Carnival cruise search, 2 adults, no discounts Was $1,978 on 2026-11-06.",
    "label": "Ocean View"
   },
   {
    "id": "sailing:carnival_tracy_2027-05-25:balcony",
    "for": "sailing:carnival_tracy_2027-05-25",
    "item": "cabin_balcony",
-   "amount": 2788,
+   "amount": 2728,
    "currency": "USD",
-   "usd": 2788,
+   "usd": 2728,
    "fx": null,
    "basis": "Cabin for 2 adults (v1 per-person average x 2). Average per person, 2 adults sharing, cruise fare including taxes, fees and port expenses. Gratuities not included.",
    "status": "verified",
    "source": null,
    "url": "https://www.carnival.com/itinerary/7-day-alaska-inside-passage-and-glacier-cruise/seattle/legend/7-days/ga2?itinportcode=SEA&sailDate=05252027&numGuests=2",
-   "checked": "2026-11-06",
-   "note": "Carnival cruise search, 2 adults, no discounts"
+   "checked": "2026-11-07",
+   "note": "Carnival cruise search, 2 adults, no discounts Was $2,788 on 2026-11-06."
   },
   {
    "id": "sailing:carnival_tracy_2027-05-25:miniSuite",
@@ -2919,7 +2919,7 @@
    "status": "verified",
    "source": null,
    "url": "https://www.carnival.com/itinerary/7-day-alaska-inside-passage-and-glacier-cruise/seattle/legend/7-days/ga2?itinportcode=SEA&sailDate=05252027&numGuests=2",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "note": "Carnival cruise search, 2 adults, no discounts",
    "label": "Suite"
   },
