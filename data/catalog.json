@@ -400,6 +400,38 @@
    "built": null,
    "guests": null,
    "guestsSource": null
+  },
+  {
+   "id": "serenade_of_the_seas",
+   "line": "rci",
+   "name": "Serenade of the Seas",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "anthem_of_the_seas",
+   "line": "rci",
+   "name": "Anthem of the Seas",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "celebrity_summit",
+   "line": "celebrity",
+   "name": "Celebrity Summit",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
+  },
+  {
+   "id": "celebrity_solstice",
+   "line": "celebrity",
+   "name": "Celebrity Solstice",
+   "built": null,
+   "guests": null,
+   "guestsSource": null
   }
  ],
  "itineraries": [
@@ -6147,6 +6179,781 @@
    "timesStatus": "verified",
    "mapLineBasis": null,
    "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy",
+   "line": "rci",
+   "ship": "serenade_of_the_seas",
+   "routeFamily": "YVR-RT",
+   "name": "7 Night Alaska Inside Passage Cruise (Tracy Arm, Icy Strait Point, Sitka)",
+   "weekday": "Sunday",
+   "glacier": "Tracy Arm Fjord",
+   "glacierPlace": "tracy_arm",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page SR07A481 (Jun 6). Juneau is a TENDER call on this itinerary.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "tracy_arm",
+      "arr": "06:30",
+      "dep": "10:30"
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:30",
+      "dep": "22:00",
+      "tender": true
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "08:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "08:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_rupert",
+   "line": "rci",
+   "ship": "serenade_of_the_seas",
+   "routeFamily": "YVR-RT",
+   "name": "7 Night Alaska Inside Passage Cruise (Sitka, Tracy Arm, Ketchikan, Prince Rupert)",
+   "weekday": "Sunday",
+   "glacier": "Tracy Arm Fjord",
+   "glacierPlace": "tracy_arm",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page SR07A482 (May 30)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "10:30",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "tracy_arm",
+      "arr": "06:30",
+      "dep": "10:30"
+     },
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "13:30",
+      "dep": "21:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "14:30",
+      "dep": "22:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "prince_rupert",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_nb_icy",
+   "line": "rci",
+   "ship": "anthem_of_the_seas",
+   "routeFamily": "YVR-N",
+   "name": "7 Night Northbound Alaska & Hubbard Glacier (Icy Strait Point)",
+   "weekday": "Friday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page AN07A463 (May 28). Ketchikan call is at Ward Cove.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan_wc",
+      "arr": "07:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "11:59",
+      "dep": "21:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "07:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "07:00",
+      "dep": "11:00"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "seward",
+      "arr": "05:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_nb_juneau",
+   "line": "rci",
+   "ship": "anthem_of_the_seas",
+   "routeFamily": "YVR-N",
+   "name": "7 Night Northbound Alaska & Hubbard Glacier (Juneau)",
+   "weekday": "Friday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page AN07A465 (Jun 11). Ketchikan call is at Ward Cove.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan_wc",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "08:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "07:00",
+      "dep": "11:00"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "seward",
+      "arr": "05:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_sb",
+   "line": "rci",
+   "ship": "anthem_of_the_seas",
+   "routeFamily": "YVR-S",
+   "name": "7 Night Southbound Alaska & Hubbard Glacier",
+   "weekday": "Friday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "verified",
+   "timesSource": "Royal Caribbean itinerary page AN07A464/AN07A468 (Jul 2)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "seward",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "13:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "09:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "07:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_sb_ketchikan",
+   "line": "rci",
+   "ship": "anthem_of_the_seas",
+   "routeFamily": "YVR-S",
+   "name": "7 Night Southbound Alaska & Hubbard Glacier (with Ketchikan)",
+   "weekday": "Friday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "unavailable",
+   "timesSource": "Search card lists Seward, Hubbard, Juneau, Skagway, Icy Strait Point, Ketchikan, Vancouver. The June itinerary page (AN07A462) redirected to a September sailing, so June port times were not captured.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "seward",
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "sea"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": null
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_dawes",
+   "line": "celebrity",
+   "ship": "celebrity_summit",
+   "routeFamily": "YVR-RT",
+   "name": "7 Night Alaska Dawes Glacier (round trip Vancouver)",
+   "weekday": "Sunday",
+   "glacier": "Endicott Arm & Dawes Glacier",
+   "glacierPlace": "endicott_arm",
+   "timesStatus": "verified",
+   "timesSource": "Celebrity itinerary page SM07A447 (Jun 6)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "13:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "07:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "13:30",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_hubbard",
+   "line": "celebrity",
+   "ship": "celebrity_summit",
+   "routeFamily": "YVR-RT",
+   "name": "7 Night Alaska Hubbard Glacier (round trip Vancouver)",
+   "weekday": "Sunday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "published",
+   "timesSource": "Times from a Sep 5, 2027 sailing of the same itinerary (SM07A453); the June page redirected there. June times not confirmed.",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "15:30",
+      "dep": "21:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "09:30",
+      "dep": "14:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "07:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "13:30",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_nb",
+   "line": "celebrity",
+   "ship": "celebrity_solstice",
+   "routeFamily": "YVR-N",
+   "name": "7 Night Alaska Northbound Glacier",
+   "weekday": "Friday",
+   "glacier": "Endicott Arm + Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "verified",
+   "timesSource": "Celebrity itinerary page SL07A443 (Jun 18)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "yvr_canada_place",
+      "dep": "16:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "sitka",
+      "arr": "09:30",
+      "dep": "17:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "endicott_arm",
+      "arr": "09:00",
+      "dep": "15:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "07:00",
+      "dep": "16:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "07:00",
+      "dep": "11:00"
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "seward",
+      "arr": "06:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_sb",
+   "line": "celebrity",
+   "ship": "celebrity_solstice",
+   "routeFamily": "YVR-S",
+   "name": "7 Night Alaska Southbound Glacier",
+   "weekday": "Friday",
+   "glacier": "Hubbard Glacier",
+   "glacierPlace": "hubbard",
+   "timesStatus": "verified",
+   "timesSource": "Celebrity itinerary page SL07A442 (May 28)",
+   "days": [
+    [
+     {
+      "type": "embark",
+      "place": "seward",
+      "dep": "20:00"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "hubbard",
+      "arr": "15:00",
+      "dep": "18:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "juneau",
+      "arr": "10:00",
+      "dep": "21:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "skagway",
+      "arr": "07:00",
+      "dep": "19:30"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "icy_strait",
+      "arr": "07:00",
+      "dep": "17:00"
+     }
+    ],
+    [
+     {
+      "type": "port",
+      "place": "ketchikan",
+      "arr": "10:30",
+      "dep": "19:30"
+     }
+    ],
+    [
+     {
+      "type": "scenic",
+      "place": "inside_passage_bc",
+      "arr": null,
+      "dep": null
+     }
+    ],
+    [
+     {
+      "type": "disembark",
+      "place": "yvr_canada_place",
+      "arr": "07:00"
+     }
+    ]
+   ],
+   "mapLineBasis": null,
+   "addedIn": "p1"
   }
  ],
  "sailings": [
@@ -8124,6 +8931,575 @@
    },
    "priceSourceKind": "first-party",
    "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy_2027-05-23",
+   "itinerary": "rci_serenade_yvr_tracy",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-05-23",
+   "return": "2027-05-30",
+   "nights": 7,
+   "code": "SR07YVR-3848220377",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_tracy_2027-05-23:interior",
+    "oceanview": "sailing:rci_serenade_yvr_tracy_2027-05-23:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_tracy_2027-05-23:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_tracy_2027-05-23:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_rupert_2027-05-30",
+   "itinerary": "rci_serenade_yvr_rupert",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-05-30",
+   "return": "2027-06-06",
+   "nights": 7,
+   "code": "SR07YVR-810324492",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_rupert_2027-05-30:interior",
+    "oceanview": "sailing:rci_serenade_yvr_rupert_2027-05-30:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_rupert_2027-05-30:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_rupert_2027-05-30:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy_2027-06-06",
+   "itinerary": "rci_serenade_yvr_tracy",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-06-06",
+   "return": "2027-06-13",
+   "nights": 7,
+   "code": "SR07YVR-3848220377",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_tracy_2027-06-06:interior",
+    "oceanview": "sailing:rci_serenade_yvr_tracy_2027-06-06:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_tracy_2027-06-06:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_tracy_2027-06-06:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy_2027-06-13",
+   "itinerary": "rci_serenade_yvr_tracy",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-06-13",
+   "return": "2027-06-20",
+   "nights": 7,
+   "code": "SR07YVR-3848220377",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_tracy_2027-06-13:interior",
+    "oceanview": "sailing:rci_serenade_yvr_tracy_2027-06-13:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_tracy_2027-06-13:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_tracy_2027-06-13:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy_2027-06-20",
+   "itinerary": "rci_serenade_yvr_tracy",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-06-20",
+   "return": "2027-06-27",
+   "nights": 7,
+   "code": "SR07YVR-3848220377",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_tracy_2027-06-20:interior",
+    "oceanview": "sailing:rci_serenade_yvr_tracy_2027-06-20:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_tracy_2027-06-20:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_tracy_2027-06-20:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy_2027-06-27",
+   "itinerary": "rci_serenade_yvr_tracy",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-06-27",
+   "return": "2027-07-04",
+   "nights": 7,
+   "code": "SR07YVR-3848220377",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_tracy_2027-06-27:interior",
+    "oceanview": "sailing:rci_serenade_yvr_tracy_2027-06-27:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_tracy_2027-06-27:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_tracy_2027-06-27:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_serenade_yvr_tracy_2027-07-04",
+   "itinerary": "rci_serenade_yvr_tracy",
+   "ship": "serenade_of_the_seas",
+   "depart": "2027-07-04",
+   "return": "2027-07-11",
+   "nights": 7,
+   "code": "SR07YVR-3848220377",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_serenade_yvr_tracy_2027-07-04:interior",
+    "oceanview": "sailing:rci_serenade_yvr_tracy_2027-07-04:oceanview",
+    "balcony": "sailing:rci_serenade_yvr_tracy_2027-07-04:balcony",
+    "miniSuite": "sailing:rci_serenade_yvr_tracy_2027-07-04:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_nb_icy_2027-05-28",
+   "itinerary": "rci_anthem_nb_icy",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-05-28",
+   "return": "2027-06-04",
+   "nights": 7,
+   "code": "AN07YVR-1733859911",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_nb_icy_2027-05-28:interior",
+    "oceanview": "sailing:rci_anthem_nb_icy_2027-05-28:oceanview",
+    "balcony": "sailing:rci_anthem_nb_icy_2027-05-28:balcony",
+    "miniSuite": "sailing:rci_anthem_nb_icy_2027-05-28:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_sb_2027-06-04",
+   "itinerary": "rci_anthem_sb",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-06-04",
+   "return": "2027-06-11",
+   "nights": 7,
+   "code": "AN07SWD-3892106028",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_sb_2027-06-04:interior",
+    "oceanview": "sailing:rci_anthem_sb_2027-06-04:oceanview",
+    "balcony": "sailing:rci_anthem_sb_2027-06-04:balcony",
+    "miniSuite": "sailing:rci_anthem_sb_2027-06-04:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_nb_juneau_2027-06-11",
+   "itinerary": "rci_anthem_nb_juneau",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-06-11",
+   "return": "2027-06-18",
+   "nights": 7,
+   "code": "AN07YVR-4066772602",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_nb_juneau_2027-06-11:interior",
+    "oceanview": "sailing:rci_anthem_nb_juneau_2027-06-11:oceanview",
+    "balcony": "sailing:rci_anthem_nb_juneau_2027-06-11:balcony",
+    "miniSuite": "sailing:rci_anthem_nb_juneau_2027-06-11:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_sb_ketchikan_2027-06-18",
+   "itinerary": "rci_anthem_sb_ketchikan",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-06-18",
+   "return": "2027-06-25",
+   "nights": 7,
+   "code": "AN07SWD-953470841",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_sb_ketchikan_2027-06-18:interior",
+    "oceanview": "sailing:rci_anthem_sb_ketchikan_2027-06-18:oceanview",
+    "balcony": "sailing:rci_anthem_sb_ketchikan_2027-06-18:balcony",
+    "miniSuite": "sailing:rci_anthem_sb_ketchikan_2027-06-18:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_nb_icy_2027-06-25",
+   "itinerary": "rci_anthem_nb_icy",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-06-25",
+   "return": "2027-07-02",
+   "nights": 7,
+   "code": "AN07YVR-1733859911",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_nb_icy_2027-06-25:interior",
+    "oceanview": "sailing:rci_anthem_nb_icy_2027-06-25:oceanview",
+    "balcony": "sailing:rci_anthem_nb_icy_2027-06-25:balcony",
+    "miniSuite": "sailing:rci_anthem_nb_icy_2027-06-25:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_sb_2027-07-02",
+   "itinerary": "rci_anthem_sb",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-07-02",
+   "return": "2027-07-09",
+   "nights": 7,
+   "code": "AN07SWD-3892106028",
+   "flags": [
+    "holiday"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_sb_2027-07-02:interior",
+    "oceanview": "sailing:rci_anthem_sb_2027-07-02:oceanview",
+    "balcony": "sailing:rci_anthem_sb_2027-07-02:balcony",
+    "miniSuite": "sailing:rci_anthem_sb_2027-07-02:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "rci_anthem_nb_icy_2027-07-09",
+   "itinerary": "rci_anthem_nb_icy",
+   "ship": "anthem_of_the_seas",
+   "depart": "2027-07-09",
+   "return": "2027-07-16",
+   "nights": 7,
+   "code": "AN07YVR-1733859911",
+   "flags": [],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:rci_anthem_nb_icy_2027-07-09:interior",
+    "oceanview": "sailing:rci_anthem_nb_icy_2027-07-09:oceanview",
+    "balcony": "sailing:rci_anthem_nb_icy_2027-07-09:balcony",
+    "miniSuite": "sailing:rci_anthem_nb_icy_2027-07-09:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_dawes_2027-05-23",
+   "itinerary": "celebrity_summit_yvr_dawes",
+   "ship": "celebrity_summit",
+   "depart": "2027-05-23",
+   "return": "2027-05-30",
+   "nights": 7,
+   "code": "SM07YVR-276982758",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_dawes_2027-05-23:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_dawes_2027-05-23:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_dawes_2027-05-23:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_dawes_2027-05-23:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_hubbard_2027-05-30",
+   "itinerary": "celebrity_summit_yvr_hubbard",
+   "ship": "celebrity_summit",
+   "depart": "2027-05-30",
+   "return": "2027-06-06",
+   "nights": 7,
+   "code": "SM07YVR-248500956",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_hubbard_2027-05-30:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_hubbard_2027-05-30:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_hubbard_2027-05-30:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_hubbard_2027-05-30:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_dawes_2027-06-06",
+   "itinerary": "celebrity_summit_yvr_dawes",
+   "ship": "celebrity_summit",
+   "depart": "2027-06-06",
+   "return": "2027-06-13",
+   "nights": 7,
+   "code": "SM07YVR-276982758",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_dawes_2027-06-06:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_dawes_2027-06-06:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_dawes_2027-06-06:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_dawes_2027-06-06:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_hubbard_2027-06-13",
+   "itinerary": "celebrity_summit_yvr_hubbard",
+   "ship": "celebrity_summit",
+   "depart": "2027-06-13",
+   "return": "2027-06-20",
+   "nights": 7,
+   "code": "SM07YVR-248500956",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_hubbard_2027-06-13:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_hubbard_2027-06-13:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_hubbard_2027-06-13:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_hubbard_2027-06-13:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_dawes_2027-06-20",
+   "itinerary": "celebrity_summit_yvr_dawes",
+   "ship": "celebrity_summit",
+   "depart": "2027-06-20",
+   "return": "2027-06-27",
+   "nights": 7,
+   "code": "SM07YVR-276982758",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_dawes_2027-06-20:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_dawes_2027-06-20:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_dawes_2027-06-20:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_dawes_2027-06-20:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_hubbard_2027-06-27",
+   "itinerary": "celebrity_summit_yvr_hubbard",
+   "ship": "celebrity_summit",
+   "depart": "2027-06-27",
+   "return": "2027-07-04",
+   "nights": 7,
+   "code": "SM07YVR-248500956",
+   "flags": [
+    "holiday",
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_hubbard_2027-06-27:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_hubbard_2027-06-27:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_hubbard_2027-06-27:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_hubbard_2027-06-27:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_summit_yvr_dawes_2027-07-04",
+   "itinerary": "celebrity_summit_yvr_dawes",
+   "ship": "celebrity_summit",
+   "depart": "2027-07-04",
+   "return": "2027-07-11",
+   "nights": 7,
+   "code": "SM07YVR-276982758",
+   "flags": [
+    "holiday",
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_summit_yvr_dawes_2027-07-04:interior",
+    "oceanview": "sailing:celebrity_summit_yvr_dawes_2027-07-04:oceanview",
+    "balcony": "sailing:celebrity_summit_yvr_dawes_2027-07-04:balcony",
+    "miniSuite": "sailing:celebrity_summit_yvr_dawes_2027-07-04:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_sb_2027-05-28",
+   "itinerary": "celebrity_solstice_sb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-05-28",
+   "return": "2027-06-04",
+   "nights": 7,
+   "code": "SL07SWD-1391220359",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_sb_2027-05-28:interior",
+    "oceanview": "sailing:celebrity_solstice_sb_2027-05-28:oceanview",
+    "balcony": "sailing:celebrity_solstice_sb_2027-05-28:balcony",
+    "miniSuite": "sailing:celebrity_solstice_sb_2027-05-28:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_nb_2027-06-04",
+   "itinerary": "celebrity_solstice_nb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-06-04",
+   "return": "2027-06-11",
+   "nights": 7,
+   "code": "SL07YVR-2527737053",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_nb_2027-06-04:interior",
+    "oceanview": "sailing:celebrity_solstice_nb_2027-06-04:oceanview",
+    "balcony": "sailing:celebrity_solstice_nb_2027-06-04:balcony",
+    "miniSuite": "sailing:celebrity_solstice_nb_2027-06-04:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_sb_2027-06-11",
+   "itinerary": "celebrity_solstice_sb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-06-11",
+   "return": "2027-06-18",
+   "nights": 7,
+   "code": "SL07SWD-1391220359",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_sb_2027-06-11:interior",
+    "oceanview": "sailing:celebrity_solstice_sb_2027-06-11:oceanview",
+    "balcony": "sailing:celebrity_solstice_sb_2027-06-11:balcony",
+    "miniSuite": "sailing:celebrity_solstice_sb_2027-06-11:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_nb_2027-06-18",
+   "itinerary": "celebrity_solstice_nb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-06-18",
+   "return": "2027-06-25",
+   "nights": 7,
+   "code": "SL07YVR-2527737053",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_nb_2027-06-18:interior",
+    "oceanview": "sailing:celebrity_solstice_nb_2027-06-18:oceanview",
+    "balcony": "sailing:celebrity_solstice_nb_2027-06-18:balcony",
+    "miniSuite": "sailing:celebrity_solstice_nb_2027-06-18:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_sb_2027-06-25",
+   "itinerary": "celebrity_solstice_sb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-06-25",
+   "return": "2027-07-02",
+   "nights": 7,
+   "code": "SL07SWD-1391220359",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_sb_2027-06-25:interior",
+    "oceanview": "sailing:celebrity_solstice_sb_2027-06-25:oceanview",
+    "balcony": "sailing:celebrity_solstice_sb_2027-06-25:balcony",
+    "miniSuite": "sailing:celebrity_solstice_sb_2027-06-25:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_nb_2027-07-02",
+   "itinerary": "celebrity_solstice_nb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-07-02",
+   "return": "2027-07-09",
+   "nights": 7,
+   "code": "SL07YVR-2527737053",
+   "flags": [
+    "holiday",
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_nb_2027-07-02:interior",
+    "oceanview": "sailing:celebrity_solstice_nb_2027-07-02:oceanview",
+    "balcony": "sailing:celebrity_solstice_nb_2027-07-02:balcony",
+    "miniSuite": "sailing:celebrity_solstice_nb_2027-07-02:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
+  },
+  {
+   "id": "celebrity_solstice_sb_2027-07-09",
+   "itinerary": "celebrity_solstice_sb",
+   "ship": "celebrity_solstice",
+   "depart": "2027-07-09",
+   "return": "2027-07-16",
+   "nights": 7,
+   "code": "SL07SWD-1391220359",
+   "flags": [
+    "promo"
+   ],
+   "note": null,
+   "priceRows": {
+    "interior": "sailing:celebrity_solstice_sb_2027-07-09:interior",
+    "oceanview": "sailing:celebrity_solstice_sb_2027-07-09:oceanview",
+    "balcony": "sailing:celebrity_solstice_sb_2027-07-09:balcony",
+    "miniSuite": "sailing:celebrity_solstice_sb_2027-07-09:miniSuite"
+   },
+   "priceSourceKind": "first-party",
+   "addedIn": "p1"
   }
  ],
  "places": [
@@ -8416,6 +9792,45 @@
    "lat": 61.2,
    "lng": -147.8,
    "notes": "Fjord in northern Prince William Sound lined with tidewater and valley glaciers named after colleges. Ships cruise it in the evening before arriving in Whittier.",
+   "dock": "Scenic cruising (no landing)",
+   "coordBasis": "approximate"
+  },
+  {
+   "id": "seward",
+   "name": "Seward, Alaska (cruise port for Anchorage)",
+   "short": "Seward",
+   "kind": "terminal",
+   "country": "US",
+   "tz": "America/Anchorage",
+   "lat": 60.1042,
+   "lng": -149.4422,
+   "notes": "Resurrection Bay port about 125 mi (2.5-3 h) by road from Anchorage; the Alaska Railroad also runs Seward-Anchorage in summer. Used by Royal Caribbean, Celebrity, Norwegian and luxury lines for one-way Gulf of Alaska cruises.",
+   "dock": "Dock",
+   "coordBasis": "approximate"
+  },
+  {
+   "id": "prince_rupert",
+   "name": "Prince Rupert, British Columbia",
+   "short": "Prince Rupert",
+   "kind": "port",
+   "country": "CA",
+   "tz": "America/Vancouver",
+   "lat": 54.315,
+   "lng": -130.3208,
+   "notes": "Small northern BC port (Northland cruise terminal is downtown). Canadian port: passports needed.",
+   "dock": "Dock",
+   "coordBasis": "approximate"
+  },
+  {
+   "id": "inside_passage_bc",
+   "name": "Inside Passage (British Columbia), scenic cruising",
+   "short": "Inside Passage",
+   "kind": "scenic",
+   "country": "CA",
+   "tz": "America/Vancouver",
+   "lat": 51.5,
+   "lng": -127.8,
+   "notes": "Sheltered coastal channels between Vancouver Island and the mainland; ships list a scenic-cruising day with no landing.",
    "dock": "Scenic cruising (no landing)",
    "coordBasis": "approximate"
   }

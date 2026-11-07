@@ -638,6 +638,24 @@
    "publisher": "Holland America Line",
    "checked": "2026-11-07",
    "note": "Reached from each voyage page's Continue button. 'FROM' average per person, all taxes and fees included."
+  },
+  {
+   "id": "rci_search_yvr_2027",
+   "title": "Royal Caribbean cruise search: from Vancouver / Seward, May 15-Jul 10 2027 (date panels)",
+   "url": "https://www.royalcaribbean.com/cruises?search=departurePort:YVR|startDate:2027-05-15~2027-07-10",
+   "kind": "first-party",
+   "publisher": "Royal Caribbean",
+   "checked": "2026-11-07",
+   "note": "'Pricing shown includes all taxes & fees', starting price avg per person for 2 guests per stateroom type. Tags '10% Off Resident Rate' (not applied) and 'Early Booking Bonus'."
+  },
+  {
+   "id": "celebrity_search_yvr_2027",
+   "title": "Celebrity cruise search: from Vancouver / Seward, May 15-Jul 10 2027 (date panels)",
+   "url": "https://www.celebritycruises.com/cruises?search=departurePort:YVR|startDate:2027-05-15~2027-07-10",
+   "kind": "first-party",
+   "publisher": "Celebrity Cruises",
+   "checked": "2026-11-07",
+   "note": "'Pricing shown includes all taxes & fees', starting price avg per person, 2 guests. Promos shown: 75% Off 2nd Guest, Up to $1,000 Instant Savings."
   }
  ]
 }
