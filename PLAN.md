@@ -89,7 +89,7 @@ Models: Opus 5.5, Sonnet 5.5, Haiku 5.5. Fable is not needed.
 
 P2–P5 touch different files and can run in parallel chats after P1 (all write prices.json: pull before editing, keep row ids unique per phase).
 
-### P6 · App A: Ideas, Route, Ship, Date — Opus 5.5, high
+### P6 · App A: Ideas, Route, Ship, Date — Opus 5.5, high — DONE (see handoffs/phase6.md)
 - New app reading `data/*.json`, Safari-first, built for 390/820/1180/1280 px. Screens: **Ideas** (hero photos, route-family cards, glacier highlight, "why this route"); **Route** (Leaflet map with each family's color and line style; tap a route → its ships); **Line & ship** (photo, video, facts, notes for the parents); **Date** (sailing calendar; tap → highlight route and select). Share links (`#route=…&sailing=…`). Photo credits and offline placeholders.
 - Reuse v1 logic by grepping specific functions in `app-v1/src/`, not by reading whole files.
 - Done when Ideas → Date works end to end, no console errors at the 4 widths, share links restore the view.

@@ -3,154 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Alaska 2027 · Setup test</title>
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0b3954">
+<meta name="robots" content="noindex">
+<title>Alaska 2027 Planner</title>
+<link rel="icon" href="app/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-<style>
-:root{--bg:#f6f3ee;--card:#fff;--ink:#1c2a33;--muted:#5b6b75;--line:#e3ddd3;--sea:#0f4c5c;--teal:#0f766e;--ok:#15803d;--bad:#b91c1c;--wait:#a16207}
-@media (prefers-color-scheme:dark){:root{--bg:#10171c;--card:#182229;--ink:#e8eef1;--muted:#9fb0ba;--line:#2a3740;--ok:#4ade80;--bad:#f87171;--wait:#facc15}}
-*{box-sizing:border-box}
-[hidden]{display:none!important}
-.photo img{color:transparent}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
-main{max-width:860px;margin:0 auto;padding:16px}
-h1{font:600 1.6rem/1.2 Georgia,"Times New Roman",serif;margin:8px 0 4px}
-h2{font-size:1.05rem;margin:0 0 8px}
-p{margin:0 0 8px}
-.lede{color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:14px 0;overflow:hidden}
-.status{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
-.pill{border-radius:999px;padding:6px 12px;font-size:.9rem;border:1px solid var(--line);background:var(--card)}
-.pill b{margin-right:4px}
-.ok b{color:var(--ok)} .bad b{color:var(--bad)} .wait b{color:var(--wait)}
-figure{margin:0}
-.photo{position:relative;aspect-ratio:3/2;border-radius:10px;overflow:hidden;
-  background:linear-gradient(135deg,#0f4c5c,#5fa8a0)}
-.photo img{width:100%;height:100%;object-fit:cover;display:block}
-.photo .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;text-align:center;padding:12px}
-figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
-figcaption a{color:inherit}
-#map{height:60vh;min-height:320px;border-radius:10px}
-.video{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#0b1a20}
-.video button{all:unset;cursor:pointer;position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;gap:8px;text-align:center;padding:12px}
-.video button span:first-child{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:30px}
-.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-ol{padding-left:22px;margin:0} li{margin:6px 0}
-small,.muted{color:var(--muted)}
-</style>
+<link rel="stylesheet" href="app/app.css">
 </head>
 <body>
-<main>
-  <h1>Alaska 2027 · setup test</h1>
-  <p class="lede">This page only checks that photos, the map, a video and the trip data all work on your phone. The real planner replaces it later.</p>
-
-  <div class="status" id="status" aria-live="polite">
-    <span class="pill wait" id="s-photo"><b>…</b>Photo</span>
-    <span class="pill wait" id="s-map"><b>…</b>Map</span>
-    <span class="pill wait" id="s-data"><b>…</b>Trip data</span>
-    <span class="pill wait" id="s-video"><b>…</b>Video (tap it)</span>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-row">
+    <a class="brand" href="#view=ideas" data-act="view" data-view="ideas" aria-label="Alaska 2027 planner, home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><path d="M3 24 L12 10 L17 17 L21 12 L29 24 Z" fill="currentColor" opacity=".9"/><path d="M12 10 L14.6 14 L12.8 13.4 L11 15 Z" fill="#fff"/><path d="M3 26 Q8 24 13 26 T23 26 T29 26" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      </span>
+      <span class="brand-text"><b>Alaska 2027</b><small>Family cruise ideas</small></span>
+    </a>
+    <button class="btn ghost share" type="button" data-act="share" aria-label="Share a link to this view">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Share</span>
+    </button>
   </div>
+  <nav class="steps" aria-label="Planner steps">
+    <a href="#view=ideas" data-act="view" data-view="ideas"><i>1</i>Ideas</a>
+    <a href="#view=route" data-act="view" data-view="route"><i>2</i>Route</a>
+    <a href="#view=ship" data-act="view" data-view="ship"><i>3</i>Line &amp; ship</a>
+    <a href="#view=date" data-act="view" data-view="date"><i>4</i>Dates</a>
+  </nav>
+</header>
 
-  <section class="card">
-    <h2>1 · Photo</h2>
-    <figure>
-      <div class="photo">
-        <div class="ph" id="ph">Glacier Bay (photo loading…)</div>
-        <img id="img" alt="Margerie Glacier in Glacier Bay National Park" loading="eager"
-             src="https://commons.wikimedia.org/wiki/Special:FilePath/Glaciar_Margerie%2C_Parque_Nacional_Bah%C3%ADa_del_Glaciar%2C_Alaska%2C_Estados_Unidos%2C_2017-08-19%2C_DD_33.jpg?width=1000">
+<main id="main" tabindex="-1">
+  <section id="v-ideas" class="view" data-view="ideas" hidden></section>
+  <section id="v-route" class="view" data-view="route" hidden>
+    <div class="route-layout">
+      <div class="map-wrap">
+        <div id="routeMap" class="map" role="region" aria-label="Map of cruise routes"></div>
+        <p class="map-note">Lines are schematic: they show the order of stops, not the ship's exact track. Tap a line or a pin.</p>
       </div>
-      <figcaption>Margerie Glacier, Glacier Bay. Photo: Diego Delso, <a href="https://commons.wikimedia.org/wiki/File:Glaciar_Margerie%2C_Parque_Nacional_Bah%C3%ADa_del_Glaciar%2C_Alaska%2C_Estados_Unidos%2C_2017-08-19%2C_DD_33.jpg">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
-    </figure>
-  </section>
-
-  <section class="card">
-    <h2>2 · Map</h2>
-    <p class="muted">Pinch to zoom and drag to move. The teal line is the Holland America Glacier Bay route, drawn as a sketch along the usual channels (not the exact ship track).</p>
-    <div id="map" role="region" aria-label="Map of Seattle to Alaska"></div>
-  </section>
-
-  <section class="card">
-    <h2>3 · Video</h2>
-    <p class="muted">Nothing loads from YouTube until you tap.</p>
-    <div class="video" id="video">
-      <button type="button" id="play" aria-label="Load and play video">
-        <span>▶</span><span>Experience Glacier Bay on a cruise ship</span><small style="color:#cfe3e8">Tap to load from YouTube</small>
-      </button>
+      <div id="routePanel" class="route-panel"></div>
     </div>
   </section>
-
-  <section class="card">
-    <h2>4 · Trip data</h2>
-    <p id="data">Loading…</p>
+  <section id="v-ship" class="view" data-view="ship" hidden></section>
+  <section id="v-date" class="view" data-view="date" hidden>
+    <div id="dateTop"></div>
+    <div class="date-layout">
+      <div id="calendar" class="cal-wrap"></div>
+      <div class="date-side">
+        <div class="map-wrap small">
+          <div id="dateMap" class="map" role="region" aria-label="Map of the selected sailing"></div>
+        </div>
+        <div id="sailingPanel"></div>
+      </div>
+    </div>
   </section>
-
-  <section class="card">
-    <h2>What to check on your iPhone</h2>
-    <ol>
-      <li>All four pills at the top turn green (tap the video first).</li>
-      <li>The glacier photo shows, not a blank teal box.</li>
-      <li>The map shows streets and coastline. Pinch zooms in and out; one finger drags it.</li>
-      <li>The video plays after one tap, and can go full screen.</li>
-      <li>Nothing runs off the right edge of the screen. Try the phone sideways too.</li>
-    </ol>
-    <p class="muted" style="margin-top:8px" id="device"></p>
-  </section>
+  <div id="loading" class="loading">Loading the trip data…</div>
 </main>
 
+<div id="pickbar" class="pickbar" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<footer class="foot">
+  <p>Every price shows where it came from and when it was checked. Nothing here is a booking or a quote.
+  Photos: Wikimedia Commons (credit under each photo). Map: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, drawn with Leaflet.
+  Videos are third-party YouTube tours and load only when tapped.</p>
+</footer>
+
 <script src="vendor/leaflet/leaflet.js"></script>
-<script>
-const set = (id, ok, label) => { const el = document.getElementById(id); el.className = 'pill ' + (ok === null ? 'wait' : ok ? 'ok' : 'bad'); el.querySelector('b').textContent = ok === null ? '…' : ok ? '✓' : '✗'; if (label) el.lastChild.textContent = label; };
-
-// 1 · photo
-const img = document.getElementById('img'), ph = document.getElementById('ph');
-img.addEventListener('load', () => { ph.hidden = true; set('s-photo', true); });
-img.addEventListener('error', () => { img.hidden = true; ph.textContent = 'Glacier Bay (photo could not load, this is the offline placeholder)'; set('s-photo', false); });
-if (img.complete && img.naturalWidth) { ph.hidden = true; set('s-photo', true); }
-
-// 2 · map
-let map;
-try {
-  map = L.map('map', { scrollWheelZoom: false }).setView([54.5, -130.5], 5);
-  const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
-  let loaded = 0, failed = 0;
-  tiles.on('tileload', () => { if (++loaded === 4) set('s-map', true); });
-  tiles.on('tileerror', () => { if (++failed === 6 && loaded < 4) set('s-map', false, 'Map tiles blocked'); });
-} catch (e) { set('s-map', false, 'Map failed to start'); }
-
-// 4 · data (also draws the route on the map)
-Promise.all(['catalog', 'meta', 'prices'].map(n => fetch('data/' + n + '.json').then(r => { if (!r.ok) throw new Error(n + ' ' + r.status); return r.json(); })))
-  .then(([cat, meta, prices]) => {
-    const fam = Object.fromEntries(cat.routeFamilies.map(f => [f.id, f]));
-    const it = cat.itineraries.find(i => i.id === 'hal_eurodam_explorer');
-    if (map && it && it.mapLine) {
-      const line = L.polyline(it.mapLine, { color: fam[it.routeFamily].color, weight: 4, opacity: .85 }).addTo(map);
-      map.fitBounds(line.getBounds(), { padding: [16, 16] });
-    }
-    const used = new Set((it.days || []).flat().map(e => e.place).filter(Boolean));
-    if (map) cat.places.filter(p => used.has(p.id)).forEach(p =>
-      L.circleMarker([p.lat, p.lng], { radius: 7, color: '#fff', weight: 2, fillColor: '#0f4c5c', fillOpacity: 1 })
-        .bindPopup('<b>' + (p.short || p.name) + '</b>').addTo(map));
-    const verified = prices.rows.filter(r => r.status === 'verified').length;
-    document.getElementById('data').textContent =
-      `Loaded ${cat.sailings.length} sailings on ${cat.ships.length} ships, ${prices.rows.length} prices (${verified} verified), ${cat.routeFamilies.length} route families. Data version ${meta.version}.`;
-    set('s-data', true);
-  })
-  .catch(e => { document.getElementById('data').textContent = 'Could not load the data files (' + e.message + ').'; set('s-data', false); });
-
-// 3 · video: tap to load youtube-nocookie
-document.getElementById('play').addEventListener('click', () => {
-  const f = document.createElement('iframe');
-  f.src = 'https://www.youtube-nocookie.com/embed/AG2jFHq0_qE?autoplay=1&playsinline=1&rel=0';
-  f.title = 'Experience Glacier Bay National Park, Alaska on a Cruise Ship';
-  f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-  f.allowFullscreen = true;
-  f.addEventListener('load', () => set('s-video', true, 'Video'));
-  const box = document.getElementById('video'); box.innerHTML = ''; box.appendChild(f);
-});
-
-const ua = navigator.userAgent, safari = /Safari/.test(ua) && !/Chrome|CriOS|FxiOS|EdgiOS/.test(ua);
-document.getElementById('device').textContent = `Screen ${window.innerWidth} px wide · ${safari ? 'Safari' : 'not Safari'}.`;
-</script>
+<script src="app/model.js"></script>
+<script src="app/ui.js"></script>
 </body>
 </html>

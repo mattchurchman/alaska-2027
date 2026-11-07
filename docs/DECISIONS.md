@@ -13,3 +13,8 @@
 - **2026-11-07 · p3 · `walkMiles` is a conservative one-person planning figure** (dock to start, on-tour walking, back to the dock; higher end of any range) with `walkConfidence` documented / derived / estimate. Reason: operators rarely publish walking distances; the parents' 2-mile budget needs a number, but it must not look measured.
 - **2026-11-07 · p3 · Rental-car prices stored as `unavailable`.** No renter publishes a June 2027 rate; an aggregator's Turo-branded November price and a forum anecdote were deliberately not used. Juneau Car Rental's site is robots-blocked and was not read.
 - **2026-11-07 · p3 · New experiences carry `diy: true`; self-drive ones that suit the parents carry `parentsDrive: true`.** The Skagway-to-Canada rental question is recorded as unresolved (no written renter policy found).
+- **2026-11-07 · p6 · App is plain HTML/CSS/JS with no build step** (`index.html` + `app/`), reading `data/*.json` at load. Reason: the moderator never has to run anything; any phase can edit a file and push.
+- **2026-11-07 · p6 · Two-cabin price = interior row + balcony row** (no tips), status = the weaker of the two; shown as "not captured" if either is missing. Tips shown separately as an estimate (line rate × 4 × nights).
+- **2026-11-07 · p6 · Share state lives in the URL hash** (`#view=&route=&ship=&sailing=&june=1`); the "only this ship" calendar filter is not shared.
+- **2026-11-07 · p6 · Setup test page kept at `setup-test.html`** until the moderator's iPhone check is done.
+- **2026-11-07 · p6 · Interface:** P6 stayed in the Claude app (headless Chrome testing). Claude Code on the moderator's computer is only worth it if the P8 device test finds Safari-only bugs.
