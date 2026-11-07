@@ -270,8 +270,581 @@
    "for": [
     "place:hubbard"
    ]
+  },
+  {
+   "id": "ph-place-sea_airport",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sea-Tac_Airport_control_tower_with_Link_train_passing.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Sea-Tac_Airport_control_tower_with_Link_train_passing.jpg",
+   "credit": "Steve Morgan / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:sea_airport"
+   ],
+   "alt": "Sea-Tac Airport control tower with a Link light-rail train passing",
+   "w": 2539,
+   "h": 1710,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-stephens_passage",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephens_Passage_and_Admiralty_Island%2C_AK.JPG?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Stephens_Passage_and_Admiralty_Island%2C_AK.JPG",
+   "credit": "Jsayre64 / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "place:stephens_passage"
+   ],
+   "alt": "Stephens Passage and Admiralty Island",
+   "w": 4608,
+   "h": 3456,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-yvr_canada_place",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vancouver_%28BC%2C_Canada%29%2C_Canada_Place_--_2022_--_2093.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Vancouver_%28BC%2C_Canada%29%2C_Canada_Place_--_2022_--_2093.jpg",
+   "credit": "Dietmar Rabich / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "place:yvr_canada_place"
+   ],
+   "alt": "Canada Place cruise terminal in Vancouver",
+   "w": 6720,
+   "h": 3780,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-whittier",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Whittier_Harbor%2C_Alaska_%282%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Whittier_Harbor%2C_Alaska_%282%29.jpg",
+   "credit": "127x0x0x1 at en.wikipedia / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "place:whittier"
+   ],
+   "alt": "Whittier harbor",
+   "w": 3264,
+   "h": 2448,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-college_fjord",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vassar_Glacier%2C_College_Fjord%2C_Alaska_06.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Vassar_Glacier%2C_College_Fjord%2C_Alaska_06.jpg",
+   "credit": "Ken Lund / Wikimedia Commons / CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "for": [
+    "place:college_fjord"
+   ],
+   "alt": "Vassar Glacier in College Fjord",
+   "w": 6000,
+   "h": 4000,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-seward",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seward_harbor.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Seward_harbor.jpg",
+   "credit": "1brownsfan / Wikimedia Commons / Public domain",
+   "license": "Public domain",
+   "for": [
+    "place:seward"
+   ],
+   "alt": "Seward harbor",
+   "w": 1400,
+   "h": 1050,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-prince_rupert",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariner_Statue_along_Waterfront_-_Prince_Rupert_-_British_Columbia_-_Canada.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Mariner_Statue_along_Waterfront_-_Prince_Rupert_-_British_Columbia_-_Canada.jpg",
+   "credit": "Adam Jones, Ph.D. / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "place:prince_rupert"
+   ],
+   "alt": "Mariner statue on the Prince Rupert waterfront",
+   "w": 2736,
+   "h": 3648,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-inside_passage_bc",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Inside_Passage_in_British_Columbia_-_NOAA.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Inside_Passage_in_British_Columbia_-_NOAA.jpg",
+   "credit": "Commander John Bortniak, NOAA Corps / Wikimedia Commons / Public domain",
+   "license": "Public domain",
+   "for": [
+    "place:inside_passage_bc"
+   ],
+   "alt": "Inside Passage in British Columbia",
+   "w": 1588,
+   "h": 1184,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-place-haines",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2018-09-19_01_Wide_view_of_Haines%2C_Alaska_USA.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:2018-09-19_01_Wide_view_of_Haines%2C_Alaska_USA.jpg",
+   "credit": "Gordon Leggett / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "place:haines"
+   ],
+   "alt": "Wide view of Haines",
+   "w": 8012,
+   "h": 2030,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-auke_bay",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juneau_Auke_Bay_Aerial_0595.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Juneau_Auke_Bay_Aerial_0595.jpg",
+   "credit": "Gillfoto / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "poi:auke_bay"
+   ],
+   "alt": "Aerial view of Auke Bay near Juneau",
+   "w": 1200,
+   "h": 796,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-mendenhall_vc",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mendenhall_Glacier_Visitor_Center_01.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Mendenhall_Glacier_Visitor_Center_01.jpg",
+   "credit": "Joe Mabel / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:mendenhall_vc"
+   ],
+   "alt": "Mendenhall Glacier Visitor Center",
+   "w": 6000,
+   "h": 4000,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-juneau_heli",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Helicopter%2C_Mendenhall_Glacier%2C_Alaska.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Helicopter%2C_Mendenhall_Glacier%2C_Alaska.jpg",
+   "credit": "Robert Raines / Wikimedia Commons / CC BY-SA 2.0",
+   "license": "CC BY-SA 2.0",
+   "for": [
+    "poi:juneau_heli"
+   ],
+   "alt": "Helicopter at Mendenhall Glacier",
+   "w": 4272,
+   "h": 2848,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-goldbelt_tram",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Roberts_Tramway_in_Juneau%2C_Alaska.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Mount_Roberts_Tramway_in_Juneau%2C_Alaska.jpg",
+   "credit": "Wknight94 / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "poi:goldbelt_tram"
+   ],
+   "alt": "Mount Roberts Tramway above Juneau",
+   "w": 3072,
+   "h": 2304,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-white_pass",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/White_Pass_and_Yukon_Route_train_entering_a_tunnel.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:White_Pass_and_Yukon_Route_train_entering_a_tunnel.jpg",
+   "credit": "Cullen328 / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:white_pass"
+   ],
+   "alt": "White Pass and Yukon Route train entering a tunnel",
+   "w": 3005,
+   "h": 2539,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-carcross",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carcross%2C_Yukon_Territory_2.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Carcross%2C_Yukon_Territory_2.jpg",
+   "credit": "Richard Martin / Wikimedia Commons / CC BY 2.0",
+   "license": "CC BY 2.0",
+   "for": [
+    "poi:carcross"
+   ],
+   "alt": "Carcross, Yukon",
+   "w": 2896,
+   "h": 1936,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-klgo_vc",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Klondike_Gold_Rush_NHP_Skagway.JPG?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Klondike_Gold_Rush_NHP_Skagway.JPG",
+   "credit": "Reywas92 / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "poi:klgo_vc"
+   ],
+   "alt": "Klondike Gold Rush National Historical Park in Skagway",
+   "w": 3648,
+   "h": 2736,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-creek_street",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Calle_hist%C3%B3rica_Creek%2C_Ketchikan%2C_Alaska%2C_Estados_Unidos%2C_2017-08-16%2C_DD_54.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Calle_hist%C3%B3rica_Creek%2C_Ketchikan%2C_Alaska%2C_Estados_Unidos%2C_2017-08-16%2C_DD_54.jpg",
+   "credit": "Diego Delso / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:creek_street"
+   ],
+   "alt": "Creek Street boardwalk in Ketchikan",
+   "w": 7856,
+   "h": 4123,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-totem_bight",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Totem_Bight_Community_House%2C_Mud_Bight_Village%2C_North_Tongass_Highway%2C_Ketchikan_vicinity_%28Ketchikan_Gateway_Borough%2C_Alaska%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Totem_Bight_Community_House%2C_Mud_Bight_Village%2C_North_Tongass_Highway%2C_Ketchikan_vicinity_%28Ketchikan_Gateway_Borough%2C_Alaska%29.jpg",
+   "credit": "Unknown author / Wikimedia Commons / Public domain",
+   "license": "Public domain",
+   "for": [
+    "poi:totem_bight"
+   ],
+   "alt": "Community house at Totem Bight (historic photo)",
+   "w": 4059,
+   "h": 3250,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-saxman",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saxman_totem_park%28js%2901.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Saxman_totem_park%28js%2901.jpg",
+   "credit": "Jerzystrzelecki / Wikimedia Commons / CC BY 3.0",
+   "license": "CC BY 3.0",
+   "for": [
+    "poi:saxman"
+   ],
+   "alt": "Totem poles at Saxman",
+   "w": 5648,
+   "h": 3652,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-misty_fjords",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Misty_Fjords_National_Monument_ENBLA22.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Misty_Fjords_National_Monument_ENBLA22.jpg",
+   "credit": "Enrico Blasutto / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:misty_fjords"
+   ],
+   "alt": "Misty Fjords National Monument",
+   "w": 5435,
+   "h": 3623,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-raptor_center",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Handler_with_snowy_owl_at_the_Alaska_Raptor_Center.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Handler_with_snowy_owl_at_the_Alaska_Raptor_Center.jpg",
+   "credit": "Cullen328 / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:raptor_center"
+   ],
+   "alt": "Handler with a snowy owl at the Alaska Raptor Center",
+   "w": 4000,
+   "h": 3000,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-sitka_nhp",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sitka%2C_Alaska_-_Sitka_National_Historical_Park_-_Totem_Trail_%281%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Sitka%2C_Alaska_-_Sitka_National_Historical_Park_-_Totem_Trail_%281%29.jpg",
+   "credit": "Jrozwado / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:sitka_nhp"
+   ],
+   "alt": "Totem Trail in Sitka National Historical Park",
+   "w": 800,
+   "h": 1200,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-inner_harbour",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria_Inner_Harbor_%285945755775%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Victoria_Inner_Harbor_%285945755775%29.jpg",
+   "credit": "Roy Luck / Wikimedia Commons / CC BY 2.0",
+   "license": "CC BY 2.0",
+   "for": [
+    "poi:inner_harbour"
+   ],
+   "alt": "Victoria Inner Harbour",
+   "w": 4752,
+   "h": 3168,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-poi-butchart",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Butchart_Garden_splendor.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Butchart_Garden_splendor.jpg",
+   "credit": "Michelamillerdickson96 / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "poi:butchart"
+   ],
+   "alt": "Butchart Gardens",
+   "w": 4032,
+   "h": 3024,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-exp-whales",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Adult_Humpback_Whale_breaching.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Adult_Humpback_Whale_breaching.jpg",
+   "credit": "Gillfoto from Juneau, Alaska, United States / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "experience:jnu_whale",
+    "experience:jnu_mdh_whale"
+   ],
+   "alt": "Humpback whale breaching near Juneau",
+   "w": 3648,
+   "h": 2736,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-exp-lumberjack",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Alaskan_Lumberjack_Show_lumberjack.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Alaskan_Lumberjack_Show_lumberjack.jpg",
+   "credit": "Wknight94 / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "experience:ktn_lumber"
+   ],
+   "alt": "Great Alaskan Lumberjack Show",
+   "w": 3072,
+   "h": 2304,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-emerald_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Emerald_Princess_cruise_ship.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Emerald_Princess_cruise_ship.jpg",
+   "credit": "Quintin Soloviev / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:emerald_princess"
+   ],
+   "alt": "Emerald Princess",
+   "w": 7311,
+   "h": 4387,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-crown_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crown_Princess_%28ship%2C_2006%29_in_Fremantle_Harbour%2C_November_2024_03.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Crown_Princess_%28ship%2C_2006%29_in_Fremantle_Harbour%2C_November_2024_03.jpg",
+   "credit": "Calistemon / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:crown_princess"
+   ],
+   "alt": "Crown Princess",
+   "w": 4543,
+   "h": 2555,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-discovery_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Discovery_Princess_docked_in_Juneau%2C_AK.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Discovery_Princess_docked_in_Juneau%2C_AK.jpg",
+   "credit": "Matthew Groh / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:discovery_princess"
+   ],
+   "alt": "Discovery Princess docked in Juneau",
+   "w": 6000,
+   "h": 3375,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-coral_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2026_Coral_Princess_Alaska_gf51.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:2026_Coral_Princess_Alaska_gf51.jpg",
+   "credit": "Gillfoto / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:coral_princess"
+   ],
+   "alt": "Coral Princess in Alaska",
+   "w": 6000,
+   "h": 4000,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-island_princess",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Island_Princess_in_Port_Everglades.JPG?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Island_Princess_in_Port_Everglades.JPG",
+   "credit": "Jean-Philippe Boulet / Wikimedia Commons / CC BY 3.0",
+   "license": "CC BY 3.0",
+   "for": [
+    "ship:island_princess"
+   ],
+   "alt": "Island Princess",
+   "w": 4000,
+   "h": 3000,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-westerdam",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/MS_Westerdam_Skagway.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:MS_Westerdam_Skagway.jpg",
+   "credit": "PhilipRJ 89 / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:westerdam"
+   ],
+   "alt": "Westerdam at Skagway",
+   "w": 4608,
+   "h": 3456,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-noordam",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Noordam_in_Vancouver.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Noordam_in_Vancouver.jpg",
+   "credit": "Murgatroyd49 / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:noordam"
+   ],
+   "alt": "Noordam in Vancouver",
+   "w": 850,
+   "h": 560,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-serenade_of_the_seas",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serenade_of_the_Seas_in_Halifax%2C_Nova_Scotia_2024.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Serenade_of_the_Seas_in_Halifax%2C_Nova_Scotia_2024.jpg",
+   "credit": "Quintin Soloviev / Wikimedia Commons / CC BY 4.0",
+   "license": "CC BY 4.0",
+   "for": [
+    "ship:serenade_of_the_seas"
+   ],
+   "alt": "Serenade of the Seas",
+   "w": 8064,
+   "h": 5176,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-anthem_of_the_seas",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthem_of_the_Seas_%28ship%2C_2015%29_at_Liverpool_2021-6.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Anthem_of_the_Seas_%28ship%2C_2015%29_at_Liverpool_2021-6.jpg",
+   "credit": "Rodhullandemu / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:anthem_of_the_seas"
+   ],
+   "alt": "Anthem of the Seas",
+   "w": 4721,
+   "h": 2871,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-celebrity_summit",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celebrity_Summit_NYC.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Celebrity_Summit_NYC.jpg",
+   "credit": "Fritzmann2002 / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:celebrity_summit"
+   ],
+   "alt": "Celebrity Summit",
+   "w": 2507,
+   "h": 1410,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-celebrity_solstice",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celebrity_Solstice_%28ship%2C_2008%29_001.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Celebrity_Solstice_%28ship%2C_2008%29_001.jpg",
+   "credit": "Aah-Yeah / Wikimedia Commons / CC BY 2.0",
+   "license": "CC BY 2.0",
+   "for": [
+    "ship:celebrity_solstice"
+   ],
+   "alt": "Celebrity Solstice",
+   "w": 2758,
+   "h": 1568,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-norwegian_jade",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegian_Jade_%28ship%2C_2006%29_IMO_9304057%3B_in_Split%2C_2011-10-10%3B_%281%29.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Norwegian_Jade_%28ship%2C_2006%29_IMO_9304057%3B_in_Split%2C_2011-10-10%3B_%281%29.jpg",
+   "credit": "Ivan T. / Wikimedia Commons / CC BY-SA 3.0",
+   "license": "CC BY-SA 3.0",
+   "for": [
+    "ship:norwegian_jade"
+   ],
+   "alt": "Norwegian Jade",
+   "w": 2947,
+   "h": 1958,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-disney_wonder",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Disney_Wonder_in_Sydney_24_December_2024.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Disney_Wonder_in_Sydney_24_December_2024.jpg",
+   "credit": "Dicklyon / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:disney_wonder"
+   ],
+   "alt": "Disney Wonder",
+   "w": 4080,
+   "h": 3072,
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ph-ship-disney_magic",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Disney_Magic_in_Oslo_2016_I.jpg?width=1000",
+   "page": "https://commons.wikimedia.org/wiki/File:Disney_Magic_in_Oslo_2016_I.jpg",
+   "credit": "Smiley.toerist / Wikimedia Commons / CC BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "for": [
+    "ship:disney_magic"
+   ],
+   "alt": "Disney Magic",
+   "w": 3648,
+   "h": 2736,
+   "checked": "2026-11-07"
   }
  ],
  "videos": [],
- "officialLinks": []
+ "officialLinks": [],
+ "placeholders": [
+  {
+   "for": "place:stikine_icecap",
+   "note": "No matching Commons photo found (searched Stikine Icecap/Icefield, Shakes Glacier).",
+   "checked": "2026-11-07"
+  },
+  {
+   "for": "poi:rainforest_sanctuary",
+   "note": "No matching Commons photo found for the Ketchikan Rainforest Sanctuary.",
+   "checked": "2026-11-07"
+  }
+ ]
 }
