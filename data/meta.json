@@ -44,7 +44,7 @@
   {
    "n": 3,
    "name": "Experiences A",
-   "status": "todo"
+   "status": "done"
   },
   {
    "n": 4,
@@ -80,7 +80,8 @@
   "Seattle terminal is the line's usual pier; confirm on cruise documents.",
   "Prices change daily and sales end; refresh before booking.",
   "Flight fares are 4-adult round-trip totals from Google Flights' listing of Alaska Airlines fares; hotel rates are one room for two guests. Two-room totals are 2 x the one-room rate.",
-  "Map pins use Wikipedia coordinates where marked; others (and all hotels) are approximate. Cruise route lines are schematic, drawn along common channels, not actual ship tracks."
+  "Map pins use Wikipedia coordinates where marked; others (and all hotels) are approximate. Cruise route lines are schematic, drawn along common channels, not actual ship tracks.",
+  "walkMiles on experiences is one person's conservative planning figure (dock to start, on-tour walking, back to the dock; the higher end of any range). walkConfidence says whether it is documented, derived or an estimate; it is not a measured accessibility rating."
  ],
  "statusDefinitions": {
   "verified": {

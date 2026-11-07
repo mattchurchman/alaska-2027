@@ -10465,6 +10465,22 @@
     {
      "text": "Allen Marine's Juneau office is in Auke Bay (13391 Glacier Highway). Cruise whale tours include a motorcoach from downtown.",
      "source": "allen_juneau"
+    },
+    {
+     "text": "Franklin Dock and the cruise terminal are a few minutes' walk to downtown and fully wheelchair accessible; AJ Dock is about 1 mile south of the center with a $5 shuttle.",
+     "source": "cruisehive_juneau"
+    },
+    {
+     "text": "Capital Transit routes 3, 4 and 8 stop at Dredge Lake Road, about 1.5 miles (30 minutes' flat paved walk) from the Mendenhall visitor center; $2 adult fare, up to about 1.5 hours each way.",
+     "source": "jcat_glacier"
+    },
+    {
+     "text": "Mendenhall paths: 1/3 mile paved round trip; Nugget Falls gravel trail about 2 miles round trip on the Forest Service map.",
+     "source": "fs_mdh_trails_map"
+    },
+    {
+     "text": "No 2027 reopening date for the Goldbelt tram as of 2026-11-07; it needs a state certification evaluation first.",
+     "source": "ktoo_tram"
     }
    ]
   },
@@ -10493,6 +10509,18 @@
     {
      "text": "No fee to enter Klondike Gold Rush NHP; ranger programs and museums are free.",
      "source": "nps_klgo_fees"
+    },
+    {
+     "text": "SMART bus runs dock to downtown 7 am to 9 pm on ship days ($3 each way, $5 all day); on-demand shuttle to the River Bridge ($5), Dyea Road pavement end ($10) and Dyea ($15).",
+     "source": "skagway_getting_around"
+    },
+    {
+     "text": "Under a mile (about 18 minutes) from the ships to downtown; Broadway Dock at the edge of Broadway, Railroad and Ore docks at the south end of town; all piers wheelchair accessible.",
+     "source": "cruisehive_skagway"
+    },
+    {
+     "text": "Rental companies listed by the visitor bureau: Affordable Car Rentals (648 Broadway) and Drive About (202 9th Ave). Canada-driving rules were not found in writing; cruisers say US citizens can cross with passports.",
+     "source": "skagway_getting_around"
     }
    ]
   },
@@ -10511,6 +10539,18 @@
     {
      "text": "Alaska Rainforest Sanctuary is at Herring Cove, about 8 road miles from town.",
      "source": "visit_ktn_ars"
+    },
+    {
+     "text": "Four downtown berths (1 to 4, south to north) put the ship on Front Street; Saxman is about 2 miles south, Totem Bight a few miles north.",
+     "source": "princess_ktn_blog"
+    },
+    {
+     "text": "Totem Heritage Center is about a 15-minute walk from downtown; Creek Street's boardwalk is flat but slippery when wet.",
+     "source": "acs_ktn_walk"
+    },
+    {
+     "text": "Borough bus to Totem Bight takes about 25 minutes and runs roughly hourly (May 2023 timetable); $2 cash fare, whole fleet wheelchair accessible.",
+     "source": "flashpack_ktn_bus"
     }
    ]
   },
@@ -10529,6 +10569,10 @@
     {
      "text": "A reseller lists a Ward Cove to downtown shuttle at $65 (one way, per-person basis unclear).",
      "source": "ase_ketchikan"
+    },
+    {
+     "text": "From the Ward Cove bus stop, Totem Bight is about 5 minutes and 3 miles by borough bus (May 2023 blog).",
+     "source": "flashpack_ktn_bus"
     }
    ]
   },

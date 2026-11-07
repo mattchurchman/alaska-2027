@@ -746,6 +746,186 @@
    "publisher": "UnCruise Adventures",
    "checked": "2026-11-07",
    "note": "Jun 27 2027, Juneau to Ketchikan, 76 guests; Navigator cabin double occupancy per person, port taxes and fees included, gratuities not included."
+  },
+  {
+   "id": "jcat_glacier",
+   "title": "How to Ride to the Mendenhall Glacier Visitor Center with Capital Transit",
+   "url": "https://juneaucapitaltransit.org/glacier",
+   "kind": "first-party",
+   "publisher": "Capital Transit (Juneau)",
+   "checked": "2026-11-07",
+   "note": "Routes 3, 4, 8 stop at Dredge Lake Rd; $2 adult cash fare; stop is about 1.5 mi (30 min) from the visitor center on a flat paved path; up to about 1.5 h each way."
+  },
+  {
+   "id": "cruisehive_juneau",
+   "title": "Juneau Cruise Port, Alaska: Overview and Guide",
+   "url": "https://www.cruisehive.com/juneau-cruise-port-guide/99168",
+   "kind": "secondary",
+   "publisher": "CruiseHive",
+   "checked": "2026-11-07",
+   "note": "Docks, walking distances to downtown, $5 AJ Dock shuttle, wheelchair access at Franklin Dock and the cruise terminal."
+  },
+  {
+   "id": "fs_mdh_trails_map",
+   "title": "Mendenhall Glacier Recreation Area trail map (Forest Service)",
+   "url": "https://www.fs.usda.gov/media/199080",
+   "kind": "government",
+   "publisher": "USDA Forest Service",
+   "checked": "2026-11-07",
+   "note": "Trail lengths: 1/3 mi paved round trip, Nugget Falls 2 mi round trip gravel, Trail of Time 1 mi loop, Steep Creek 0.25 mi loop. Fee area, amounts not on the map."
+  },
+  {
+   "id": "fs_nugget_falls",
+   "title": "Nugget Falls Trail (Tongass National Forest)",
+   "url": "https://www.fs.usda.gov/r10/tongass/recreation/trails/nugget-falls-trail",
+   "kind": "government",
+   "publisher": "USDA Forest Service",
+   "checked": "2026-11-07",
+   "note": "Lists 0.8 mi without saying one way or round trip; mostly natural surface, gentle slope; starts just past the visitor center."
+  },
+  {
+   "id": "juneau_museum_tours",
+   "title": "Juneau-Douglas City Museum walking tours (2026 schedule)",
+   "url": "https://juneau.org/library/museum/walking-tours",
+   "kind": "government",
+   "publisher": "City and Borough of Juneau",
+   "checked": "2026-11-07",
+   "note": "Historic Downtown tour 90 min, $31.50, Tue-Thu 1:45 pm, last tour June 30 2026; Capitol tour free on weekdays; tours may include inclines, stairs and uneven ground."
+  },
+  {
+   "id": "gpsmycity_juneau",
+   "title": "Juneau Introduction Walking Tour (self guided)",
+   "url": "https://www.gpsmycity.com/tours/juneau-introduction-walking-tour-7102.html",
+   "kind": "secondary",
+   "publisher": "GPSmyCity",
+   "checked": "2026-11-07",
+   "note": "About 1.1 mi, about 2 h, 12 stops, first stop the Juneau Cruise Port; narrow streets and wooden boardwalks."
+  },
+  {
+   "id": "alaskaorg_juneau_trails",
+   "title": "Parks & Trails in Juneau (alaska.org)",
+   "url": "https://alaska.org/destination/juneau/trails",
+   "kind": "secondary",
+   "publisher": "Alaska.org",
+   "checked": "2026-11-07",
+   "note": "Perseverance Trail about 3 mi moderate; Mount Roberts Trail difficult and steep, trailhead about 1 mi from downtown (Basin Road); Airport Dike Trail 1 mi paved."
+  },
+  {
+   "id": "cc_juneau_rental",
+   "title": "Cruise Critic: car rental in Juneau and ideas for visiting with an older parent",
+   "url": "https://boards.cruisecritic.com/topic/2522669-car-rental-in-juneau-amp-ideas-for-visiting-with-older-parent/",
+   "kind": "secondary",
+   "publisher": "Cruise Critic forum (anecdotal)",
+   "checked": "2026-11-07",
+   "note": "Cruiser reports: Juneau Car Rental and Avis downtown, about a 20-minute walk from some berths; downtown office reportedly closes about 2 pm on cruise days; airport rentals cheaper but need a cab. Not first-party."
+  },
+  {
+   "id": "skagway_getting_around",
+   "title": "Skagway: Getting Around (Skagway Convention & Visitors Bureau)",
+   "url": "https://www.skagway.com/plan-your-trip/travel-transportation/getting-around/",
+   "kind": "first-party",
+   "publisher": "Skagway Convention & Visitors Bureau",
+   "checked": "2026-11-07",
+   "note": "SMART bus $5 all day or $3 each way, 7 am-9 pm on ship days; on-demand shuttle $5 to River Bridge, $10 to end of pavement on Dyea/Liarsville Rd, $15 to Dyea; rental companies Affordable Car Rentals and Drive About."
+  },
+  {
+   "id": "nps_klgo_hikes",
+   "title": "Skagway shorter day hikes (Klondike Gold Rush NHP)",
+   "url": "https://home.nps.gov/klgo/planyourvisit/shorterdayhikes.htm",
+   "kind": "government",
+   "publisher": "National Park Service",
+   "checked": "2026-11-07",
+   "note": "Yakutania Point 1-2 mi, 100 ft; Gold Rush Cemetery and Lower Reid Falls 4 mi, 50 ft; Lower Dewey Lake 0.9 mi to the lake or 3.6 mi around, 500 ft. Distances round trip from the NPS visitor center."
+  },
+  {
+   "id": "cruisehive_skagway",
+   "title": "Skagway Cruise Port: What You Need to Know",
+   "url": "https://www.cruisehive.com/skagway-cruise-port/125515",
+   "kind": "secondary",
+   "publisher": "CruiseHive",
+   "checked": "2026-11-07",
+   "note": "Broadway Dock vs Railroad/Ore docks at the south end; under a mile (about 18 min) to downtown; heliport 5-15 min from the ship; piers wheelchair accessible."
+  },
+  {
+   "id": "cc_skagway_rental",
+   "title": "Cruise Critic: car rental in Skagway, can you drive to Carcross",
+   "url": "https://boards.cruisecritic.co.uk/topic/947414-car-rental-in-skagway-can-you-drive-to-carcross/",
+   "kind": "secondary",
+   "publisher": "Cruise Critic forum (anecdotal)",
+   "checked": "2026-11-07",
+   "note": "Posters say US citizens can take a US rental into Canada with passports; Avis cars barred from gravel (Dyea Rd); Sourdough allows it; counter lines on ship days. No renter policy found in writing."
+  },
+  {
+   "id": "wiki_skagway_fraser",
+   "title": "Skagway-Fraser Border Crossing",
+   "url": "https://en.wikipedia.org/wiki/Skagway%E2%80%93Fraser_Border_Crossing",
+   "kind": "reference",
+   "publisher": "Wikipedia",
+   "checked": "2026-11-07",
+   "note": "US port at Mile 6.8 of the Klondike Highway; US inspection station about 7.9 mi south of the border. Hours not stated."
+  },
+  {
+   "id": "princess_ktn_blog",
+   "title": "Ketchikan cruise port (Princess blog)",
+   "url": "https://www.princess.com/blog/ketchikan-cruise-port",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-07",
+   "note": "Four downtown berths numbered 1-4 south to north; fifth berth at Ward Cove with a shuttle; Saxman about 2 mi south; Totem Bight a few miles north."
+  },
+  {
+   "id": "acs_ktn_walk",
+   "title": "Creek Street and Beyond: a self-guided walking tour of Ketchikan",
+   "url": "https://alaskacruiseshirts.com/blogs/alaska-cruise-guide/ketchikan-walking-tour-creek-street-guide",
+   "kind": "secondary",
+   "publisher": "Alaska Cruise Shirts",
+   "checked": "2026-11-07",
+   "note": "Creek Street 1-2 h with flat but slippery boardwalk; Totem Heritage Center about a 15-minute walk from downtown; some downtown hills and stairs."
+  },
+  {
+   "id": "pr_ktn_walk",
+   "title": "Historical Ketchikan and Creek Street Walking Tour (Princess)",
+   "url": "https://princess.com/ports-excursions/ketchikan-alaska-excursions/historical-ketchikan-and-creek-street-walking-tour",
+   "kind": "first-party",
+   "publisher": "Princess Cruises",
+   "checked": "2026-11-07",
+   "note": "About 9 blocks, 1.5 h, Easy, wheelchair accessible (manual chairs need a companion); no price shown on the page."
+  },
+  {
+   "id": "flashpack_ktn_bus",
+   "title": "Ketchikan bus to Totem Bight State Historical Park",
+   "url": "https://www.flashpackingamerica.com/alaska-travel/ketchikan-bus-to-totem-bight-state-historical-park/",
+   "kind": "secondary",
+   "publisher": "Flashpacking America (May 2023 schedule)",
+   "checked": "2026-11-07",
+   "note": "$2 cash per ride, about hourly, about 25 min from the port, bus enters the park; $5 park entry by card; Ward Cove stop about 5 min and 3 mi from Totem Bight."
+  },
+  {
+   "id": "alaskaorg_ktn_bus",
+   "title": "Ketchikan bus services (alaska.org)",
+   "url": "https://www.alaska.org/detail/ketchikan-bus-services",
+   "kind": "secondary",
+   "publisher": "Alaska.org",
+   "checked": "2026-11-07",
+   "note": "Whole bus fleet wheelchair accessible; routes reach Ward Cove, Totem Bight, Saxman; lists a $1 fare (conflicts with the $2 on newer blog); two free summer dock shuttles."
+  },
+  {
+   "id": "cc_ktn_rental",
+   "title": "Cruise Critic: Ketchikan by rental car (Settlers Cove, Totem Bight, Ward Lake)",
+   "url": "https://boards.cruisecritic.com.au/topic/2164724-ketchikan-by-rental-car-review-settlers-cove-totem-bight-and-ward-lake/",
+   "kind": "secondary",
+   "publisher": "Cruise Critic forum (anecdotal)",
+   "checked": "2026-11-07",
+   "note": "Alaska Car Rental picked up and returned at the dock; Settlers Cove about 20 min drive; Totem Bight about 10 min beyond; Ward Lake loop 1.3 mi, flat."
+  },
+  {
+   "id": "alaskaorg_deer",
+   "title": "Deer Mountain Trail (alaska.org)",
+   "url": "https://alaska.org/detail/deer-mountain-trail",
+   "kind": "secondary",
+   "publisher": "Alaska.org",
+   "checked": "2026-11-07",
+   "note": "5 mi, about 2,600 ft gain, difficult."
   }
  ]
 }

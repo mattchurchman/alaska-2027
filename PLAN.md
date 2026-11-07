@@ -70,7 +70,7 @@ Models: Opus 5.5, Sonnet 5.5, Haiku 5.5. Fable is not needed.
 - Representative fares for 4 adults on 2–3 date pairs: ABQ ↔ SEA (refresh), ABQ ↔ YVR, open-jaw ABQ → YVR / ANC → ABQ and the reverse. Ground SEA → Vancouver (train, bus, shuttle). Seward/Whittier → Anchorage transfers. One hotel price range per city (Seattle, Vancouver, Anchorage) with a search link. Rough numbers fine, labeled `published` or `estimate`.
 - Out: travel.json, prices.json. Done when every route family has an arrival-city cost line.
 
-### P3 · Experiences A: Juneau, Skagway, Ketchikan — Sonnet 5.5, high
+### P3 · Experiences A: Juneau, Skagway, Ketchikan — Sonnet 5.5, high — DONE (see handoffs/phase3.md)
 - Walking miles on every existing experience (dock to start + on-tour, basis noted); stairs and hills.
 - At least 2 DIY or budget alternatives per port: rental car (who rents at the port, ship-day sellouts; Skagway: does the contract allow the Klondike Highway into Canada), public bus, self-guided walks with miles. Flag self-drive options easy for the parents.
 - Check the 2027 status of the Goldbelt tram.
