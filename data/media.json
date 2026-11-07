@@ -1605,7 +1605,288 @@
    "checked": "2026-11-07"
   }
  ],
- "officialLinks": [],
+ "officialLinks": [
+  {
+   "id": "ol-ship-royal_princess",
+   "title": "Royal Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/rp-royal-princess",
+   "for": [
+    "ship:royal_princess"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-star_princess",
+   "title": "Star Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/st-star-princess",
+   "for": [
+    "ship:star_princess"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-emerald_princess",
+   "title": "Emerald Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/ep-emerald-princess",
+   "for": [
+    "ship:emerald_princess"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-crown_princess",
+   "title": "Crown Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/kp-crown-princess",
+   "for": [
+    "ship:crown_princess"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-discovery_princess",
+   "title": "Discovery Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/xp-discovery-princess",
+   "for": [
+    "ship:discovery_princess"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-coral_princess",
+   "title": "Coral Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/co-coral-princess",
+   "for": [
+    "ship:coral_princess"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-island_princess",
+   "title": "Island Princess on the cruise line's site",
+   "url": "https://www.princess.com/ships-and-experience/ships/ip-island-princess",
+   "for": [
+    "ship:island_princess"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-eurodam",
+   "title": "Eurodam on the cruise line's site",
+   "url": "https://www.hollandamerica.com/en/us/cruise-ships/eurodam/0",
+   "for": [
+    "ship:eurodam"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-westerdam",
+   "title": "Westerdam on the cruise line's site",
+   "url": "https://www.hollandamerica.com/en/us/cruise-ships/westerdam/8",
+   "for": [
+    "ship:westerdam"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-noordam",
+   "title": "Noordam on the cruise line's site",
+   "url": "https://www.hollandamerica.com/en/us/cruise-ships/noordam/7",
+   "for": [
+    "ship:noordam"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-norwegian_encore",
+   "title": "Norwegian Encore on the cruise line's site",
+   "url": "https://www.ncl.com/cruise-ships/norwegian-encore",
+   "for": [
+    "ship:norwegian_encore"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-norwegian_bliss",
+   "title": "Norwegian Bliss on the cruise line's site",
+   "url": "https://www.ncl.com/cruise-ships/norwegian-bliss",
+   "for": [
+    "ship:norwegian_bliss"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-norwegian_joy",
+   "title": "Norwegian Joy on the cruise line's site",
+   "url": "https://www.ncl.com/cruise-ships/norwegian-joy",
+   "for": [
+    "ship:norwegian_joy"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-norwegian_jade",
+   "title": "Norwegian Jade on the cruise line's site",
+   "url": "https://www.ncl.com/cruise-ships/norwegian-jade",
+   "for": [
+    "ship:norwegian_jade"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-voyager_of_the_seas",
+   "title": "Voyager of the Seas on the cruise line's site",
+   "url": "https://www.royalcaribbean.com/cruise-ships/voyager-of-the-seas",
+   "for": [
+    "ship:voyager_of_the_seas"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-quantum_of_the_seas",
+   "title": "Quantum of the Seas on the cruise line's site",
+   "url": "https://www.royalcaribbean.com/cruise-ships/quantum-of-the-seas",
+   "for": [
+    "ship:quantum_of_the_seas"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-serenade_of_the_seas",
+   "title": "Serenade of the Seas on the cruise line's site",
+   "url": "https://www.royalcaribbean.com/cruise-ships/serenade-of-the-seas",
+   "for": [
+    "ship:serenade_of_the_seas"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-anthem_of_the_seas",
+   "title": "Anthem of the Seas on the cruise line's site",
+   "url": "https://www.royalcaribbean.com/cruise-ships/anthem-of-the-seas",
+   "for": [
+    "ship:anthem_of_the_seas"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-celebrity_edge",
+   "title": "Celebrity Edge on the cruise line's site",
+   "url": "https://www.celebritycruises.com/cruise-ships/celebrity-edge",
+   "for": [
+    "ship:celebrity_edge"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-celebrity_summit",
+   "title": "Celebrity Summit on the cruise line's site",
+   "url": "https://www.celebritycruises.com/cruise-ships/celebrity-summit",
+   "for": [
+    "ship:celebrity_summit"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-celebrity_solstice",
+   "title": "Celebrity Solstice on the cruise line's site",
+   "url": "https://www.celebritycruises.com/cruise-ships/celebrity-solstice",
+   "for": [
+    "ship:celebrity_solstice"
+   ],
+   "verified": "loaded",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-carnival_legend",
+   "title": "Carnival Legend on the cruise line's site",
+   "url": "https://www.carnival.com/cruise-ships/carnival-legend",
+   "for": [
+    "ship:carnival_legend"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-carnival_spirit",
+   "title": "Carnival Spirit on the cruise line's site",
+   "url": "https://www.carnival.com/cruise-ships/carnival-spirit",
+   "for": [
+    "ship:carnival_spirit"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-msc_poesia",
+   "title": "MSC Poesia on the cruise line's site",
+   "url": "https://www.msccruisesusa.com/ships/msc-poesia",
+   "for": [
+    "ship:msc_poesia"
+   ],
+   "verified": "search",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-brilliant_lady",
+   "title": "Brilliant Lady on the cruise line's site",
+   "url": "https://www.virginvoyages.com/ships/brilliant-lady",
+   "for": [
+    "ship:brilliant_lady"
+   ],
+   "verified": "search",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-oceania_riviera",
+   "title": "Oceania Riviera on the cruise line's site",
+   "url": "https://www.oceaniacruises.com/ships/riviera",
+   "for": [
+    "ship:oceania_riviera"
+   ],
+   "verified": "search",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-disney_wonder",
+   "title": "Disney Wonder on the cruise line's site",
+   "url": "https://disneycruise.disney.go.com/ships/wonder/",
+   "for": [
+    "ship:disney_wonder"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  },
+  {
+   "id": "ol-ship-disney_magic",
+   "title": "Disney Magic on the cruise line's site",
+   "url": "https://disneycruise.disney.go.com/ships/magic/",
+   "for": [
+    "ship:disney_magic"
+   ],
+   "verified": "listed",
+   "checked": "2026-11-07"
+  }
+ ],
  "placeholders": [
   {
    "for": "place:stikine_icecap",

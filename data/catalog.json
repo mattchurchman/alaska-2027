@@ -324,8 +324,9 @@
    "line": "hal",
    "name": "Eurodam",
    "built": 2008,
-   "guests": null,
-   "note": "Mid-size ship; Holland America's quieter style suits the parents."
+   "guests": 2104,
+   "note": "Mid-size ship; Holland America's quieter style suits the parents.",
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (passengers)"
   },
   {
    "id": "norwegian_encore",
@@ -357,7 +358,8 @@
    "line": "rci",
    "name": "Voyager of the Seas",
    "built": 1999,
-   "guests": null
+   "guests": 3602,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (double occupancy; max 4,000)"
   },
   {
    "id": "quantum_of_the_seas",
@@ -404,8 +406,9 @@
    "line": "virgin",
    "name": "Brilliant Lady",
    "built": 2025,
-   "guests": null,
-   "note": "Adults only (18+)."
+   "guests": 2770,
+   "note": "Adults only (18+).",
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07"
   },
   {
    "id": "oceania_riviera",
@@ -419,26 +422,29 @@
    "id": "emerald_princess",
    "line": "princess",
    "name": "Emerald Princess",
-   "built": null,
+   "built": 2007,
    "guests": 3090,
    "guestsSource": "Princess itinerary page",
-   "note": "Guests from the Princess itinerary page."
+   "note": "Guests from the Princess itinerary page.",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (christened May 2007)"
   },
   {
    "id": "crown_princess",
    "line": "princess",
    "name": "Crown Princess",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2006,
+   "guests": 3080,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed 26 May 2006)"
   },
   {
    "id": "discovery_princess",
    "line": "princess",
    "name": "Discovery Princess",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2022,
+   "guests": 3660,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (passengers)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed 27 Jan 2022)"
   },
   {
    "id": "coral_princess",
@@ -461,73 +467,84 @@
    "id": "westerdam",
    "line": "hal",
    "name": "Westerdam",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2004,
+   "guests": 1964,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (passengers)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (in service 2004)"
   },
   {
    "id": "noordam",
    "line": "hal",
    "name": "Noordam",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2006,
+   "guests": 1916,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (passengers)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (in service 2006)"
   },
   {
    "id": "serenade_of_the_seas",
    "line": "rci",
    "name": "Serenade of the Seas",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2003,
+   "guests": 2490,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (passengers)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed July 2003)"
   },
   {
    "id": "anthem_of_the_seas",
    "line": "rci",
    "name": "Anthem of the Seas",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2015,
+   "guests": 4180,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (double occupancy; max 4,905)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed 10 Apr 2015)"
   },
   {
    "id": "celebrity_summit",
    "line": "celebrity",
    "name": "Celebrity Summit",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2001,
+   "guests": 2158,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (lower berths; all berths 2,218)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (in service Nov 2001)"
   },
   {
    "id": "celebrity_solstice",
    "line": "celebrity",
    "name": "Celebrity Solstice",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2008,
+   "guests": 2852,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed Oct 2008)",
+   "refit": "15 Jan 2026 to 2 Mar 2026 (Wikipedia infobox; scope not checked)",
+   "refitSource": "Wikipedia ship infobox, read 2026-11-07"
   },
   {
    "id": "norwegian_jade",
    "line": "ncl",
    "name": "Norwegian Jade",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 2006,
+   "guests": 2402,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (max 3,590)",
+   "builtSource": "Commons category 'Norwegian Jade (ship, 2006)'"
   },
   {
    "id": "disney_wonder",
    "line": "disney",
    "name": "Disney Wonder",
-   "built": null,
+   "built": 1999,
    "guests": null,
-   "guestsSource": null
+   "guestsSource": null,
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed 17 Jun 1999)"
   },
   {
    "id": "disney_magic",
    "line": "disney",
    "name": "Disney Magic",
-   "built": null,
-   "guests": null,
-   "guestsSource": null
+   "built": 1998,
+   "guests": 1750,
+   "guestsSource": "Wikipedia ship infobox, read 2026-11-07 (double occupancy; max 2,713)",
+   "builtSource": "Wikipedia ship infobox, read 2026-11-07 (completed 30 Jun 1998)"
   }
  ],
  "itineraries": [

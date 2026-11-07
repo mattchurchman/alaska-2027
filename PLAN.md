@@ -81,7 +81,7 @@ Models: Opus 5.5, Sonnet 5.5, Haiku 5.5. Fable is not needed.
 - Glacier guide for Glacier Bay, Hubbard, Dawes/Endicott, Tracy Arm, College Fjord: what you see; hours in the area; how often ships reach the face or substitute (sourced); rangers aboard?; best viewing spots for the parents; which route families include it. Stored in `meta.glacierGuide`.
 - Done when every port in catalog.json has experiences, and the guide covers every glacier day.
 
-### P5 · Media — Sonnet 5.5, medium
+### P5 · Media — Sonnet 5.5, medium — DONE (see handoffs/phase5.md)
 - Wikimedia Commons photos (author, license, file page) for every port and glacier, ship exteriors, experiences where a matching photo exists.
 - Per ship: official ship page; 1–2 recent YouTube ship tours (title, channel, publish date; after the last refit where possible); quick facts (year built/refit, guests, accessible-cabin notes).
 - No logos, no cruise-line photos. Run a link check (on a normal computer, or note that it couldn't run).
